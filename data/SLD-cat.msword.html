@@ -1,7 +1,7 @@
 <!DOCTYPE HTML><html>
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>Conceptual model/Overheidsbesluit bodemverontreiniging/20221202</title>
+      <title>Conceptual model/Overheidsbesluit bodemverontreiniging SLD/20221202</title>
       <style>
                     table tbody tr th,
                     table tbody tr td {text-align: left; vertical-align: top;} 
@@ -13,9 +13,9 @@
                 </style>
    </head>
    <body>
-      <p>Conceptual model/Overheidsbesluit bodemverontreiniging/20221202</p>
+      <p>Conceptual model/Overheidsbesluit bodemverontreiniging SLD/20221202</p>
       <p>Imvertor: 1.67.1</p>
-      <p>Model release: Conceptualmodel-Overheidsbesluitbodemverontreiniging-1.0-1-20221202-20221215-212944</p>
+      <p>Model release: Conceptualmodel-OverheidsbesluitbodemverontreinigingSLD-1.0-1-20221202-20221219-101057</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -76,7 +76,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De identificatie van een booronderzoek in de registratie ondergrond.</p>
+                                 <p>De identificatie van een overheidsbesluit in de registratie ondergrond.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -152,7 +152,7 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p> De organisatie moet binnen de basisregistratie ondergrond als bronhouder van booronderzoek
+                                 <p>De organisatie moet binnen de basisregistratie ondergrond als bronhouder van overheidsbesluit
                                     bekend zijn. </p>
                                  </td>
                            </tr>
@@ -254,7 +254,7 @@
                               <td>
                                  
                                  <p>De organisatie moet binnen de basisregistratie ondergrond als dataleverancier van
-                                    booronderzoek bekend zijn. </p>
+                                    overheidsbesluit bekend zijn. </p>
                                  </td>
                            </tr>
                            <tr>
@@ -383,9 +383,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De datum waarop de uitvoerder van het bodemkwaliteitonderzoek alle gegevens van het
-                                    bodemkwaliteitonderzoek aan de bronhouder heeft overgedragen of in het geval van historische
-                                    gegevens de datum waarop alle gegevens zijn vastgesteld.</p>
+                                 <p>De datum waarop het bevoegd gezag het besluit bekend heeft gemaakt.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -461,16 +459,16 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Dit gegeven komt alleen voor wanneer het bodemonderzoek voor opname in de BRO geregistreerd
+                                 <p>Dit gegeven komt alleen voor wanneer het besluit voor opname in de BRO geregistreerd
                                     was in een Bodem Informatie Systeem (BIS). Het SIKB-identificatienummer is de algemeen
-                                    gebruikte identificatie die een bodemonderzoek voor invoering van de basisregistratie
-                                    ondergrond had. De SIKB-ID kan gelijk zijn aan het object-ID bronhouder. Anders dan
-                                    het object-ID bronhouder wordt de SIKB-ID standaard uitgeleverd.</p>
+                                    gebruikte identificatie die een besluit voor invoering van de basisregistratie ondergrond
+                                    had. Het SIKB-ID kan gelijk zijn aan het object-ID bronhouder. Anders dan het object-ID
+                                    bronhouder wordt het SIKB-ID standaard uitgeleverd.</p>
                                  </td>
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d13486e1770"></a><section id="detail_d13486e1770">
+                     </section><a class="anchor" id="detail_d13695e1772"></a><section id="detail_d13695e1772">
                      <h4>  registratiegeschiedenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -648,14 +646,6 @@
                               <th>&nbsp;&nbsp;Naam</th>
                               <td>
                                  DatumTijd
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 
-                                 <p>Het gegeven is alleen aanwezig wanneer na de registratie van een deelonderzoek ander
-                                    deelonderzoek is vastgelegd.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -1149,6 +1139,15 @@
                         <p>De gegevens zijn aangeleverd in het kader van archiefoverdracht.</p>
                         </td>
                   </tr>
+                  <tr>
+                     <td>wbb</td>
+                     <td></td>
+                     <td>✔</td>
+                     <td>
+                        
+                        <p>Wet bodembescherming</p>
+                        </td>
+                  </tr>
                </tbody>
             </table>
             </section>
@@ -1178,6 +1177,28 @@
                      <th>IMBRO</th>
                      <th>IMBRO/A</th>
                      <th>Omschrijving</th>
+                  </tr>
+                  <tr>
+                     <td>aangevuld</td>
+                     <td>✔</td>
+                     <td>✔</td>
+                     <td>
+                        
+                        <p>Het registeren van de gegevens van het object heeft na de start van de registratie
+                           een vervolg gekregen. De gegevens in de registratie ondergrond zijn minimaal een keer
+                           aangevuld met nieuwe gegevens.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>geregistreerd</td>
+                     <td>✔</td>
+                     <td>✔</td>
+                     <td>
+                        
+                        <p>Het registeren van de gegevens van het object is gestart. De gegevens uit het eerste
+                           brondocument zijn in de registratie ondergrond vastgelegd. Er zijn daarna geen nieuwe
+                           gegevens geregistreerd.</p>
+                        </td>
                   </tr>
                   <tr>
                      <td>voltooid</td>
