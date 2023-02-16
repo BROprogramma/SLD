@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/Overheidsbesluit bodemverontreiniging SLD/20230209</p>
       <p>Imvertor: 2.0.0</p>
-      <p>Model release: Conceptualmodel-OverheidsbesluitbodemverontreinigingSLD-0.5-1-20230209-20230216-130329</p>
+      <p>Model release: Conceptualmodel-OverheidsbesluitbodemverontreinigingSLD-0.5-1-20230209-20230216-162522</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -29,17 +29,27 @@
                   <tbody>
                      <tr>
                         <th>Naam</th>
-                        <td></td>
+                        <td>Overheidsbesluit bodemverontreiniging</td>
                      </tr>
                      <tr>
                         <th>Code</th>
                         <td>SLD</td>
                      </tr>
                      <tr>
+                        <th>Definitie</th>
+                        <td>
+                           
+                           <p>Het geheel van gegevens dat betrekking heeft op de status van een bepaalde locatie
+                              in het kader van bodembescherming.</p>
+                           </td>
+                     </tr>
+                     <tr>
                         <th>Populatie</th>
                         <td>
                            
-                           <p>Ieder object heeft ter identificatie een eigen BRO-ID.<br clear="none">
+                           <p>De populatie bodemlocaties in de registratie ondergrond omvat alleen de locaties die
+                              een aanduiding hebben op basis van de Wet bodembescherming (Wbb).<br clear="none">
+                              Ieder object heeft ter identificatie een eigen BRO-ID.<br clear="none">
                               De huidige gegevensdefinitie beperkt zich tot het kwaliteitsregime IMBRO/A.</p>
                            </td>
                      </tr>
@@ -58,7 +68,7 @@
             <h2>Entiteiten en attributen</h2>
             <section id=""><a class="anchor" id="graph_EAID_F21C13A4_0F68_43f5_92C5_843C48DCED17"></a><a class="anchor" id="global_class_Model_Bodemlocatie"></a><section id="global_class_Model_Bodemlocatie">
                   <h3>   Bodemlocatie</h3>
-                  <div class="imageinfo "><img src="Images/EAID_0F45FF8A_B121_4718_846F_C709296EF933.png" usemap="#imagemap-EAID_0F45FF8A_B121_4718_846F_C709296EF933" alt="Diagram "><map name="imagemap-EAID_0F45FF8A_B121_4718_846F_C709296EF933"><area shape="rect" alt="Registratieobject" coords="96,14,378,189" href="#graph_EAID_E4A6E770_0010_4cd5_9097_0371563C1D69"><area shape="rect" alt="Bodemlocatie" coords="14,276,458,546" href="#graph_EAID_F21C13A4_0F68_43f5_92C5_843C48DCED17"></map><p><b></b></p>
+                  <div class="imageinfo "><img src="Images/EAID_0F45FF8A_B121_4718_846F_C709296EF933.png" usemap="#imagemap-EAID_0F45FF8A_B121_4718_846F_C709296EF933" alt="Diagram "><map name="imagemap-EAID_0F45FF8A_B121_4718_846F_C709296EF933"><area shape="rect" alt="Registratiegeschiedenis" coords="676,15,1038,315" href="#graph_EAID_CE2B6788_1AA6_4f1e_B8AD_F087B41405D6"><area shape="rect" alt="Gestandaardiseerde locatie" coords="676,338,1038,460" href="#graph_EAID_0DE952A0_3F03_4f25_8109_4E917E017038"><area shape="rect" alt="Registratieobject" coords="96,14,378,189" href="#graph_EAID_E4A6E770_0010_4cd5_9097_0371563C1D69"><area shape="rect" alt="Bodemlocatie" coords="14,276,458,546" href="#graph_EAID_F21C13A4_0F68_43f5_92C5_843C48DCED17"></map><p><b></b></p>
                   </div>
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -67,6 +77,23 @@
                         <tr>
                            <th>Type gegeven</th>
                            <td>Entiteit</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>De gegevens die de status van de locatie beschrijven.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              <p>Een eenheid of aggregatie van kleinere eenheden met een vermoede of bewezen bodemverontreiniging
+                                 die als één geheel wordt aangepakt bij onderzoek en sanering. De grens van een locatie
+                                 valt niet per se samen met de grens van een geval. Eén locatie kan soms verschillende
+                                 gevallen bevatten (of andersom).</p>
+                              </td>
                         </tr>
                      </tbody>
                   </table><a class="anchor" id="detail_attribute_Model_Bodemlocatie_kaderaanlevering"></a><section id="detail_attribute_Model_Bodemlocatie_kaderaanlevering">
@@ -329,10 +356,7 @@
                                  
                                  <p>De vervolgactie wordt bepaald op basis van een besluit of op basis van de onderzoeksresultaten
                                     uit het milieuhygiënisch bodemonderzoek.<br clear="none">
-                                    Het gegeven kan een nieuwe waarde krijgen bij een verandering/mutatie/wijziging. In
-                                    dat geval blijft de oude waarde behouden (<em>materiele geschiedenis</em>).  -&gt; tot nu toe wordt de oude waarde niet bewaard, alleen de actuele waarde. 
-                                    Voor gegevens die zijn aangeleverd onder IMBRO/A is de vervolgactie niet altijd vastgelegd,
-                                    en kan het gegeven ontbreken.</p>
+                                    IMBRO/A is de vervolgactie niet altijd vastgelegd, en kan het gegeven ontbreken.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -452,7 +476,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d26225e2625"></a><section id="detail_d26225e2625">
+                     </section><a class="anchor" id="detail_d25944e2686"></a><section id="detail_d25944e2686">
                      <h4>  gestandaardiseerde locatie</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -499,7 +523,7 @@
                            </tr>
                         </tbody>
                      </table>
-                  </section><a class="anchor" id="detail_d26225e2859"></a><section id="detail_d26225e2859">
+                  </section><a class="anchor" id="detail_d25944e2920"></a><section id="detail_d25944e2920">
                      <h4>  registratiegeschiedenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1316,6 +1340,8 @@
                      </section>
                </section><a class="anchor" id="graph_EAID_72CBBD31_EF6A_42db_BC9B_245B98DBBFFA"></a><a class="anchor" id="global_class_Model_Verdachteactiviteit"></a><section id="global_class_Model_Verdachteactiviteit">
                   <h3>   Verdachte activiteit</h3>
+                  <div class="imageinfo "><img src="Images/EAID_48CC91D9_03E1_464b_ADE3_E50E29F913E9.png" usemap="#imagemap-EAID_48CC91D9_03E1_464b_ADE3_E50E29F913E9" alt="Diagram "><map name="imagemap-EAID_48CC91D9_03E1_464b_ADE3_E50E29F913E9"><area shape="rect" alt="UBIcode" coords="568,108,705,218" href="#graph_EAID_72C254E0_2C60_4a60_A15E_95EB9C0AF748"><area shape="rect" alt="Verdachte activiteit" coords="14,14,331,171" href="#graph_EAID_72CBBD31_EF6A_42db_BC9B_245B98DBBFFA"></map><p><b></b></p>
+                  </div>
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
                      <colgroup style="width: 70%;"></colgroup>
@@ -1323,6 +1349,24 @@
                         <tr>
                            <th>Type gegeven</th>
                            <td>Entiteit</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Een (voormalige) activiteit die op de locatie bodemverontreiniging kan veroorzaken
+                                 of heeft veroorzaakt. </p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              <p>Het historisch gebruik van de bodem bepaalt voor een groot deel de milieuhygiënische
+                                 kwaliteit. Belastende activiteiten kunnen de bodemkwaliteit verminderen of bedreigen.
+                                 Onder belastende activiteiten vallen bijvoorbeeld stortplaatsen, slootdempingen, (gesaneerde)
+                                 ondergrondse brandstoftanks of (oude) industriële bedrijfsterreinen.</p>
+                              </td>
                         </tr>
                      </tbody>
                   </table><a class="anchor" id="detail_attribute_Model_Verdachteactiviteit_identificatie"></a><section id="detail_attribute_Model_Verdachteactiviteit_identificatie">
@@ -1364,13 +1408,6 @@
                               <td>Nee</td>
                            </tr>
                            <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 
-                                 <p>De SIKB-identificatie is de SIKB invulling van het NEN3610-ID.</p>
-                                 </td>
-                           </tr>
-                           <tr>
                               <th>Identificerend</th>
                               <td>Ja</td>
                            </tr>
@@ -1388,6 +1425,13 @@
                               <td>Attribuut van Verdachte activiteit</td>
                            </tr>
                            <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het type activiteit aangeduid met de UBI-code.</p>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th>Juridische status</th>
                               <td>Authentiek</td>
                            </tr>
@@ -1401,8 +1445,8 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
-                              <td><a class="link" href="#detail_class_Model_VerdachteActiviteit">
-                                    VerdachteActiviteit
+                              <td><a class="link" href="#detail_class_Model_UBIcode">
+                                    UBIcode
                                     </a></td>
                            </tr>
                            <tr>
@@ -1412,6 +1456,14 @@
                            <tr>
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>In Nederland wordt de uniforme bron indeling (UBI) gebruikt voor de aanduiding van
+                                    historische activiteiten.</p>
+                                 </td>
                            </tr>
                         </tbody>
                      </table>
@@ -1430,7 +1482,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>* </p>
+                                 <p>Het jaar waarin de activiteit is gestart. </p>
                                  </td>
                            </tr>
                            <tr>
@@ -1459,7 +1511,7 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>domein is een jaartal, zie combinaties van 8888 en 9999</p>
+                                 <p>'9999' staat voor 'onbekend'</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -1474,6 +1526,13 @@
                            <tr>
                               <th>Type gegeven</th>
                               <td>Attribuut van Verdachte activiteit</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het jaar waarin de activiteit is beeindigd. </p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
@@ -1497,6 +1556,13 @@
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
                            </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>9999 staat voor 'onbekend', 8888 staat voor 'nog aanwezig'.</p>
+                                 </td>
+                           </tr>
                         </tbody>
                      </table>
                      </section>
@@ -1509,6 +1575,13 @@
                         <tr>
                            <th>Type gegeven</th>
                            <td>Entiteit</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Een besluit genomen door het bevoegd gezag Wet bodembescherming.</p>
+                              </td>
                         </tr>
                      </tbody>
                   </table><a class="anchor" id="detail_attribute_Model_Besluit_identificatie"></a><section id="detail_attribute_Model_Besluit_identificatie">
@@ -1548,13 +1621,6 @@
                            <tr>
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 
-                                 <p>De SIKB-identificatie is de SIKB invulling van het NEN3610-ID.</p>
-                                 </td>
                            </tr>
                            <tr>
                               <th>Identificerend</th>
@@ -1613,6 +1679,13 @@
                               <td>Attribuut van Besluit</td>
                            </tr>
                            <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De identificatie van het document waarin het besluit is vastgelegd. </p>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th>Juridische status</th>
                               <td>Authentiek</td>
                            </tr>
@@ -1644,6 +1717,13 @@
                            <tr>
                               <th>Type gegeven</th>
                               <td>Attribuut van Besluit</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De datum waarop het besluit in werking is getreden.</p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
@@ -1685,6 +1765,13 @@
                               <td>Attribuut van Besluit</td>
                            </tr>
                            <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De datum waarop de in werking treding van het besluit is beeindigd.</p>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th>Juridische status</th>
                               <td>Authentiek</td>
                            </tr>
@@ -1715,6 +1802,8 @@
                      </section>
                </section><a class="anchor" id="graph_EAID_09FB6C8E_DA12_408b_BDA9_F0F7AF0E6070"></a><a class="anchor" id="global_class_Model_Sanering"></a><section id="global_class_Model_Sanering">
                   <h3>   Sanering</h3>
+                  <div class="imageinfo "><img src="Images/EAID_B855C6A4_F845_464a_9F34_0CC8DFC004E1.png" usemap="#imagemap-EAID_B855C6A4_F845_464a_9F34_0CC8DFC004E1" alt="Diagram "><map name="imagemap-EAID_B855C6A4_F845_464a_9F34_0CC8DFC004E1"><area shape="rect" alt="Sanering" coords="14,14,323,153" href="#graph_EAID_09FB6C8E_DA12_408b_BDA9_F0F7AF0E6070"></map><p><b></b></p>
+                  </div>
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
                      <colgroup style="width: 70%;"></colgroup>
@@ -1722,6 +1811,20 @@
                         <tr>
                            <th>Type gegeven</th>
                            <td>Entiteit</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Het aanpakken van een bodemverontreiniging.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              <p>Er kunnen meerdere saneringscontouren op één locatie zijn.</p>
+                              </td>
                         </tr>
                      </tbody>
                   </table><a class="anchor" id="detail_attribute_Model_Sanering_identificatie"></a><section id="detail_attribute_Model_Sanering_identificatie">
@@ -1763,50 +1866,8 @@
                               <td>Nee</td>
                            </tr>
                            <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 
-                                 <p>De SIKB-identificatie is de SIKB invulling van het NEN3610-ID.</p>
-                                 </td>
-                           </tr>
-                           <tr>
                               <th>Identificerend</th>
                               <td>Ja</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Sanering_contour"></a><section id="detail_attribute_Model_Sanering_contour">
-                     <h4>  contour</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Sanering</td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>
-                                 GM_MultiSurface
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Materiële geschiedenis</th>
-                              <td>Nee</td>
                            </tr>
                         </tbody>
                      </table>
@@ -1820,6 +1881,13 @@
                            <tr>
                               <th>Type gegeven</th>
                               <td>Attribuut van Sanering</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De aanduiding waarop de sanering betrekking heeft. </p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
@@ -1847,22 +1915,17 @@
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
                            </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>Grond, grondwater of waterbodem</p>
+                                 </td>
+                           </tr>
                         </tbody>
                      </table>
-                     </section>
-               </section><a class="anchor" id="graph_EAID_EF3010F6_C540_4cb6_BA87_CFC5DA2F7F43"></a><a class="anchor" id="global_class_Model_Bodemonderzoek"></a><section id="global_class_Model_Bodemonderzoek">
-                  <h3>   Bodemonderzoek</h3>
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Type gegeven</th>
-                           <td>Entiteit</td>
-                        </tr>
-                     </tbody>
-                  </table><a class="anchor" id="detail_attribute_Model_Bodemonderzoek_BROID"></a><section id="detail_attribute_Model_Bodemonderzoek_BROID">
-                     <h4>  BRO-ID</h4>
+                     </section><a class="anchor" id="detail_attribute_Model_Sanering_saneringscontour"></a><section id="detail_attribute_Model_Sanering_saneringscontour">
+                     <h4>  saneringscontour</h4>
                      
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1870,13 +1933,13 @@
                         <tbody>
                            <tr>
                               <th>Type gegeven</th>
-                              <td>Attribuut van Bodemonderzoek</td>
+                              <td>Attribuut van Sanering</td>
                            </tr>
                            <tr>
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De identificatie van een bodemonderzoek in de registratie ondergrond.</p>
+                                 <p>De grens van het gebied waarbinnen de saneringswerkzaamheden zijn uitgevoerd. </p>
                                  </td>
                            </tr>
                            <tr>
@@ -1893,15 +1956,9 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
-                              <td>Registratieobjectcode</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Code</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Opbouw</th>
-                              <td></td>
+                              <td>
+                                 GM_MultiSurface
+                                 </td>
                            </tr>
                            <tr>
                               <th>Materiële geschiedenis</th>
@@ -1911,13 +1968,10 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde aan
-                                    het object toe. </p>
+                                 <p>Deze grens valt binnen de grens van de bodemlocatie, maar hoeft niet samen te vallen
+                                    met de grens van de locatie. Er kunnen meerdere saneringscontouren op één locatie
+                                    zijn.</p>
                                  </td>
-                           </tr>
-                           <tr>
-                              <th>Identificerend</th>
-                              <td>Ja</td>
                            </tr>
                         </tbody>
                      </table>
@@ -1928,6 +1982,29 @@
       </section>
       <section>
          <h1>Artikel 2 Beschrijving van uitbreidbare waardelijsten    </h1>
+         <section id="detail_class_Model_Besluittype">
+            <h3>  Besluittype</h3>
+            
+            <table style="width: 100%;" class="list">
+               <colgroup></colgroup>
+               <tbody>
+                  <tr>
+                     <td></td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <table style="width: 100%;">
+               <tbody>
+                  <tr>
+                     <th>Waarde</th>
+                     <th>IMBRO</th>
+                     <th>IMBRO/A</th>
+                     <th>Omschrijving</th>
+                  </tr>
+               </tbody>
+            </table>
+            </section>
          <section id="detail_class_Model_Contourtype">
             <h3>  Contourtype</h3>
             
@@ -1969,29 +2046,6 @@
                      <td></td>
                      <td>✔</td>
                      <td></td>
-                  </tr>
-               </tbody>
-            </table>
-            </section>
-         <section id="detail_class_Model_Besluittype">
-            <h3>  Besluittype</h3>
-            
-            <table style="width: 100%;" class="list">
-               <colgroup></colgroup>
-               <tbody>
-                  <tr>
-                     <td></td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <table style="width: 100%;">
-               <tbody>
-                  <tr>
-                     <th>Waarde</th>
-                     <th>IMBRO</th>
-                     <th>IMBRO/A</th>
-                     <th>Omschrijving</th>
                   </tr>
                </tbody>
             </table>
@@ -2174,8 +2228,8 @@
                </tbody>
             </table>
             </section>
-         <section id="detail_class_Model_VerdachteActiviteit">
-            <h3>  VerdachteActiviteit</h3>
+         <section id="detail_class_Model_UBIcode">
+            <h3>  UBIcode</h3>
             
             <table style="width: 100%;" class="list">
                <colgroup></colgroup>
