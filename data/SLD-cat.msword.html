@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/Overheidsbesluit bodemverontreiniging SLD/20230209</p>
       <p>Imvertor: 2.0.0</p>
-      <p>Model release: Conceptualmodel-OverheidsbesluitbodemverontreinigingSLD-0.5-1-20230209-20230223-191125</p>
+      <p>Model release: Conceptualmodel-OverheidsbesluitbodemverontreinigingSLD-0.5-1-20230209-20230223-203334</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -498,6 +498,9 @@
                                     de onderzoeksresultaten uit het milieuhygiënisch bodemonderzoek. Het kan voorkomen
                                     dat een niet bevoegd gezag de status 'voldoende onderzocht' (VervolgactieWbb ID =
                                     20) heeft toegekend aan de bodemlocatie op basis van een milieuhygiënisch bodemonderzoek.<br clear="none">
+                                    Het gegeven kan een nieuwe waarde krijgen bij een verandering. In dat geval blijft
+                                    de oude waarde in de registratie ondergrond behouden. De geschiedenis van het gegeven
+                                    vóór opname in de BRO is niet vastgelegd.<br clear="none">
                                     Onder IMBRO/A is de vervolgactie niet altijd vastgelegd, en kan het gegeven ontbreken.</p>
                                  </td>
                            </tr>
@@ -560,7 +563,9 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>
+                                 <p>Het gegeven kan een nieuwe waarde krijgen bij een verandering. In dat geval wordt
+                                    de oude waarde in de registratie ondergrond overschreven en is niet meer direct beschikbaar
+                                    voor afnemers.<br clear="none">
                                     <strong>[OPEN PUNT]</strong> Organisatie worden in de BRO vastgelegd dmv het Kvk-nummer of EUID. In de huidige
                                     praktijk is de naam van de informatieverstrekker in een codelijst opgenomen (met ruim
                                     500 organisaties). </p>
@@ -568,7 +573,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d38277e3066"></a><section id="detail_d38277e3066">
+                     </section><a class="anchor" id="detail_d38344e3074"></a><section id="detail_d38344e3074">
                      <h4>  registratiegeschiedenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -605,7 +610,7 @@
                            </tr>
                         </tbody>
                      </table>
-                  </section><a class="anchor" id="detail_d38277e3251"></a><section id="detail_d38277e3251">
+                  </section><a class="anchor" id="detail_d38344e3259"></a><section id="detail_d38344e3259">
                      <h4>  geldigheid</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -644,16 +649,16 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>De bodemlocatie ontstaat op het moment dat hij wordt aangemaakt. Wanneer de status
-                                    van de bodemlocatie (<em>vervolgactie Wbb</em>) of de <em>informatieverstrekker</em> verandert ontstaat een nieuwe toestand van de bodemlocatie.<br clear="none">
-                                    Voor gegevens die zijn aangeleverd onder IMBRO/A is de datum waarop de bodemlocatie
-                                    is aangemaakt vaak niet bekend.<br clear="none">
-                                    <strong>[OPEN PUNT]</strong> Wanneer is de registratie van de bodemlocatie voltooid?</p>
+                                 <p>De bodemlocatie ontstaat op het moment dat hij wordt aangemaakt, en wanneer de status
+                                    van de bodemlocatie (<em>vervolgactie Wbb</em>) verandert ontstaat een nieuwe toestand van de bodemlocatie.<br clear="none">
+                                    Van gegevens die zijn aangeleverd onder IMBRO/A is de geschiedenis van het object
+                                    vóór opname in de BRO is niet vastgelegd.<br clear="none">
+                                    </p>
                                  </td>
                            </tr>
                         </tbody>
                      </table>
-                  </section><a class="anchor" id="detail_d38277e3521"></a><section id="detail_d38277e3521">
+                  </section><a class="anchor" id="detail_d38344e3519"></a><section id="detail_d38344e3519">
                      <h4>  gestandaardiseerde locatie</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -815,6 +820,14 @@
                            <tr>
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>
+                                    <strong>[OPEN PUNT]</strong> Wanneer is de registratie van de bodemlocatie voltooid? bij de vervolgactie <em>voldoende onderzocht</em>?</p>
+                                 </td>
                            </tr>
                         </tbody>
                      </table>
@@ -1415,6 +1428,10 @@
                               <td>OnvolledigeDatum</td>
                            </tr>
                            <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> tot heden</td>
+                           </tr>
+                           <tr>
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
                            </tr>
@@ -1470,6 +1487,10 @@
                            <tr>
                               <th>&nbsp;&nbsp;Naam IMBRO/A</th>
                               <td>OnvolledigeDatum</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> tot heden</td>
                            </tr>
                            <tr>
                               <th>Materiële geschiedenis</th>
@@ -1641,8 +1662,10 @@
                                  kwaliteit. Belastende activiteiten kunnen de bodemkwaliteit verminderen of bedreigen.
                                  Onder belastende activiteiten vallen bijvoorbeeld stortplaatsen, slootdempingen, (gesaneerde)
                                  ondergrondse brandstoftanks of (oude) industriële bedrijfsterreinen.<br clear="none">
-                                 <strong>[TODO]</strong> vanaf 1 januari 1987 (de inwerking treding van de Wet bodembescherming.
-                                 <strong>[open punt]</strong> in de volgende werkversie van de catalogus wordt het start- en eindjaar toegevoegd.
+                                 De verdachte activiteiten zijn gebaseerd op een landelijke inventarisatie van (bedrijfs-)
+                                 activiteiten van voor 1 januari 1987, het Historisch Bodembestand (Hbb). Dit is een
+                                 statisch bestand, en wordt niet meer aangevuld met nieuwe activiteiten.<br clear="none">
+                                 <strong>[OPEN PUNT]</strong> in de volgende werkversie van de catalogus wordt het start- en eindjaar toegevoegd.
                                  </p>
                               </td>
                         </tr>
@@ -1783,7 +1806,7 @@
                               
                               <p>Van besluiten die zijn aangeleverd onder IMBRO/A is de eind geldigheid niet vastgelegd,
                                  dat is wanneer het besluit is ingetrokken, vervallen of verlopen.<br clear="none">
-                                 <strong>[open punt]</strong> De dagtekening van het besluit (verplicht BRO-gegeven).</p>
+                                 <strong>[OPEN PUNT]</strong> De dagtekening van het besluit (verplicht BRO-gegeven).</p>
                               </td>
                         </tr>
                      </tbody>
@@ -1975,6 +1998,10 @@
                            <tr>
                               <th>&nbsp;&nbsp;Naam IMBRO/A</th>
                               <td>OnvolledigeDatum</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> tot heden</td>
                            </tr>
                            <tr>
                               <th>Materiële geschiedenis</th>
@@ -2203,7 +2230,7 @@
                         
                         <p>Het type besluit dat door het bevoegd gezag Wet Bodembescherming (een provincie of
                            een gemeente) is genomen over een locatie waarvan de bodem (mogelijk) gesaneerd of
-                           beheerd moet worden of reeds gesaneerd of beheerd is.
+                           beheerd moet worden of reeds gesaneerd of beheerd is.<br clear="none">
                            <strong>[TODO]</strong> omschrijvingen toevoegen.</p>
                         </td>
                   </tr>
