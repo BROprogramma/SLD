@@ -28,8 +28,9 @@
                <td>
                   
                   <p>De populatie bodemlocaties in de basisregistratie ondergrond omvat de locaties die
-                     een aanduiding hebben op basis van de Wet bodembescherming (Wbb), en de gemeentelijke
-                     locaties waar verdachte activiteiten zijn geregistreerd en/of de status <em>voldoende onderzocht</em> aan is toegekend op basis van een milieuhygiënisch bodemonderzoek.<br clear="none">
+                     een aanduiding hebben op basis van de Wet bodembescherming (Wbb), en de locaties van
+                     gemeenten die geen bevoegd gezag Wbb zijn, maar waar verdachte activiteiten zijn geregistreerd
+                     en/of de status <em>voldoende onderzocht</em> aan is toegekend op basis van een milieuhygiënisch bodemonderzoek.<br clear="none">
                      Ieder object heeft ter identificatie een eigen BRO-ID.<br clear="none">
                      De huidige gegevensdefinitie beperkt zich tot het kwaliteitsregime IMBRO/A.</p>
                   </td>
@@ -70,7 +71,7 @@
                         die als één geheel wordt aangepakt bij onderzoek en sanering. De grens van een locatie
                         valt niet per se samen met de grens van een geval van bodemverontreiniging. Eén locatie
                         kan soms verschillende gevallen bevatten (of andersom).<br clear="none">
-                        Bodemlocaties kunnen overlappen.</p>
+                        Bodemlocaties kunnen elkaar overlappen.</p>
                      </td>
                </tr>
             </tbody>
@@ -163,7 +164,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst 50</td>
+                     <td>Tekst 40</td>
                   </tr>
                   <tr>
                      <th>Materiële geschiedenis</th>
@@ -173,7 +174,8 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>De SIKB-identificatie is de SIKB invulling van het NEN3610-ID.</p>
+                        <p>De SIKB-identificatie is de SIKB invulling van het NEN3610-ID, en is een unieke identificatie
+                           in de vorm van een zogenaamde GUID (Globally Unique Identifier).</p>
                         </td>
                   </tr>
                </tbody>
@@ -193,7 +195,7 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>De code die de bodemlocatie heeft binnen het bodem informatiesysteem (BIS).</p>
+                        <p>De code die de bodemlocatie heeft binnen het bodem informatiesysteem.</p>
                         </td>
                   </tr>
                   <tr>
@@ -213,6 +215,14 @@
                      <td>Tekst 11</td>
                   </tr>
                   <tr>
+                     <th>Regels IMBRO/A</th>
+                     <td>
+                        
+                        <p>De code moet uniek zijn binnen  de set bodemlocaties van het registatieobjecttype
+                           <em>Overheidsbesluit bodemverontreiniging</em> (SLD).</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Materiële geschiedenis</th>
                      <td>Nee</td>
                   </tr>
@@ -220,8 +230,7 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>De code is uniek binnen de set bodemlocaties van het registatieobjecttype <em>Overheidsbesluit bodemverontreiniging</em> (SLD).<br clear="none">
-                           De code wordt aangemaakt als een locatie voor het eerst in een BIS wordt geregistreerd.
+                        <p>De code wordt aangemaakt als een locatie voor het eerst in een BIS wordt geregistreerd.
                            De code is als volgt opgebouwd: </p>
                         
                         <ul>
@@ -251,8 +260,8 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>De code die door het bevoegd gezag Wet bodembescherming (Wbb) wordt gebruikt om de
-                           bodemlocatie te identificeren.</p>
+                        <p>De code die door het bevoegd gezag Wet bodembescherming wordt gebruikt om de bodemlocatie
+                           te identificeren.</p>
                         </td>
                   </tr>
                   <tr>
@@ -272,6 +281,14 @@
                      <td>Tekst 11</td>
                   </tr>
                   <tr>
+                     <th>Regels IMBRO/A</th>
+                     <td>
+                        
+                        <p>De code moet uniek zijn binnen  de set bodemlocaties van het registatieobjecttype
+                           <em>Overheidsbesluit bodemverontreiniging</em> (SLD).</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Materiële geschiedenis</th>
                      <td>Nee</td>
                   </tr>
@@ -279,8 +296,7 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>De code is uniek binnen de set bodemlocaties van het registatieobjecttype <em>Overheidsbesluit bodemverontreiniging</em> (SLD).<br clear="none">
-                           De code is als volgt opgebouwd: </p>
+                        <p>De code is als volgt opgebouwd: </p>
                         
                         <ul>
                            
@@ -290,6 +306,9 @@
                            
                            <li>uniek volgnummer binnen het beheersgebied - 5 cijfers</li>
                            </ul>
+                        
+                        <p>Wanneer de bodemlocatie een gemeentelijke locatie betreft van een gemeente die geen
+                           bevoegd gezag Wbb is, ontbreekt het gegeven.</p>
                         </td>
                   </tr>
                </tbody>
@@ -342,8 +361,8 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_attribute_Model_Bodemlocatie_begrenzing"></a><section id="detail_attribute_Model_Bodemlocatie_begrenzing">
-            <h4>  begrenzing</h4>
+            </section><a class="anchor" id="detail_attribute_Model_Bodemlocatie_aangeleverdebegrenzing"></a><section id="detail_attribute_Model_Bodemlocatie_aangeleverdebegrenzing">
+            <h4>  aangeleverde begrenzing</h4>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -472,6 +491,10 @@
                      <td>Attribuut van Bodemlocatie</td>
                   </tr>
                   <tr>
+                     <th>Herkomst</th>
+                     <td>Handelsregister</td>
+                  </tr>
+                  <tr>
                      <th>Definitie</th>
                      <td>
                         
@@ -483,7 +506,7 @@
                   </tr>
                   <tr>
                      <th>Juridische status</th>
-                     <td>Niet-authentiek</td>
+                     <td>Authentiek</td>
                   </tr>
                   <tr>
                      <th>Kardinaliteit</th>
@@ -502,23 +525,26 @@
                      <td>
                         
                         <p>De organisatie moet bekend zijn binnen de basisregistratie ondergrond als informatieverstrekker
-                           van bodemonderzoek.</p>
+                           van bodemlocatie.</p>
                         </td>
                   </tr>
                   <tr>
                      <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
+                     <td>Ja</td>
                   </tr>
                   <tr>
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de bronhouder.</p>
+                        <p>
+                           <strong>[OPEN PUNT]</strong> Organisatie worden in de BRO vastgelegd dmv het Kvk-nummer of EUID. In de huidige
+                           praktijk is de naam van de informatieverstrekker in een codelijst opgenomen (met ruim
+                           500 organisaties). </p>
                         </td>
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d34894e2886"></a><section id="detail_d34894e2886">
+            </section><a class="anchor" id="detail_d37994e2942"></a><section id="detail_d37994e2942">
             <h4>  registratiegeschiedenis</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -555,7 +581,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d34894e3071"></a><section id="detail_d34894e3071">
+         </section><a class="anchor" id="detail_d37994e3127"></a><section id="detail_d37994e3127">
             <h4>  geldigheid</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -569,7 +595,7 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>De periode gedurende welke de bodemlocatie geldig is. </p>
+                        <p>De periode gedurende welke deze toestand van de bodemlocatie geldig is in de werkelijkheid.</p>
                         </td>
                   </tr>
                   <tr>
@@ -594,15 +620,16 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>De bodemlocatie bestaat vanaf het moment dat het is aangemaakt. Een bodemlocatie zal
-                           nooit worden verwijderd, en daarmee ophouden te bestaan.<br clear="none">
+                        <p>De bodemlocatie ontstaat op het moment dat hij wordt aangemaakt. Wanneer de status
+                           van de bodemlocatie (<em>vervolgactie Wbb</em>) of de <em>informatieverstrekker</em> verandert ontstaat een nieuwe toestand van de bodemlocatie.<br clear="none">
                            Voor gegevens die zijn aangeleverd onder IMBRO/A is de datum waarop de bodemlocatie
-                           is aangemaakt vaak niet bekend.</p>
+                           is aangemaakt vaak niet bekend.<br clear="none">
+                           <strong>[OPEN PUNT]</strong> Wanneer is de registratie van de bodemlocatie voltooid?</p>
                         </td>
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d34894e3323"></a><section id="detail_d34894e3323">
+         </section><a class="anchor" id="detail_d37994e3397"></a><section id="detail_d37994e3397">
             <h4>  gestandaardiseerde locatie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -1288,6 +1315,148 @@
                   <tr>
                      <th>Materiële geschiedenis</th>
                      <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section>
+      </section><a class="anchor" id="graph_EAID_2B7A3AB6_1FBB_4a58_844A_7E37A0656DBF"></a><a class="anchor" id="global_class_Model_Geldigheid"></a><section id="global_class_Model_Geldigheid">
+         <h3>   Geldigheid</h3>
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Type gegeven</th>
+                  <td>Entiteit</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     <p>De periode gedurende welke de toestand van het object geldig is.</p>
+                     </td>
+               </tr>
+               <tr>
+                  <th>Toelichting</th>
+                  <td>
+                     
+                     <p>Wanneer een eigenschap van een object in de werkelijkheid verandert ontstaat een nieuwe
+                        toestand van het object.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table><a class="anchor" id="detail_attribute_Model_Geldigheid_begingeldigheid"></a><section id="detail_attribute_Model_Geldigheid_begingeldigheid">
+            <h4>  begin geldigheid</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Geldigheid</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>NEN 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De datum die het begin aangeeft van de periode gedurende welke de toestand van het
+                           object geldig is.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>
+                        Datum
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam IMBRO/A</th>
+                     <td>OnvolledigeDatum</td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>De toestand van het object is geldig vanaf (het begin van) deze dag.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Geldigheid_eindgeldigheid"></a><section id="detail_attribute_Model_Geldigheid_eindgeldigheid">
+            <h4>  eind geldigheid</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Geldigheid</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>NEN 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De datum waarop de toestand van het object zijn geldigheid heeft verloren.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>0..1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>
+                        Datum
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam IMBRO/A</th>
+                     <td>OnvolledigeDatum</td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>De toestand van het object is niet meer geldig vanaf (het begin van) deze dag.</p>
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -2007,272 +2176,6 @@
                </tbody>
             </table>
             </section>
-      </section><a class="anchor" id="graph_EAID_3BB577F2_EDCD_4a98_B254_9B70AA918E14"></a><a class="anchor" id="global_class_Model_Levensduur"></a><section id="global_class_Model_Levensduur">
-         <h3>   Levensduur</h3>
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Type gegeven</th>
-                  <td>Entiteit</td>
-               </tr>
-            </tbody>
-         </table><a class="anchor" id="detail_attribute_Model_Levensduur_objectbegindatum"></a><section id="detail_attribute_Model_Levensduur_objectbegindatum">
-            <h4>  object begindatum</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Levensduur</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>NEN 3610</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De datum waarop het object in de werkelijkheid is ontstaan.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>
-                        Datum
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam IMBRO/A</th>
-                     <td>OnvolledigeDatum</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Vanaf deze datum bestaat het object.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Levensduur_objecteinddatum"></a><section id="detail_attribute_Model_Levensduur_objecteinddatum">
-            <h4>  object einddatum</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Levensduur</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>NEN 3610</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De datum waarop het object in de werkelijkheid niet meer bestaat.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>0..1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>
-                        Datum
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam IMBRO/A</th>
-                     <td>OnvolledigeDatum</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Vanaf deze datum bestaat het object niet meer.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section>
-      </section><a class="anchor" id="graph_EAID_2B7A3AB6_1FBB_4a58_844A_7E37A0656DBF"></a><a class="anchor" id="global_class_Model_Geldigheid"></a><section id="global_class_Model_Geldigheid">
-         <h3>   Geldigheid</h3>
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Type gegeven</th>
-                  <td>Entiteit</td>
-               </tr>
-               <tr>
-                  <th>Definitie</th>
-                  <td>
-                     
-                     <p>De datum die het begin aangeeft van de periode gedurende welke het object geldig is.</p>
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     
-                     <p>Vanaf deze datum is het object geldig.</p>
-                     </td>
-               </tr>
-            </tbody>
-         </table><a class="anchor" id="detail_attribute_Model_Geldigheid_begingeldigheid"></a><section id="detail_attribute_Model_Geldigheid_begingeldigheid">
-            <h4>  begin geldigheid</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Geldigheid</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>NEN 3610</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De datum waarop het object in de werkelijkheid is ontstaan.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>
-                        Datum
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam IMBRO/A</th>
-                     <td>OnvolledigeDatum</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Vanaf deze datum bestaat het object.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Geldigheid_eindgeldigheid"></a><section id="detail_attribute_Model_Geldigheid_eindgeldigheid">
-            <h4>  eind geldigheid</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Geldigheid</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>NEN 3610</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De datum waarop het object zijn geldigheid heeft verloren.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>0..1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>
-                        Datum
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam IMBRO/A</th>
-                     <td>OnvolledigeDatum</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Vanaf deze datum is het object niet meer geldig.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section>
       </section>
    </section>
 </section><section>
@@ -2284,7 +2187,12 @@
          <colgroup></colgroup>
          <tbody>
             <tr>
-               <td></td>
+               <td>
+                  
+                  <p>Het type besluit dat door het bevoegd gezag Wet Bodembescherming (een provincie of
+                     een gemeente) is genomen over een locatie waarvan de bodem (mogelijk) gesaneerd of
+                     beheerd moet worden of reeds gesaneerd of beheerd is.</p>
+                  </td>
             </tr>
          </tbody>
       </table>
@@ -2674,7 +2582,67 @@
                <td></td>
             </tr>
             <tr>
+               <td>63</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>64</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>65</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>66</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
                <td>71</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>72</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>73</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>74</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>75</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>76</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>77</td>
                <td></td>
                <td>✔</td>
                <td></td>
@@ -2686,7 +2654,43 @@
                <td></td>
             </tr>
             <tr>
+               <td>79</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
                <td>80</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>81</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>82</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>83</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>84</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>85</td>
                <td></td>
                <td>✔</td>
                <td></td>
@@ -2713,7 +2717,10 @@
          <colgroup></colgroup>
          <tbody>
             <tr>
-               <td></td>
+               <td>
+                  
+                  <p>Aanduiding van bodemmatrix van de contour.</p>
+                  </td>
             </tr>
          </tbody>
       </table>
@@ -2936,7 +2943,10 @@
          <colgroup></colgroup>
          <tbody>
             <tr>
-               <td></td>
+               <td>
+                  
+                  <p>Aanduiding of een bepaalde (bedrijfsmatige) activiteit voldoende is onderzocht.</p>
+                  </td>
             </tr>
          </tbody>
       </table>
@@ -2959,18 +2969,158 @@
          <colgroup></colgroup>
          <tbody>
             <tr>
-               <td></td>
+               <td>
+                  
+                  <p>De vervolgactie die in het kader van de Wet bodembescherming (Wbb) uitgevoerd moet
+                     worden.</p>
+                  </td>
             </tr>
          </tbody>
       </table>
       
-      <table style="width: 100%;">
+      <table style="width: 100%;" class="list">
+         <colgroup style="width: 20%;"></colgroup>
+         <colgroup style="width: 5%;"></colgroup>
+         <colgroup style="width: 5%;"></colgroup>
+         <colgroup></colgroup>
          <tbody>
             <tr>
                <th>Waarde</th>
                <th>IMBRO</th>
                <th>IMBRO/A</th>
                <th>Omschrijving</th>
+            </tr>
+            <tr>
+               <td>1</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>2</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>3</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>4</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>5</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>6</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>7</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>8</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>9</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>10</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>11</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>13</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>14</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>15</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>16</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>17</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>18</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>19</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>20</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>21</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>22</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>23</td>
+               <td></td>
+               <td>✔</td>
+               <td></td>
             </tr>
          </tbody>
       </table>
