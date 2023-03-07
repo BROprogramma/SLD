@@ -62,7 +62,7 @@ Explanation: Het gegeven ontbreekt als de BRO geen registratieobject bevat met h
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="reportDate" type="xs:date" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="reportDate" type="sldcom:PartialDateType" minOccurs="1" maxOccurs="1"/>
                     <xs:element name="standardizedLocation" type="sldcom:StandardizedLocationV2Type" nillable="false" minOccurs="1" maxOccurs="1"/>
                     <xs:element name="registrationHistory" type="sldcom:RegistrationHistoryType" nillable="false" minOccurs="1" maxOccurs="1"/>
                     <xs:element name="featureCollection" type="imsikb0101:FeatureCollectionIMSIKB0101PropertyType" nillable="false" minOccurs="1" maxOccurs="1"/>
