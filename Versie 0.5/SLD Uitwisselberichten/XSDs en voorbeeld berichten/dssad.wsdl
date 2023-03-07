@@ -3,11 +3,11 @@
                   xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
                   xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
                   xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata"
-                  xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+                  xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon/1.0"
                   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-                  xmlns:msg="http://www.broservices.nl/xsd/dssld-internal/1.0"
-                  xmlns:tns="http://www.broservices.nl/wsdl/dssld-internal/1.0"
-                  targetNamespace="http://www.broservices.nl/wsdl/dssld-internal/1.0">
+                  xmlns:msg="http://www.broservices.nl/xsd/dssld/1.0"
+                  xmlns:tns="http://www.broservices.nl/wsdl/dssld/1.0"
+                  targetNamespace="http://www.broservices.nl/wsdl/dssld/1.0">
 
     <wsdl:documentation>
         This WSDL defines the webservice for the sld intake webservice (SoilLegalDecision)
@@ -16,12 +16,14 @@
     </wsdl:documentation>
 
     <wsdl:types>
-        <xsd:schema xmlns:tns="http://www.broservices.nl/wsdl/dssld-internal/1.0" targetNamespace="http://www.broservices.nl/wsdl/dssld-internal/1.0">
+        <xsd:schema xmlns:tns="http://www.broservices.nl/wsdl/dssld/1.0" targetNamespace="http://www.broservices.nl/wsdl/dssld/1.0">
             <!--
-            <xsd:import namespace="http://www.broservices.nl/xsd/dssld-internal/1.0" schemaLocation="https://schema.broservices.nl/xsd/dssld-internal/1.0/dssld-internal-messages.xsd"/>
+            <xsd:import namespace="http://www.broservices.nl/xsd/dssld/1.0" schemaLocation="https://schema.broservices.nl/xsd/dssld/1.0/dssld-messages.xsd"/>
             -->
-            <xsd:import namespace="http://www.broservices.nl/xsd/dssld-internal/1.0" schemaLocation="../schema/dssld-internal-messages.xsd"/>
-            <xsd:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd" />
+            <xsd:import namespace="http://www.broservices.nl/xsd/dssld/1.0" schemaLocation="../schema/dssld-messages.xsd"/>
+            <!--
+            <xsd:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
+            -->
         </xsd:schema>
     </wsdl:types>
 
@@ -38,7 +40,7 @@
     </wsdl:message>
 
     <wsdl:message name="DeliveryResponsiblePartyHeader">
-        <wsdl:part name="deliveryResponsibleParty" element="brocom:deliveryResponsibleParty" />
+        <wsdl:part name="deliveryResponsibleParty" element="sldcom:deliveryResponsibleParty" />
     </wsdl:message>
 
     <wsdl:portType name="dssld">
