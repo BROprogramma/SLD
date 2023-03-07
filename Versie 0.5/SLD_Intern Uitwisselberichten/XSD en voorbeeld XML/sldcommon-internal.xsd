@@ -136,42 +136,42 @@ Explanation: De saneringscontour valt normaliter binnen de begrenzing van de bod
    <xs:complexType name="DecisionTypeType">
       <xs:simpleContent>
          <xs:restriction base="gml:CodeWithAuthorityType">
-            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:sld:DecisionType"/>
          </xs:restriction>
       </xs:simpleContent>
    </xs:complexType>
    <xs:complexType name="CompartmentType">
       <xs:simpleContent>
          <xs:restriction base="gml:CodeWithAuthorityType">
-            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:sld:Compartment"/>
          </xs:restriction>
       </xs:simpleContent>
    </xs:complexType>
    <xs:complexType name="CoordinateTransformationType">
       <xs:simpleContent>
          <xs:restriction base="gml:CodeWithAuthorityType">
-            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:sld:CoordinateTransformation"/>
          </xs:restriction>
       </xs:simpleContent>
    </xs:complexType>
    <xs:complexType name="DeliveryContextType">
       <xs:simpleContent>
          <xs:restriction base="gml:CodeWithAuthorityType">
-            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:sld:DeliveryContext"/>
          </xs:restriction>
       </xs:simpleContent>
    </xs:complexType>
    <xs:complexType name="UBIcodeType">
       <xs:simpleContent>
          <xs:restriction base="gml:CodeWithAuthorityType">
-            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:sld:UBIcode"/>
          </xs:restriction>
       </xs:simpleContent>
    </xs:complexType>
    <xs:complexType name="followUpWbbType">
       <xs:simpleContent>
          <xs:restriction base="gml:CodeWithAuthorityType">
-            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:sld:followUpWbb"/>
          </xs:restriction>
       </xs:simpleContent>
    </xs:complexType>
