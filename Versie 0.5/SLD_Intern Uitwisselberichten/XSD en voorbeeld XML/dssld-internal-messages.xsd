@@ -83,7 +83,7 @@ Explanation: De SIKB-identificatie is de SIKB invulling van het NEN3610-ID, en i
                         </xs:annotation>
                         <xs:simpleType>
                             <xs:restriction base="xs:string">
-                                <xs:length value="40"/>
+                                <xs:maxLength value="40"/>
                             </xs:restriction>
                         </xs:simpleType>
                     </xs:element>
@@ -94,7 +94,7 @@ Explanation: De code wordt aangemaakt als een locatie voor het eerst in een BIS 
                         </xs:annotation>
                         <xs:simpleType>
                             <xs:restriction base="xs:string">
-                                <xs:length value="11"/>
+                                <xs:maxLength value="11"/>
                             </xs:restriction>
                         </xs:simpleType>
                     </xs:element>
@@ -106,7 +106,7 @@ Explanation: De code is als volgt opgebouwd: afkorting bevoegd gezag - 2 letters
                         </xs:annotation>
                         <xs:simpleType>
                             <xs:restriction base="xs:string">
-                                <xs:length value="11"/>
+                                <xs:maxLength value="11"/>
                             </xs:restriction>
                         </xs:simpleType>
                     </xs:element>
@@ -118,7 +118,7 @@ Explanation: Voor gegevens die zijn aangeleverd onder IMBRO/A is dit gegeven nie
                         </xs:annotation>
                         <xs:simpleType>
                             <xs:restriction base="xs:string">
-                                <xs:length value="200"/>
+                                <xs:maxLength value="200"/>
                             </xs:restriction>
                         </xs:simpleType>
                     </xs:element>
@@ -144,8 +144,8 @@ Explanation: De bodemlocatie doorloopt een aantal stadia. De stadia zijn gekoppe
 Explanation: Het gegeven kan een nieuwe waarde krijgen bij een verandering. In dat geval wordt de oude waarde in de registratie ondergrond overschreven en is niet meer direct beschikbaar voor afnemers. [OPEN PUNT] Organisatie worden in de BRO vastgelegd dmv het Kvk-nummer of EUID. In de huidige praktijk is de naam van de informatieverstrekker in een codelijst opgenomen (met ruim 500 organisaties).</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="activity" type="sldcom:DecisionPropertyType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
-                    <xs:element name="decision" type="sldcom:ActivityPropertyType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="activity" type="sldcom:DecisionType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="decision" type="sldcom:ActivityType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
