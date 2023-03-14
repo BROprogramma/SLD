@@ -35,17 +35,17 @@
         <xs:complexContent>
             <xs:extension base="sldcom:RegistrationRequestType">
                 <xs:sequence>
-                    <xs:element name="sourceDocument" type="issld:SLD_CompleteReportPropertyType" nillable="false" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="sourceDocument" type="issld:SourceDocumentType" nillable="false" minOccurs="1" maxOccurs="1"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    <xs:element name="SLD_CompleteReport" type="issld:SLD_CompleteReportType" substitutionGroup="gml:AbstractFeature">
+        <xs:element name="SLD_StartRegistration" type="issld:SLD_StartRegistrationType" substitutionGroup="gml:AbstractFeature">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het brondocument wordt aangeboden wanneer het Bodemlocatie in een keer volledig wordt aangeleverd.</xs:documentation>
         </xs:annotation>
     </xs:element>
-    <xs:complexType name="SLD_CompleteReportType">
+    <xs:complexType name="SLD_StartRegistrationType">
         <xs:complexContent>
             <xs:extension base="gml:AbstractFeatureType">
                 <xs:sequence>
@@ -63,9 +63,75 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    <xs:complexType name="SLD_CompleteReportPropertyType">
-        <xs:sequence minOccurs="1">
-            <xs:element ref="issld:SLD_CompleteReport"/>
+    <xs:complexType name="SLD_StartRegistrationPropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="issld:SLD_StartRegistration"/>
         </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    <xs:element name="SLD_NewDecision" type="issld:SLD_NewDecisionType" substitutionGroup="gml:AbstractFeature">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het brondocument wordt aangeboden wanneer het Bodemlocatie in een keer volledig wordt aangeleverd.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="SLD_NewDecisionType">
+        <xs:complexContent>
+            <xs:extension base="gml:AbstractFeatureType">
+                <xs:sequence>
+                    <xs:element name="deliveryContext" type="sldcom:DeliveryContextType" minOccurs="1" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:appinfo>
+                                <CodeListName>DeliveryContext</CodeListName>
+                                <CodeListURI/>
+                            </xs:appinfo>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="reportDate" type="sldcom:PartialDatePropertyType" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="featureCollection" type="imsikb0101:FeatureCollectionIMSIKB0101PropertyType" nillable="false" minOccurs="1" maxOccurs="1"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="SLD_NewDecisionPropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="issld:SLD_NewDecision"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    <xs:element name="SLD_NewState" type="issld:SLD_NewStateType" substitutionGroup="gml:AbstractFeature">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het brondocument wordt aangeboden wanneer het Bodemlocatie in een keer volledig wordt aangeleverd.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="SLD_NewStateType">
+        <xs:complexContent>
+            <xs:extension base="gml:AbstractFeatureType">
+                <xs:sequence>
+                    <xs:element name="deliveryContext" type="sldcom:DeliveryContextType" minOccurs="1" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:appinfo>
+                                <CodeListName>DeliveryContext</CodeListName>
+                                <CodeListURI/>
+                            </xs:appinfo>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="reportDate" type="sldcom:PartialDatePropertyType" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="featureCollection" type="imsikb0101:FeatureCollectionIMSIKB0101PropertyType" nillable="false" minOccurs="1" maxOccurs="1"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="SLD_NewStatePropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="issld:SLD_NewState"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
+    <xs:complexType name="SourceDocumentType">
+        <xs:choice minOccurs="1" maxOccurs="1">
+            <xs:element ref="issld:SLD_StartRegistration"/>
+            <xs:element ref="issld:SLD_NewDecision"/>
+            <xs:element ref="issld:SLD_NewState"/>
+        </xs:choice>
     </xs:complexType>
 </xs:schema>
