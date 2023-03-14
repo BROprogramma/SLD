@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registrationRequest xmlns="http://www.broservices.nl/xsd/issld-internal/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.broservices.nl/xsd/issld-internal/0.5 ../issld-internal-messages.xsd" xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon-internal/1.0">
+    <brocom:requestReference>Wbb_Status_1</brocom:requestReference>
+    <brocom:qualityRegime>IMBRO/A</brocom:qualityRegime>
+    <sourceDocument>
+        <SLD_NewState gml:id="id_0001">
+            <currentStateWbb codeSpace="urn:bro:sld:followUpWbb">Gesaneerd</currentStateWbb>
+        </SLD_NewState>
+    </sourceDocument>
+</registrationRequest>
