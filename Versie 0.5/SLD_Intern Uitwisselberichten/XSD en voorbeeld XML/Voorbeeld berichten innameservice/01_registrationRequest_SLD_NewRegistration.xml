@@ -18,6 +18,7 @@
     <sourceDocument>
         <SLD_StartRegistration gml:id="id_0001">
             <deliveryContext codeSpace="urn:bro:sld:DeliveryContext">archiefoverdracht</deliveryContext>
+            <objectIdAccountableParty>12345</objectIdAccountableParty>
             <reportDate>
                 <brocom:date>2023-03-14</brocom:date>
             </reportDate>
@@ -51,7 +52,7 @@
             <decision gml:id="id_0006">
                 <sldcom:identification>c6d320cf-2a0b-4a74-8c36-a0b7c336dd40</sldcom:identification>
                 <sldcom:decisionType codeSpace="urn:bro:sld:DecisionType">Besluit</sldcom:decisionType>
-                <sldcom:effectiveDate>2023-03-14</sldcom:effectiveDate>
+                <sldcom:effectiveDate><brocom:date>2023-03-21</brocom:date></sldcom:effectiveDate>
                 <sldcom:executedRemediation gml:id="id_0005">
                     <sldcom:identification>c6d320cf-2a0b-4a74-8c36-a0b7c336dd41</sldcom:identification>
                     <sldcom:compartment codeSpace="urn:bro:sld:Compartment">Compartment</sldcom:compartment>
@@ -73,26 +74,6 @@
                     </gml:surfaceMember></gml:MultiSurface></sldcom:remediationBoundary>
                 </sldcom:executedRemediation>
             </decision>
-            <standardizedLocation>
-                <brocom:location><gml:MultiSurface gml:id="id_0011"><gml:surfaceMember>
-                        <gml:Polygon gml:id="id_0010">
-                            <gml:exterior>
-                                <gml:LinearRing>
-                                    <gml:posList>
-                                        50.8748363 5.9284810
-                                        50.8757351 5.9284915
-                                        50.8766307 5.9292124
-                                        50.8757285 5.9299122
-                                        50.8748296 5.9299017
-                                        50.8748363 5.9284810
-                                    </gml:posList>
-                                </gml:LinearRing>
-                            </gml:exterior>
-                        </gml:Polygon>
-                    </gml:surfaceMember></gml:MultiSurface>
-                </brocom:location>
-                <brocom:coordinateTransformation codeSpace="urn:bro:CoordinateTransformation">WGS-84</brocom:coordinateTransformation>
-            </standardizedLocation>
         </SLD_StartRegistration>
     </sourceDocument>
 </registrationRequest>

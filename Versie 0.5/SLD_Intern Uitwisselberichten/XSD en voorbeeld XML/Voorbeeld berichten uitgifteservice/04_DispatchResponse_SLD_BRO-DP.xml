@@ -18,7 +18,7 @@
             <dssld:reportDate>
                 <brocom:date>2023-03-14</brocom:date>
             </dssld:reportDate>
-            <dssld:SIKBidentification>123456-1234-1234-1234</dssld:SIKBidentification>
+            <dssld:identification>123456-1234-1234-1234</dssld:identification>
             <dssld:dossierIdSoilInformationsystem>12345</dssld:dossierIdSoilInformationsystem>
             <dssld:standardizedLocation>
                 <brocom:location>

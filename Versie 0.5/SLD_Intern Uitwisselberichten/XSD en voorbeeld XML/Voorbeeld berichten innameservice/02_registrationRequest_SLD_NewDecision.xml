@@ -17,7 +17,7 @@
             <decision gml:id="id_0002">
                 <sldcom:identification>12345-6789-1011-1213</sldcom:identification>
                 <sldcom:decisionType codeSpace="urn:bro:sld:DecisionType">Besluit1</sldcom:decisionType>
-                <sldcom:effectiveDate>2023-03-14</sldcom:effectiveDate>
+                <sldcom:effectiveDate><brocom:date>2023-03-21</brocom:date></sldcom:effectiveDate>
             </decision>
         </SLD_NewDecision>
     </sourceDocument>
