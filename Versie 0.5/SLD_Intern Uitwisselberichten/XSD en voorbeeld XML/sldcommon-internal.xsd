@@ -178,7 +178,7 @@ Explanation: Dat zijn besluiten genomen in het kader van de Wet bodembescherming
          </xs:restriction>
       </xs:simpleContent>
    </xs:complexType>
-   <xs:complexType name="followUpWbbType">
+   <xs:complexType name="FollowUpWbbType">
       <xs:simpleContent>
          <xs:restriction base="gml:CodeWithAuthorityType">
             <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:sld:FollowUpWbb"/>
