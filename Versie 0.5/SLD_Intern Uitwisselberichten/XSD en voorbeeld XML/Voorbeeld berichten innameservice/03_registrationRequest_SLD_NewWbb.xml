@@ -14,7 +14,7 @@
     <brocom:qualityRegime>IMBRO/A</brocom:qualityRegime>
     <sourceDocument>
         <SLD_NewState gml:id="id_0001">
-            <currentStateWbb codeSpace="urn:bro:sld:followUpWbb">Gesaneerd</currentStateWbb>
+            <currentStateWbb codeSpace="urn:bro:sld:FollowUpWbb">Gesaneerd</currentStateWbb>
         </SLD_NewState>
     </sourceDocument>
 </registrationRequest>

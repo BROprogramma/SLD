@@ -16,7 +16,6 @@
     <sourceDocument>
         <SLD_StartRegistration>
             <deliveryContext codeSpace="urn:bro:sld:DeliveryContext">Onbekend</deliveryContext>
-            <reportDate><sldcom:date>2023-03-14</sldcom:date></reportDate>
             <featureCollection>
                 <imsikb0101:FeatureCollectionIMSIKB0101 gml:id="LIBTEST" xmlns:imsikb0101="http://www.sikb.nl/imsikb0101" xmlns:immetingen="http://www.sikb.nl/immetingen" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:om="http://www.opengis.net/om/2.0" xmlns:sam="http://www.opengis.net/sampling/2.0" xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sikb.nl/imsikb0101 file:///C:/dev/SIKB0101_Protocol/XSDs%2014.7.0/imsikb0101_v14.7.0.xsd">
                     <imsikb0101:metaData>
