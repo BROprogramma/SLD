@@ -15,9 +15,6 @@
             <brocom:broId>BRO0001</brocom:broId>
             <brocom:qualityRegime>IMBRO/A</brocom:qualityRegime>
             <dssld:deliveryContext codeSpace="urn:bro:sld:DeliveryContext">Kader Aanlevering</dssld:deliveryContext>
-            <dssld:reportDate>
-                <brocom:date>2023-03-14</brocom:date>
-            </dssld:reportDate>
             <dssld:identification>123456-1234-1234-1234</dssld:identification>
             <dssld:dossierIdSoilInformationsystem>12345</dssld:dossierIdSoilInformationsystem>
             <dssld:standardizedLocation>

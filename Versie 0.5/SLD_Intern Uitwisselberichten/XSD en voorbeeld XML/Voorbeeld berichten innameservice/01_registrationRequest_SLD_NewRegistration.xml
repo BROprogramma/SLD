@@ -19,9 +19,6 @@
         <SLD_StartRegistration gml:id="id_0001">
             <deliveryContext codeSpace="urn:bro:sld:DeliveryContext">archiefoverdracht</deliveryContext>
             <objectIdAccountableParty>12345</objectIdAccountableParty>
-            <reportDate>
-                <brocom:date>2023-03-14</brocom:date>
-            </reportDate>
             <identification>ee056d3e-a634-11ed-afa1-0242ac120002</identification>
             <dossierIdSoilInformationsystem>AA111122222</dossierIdSoilInformationsystem>
             <deliveredBoundary>

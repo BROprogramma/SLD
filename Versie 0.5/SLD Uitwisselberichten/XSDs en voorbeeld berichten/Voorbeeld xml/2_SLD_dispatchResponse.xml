@@ -24,7 +24,6 @@
             <sldcom:objectIdAccountableParty>PROJECTCODESIKB</sldcom:objectIdAccountableParty>
             <sldcom:qualityRegime>IMBRO/A</sldcom:qualityRegime>
             <deliveryContext codeSpace="urn:bro:sld:DeliveryContext">Onbekend</deliveryContext>
-            <reportDate><sldcom:date>2023-03-21</sldcom:date></reportDate>
             <standardizedLocation>
                 <sldcom:location>
                     <sldcom:StandardizedGeometry>

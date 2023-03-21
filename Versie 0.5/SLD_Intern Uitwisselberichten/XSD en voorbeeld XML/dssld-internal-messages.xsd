@@ -75,7 +75,6 @@ Explanation: Het gegeven ontbreekt als de BRO geen registratieobject bevat met h
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="reportDate" type="brocom:PartialDateType" minOccurs="1" maxOccurs="1"/>
                     <xs:element name="identification" minOccurs="1" maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie die de bodemlocatie heeft binnen de informatieketen milieukwaliteit.
