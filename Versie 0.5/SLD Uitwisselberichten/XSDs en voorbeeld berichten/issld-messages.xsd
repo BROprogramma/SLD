@@ -86,7 +86,7 @@
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="reportDate" type="sldcom:PartialDatePropertyType" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="reportDate" type="sldcom:PartialDateType" minOccurs="1" maxOccurs="1"/>
                     <xs:element name="featureCollection" type="imsikb0101:FeatureCollectionIMSIKB0101PropertyType" nillable="false" minOccurs="1" maxOccurs="1"/>
                 </xs:sequence>
             </xs:extension>
@@ -115,7 +115,7 @@
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="reportDate" type="sldcom:PartialDatePropertyType" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="reportDate" type="sldcom:PartialDateType" minOccurs="1" maxOccurs="1"/>
                     <xs:element name="featureCollection" type="imsikb0101:FeatureCollectionIMSIKB0101PropertyType" nillable="false" minOccurs="1" maxOccurs="1"/>
                 </xs:sequence>
             </xs:extension>

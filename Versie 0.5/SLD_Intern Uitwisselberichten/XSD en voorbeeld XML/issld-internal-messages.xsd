@@ -92,6 +92,12 @@ Explanation: Een eenheid of aggregatie van kleinere eenheden met een vermoede of
 Explanation: De wetgever stipuleert dat het gegeven moet zijn vastgelegd om inzicht te geven in de relatie met de taken van een bestuursorgaan. Het gegeven geeft inzicht in de maatschappelijke betekenis van de informatie. [TODO] definitie aanscherpen.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
+                    <xs:element name="objectIdAccountableParty" type="xs:string" minOccurs="0" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie die door of voor de bronhouder is gebruikt om het object in de eigen administratie te kunnen vinden, voordat het was geregistreerd in de basisregistratie ondergrond.
+Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de bronhouder. Het is in de registratie opgenomen om de communicatie tussen de registerbeheerder en de bronhouder of dataleverancier te vergemakkelijken.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
                     <xs:element name="reportDate" type="brocom:PartialDateType" minOccurs="1" maxOccurs="1"/>
                     <xs:element name="identification" minOccurs="1" maxOccurs="1">
                         <xs:annotation>
@@ -122,7 +128,7 @@ Explanation: De code is als volgt opgebouwd: afkorting bevoegd gezag - 2 letters
                         </xs:annotation>
                         <xs:simpleType>
                             <xs:restriction base="xs:string">
-                                <xs:length value="11"/>
+                                <xs:maxLength value="11"/>
                             </xs:restriction>
                         </xs:simpleType>
                     </xs:element>
@@ -133,7 +139,7 @@ Explanation: Voor gegevens die zijn aangeleverd onder IMBRO/A is dit gegeven nie
                         </xs:annotation>
                         <xs:simpleType>
                             <xs:restriction base="xs:string">
-                                <xs:length value="200"/>
+                                <xs:maxLength value="200"/>
                             </xs:restriction>
                         </xs:simpleType>
                     </xs:element>
@@ -160,13 +166,7 @@ Explanation: De bodemlocatie doorloopt een aantal stadia. De stadia zijn gekoppe
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die meer informatie kan verstrekken over de bodemlocatie als aanvulling op de aangeleverde gegevens, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
 Explanation: Het gegeven kan een nieuwe waarde krijgen bij een verandering. In dat geval wordt de oude waarde in de registratie ondergrond overschreven en is niet meer direct beschikbaar voor afnemers. [OPEN PUNT] Organisatie worden in de BRO vastgelegd dmv het Kvk-nummer of EUID. In de huidige praktijk is de naam van de informatieverstrekker in een codelijst opgenomen (met ruim 500 organisaties).</xs:documentation>
                         </xs:annotation>
-                    </xs:element>
-                    <xs:element name="standardizedLocation" type="brocom:StandardizedLocationV2Type" nillable="false" minOccurs="1" maxOccurs="1">
-                        <xs:annotation>
-                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De begrenzing van de bodemlocatie op het aardoppervlak zoals die door de basisregistratie ondergrond is getransformeerd.
-Explanation: Het gegeven staat niet in een brondocument. De gestandaardiseerde locatie wordt door de basisregistratie ondergrond berekend ten behoeve van afnemers. De bodemlocatie is gedefinieerd als een multivlak.</xs:documentation>
-                        </xs:annotation>
-                    </xs:element>
+                    </xs:element>                    
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
