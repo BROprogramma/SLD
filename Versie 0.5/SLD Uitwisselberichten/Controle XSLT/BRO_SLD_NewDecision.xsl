@@ -15,6 +15,11 @@
 			<xsl:if test="lower-case(//imsikb0101:metaData/imsikb0101:dataflow) != lower-case('urn:imsikb0101:DatastroomType:id:5')">			
 				<xsl:copy-of select="sikb:createRecord('WARNING','imsikb0101:metaData/imsikb0101:dataflow','Het veld metadata/dataflow zou ingevuld moeten zijn met: urn:imsikb0101:DatastroomType:id:5. Als dit geen LIB-xml is, kies dan voor een andere controle xslt.')"/>		
 			</xsl:if>		
+                
+            <!-- Er moet minimaal en maximaal 1 Dossier gekoppeld zijn. -->
+            <xsl:if test="count(//imsikb0101:Dossier) != 1">
+				<xsl:copy-of select="sikb:createRecord('ERROR','imsikb0101:Dossier','Er moet minimaal en maximaal 1 imsikb0101:Dossier aanwezig zijn.')"/>
+			</xsl:if>	
 		
 			<xsl:apply-templates select="//imsikb0101:metaData"/>
 			<xsl:apply-templates select="//imsikb0101:SoilLocation"/>
@@ -35,7 +40,6 @@
 		<xsl:copy-of select="sikb:checkExistence(., '','sender','ERROR')"/>
 		<xsl:copy-of select="sikb:checkSender(., '', 'WARNING')"/>
 		<xsl:copy-of select="sikb:checkLookupId(., '', 'supplier', 'Leveranciers', 'ERROR')"/>
-
 	</xsl:template>
 	<!--  lengte (/verplichting) van overige velden -->
 	<xsl:template match="imsikb0101:SoilLocation">
@@ -59,6 +63,12 @@
 			<xsl:variable name="message" select="replace(string-join(('Bij', string(./local-name()), $prGUID, 'is het element statusOnBasisOfInvestigation gevuld terwijl er geen Project, AddressLocation, Activity aanwezig is.'), ' '), '  ', ' ')"/>
 			<xsl:copy-of select="sikb:createRecord('WARNING', string(./name()), $message)"/>
 		</xsl:if>-->
+		
+		<!-- Er moet minimaal en maximaal 1 Decision gekoppeld zijn. -->
+		<xsl:if test="count(//imsikb0101:Decision) != 1">
+			<xsl:copy-of select="sikb:createRecord('ERROR','imsikb0101:Decision','Er moet minimaal en maximaal 1 imsikb0101:Decision aanwezig zijn.')"/>
+        </xsl:if>	
+		
 	</xsl:template>
 	<xsl:template match="imsikb0101:Decision">
 		<xsl:variable name="prGUID" select="./imsikb0101:identification/immetingen:NEN3610ID/immetingen:lokaalID"/>

@@ -36,8 +36,8 @@
                                     <immetingen:namespace>www.sikb.nl</immetingen:namespace>
                                     <immetingen:lokaalID>400789D5-B212-4ED1-8A6F-897E72F6D316</immetingen:lokaalID>
                                 </immetingen:NEN3610ID>
-                            </imsikb0101:identification>
-                            <imsikb0101:soilLocation xlink:href="#_8306BF06-4D30-4AC3-9928-B833E4CC9ECA"/>
+                            </imsikb0101:identification>      
+                            <imsikb0101:soilLocation/>                      
                             <imsikb0101:dataAdministrator>urn:imsikb0101:Bronhouders:id:42</imsikb0101:dataAdministrator>
                             <imsikb0101:followUpWBB>urn:imsikb0101:VervolgWBB:id:2</imsikb0101:followUpWBB>
                         </imsikb0101:Dossier>

@@ -61,7 +61,7 @@
                     </imsikb0101:featureMember>
                     <imsikb0101:featureMember>
                         <imsikb0101:Remediation gml:id="_5f28bjjq-ue16-4kr2-ds9j-550ce0d21f8c">
-                            <imsikb0101:agreementDate>2005-11-15</imsikb0101:agreementDate>
+                            <imsikb0101:agreementDate>2022-11-15</imsikb0101:agreementDate>
                             <imsikb0101:amountCleaned uom="urn:immetingen:Eenheid:id:264">300</imsikb0101:amountCleaned>
                             <imsikb0101:amountDeposited uom="urn:immetingen:Eenheid:id:264">150</imsikb0101:amountDeposited>
                             <imsikb0101:amountReused uom="urn:immetingen:Eenheid:id:264">125</imsikb0101:amountReused>
@@ -71,12 +71,12 @@
                             <imsikb0101:dataAdministrator>urn:imsikb0101:Bronhouders:id:32</imsikb0101:dataAdministrator>
                             <imsikb0101:destinationAfterRemediation>urn:imsikb0101:gebruik:id:12</imsikb0101:destinationAfterRemediation>
                             <imsikb0101:destinationBeforeRemediation>urn:imsikb0101:gebruik:id:12</imsikb0101:destinationBeforeRemediation>
-                            <imsikb0101:endTime>2006-11-08</imsikb0101:endTime>
+                            <imsikb0101:endTime>2023-11-08</imsikb0101:endTime>
                             <imsikb0101:geometry/>
                             <imsikb0101:identification>
                                 <immetingen:NEN3610ID>
                                     <immetingen:namespace>www.sikb.nl</immetingen:namespace>
-                                    <immetingen:lokaalID>4f40bded-ae11-4ed0-a0fc-990ce0d31f8b</immetingen:lokaalID>
+                                    <immetingen:lokaalID>5f28bjjq-ue16-4kr2-ds9j-550ce0d21f8c</immetingen:lokaalID>
                                 </immetingen:NEN3610ID>
                             </imsikb0101:identification>
                             <imsikb0101:lowerDepth>
@@ -91,7 +91,7 @@
                             <imsikb0101:realizedVariationTopsoil>urn:imsikb0101:san_bovengrond:id:5</imsikb0101:realizedVariationTopsoil>
                             <imsikb0101:remarks>Opmerkingen bij deze sanering</imsikb0101:remarks>
                             <imsikb0101:remediationReason>urn:imsikb0101:saneringsaanleiding:id:5</imsikb0101:remediationReason>
-                            <imsikb0101:startTime>2006-02-08</imsikb0101:startTime>
+                            <imsikb0101:startTime>2023-02-08</imsikb0101:startTime>
                             <imsikb0101:upperDepth>
                                 <immetingen:Depth>
                                     <immetingen:value uom="urn:immetingen:Eenheid:id:187">80</immetingen:value>
