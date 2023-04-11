@@ -15,6 +15,11 @@
 			<xsl:if test="lower-case(//imsikb0101:metaData/imsikb0101:dataflow) != lower-case('urn:imsikb0101:DatastroomType:id:5')">			
 				<xsl:copy-of select="sikb:createRecord('WARNING','imsikb0101:metaData/imsikb0101:dataflow','Het veld metadata/dataflow zou ingevuld moeten zijn met: urn:imsikb0101:DatastroomType:id:5. Als dit geen LIB-xml is, kies dan voor een andere controle xslt.')"/>		
 			</xsl:if>		
+			
+			<!-- Er moet minimaal en maximaal 1 Dossier gekoppeld zijn. -->
+            <xsl:if test="count(//imsikb0101:Dossier) != 1">
+				<xsl:copy-of select="sikb:createRecord('ERROR','imsikb0101:Dossier','Er moet minimaal en maximaal 1 imsikb0101:Dossier aanwezig zijn.')"/>
+			</xsl:if>	
 		
 			<xsl:apply-templates select="//imsikb0101:metaData"/>
 			<xsl:apply-templates select="//imsikb0101:SoilLocation"/>
