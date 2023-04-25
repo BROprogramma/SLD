@@ -20,7 +20,8 @@
             <deliveryContext codeSpace="urn:bro:sld:DeliveryContext">archiefoverdracht</deliveryContext>
             <objectIdAccountableParty>12345</objectIdAccountableParty>
             <identification>ee056d3e-a634-11ed-afa1-0242ac120002</identification>
-            <dossierIdSoilInformationsystem>AA111122222</dossierIdSoilInformationsystem>
+            <dossierIdSoilInformationsystem>00111122222</dossierIdSoilInformationsystem>
+            <dossierIdLocalAuthority>AA111122222</dossierIdLocalAuthority>
             <deliveredBoundary>
                 <gml:MultiSurface gml:id="id_0002" srsName="urn:ogc:def:crs:EPSG::4258">
                     <!-- 1 or more repetitions -->
