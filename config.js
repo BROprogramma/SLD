@@ -1,6 +1,7 @@
 var respecConfig = {
-  specStatus: "GN-WV",
+  specStatus: "WV",
   specType: "IM",
+  title: "Catalogus SLD"
   //subtitle: "SIKB en Geonovum informatiemodel",
   //canonicalURI: "WV",
   //publishDate: "2021-11-19",
