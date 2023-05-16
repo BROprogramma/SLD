@@ -41,9 +41,13 @@ let respecConfig = {
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
   editors:
     [
-      {
+      { name: "Geonovum",
         company: "Geonovum",
         companyURL: "https://www.geonovum.nl",
+      }
+      { name: "SIKB",
+        company: "SIKB",
+        companyURL: "https://www.sikb.nl",
       }
     ],
   //-- de namen van de auteur(s) ------------------------------------------------------
@@ -51,15 +55,19 @@ let respecConfig = {
   authors:
     [
       {
-        name: "voornaam achternaam",
+        name: "Geonovum",
         company: "Geonovum",
         companyURL: "https://www.geonovum.nl",
+      }
+      { name: "SIKB",
+        company: "SIKB",
+        companyURL: "https://www.sikb.nl",
       }
     ],
   //neem hier de URL van de github repository op waar het respec document in staat
   github: "https://github.com/BROprogramma/SLD",
   // Create PDF and link to file in header (optional):
-  alternateFormats: [
+  //alternateFormats: [
       {
           label: "pdf",
           uri: "template.pdf",
