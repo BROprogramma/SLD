@@ -45,11 +45,6 @@ let respecConfig = {
         company: "SIKB",
         companyURL: "https://www.sikb.nl",
       }
-      {
-        name: "Geonovum",
-        company: "Geonovum",
-        companyURL: "https://www.geonovum.nl",
-      }
     ],
   //-- de namen van de auteur(s) ------------------------------------------------------
   //-- vul in: per auteur: name:, company:, companyURL: -------------------------------
@@ -63,11 +58,4 @@ let respecConfig = {
     ],
   //-- neem hier de URL van de github repository op waar het respec document in staat
   github: "https://github.com/BROprogramma/SAD",
-  //-- Create PDF and link to file in header (optional):
-  //alternateFormats: [
-      {
-          label: "pdf",
-          uri: "template.pdf",
-      },
-  ],
-};
+  };
