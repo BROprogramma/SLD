@@ -1,13 +1,5 @@
 let respecConfig = {
   useLogo: true,  
-  [{
-    src: 'https://docs.geostandaarden.nl/bro/gen/logo_minbzk.png',
-    href: "https://www.geobasisregistraties.nl/basisregistraties/ondergrond",
-    alt: "Ministerie BZK",
-    width: 776,
-    height: 163,
-    id: 'logo_minbzk',
-  }]
   useLabel: true,
   // title is verplicht! Neem hier de titel van het document op ----------------------
   title: ["Titel"],
