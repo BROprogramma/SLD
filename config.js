@@ -53,7 +53,7 @@ let respecConfig = {
     ],
   //-- de namen van de auteur(s) ------------------------------------------------------
   //-- vul in: per auteur: name:, company:, companyURL: -------------------------------
-  authors:
+  //authors:
     [
       {
         name: "voornaam achternaam",
@@ -61,10 +61,10 @@ let respecConfig = {
         companyURL: "https://www.geonovum.nl",
       }
     ],
-  //neem hier de URL van de github repository op waar het respec document in staat
-  github: "https://github.com/Geonovum/NL-ReSpec-GN-template",
-  // Create PDF and link to file in header (optional):
-  alternateFormats: [
+  //-- neem hier de URL van de github repository op waar het respec document in staat
+  github: "https://github.com/BROprogramma/SAD",
+  //-- Create PDF and link to file in header (optional):
+  //alternateFormats: [
       {
           label: "pdf",
           uri: "template.pdf",
