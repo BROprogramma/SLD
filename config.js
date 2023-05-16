@@ -49,7 +49,12 @@ let respecConfig = {
   editors:
     [
       {
-        name: "voornaam achternaam",
+        name: "SIKB",
+        company: "SIKB",
+        companyURL: "https://www.sikb.nl",
+      }
+      {
+        name: "Geonovum",
         company: "Geonovum",
         companyURL: "https://www.geonovum.nl",
       }
