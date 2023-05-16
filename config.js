@@ -2,7 +2,7 @@ let respecConfig = {
   useLogo: true,
   useLabel: true,
   // title is verplicht! Neem hier de titel van het document op ----------------------
-  title: "Titel",
+  title: ["Titel"],
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   specStatus: "wv",                   // Werkversie
   //specStatus: "cv",               // Consultatieversie
@@ -19,7 +19,6 @@ let respecConfig = {
   //specType: "BD",                 // Beheer Documentatie
   //specType: "AL",                 // Algemeen document
   //specType: "BP",                 // Best Practice
-  specType: "HR",
   //-- pubDomain is verplicht! (komt in de URL) -------------------------------------
   pubDomain: "dk",
   //-- license: voor de geldende gebruiksvoorwaarden. Default is cc-by.
