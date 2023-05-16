@@ -11,10 +11,10 @@ let respecConfig = {
   //specStatus: "basis",            // Basis Document
   //-- specType is verplicht bij alle andere dan BASIS ---------------------------------
   //specType: "NO",                 // Norm
-  //specType: "ST",                 // Standaard
+  specType: "ST",                 // Standaard
   //specType: "IM",                 // Informatie Model
   //specType: "PR",                 // Praktijkrichtlijn
-  specType: "HR",                     // HandReiking
+  //specType: "HR",                     // HandReiking
   //specType: "WA",                 // Werkafspraak
   //specType: "BD",                 // Beheer Documentatie
   //specType: "AL",                 // Algemeen document
@@ -27,7 +27,7 @@ let respecConfig = {
   //licence: "cc0",                 // Public Domain Dedication
   licence: "cc-by",                 // Attribution, met bronvermelding
   //-- shortName is verplicht! (komt in de URL: kies logische afkorting)--------------
-  shortName: "NL-ReSpec-GN-template",
+  shortName: "SLD",
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
   //publishDate: "2023-03-28",
@@ -42,7 +42,6 @@ let respecConfig = {
   editors:
     [
       {
-        name: "voornaam achternaam",
         company: "Geonovum",
         companyURL: "https://www.geonovum.nl",
       }
@@ -58,7 +57,7 @@ let respecConfig = {
       }
     ],
   //neem hier de URL van de github repository op waar het respec document in staat
-  github: "https://github.com/Geonovum/NL-ReSpec-GN-template",
+  github: "https://github.com/BROprogramma/SLD",
   // Create PDF and link to file in header (optional):
   alternateFormats: [
       {
