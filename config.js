@@ -1,6 +1,5 @@
 var respecConfig = {
-  <title>Basisregistratie Ondergrond Catalogus Milieuhygiënisch bodemonderzoek</title>
-specStatus: "WV",
+  specStatus: "WV",
   specType: "IM",
   //subtitle: "SIKB en Geonovum informatiemodel",
   //canonicalURI: "WV",
