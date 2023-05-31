@@ -8,7 +8,7 @@ var organisationConfig = {
     // nl_organisationStylesURL: "https://tools.geostandaarden.nl/respec/bro/style/",
     nl_organisationPublishURL: "https://docs.geostandaarden.nl/",
     logos: [{
-    src: 'https://github.com/BROprogramma/SLD/media/BRO_logo.jpg'
+    src: 'https://github.com/BROprogramma/SLD/blob/main/media/BRO_logo.jpg'
     href: "https://www.basisregistratieondergrond.nl",
     alt: "Basisregistratie Ondergrond",
     width: 776,
