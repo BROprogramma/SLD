@@ -8,7 +8,7 @@ var organisationConfig = {
     // nl_organisationStylesURL: "https://tools.geostandaarden.nl/respec/bro/style/",
     nl_organisationPublishURL: "https://docs.geostandaarden.nl/",
     logos: [{
-        src: "https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg",
+        src: "https://github.com/BROprogramma/SLD/blob/main/media/BRO_logo.jpg",
         alt: "Geonovum",
         id: "Geonovum",
         height: 67,
