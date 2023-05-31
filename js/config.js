@@ -41,6 +41,10 @@ let respecConfig = {
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
   editors:
     [
+     {  name: "SIKB",
+        company: "SIKB",
+        companyURL: "https://www.sikb.nl",
+      }, 
       { name: "Geonovum",
         company: "Geonovum",
         companyURL: "https://www.geonovum.nl",
@@ -54,7 +58,7 @@ let respecConfig = {
         name: "SIKB",
         company: "SIKB",
         companyURL: "https://www.sikb.nl",
-      }
+      },
       {
         name: "Geonovum",
         company: "Geonovum",
