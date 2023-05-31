@@ -19,7 +19,7 @@ let respecConfig = {
   //specType: "BD",                 // Beheer Documentatie
   //specType: "AL",                 // Algemeen document
   //specType: "BP",                 // Best Practice
-  specType: "IM",
+  specType: "ST",
   //-- pubDomain is verplicht! (komt in de URL) -------------------------------------
   pubDomain: "bro",
   //-- license: voor de geldende gebruiksvoorwaarden. Default is cc-by.
@@ -35,8 +35,8 @@ let respecConfig = {
   //publishVersion: "0.0.2",
   //previousVersion: "0.0.1",
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
-  //previousPublishDate: "2014-05-01",
-  //previousMaturity: "CV",
+  previousPublishDate: "2014-05-01",
+  previousMaturity: "WV",
   //-- de namen van de Editor(s) / Redacteur(en)---------------------------------------
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
   editors:
