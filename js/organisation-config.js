@@ -1,6 +1,6 @@
 // Dit bestand is gepubliceerd als https://tools.geostandaarden.nl/respec/config/geonovum-config.js, voor hergebruik in Geonovum ReSpec documenten.
 var organisationConfig = {
-    nl_organisationName: "BRO",
+    nl_organisationName: "Geonovum",
     // werkt nog niet 
     // nl_organisationStylesURL: "https://tools.geostandaarden.nl/respec/gn-algemeen/style/",
     // bv styles url voor ander GN publicatiedomein met eigen stijlen zoals DSO of BRO:
@@ -28,7 +28,7 @@ var organisationConfig = {
 	postProcess: [window.respecMermaid.createFigures],
 
     // NB dit gaat ervan uit dat shortName = naam van de repository. Maar dit zal niet altijd het geval zijn. We kunnen edDraftURI ook nog steeds in de config.js opnemen.
-	edDraftURI: ["https://geonovum.github.io", "/", "shortName"],
+	edDraftURI: ["https://broprogramma.github.io", "/", "shortName"],
 	latestVersion: ["nl_organisationPublishURL", "pubDomain", "/", "shortName", "/"],
     thisVersion: ["nl_organisationPublishURL", "pubDomain", "/", "specStatus", "-", "specType", "-", "shortName", "-", "publishDate"],
     prevVersion: ["nl_organisationPublishURL", "pubDomain", "/", "previousMaturity", "-", "specType", "-", "shortName", "-", "previousPublishDate"],
