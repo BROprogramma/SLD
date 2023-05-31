@@ -3,9 +3,9 @@
     	</section>
     	<section id='totstandkoming' data-include='https://docs.geostandaarden.nl/bro/gen/totstandkoming.html'>
     	</section>
-    	<section id='beheer' class='generic' data-include='https://docs.geostandaarden.nl/bro/gen/beheer.html'>
+    	<section id='beheer' data-include='https://docs.geostandaarden.nl/bro/gen/beheer.html'>
     	</section>
-    	<section id="leeswijzer" class='generic'>
+    	<section id="leeswijzer">
     	<h3>Leeswijzer</h3>
 		<p><a href ="#inleiding">Hoofdstuk 1</a> geeft het doel en de doelgroep van een catalogus.</p>
 		<p><a href ="#algemene-kenmerken-en-begrippen">Hoofdstuk 2</a> behandelt enkele algemene aspecten van het BRO-systeem en begrippen van algemene aard.</p>
