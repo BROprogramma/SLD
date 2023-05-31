@@ -11,8 +11,8 @@ var organisationConfig = {
         src: "media/BRO_logo.png",
         alt: "BRO",
         id: "BRO",
-        height: 225,
-        width: 225,
+        height: 150,
+        width: 150,
         url: "https://www.basisregistratieondergrond.nl",
       }],
 	
