@@ -1,6 +1,6 @@
 // Dit bestand is gepubliceerd als https://tools.geostandaarden.nl/respec/config/geonovum-config.js, voor hergebruik in Geonovum ReSpec documenten.
 var organisationConfig = {
-    nl_organisationName: "Geonovum",
+    nl_organisationName: "BRO",
     // werkt nog niet 
     // nl_organisationStylesURL: "https://tools.geostandaarden.nl/respec/gn-algemeen/style/",
     // bv styles url voor ander GN publicatiedomein met eigen stijlen zoals DSO of BRO:
