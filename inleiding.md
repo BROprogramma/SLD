@@ -1,7 +1,5 @@
 # Inleiding
-<section id='inleiding'>
-	<h2>Inleiding</h2>
-    	<section id='doel-en-doelgroep' class='generic' data-include='https://docs.geostandaarden.nl/bro/gen/doel-en-doelgroep.html'>
+ 	<section id='doel-en-doelgroep' class='generic' data-include='https://docs.geostandaarden.nl/bro/gen/doel-en-doelgroep.html'>
     	</section>
     	<section id='totstandkoming' class='generic' data-include='https://docs.geostandaarden.nl/bro/gen/totstandkoming.html'>
     	</section>
@@ -17,4 +15,3 @@
 		<p><a href ="#gegevensdefinitie-0">Hoofdstuk 6</a> geeft de inhoud weer van het eerste artikel van de ministeriële regeling en dat is het deel waarin de definitie is opgenomen van het registratieobject, van de delen waaruit het is opgebouwd, de entiteiten, en van de eigenschappen van die delen, de attributen.</p>
 		<p><a href ="#uitbreidbare-waardelijsten">Hoofdstuk 7</a> geeft de inhoud weer van het tweede artikel van de ministeriële regeling en dat is het deel waarin de uitbreidbare waardelijsten staan waarnaar in hoofdstuk 6 verwezen wordt.</p>
   	</section>
-</section>
