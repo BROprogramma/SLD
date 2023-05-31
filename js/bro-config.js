@@ -8,12 +8,12 @@ var organisationConfig = {
     // nl_organisationStylesURL: "https://tools.geostandaarden.nl/respec/bro/style/",
     nl_organisationPublishURL: "https://docs.geostandaarden.nl/",
     logos: [{
-        src: "js/BRO_logo.png",
+        src: "media/BRO_logo.png",
         alt: "BRO",
         id: "BRO",
         height: 67,
         width: 132,
-        url: "https://www.geonovum.nl/geo-standaarden",
+        url: "https://www.basisregistratie.nl",
       }],
 	
 	postProcess: [window.respecMermaid.createFigures],
