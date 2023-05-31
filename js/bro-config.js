@@ -11,9 +11,9 @@ var organisationConfig = {
         src: "media/BRO_logo.png",
         alt: "BRO",
         id: "BRO",
-        height: 67,
-        width: 132,
-        url: "https://www.basisregistratie.nl",
+        height: 225,
+        width: 225,
+        url: "https://www.basisregistratieondergrond.nl",
       }],
 	
 	postProcess: [window.respecMermaid.createFigures],
