@@ -8,14 +8,13 @@ var organisationConfig = {
     // nl_organisationStylesURL: "https://tools.geostandaarden.nl/respec/bro/style/",
     nl_organisationPublishURL: "https://docs.geostandaarden.nl/",
     logos: [{
-    src: 'https://github.com/BROprogramma/SLD/blob/main/media/BRO_logo.jpg'
-    href: "https://www.basisregistratieondergrond.nl",
-    alt: "Basisregistratie Ondergrond",
-    width: 776,
-    height: 163,
-    id: 'logo_bro',
-  }    
-	   ],
+        src: "https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg",
+        alt: "Geonovum",
+        id: "Geonovum",
+        height: 67,
+        width: 132,
+        url: "https://www.geonovum.nl/geo-standaarden",
+      }],
 	
 	postProcess: [window.respecMermaid.createFigures],
 
