@@ -9,8 +9,8 @@ var organisationConfig = {
     nl_organisationPublishURL: "https://docs.geostandaarden.nl/",
     logos: [{
         src: "./BRO_logo.png",
-        alt: "BRO",
-        id: "BRO",
+        alt: "BROA",
+        id: "BROA",
         height: 67,
         width: 132,
         url: "https://www.geonovum.nl/geo-standaarden",
