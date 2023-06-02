@@ -14,8 +14,7 @@ var organisationConfig = {
     width: 776,
     height: 163,
     url: "https://www.geobasisregistraties.nl/basisregistraties/ondergrond",
-    style: "vertical-align:bottom"
-  },
+    },
 	    {
         src: "media/BRO_logo.png",
         alt: "BRO",
