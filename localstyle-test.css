@@ -43,8 +43,6 @@ th, td {
 /*                                Image style                                 */
 /******************************************************************************/
 
-img {
-  display: block;
-  margin-left: 0;
-  margin-right: auto;
+img, figure {
+  text-align: center;
   }
