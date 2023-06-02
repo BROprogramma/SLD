@@ -11,11 +11,11 @@
 /******************************************************************************/
 
 section.generic {
-    background-color: #7ee635;
+    background-color: #EDEDED;
     border-left-width: .5em;
     border-left-style: solid;
     border-color: #A1A1A1;
-    padding: 25px;
+    padding: .25em;
 }
 
 /******************************************************************************/
