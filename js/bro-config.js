@@ -14,7 +14,15 @@ var organisationConfig = {
         height: 150,
         width: 150,
         url: "https://www.basisregistratieondergrond.nl",
-      }],
+      },
+	    {
+    src: 'https://docs.geostandaarden.nl/bro/gen/logo_minbzk.png',
+    href: "https://www.geobasisregistraties.nl/basisregistraties/ondergrond",
+    alt: "Ministerie BZK",
+    width: 776,
+    height: 163,
+    id: 'logo_minbzk',
+  }],
 	
 	postProcess: [window.respecMermaid.createFigures],
 
