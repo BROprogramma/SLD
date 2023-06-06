@@ -8,10 +8,10 @@ var organisationConfig = {
     // nl_organisationStylesURL: "https://tools.geostandaarden.nl/respec/bro/style/",
     nl_organisationPublishURL: "https://docs.geostandaarden.nl/",
     logos: [{
-    src: "https://docs.geostandaarden.nl/bro/gen/logo_minbzk.png",
+    src: "media/logo_minbzk.png",
     alt: "Ministerie BZK",
     id: "logo_minbzk",
-    width: 450,
+    width: 409,
     height: 163,
     url: "https://www.geobasisregistraties.nl/basisregistraties/ondergrond",
     },
