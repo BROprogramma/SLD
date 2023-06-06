@@ -11,7 +11,7 @@ var organisationConfig = {
     src: "media/logo_minbzk.png",
     alt: "Ministerie BZK",
     id: "logo_minbzk",
-    width: 409,
+    width: 449,
     height: 163,
     url: "https://www.geobasisregistraties.nl/basisregistraties/ondergrond",
     },
