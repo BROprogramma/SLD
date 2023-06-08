@@ -163,6 +163,7 @@ var organisationConfig = {
             short: "CC-BY",
             url: "https://creativecommons.org/licenses/by/4.0/legalcode",
             image: "https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg",
+	    image: "media/BRO_logo.png",
         },
         "cc-by-nd": {
             name: "Creative Commons Naamsvermelding-GeenAfgeleideWerken 4.0 Internationaal",
