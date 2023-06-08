@@ -162,8 +162,7 @@ var organisationConfig = {
             name: "Creative Commons Attribution 4.0 International Public License",
             short: "CC-BY",
             url: "https://creativecommons.org/licenses/by/4.0/legalcode",
-            image: "https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg",
-	    image: "media/BRO_logo.png",
+            image: "https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg",	   
         },
         "cc-by-nd": {
             name: "Creative Commons Naamsvermelding-GeenAfgeleideWerken 4.0 Internationaal",
