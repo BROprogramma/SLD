@@ -4,6 +4,7 @@ let respecConfig = {
   // title is verplicht! Neem hier de titel van het document op ----------------------
   title: "Basisregistratie Ondergrond Catalogus Overheidsbesluit bodemverontreiniging",
   subtitle: "versie 0.5",
+  subtitle: "subtitel 2",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   specStatus: "wv",                   // Werkversie
   //specStatus: "cv",               // Consultatieversie
