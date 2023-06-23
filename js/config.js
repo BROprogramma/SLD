@@ -32,15 +32,22 @@ let respecConfig = {
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
   publishDate: "2023-06-09",
   //custom header lines  
-  otherLinks: [
+otherLinks: [
     {
-      key: "Versie",
+      key: "Implementation status",
       data: [
-      {
-        value: "0.0.2",
-        href: http://example.com
-      }]
-    }],
+        {
+          value: "Gecko",
+          href: "https://bugzilla.mozilla.org/show_bug.cgi?id=xxxx",
+        },
+        {
+          value: "Blink",
+          href: "https://code.google.com/p/chromium/issues/detail?id=xxx",
+        },
+      ],
+    },
+  ],
+
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
   //publishVersion: "0.0.2",
   //previousVersion: "0.0.1",
