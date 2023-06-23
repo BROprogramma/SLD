@@ -34,15 +34,11 @@ let respecConfig = {
   //custom header lines  
 otherLinks: [
     {
-      key: "Implementation status",
+      key: "Versie",
       data: [
         {
-          value: "Gecko",
-          href: "https://bugzilla.mozilla.org/show_bug.cgi?id=xxxx",
-        },
-        {
-          value: "Blink",
-          href: "https://code.google.com/p/chromium/issues/detail?id=xxx",
+          value: "0.5",
+          href: "https://basisregistratieondergrond.nl/",
         },
       ],
     },
