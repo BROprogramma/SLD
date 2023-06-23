@@ -38,7 +38,7 @@ otherLinks: [
       data: [
         {
           value: "0.5",
-          href: "https://basisregistratieondergrond.nl/",
+          href: "https://docs.geostandaarden.nl/bro/",
         },
       ],
     },
