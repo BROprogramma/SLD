@@ -5,5 +5,5 @@
     	</section>
     	<section id='beheer' data-include='https://docs.geostandaarden.nl/bro/gen/beheer.html'>
     	</section>
-    	<section id='leeswijzer' data-include='/leeswijzer.md'>
-    	</section>	
+    	<section id="leeswijzer" data-include-format="markdown" data-include="leeswijzer.md">
+        </section>
