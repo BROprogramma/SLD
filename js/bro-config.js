@@ -1,4 +1,4 @@
-// Dit bestand is gepubliceerd als https://tools.geostandaarden.nl/respec/config/geonovum-config.js, voor hergebruik in Geonovum ReSpec documenten.
+// Dit bestand is afgeleid van het geonovum-config bestand, gepubliceerd als https://tools.geostandaarden.nl/respec/config/geonovum-config.js, voor hergebruik in BRO ReSpec documenten.
 var organisationConfig = {
     nl_organisationName: "BRO",
     // werkt nog niet 
