@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Toetsingswaarde>
+		<Waarde>interventiewaarde</Waarde>
+		<SIKB0101-ID>3</SIKB0101-ID>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving></Omschrijving>
+	</Toetsingswaarde>
+	<Toetsingswaarde>
+		<Waarde>streefwaarde</Waarde>
+		<SIKB0101-ID>1</SIKB0101-ID>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving></Omschrijving>
+	</Toetsingswaarde>
+	<Toetsingswaarde>
+		<Waarde>onbekend</Waarde>
+		<SIKB0101-ID></SIKB0101-ID>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>-</Omschrijving>
+	</Toetsingswaarde>
+</domeintabel>
