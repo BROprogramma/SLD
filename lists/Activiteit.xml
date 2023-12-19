@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Activiteit>
+		<Waarde>mbaGraven</Waarde>
+		<SIKB0101-ID></SIKB0101-ID>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het graven in de bodem als milieubelastende activiteit vallend onder artikel 3.48f van het Besluit activiteiten leefomgeving (Bal). Hierbij geldt dat de kwaliteit van de bodem waarin gegraven wordt boven de interventiewaarde bodemkwaliteit is, het totale bodemvolume waarin het graven plaatsvindt meer is dan 25 m3 en het graven plaatsvindt in de landbodem of op de zogenaamde droge(re) oevergebieden van de waterbodem. De activiteit vindt plaats zonder saneringsdoelstelling.</Omschrijving>
+	</Activiteit>
+	<Activiteit>
+		<Waarde>mbaSaneren</Waarde>
+		<SIKB0101-ID></SIKB0101-ID>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het beperken of ongedaan maken van de blootstelling aan de verontreiniging in de bodem als milieubelastende activiteit vallend onder artikel 3.48h van het Besluit activiteiten leefomgeving (Bal). Hierbij geldt dat het saneren plaatsvindt in de landbodem of op de zogenaamde droge(re) oevergebieden van de waterbodem. De activiteit vindt plaats met saneringsdoelstelling.</Omschrijving>
+	</Activiteit>
+</domeintabel>
