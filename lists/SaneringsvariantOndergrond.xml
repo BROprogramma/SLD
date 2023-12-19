@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<SaneringsvariantOndergrond>
-		<Waarde>TEST SaneringsvariantOndergrond</Waarde>
 		<SIKB0101-ID></SIKB0101-ID>
+		<Waarde>TEST SaneringsvariantOndergrond</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving>TEST</Omschrijving>
