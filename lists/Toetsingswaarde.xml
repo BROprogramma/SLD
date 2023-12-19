@@ -5,13 +5,13 @@
 		<Waarde>streefwaarde</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving></Omschrijving>
+		<Omschrijving>De streefwaarden (s-waarden) zijn tot 1-1-2008 gebaseerd op 'Streefwaarden en interventiewaarden bodemsanering', en vanaf 1-1-2008 voor grondwater op de 'Circulaire bodemsanering' en voor grond zijn dat de achtergrondwaarden uit het 'Besluit bodemkwaliteit'.</Omschrijving>
 	</Toetsingswaarde>
 	<Toetsingswaarde>
 		<SIKB0101-ID>3</SIKB0101-ID>
 		<Waarde>interventiewaarde</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving></Omschrijving>
+		<Omschrijving>De interventiewaarden (i-waarden) zijn tot tot 1-1-2008 gebaseerd op 'Streefwaarden en interventiewaarden bodemsanering' en vanaf 1-1-2008 op de 'Circulaire bodemsanering'.</Omschrijving>
 	</Toetsingswaarde>
 </domeintabel>
