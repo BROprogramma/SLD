@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/Overheidsbesluit bodemverontreiniging SLD/20230314</p>
       <p>Imvertor: Nightly-build.13</p>
-      <p>Model release: Conceptualmodel-OverheidsbesluitbodemverontreinigingSLD-0.8-1-20230314-20231219-174043</p>
+      <p>Model release: Conceptualmodel-OverheidsbesluitbodemverontreinigingSLD-0.8-1-20230314-20231219-220710</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -39,8 +39,9 @@
                         <th>Definitie</th>
                         <td>
                            
-                           <p>Het geheel van gegevens dat betrekking heeft op de status van een bepaalde locatie
-                              in het kader van milieuhygiënische bodemkwaliteit.</p>
+                           <p>Het geheel van gegevens dat betrekking heeft op de wettelijke status van de bodemlocatie
+                              binnen het kader van de aanpak van bodemverontreiniging volgens de Wet bodembescherming
+                              (Wbb) of op het uitvoeren van milieubelastende activiteiten onder de Omgevingswet.</p>
                            </td>
                      </tr>
                      <tr>
@@ -48,9 +49,10 @@
                         <td>
                            
                            <p>De populatie Overheidsbesluiten bodemverontreiniging in de basisregistratie ondergrond
-                              omvat de locaties die een aanduiding hebben op basis van de Wet bodembescherming (Wbb)
-                              of de Omgevingswet (Ow), en de locaties van gemeenten die geen bevoegd gezag Wbb zijn,
-                              maar waar verdachte activiteiten zijn geregistreerd en/of de status <em>voldoende onderzocht</em> aan is toegekend op basis van een milieuhygiënisch bodemonderzoek.<br clear="none">
+                              omvat gebieden die zijn gesaneerd of ontgraven in het kader van de Omgevingswet (Ow),
+                              en bodemlocaties die een aanduiding hebben op basis van de Wet bodembescherming (Wbb),
+                              dat is inclusief locaties waar verdachte activiteiten zijn geregistreerd of de status
+                              <em>voldoende onderzocht</em> aan is toegekend op basis van een milieuhygiënisch bodemonderzoek.<br clear="none">
                               Ieder object heeft ter identificatie een eigen BRO-ID.</p>
                            </td>
                      </tr>
@@ -80,19 +82,30 @@
                            <td>Entiteit</td>
                         </tr>
                         <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>De gegevens die het registratieobject identificeren en inzicht geven in de totstandkoming
+                                 en context van het object voorafgaand aan opname in de registratie ondergrond.</p>
+                              </td>
+                        </tr>
+                        <tr>
                            <th>Regels</th>
                            <td>
                               
                               <p>Exact één van de volgende entiteiten moet aanwezig zijn: <em>Bodemlocatie</em> of <em>Aangepakt gebied</em>.<br clear="none">
-                                 De <em>Bodemlocatie</em> mag niet aanwezig zijn wanneer de waarde van het attribuut <em>kader aanlevering</em> van de entiteit <em>Overheidsbesluit bodemverontreiniging</em> gelijk is aan <em>OW</em>.<br clear="none">
-                                 Het <em>Aangepakt gebied</em> mag niet aanwezig zijn wanneer de waarde van het attribuut <em>kader aanlevering</em> van de entiteit <em>Overheidsbesluit bodemverontreiniging</em> niet gelijk is aan <em>OW</em>. </p>
+                                 Het <em>Overheidsbesluit bodemverontreiniging</em> betreft geen <em>Bodemlocatie</em> wanneer de de waarde van het attribuut <em>kader aanlevering</em> gelijk is aan <em>OW</em>.<br clear="none">
+                                 Het <em>Overheidsbesluit bodemverontreiniging</em> betreft geen <em>Aangepakt gebied</em> wanneer de de waarde van het attribuut <em>kader aanlevering</em> niet gelijk is aan <em>OW</em>.<br clear="none">
+                                 </p>
                               </td>
                         </tr>
                         <tr>
                            <th>Toelichting</th>
                            <td>
                               
-                              <p>De gegevens die alle registratieobjecten gemeenschappelijk hebben zijn in het domeinmodel
+                              <p>Het registratieobject Overheidsbesluit bodemverontreiniging betreft een bodemlocatie
+                                 binnen het kader van de Wbb of een aangepakt gebied binnen het kader van de Omgevingswet.<br clear="none">
+                                 De gegevens die alle registratieobjecttypen gemeenschappelijk hebben zijn in het domeinmodel
                                  gegroepeerd in de entiteit Registratieobject.</p>
                               </td>
                         </tr>
@@ -506,7 +519,7 @@
                                  <p>Het gegeven kan een nieuwe waarde krijgen bij een verandering. In dat geval wordt
                                     de oude waarde in de registratie ondergrond overschreven en is niet meer direct beschikbaar
                                     voor afnemers.<br clear="none">
-                                    <strong>[OPEN PUNT]</strong> Organisatie worden in de BRO vastgelegd dmv het Kvk-nummer of EUID. In de huidige
+                                    <strong>[OPEN PUNT]</strong> Organisatie worden in de BRO vastgelegd met het Kvk-nummer of EUID. In de huidige
                                     praktijk is de naam van de informatieverstrekker in een codelijst opgenomen (met ruim
                                     500 organisaties). </p>
                                  </td>
@@ -514,7 +527,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d57025e3227">
+                  <section id="detail_d57094e3242">
                      <h4>  registratiegeschiedenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -552,7 +565,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d57025e3412">
+                  <section id="detail_d57094e3427">
                      <h4>  gestandaardiseerde locatie</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1471,7 +1484,7 @@
                </section>
                <section id="global_class_Model_Bodemlocatie">
                   <h3>   Bodemlocatie</h3>
-                  <div class="imageinfo "><img src="Images/EAID_0F45FF8A_B121_4718_846F_C709296EF933.png" usemap="#imagemap-EAID_0F45FF8A_B121_4718_846F_C709296EF933" alt="Diagram "><map name="imagemap-EAID_0F45FF8A_B121_4718_846F_C709296EF933"><area shape="rect" alt="Verontreinigd gebied" coords="1149,156,1369,265" href="#global_class_Model_Verontreinigdgebied"><area shape="rect" alt="Nazorggebied" coords="1149,293,1369,402" href="#global_class_Model_Nazorggebied"><area shape="rect" alt="Aangepakt gebied" coords="1149,19,1369,129" href="#global_class_Model_Aangepaktgebied"><area shape="rect" alt="Besluit" coords="575,361,795,471" href="#global_class_Model_Besluit"><area shape="rect" alt="Registratiegeschiedenis" coords="14,19,369,319" href="#global_class_Model_Registratiegeschiedenis"><area shape="rect" alt="Gestandaardiseerde locatie" coords="14,347,369,469" href="#global_class_Model_Gestandaardiseerdelocatie"><area shape="rect" alt="Bodemlocatie" coords="462,14,908,265" href="#global_class_Model_Bodemlocatie"></map></div>
+                  <div class="imageinfo "><img src="Images/EAID_0F45FF8A_B121_4718_846F_C709296EF933.png" usemap="#imagemap-EAID_0F45FF8A_B121_4718_846F_C709296EF933" alt="Diagram "><map name="imagemap-EAID_0F45FF8A_B121_4718_846F_C709296EF933"><area shape="rect" alt="Verontreinigd gebied" coords="603,155,824,264" href="#global_class_Model_Verontreinigdgebied"><area shape="rect" alt="Nazorggebied" coords="603,290,824,399" href="#global_class_Model_Nazorggebied"><area shape="rect" alt="Aangepakt gebied" coords="602,19,822,129" href="#global_class_Model_Aangepaktgebied"><area shape="rect" alt="Besluit" coords="77,290,297,399" href="#global_class_Model_Besluit"><area shape="rect" alt="Bodemlocatie" coords="14,14,361,207" href="#global_class_Model_Bodemlocatie"></map></div>
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
                      <colgroup style="width: 70%;"></colgroup>
@@ -1485,7 +1498,7 @@
                            <td>
                               
                               <p>De eenheid of verzameling van eenheden met een vermoeden of bewezen bodemverontreiniging
-                                 die als één geheel wordt aangepakt bij onderzoek en sanering.</p>
+                                 die als één geheel wordt aangepakt onder de Wet Bodembescherming.</p>
                               </td>
                         </tr>
                         <tr>
@@ -1500,8 +1513,7 @@
                            <td>
                               
                               <p>De grens van een locatie valt niet per se samen met de grens van een geval van bodemverontreiniging.
-                                 Eén locatie kan meerdere gevallen bevatten. Een geval van bodemverontreiniging kan
-                                 ook de grens van de bodemlocatie overschrijden.<br clear="none">
+                                 Eén locatie kan meerdere gevallen bevatten. 
                                  Bodemlocaties kunnen elkaar overlappen.</p>
                               </td>
                         </tr>
@@ -1562,6 +1574,71 @@
                                  <p>De SIKB-identificatie is de SIKB invulling van het NEN3610-ID, en is een unieke identificatie
                                     in de vorm van een zogenaamde GUID (Globally Unique Identifier). De GUID bestaat uit
                                     36 letters en cijfers, ingedeeld in vijf groepen gescheiden door koppeltekens: 8-4-4-4-12.</p>
+                                 </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  <section id="detail_attribute_Model_Bodemlocatie_locatiecodeBIS">
+                     <h4>  locatiecode BIS</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Bodemlocatie</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De code die de bodemlocatie heeft binnen het bodem informatie systeem.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Tekst 11</td>
+                           </tr>
+                           <tr>
+                              <th>Materiële geschiedenis</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>De locatiecode BIS wordt door of voor de bronhouder gebruikt om het object in het
+                                    bodem informatie systeem (BIS) te kunnen vinden.<br clear="none">
+                                    De code wordt aangemaakt op het moment dat een locatie voor het eerst in een BIS wordt
+                                    geregistreerd. De code is als volgt opgebouwd:<br clear="none">
+                                    </p>
+                                 
+                                 <ul>
+                                    
+                                    <li>code BIS-systeem - 2 letters</li>
+                                    
+                                    <li>geografische aanduiding (gemeente code) - 4 cijfers</li>
+                                    
+                                    <li>uniek volgnummer binnen het beheersgebied - 5 cijfers.<br clear="none">
+                                       </li>
+                                    </ul>
+                                 
+                                 <p>De locatiecode BIS is niet altijd uniek binnen de set bodemlocaties van het registratieobjecttype
+                                    <em>Overheidsbesluit bodemverontreiniging</em> (SLD).</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -1638,8 +1715,8 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_attribute_Model_Bodemlocatie_locatiecodeBIS">
-                     <h4>  locatiecode BIS</h4>
+                  <section id="detail_attribute_Model_Bodemlocatie_vervolgactieWbb">
+                     <h4>  vervolgactie Wbb</h4>
                      
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1653,7 +1730,8 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De code die de bodemlocatie heeft binnen het bodem informatie systeem.</p>
+                                 <p>De uit te voeren vervolgactie in de aanpak van een bodemverontreiniging binnen het
+                                    kader van de Wet bodembescherming.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -1662,7 +1740,7 @@
                            </tr>
                            <tr>
                               <th>Kardinaliteit</th>
-                              <td>1</td>
+                              <td>0..1</td>
                            </tr>
                            <tr>
                               <th>Domein</th>
@@ -1670,34 +1748,35 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
-                              <td>Tekst 11</td>
+                              <td><a class="link" href="#detail_class_Model_VervolgactieWbb">VervolgactieWbb</a></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Waardelijst uitbreidbaar</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Identificerend gegeven</th>
+                              <td>SIKB0101-ID</td>
                            </tr>
                            <tr>
                               <th>Materiële geschiedenis</th>
-                              <td>Nee</td>
+                              <td>Ja</td>
                            </tr>
                            <tr>
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>De locatiecode BIS wordt door of voor de bronhouder gebruikt om het object in het
-                                    bodem informatie systeem (BIS) te kunnen vinden.<br clear="none">
-                                    De code wordt aangemaakt op het moment dat een locatie voor het eerst in een BIS wordt
-                                    geregistreerd. De code is als volgt opgebouwd:<br clear="none">
-                                    </p>
-                                 
-                                 <ul>
-                                    
-                                    <li>code BIS-systeem - 2 letters</li>
-                                    
-                                    <li>geografische aanduiding (gemeente code) - 4 cijfers</li>
-                                    
-                                    <li>uniek volgnummer binnen het beheersgebied - 5 cijfers.<br clear="none">
-                                       </li>
-                                    </ul>
-                                 
-                                 <p>De locatiecode BIS is niet altijd uniek binnen de set bodemlocaties van het registratieobjecttype
-                                    <em>Overheidsbesluit bodemverontreiniging</em> (SLD).</p>
+                                 <p>De aanpak van bodemverontreiniging onder de Wbb doorloopt een aantal stadia. De <em>vervolgactie Wbb</em> geeft aan wat de volgende stap in die aanpak is. De vervolgactie wordt bepaald door
+                                    het bevoegd gezag Wbb op basis van een besluit of op basis van de onderzoeksresultaten
+                                    uit het milieuhygiënisch bodemonderzoek.<br clear="none">
+                                    Bij archiefgegevens onder IMBRO/A kan het voorkomen dat een niet bevoegd gezag Wbb
+                                    de waarde <em>voldoende onderzocht</em> heeft toegekend aan de bodemlocatie op basis van een milieuhygiënisch bodemonderzoek.<br clear="none">
+                                    Wanneer de bodemlocatie voldoende is onderzocht of voldoende is gesaneerd is de aanpak
+                                    van de verontreiniging in het kader van de Wbb afgerond.<br clear="none">
+                                    Het gegeven kan een nieuwe waarde krijgen bij voortgang in de aanpak van de bodemverontreiniging.
+                                    In dat geval blijft de oude waarde behouden.<br clear="none">
+                                    Voor archiefgegevens onder IMBRO/A is de vervolgactie niet altijd vastgelegd, en kan
+                                    het gegeven ontbreken.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -1803,7 +1882,7 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>De aangeleverde begrenzing is vastgelegd als een vlak of verzameling vlakken.<br clear="none">
+                                 <p>De aangeleverde begrenzing is vastgelegd als een vlak of verzameling vlakken (multi-vlak).<br clear="none">
                                     De begrenzing kan wijzigen. Bij een wijziging krijgt het gegeven een nieuwe waarde.
                                     In dat geval blijft de oude waarde behouden. </p>
                                  </td>
@@ -1811,74 +1890,8 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_attribute_Model_Bodemlocatie_vervolgactieWbb">
-                     <h4>  vervolgactie Wbb</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Bodemlocatie</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>De fase waarin de aanpak van de bodemverontreiniging op de bodemlocatie zich bevindt
-                                    binnen het kader van de Wet bodembescherming (Wbb).</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>0..1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td><a class="link" href="#detail_class_Model_VervolgactieWbb">VervolgactieWbb</a></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Waardelijst uitbreidbaar</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Identificerend gegeven</th>
-                              <td>SIKB0101-ID</td>
-                           </tr>
-                           <tr>
-                              <th>Materiële geschiedenis</th>
-                              <td>Ja</td>
-                           </tr>
-                           <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 
-                                 <p>De bodemlocatie doorloopt een aantal stadia. De stadia zijn gekoppeld aan de Wet bodembescherming
-                                    (Wbb). De status geeft aan in welk stadium de locatie zich bevindt. De status wordt
-                                    bepaald door het bevoegd gezag Wbb op basis van een besluit of op basis van de onderzoeksresultaten
-                                    uit het milieuhygiënisch bodemonderzoek. Het kan voorkomen dat een niet bevoegd gezag
-                                    Wbb de status 'voldoende onderzocht' (ID = 20) heeft toegekend aan de bodemlocatie
-                                    op basis van een milieuhygiënisch bodemonderzoek.<br clear="none">
-                                    Het gegeven kan een nieuwe waarde krijgen bij een verandering. In dat geval blijft
-                                    de oude waarde behouden.<br clear="none">
-                                    Voor historische gegevens onder IMBRO/A is de status niet altijd vastgelegd, en kan
-                                    het gegeven ontbreken.</p>
-                                 </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section>
-                  <section id="detail_association_Model_Bodemlocatie_gesaneerdgebied">
-                     <h4>  gesaneerd gebied</h4>
+                  <section id="detail_association_Model_Bodemlocatie_aangepaktgebied">
+                     <h4>  aangepakt gebied</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
                         <colgroup style="width: 70%;"></colgroup>
@@ -1886,6 +1899,13 @@
                            <tr>
                               <th>Type gegeven</th>
                               <td>Associatie van Bodemlocatie</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het gebied dat gerelateerd is aan de bodemlocatie.</p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
@@ -1901,7 +1921,7 @@
                            </tr>
                            <tr>
                               <th>Relatierol naam</th>
-                              <td>gesaneerd gebied</td>
+                              <td>aangepakt gebied</td>
                            </tr>
                            <tr>
                               <th>Bron</th>
@@ -1920,8 +1940,8 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_association_Model_Bodemlocatie_vastgesteldeverontreiniging">
-                     <h4>  vastgestelde verontreiniging</h4>
+                  <section id="detail_association_Model_Bodemlocatie_verontreinigdgebied">
+                     <h4>  verontreinigd gebied</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
                         <colgroup style="width: 70%;"></colgroup>
@@ -1929,6 +1949,13 @@
                            <tr>
                               <th>Type gegeven</th>
                               <td>Associatie van Bodemlocatie</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het gebied dat gerelateerd is aan de bodemlocatie.</p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
@@ -1944,7 +1971,7 @@
                            </tr>
                            <tr>
                               <th>Relatierol naam</th>
-                              <td>vastgestelde verontreiniging</td>
+                              <td>verontreinigd gebied</td>
                            </tr>
                            <tr>
                               <th>Bron</th>
@@ -1972,6 +1999,13 @@
                            <tr>
                               <th>Type gegeven</th>
                               <td>Associatie van Bodemlocatie</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het gebied dat gerelateerd is aan de bodemlocatie.</p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
@@ -2020,7 +2054,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>Het besluit dat van toepassing is op de bodmelocatie</p>
+                                 <p>Het besluit dat gerelateerd is aan de bodemlocatie.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -2033,7 +2067,7 @@
                            </tr>
                            <tr>
                               <th>Relatiesoort naam</th>
-                              <td>bestaat uit</td>
+                              <td>omvat</td>
                            </tr>
                            <tr>
                               <th>Relatierol naam</th>
@@ -2059,7 +2093,7 @@
                </section>
                <section id="global_class_Model_Aangepaktgebied">
                   <h3>   Aangepakt gebied</h3>
-                  <div class="imageinfo "><img src="Images/EAID_B855C6A4_F845_464a_9F34_0CC8DFC004E1.png" usemap="#imagemap-EAID_B855C6A4_F845_464a_9F34_0CC8DFC004E1" alt="Diagram "><map name="imagemap-EAID_B855C6A4_F845_464a_9F34_0CC8DFC004E1"><area shape="rect" alt="Bodemonderzoek" coords="621,92,867,215" href="#global_class_Model_Bodemonderzoek"><area shape="rect" alt="Aangepakt gebied" coords="14,14,443,297" href="#global_class_Model_Aangepaktgebied"></map></div>
+                  <div class="imageinfo "><img src="Images/EAID_B855C6A4_F845_464a_9F34_0CC8DFC004E1.png" usemap="#imagemap-EAID_B855C6A4_F845_464a_9F34_0CC8DFC004E1" alt="Diagram "><map name="imagemap-EAID_B855C6A4_F845_464a_9F34_0CC8DFC004E1"><area shape="rect" alt="Bodemonderzoek" coords="620,83,866,207" href="#global_class_Model_Bodemonderzoek"><area shape="rect" alt="Aangepakt gebied" coords="14,14,443,278" href="#global_class_Model_Aangepaktgebied"></map></div>
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
                      <colgroup style="width: 70%;"></colgroup>
@@ -2073,24 +2107,26 @@
                            <td>
                               
                               <p>Een geografisch begrensde ruimte waarbinnen een sanering is uitgevoerd of waarbinnen
-                                 zonder saneringsdoelstelling grond is ontgraven en afgevoerd.</p>
+                                 grond is ontgraven en afgevoerd zonder saneringsdoelstelling.</p>
                               </td>
                         </tr>
                         <tr>
                            <th>Toelichting</th>
                            <td>
                               
-                              <p>Het betreft een gebied waar onder de Wet bodembescherming een sanering of waar onder
-                                 de Omgevingswet een milieubelastende activiteit (MBA) is uitgevoerd. Hierbij zijn
-                                 de MBA's beperkt tot saneren en tot graven in bodem met een kwaliteit boven interventiewaarde
-                                 bodemkwaliteit waarbij bovendien de uitgegraven grond is afgevoerd.<br clear="none">
+                              <p>Het betreft een gebied waar onder de Wet bodembescherming een sanering is uitgevoerd
+                                 of waar onder de Omgevingswet een milieubelastende activiteit (MBA) is uitgevoerd.
+                                 Hierbij zijn de MBA's beperkt tot saneren en graven in bodem met een kwaliteit boven
+                                 interventiewaarde waarbij bovendien de uitgegraven grond is afgevoerd.<br clear="none">
                                  Het bevoegd gezag heeft, nadat in het gebied is gesaneerd of is ontgraven zonder saneringsdoelstelling,
-                                 een evaluatieverslag ontvangen en  geaccepteerd. Onder de Wet bodembescherming neemt
-                                 het bevoegd gezag hierbij een instemmingsbesluit en legt deze vast in een beschikking.
-                                 Onder de Omgevingswet is een dergelijk besluit niet aan de orde.<br clear="none">
-                                 In de registratie ondergrond geen gebieden vastgelegd voor saneringen die wel zijn
-                                 gepland maar nog niet zijn uitgevoerd. Voor archiefgegevens is het echter niet uitgesloten
-                                 dat ook voor geplande saneringen er gebieden zijn opgenomen.</p>
+                                 een evaluatieverslag ontvangen en geaccepteerd. Onder de Wet bodembescherming neemt
+                                 het bevoegd gezag hierbij een instemmingsbesluit en legt deze vast in een beschikking
+                                 (conform Wbb art. 39c lid 2). Onder de Omgevingswet is een dergelijk besluit niet
+                                 aan de orde.<br clear="none">
+                                 In de registratie ondergrond worden geen gebieden vastgelegd van saneringen die zijn
+                                 gepland maar nog niet zijn uitgevoerd. Voor archiefgegevens die onder IMBRO/A zijn
+                                 aangeleverd is het echter niet uitgesloten dat ook gebieden voor geplande saneringen
+                                 zijn opgenomen in de BRO.</p>
                               </td>
                         </tr>
                      </tbody>
@@ -2705,9 +2741,8 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>Het milieuhygiënisch bodemonderzoek met het evaluatieverslag waarin de resultaten
-                                    zijn opgenomen van het onderzoek dat is uitgevoerd nadat in het aangepakte gebied
-                                    is gesaneerd of ontgraven.</p>
+                                 <p>Het evaluatieverslag, dat is vastgelegd bij het milieuhygiënisch bodemonderzoek, waarin
+                                    de betreffende sanering of ontgraving is beschreven.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -2751,11 +2786,11 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Het bevoegd gezag heeft, nadat er in het gebied is gesaneerd of is ontgraven zonder
-                                    saneringsdoelstelling, een verslag ontvangen met daarin de resultaten van de evaluatie
-                                    van die sanering of ontgraving. Op basis van dit evaluatieverslag is een milieuhygiënisch
-                                    bodemonderzoek opgenomen in de registratie ondergrond, inclusief identificerende gegevens
-                                    van het betreffende verslag.</p>
+                                 <p>Het bevoegd gezag heeft, nadat er in het gebied is gesaneerd of gegraven, een evaluatieverslag
+                                    ontvangen met daarin de resultaten van de sanering of ontgraving. Op basis van dit
+                                    evaluatieverslag is het aangepakt gebied geregistreerd in de BRO. De identificerende
+                                    gegevens van het evaluatieverslag zijn opgenomen bij het bijbehorende milieuhygiënisch
+                                    bodemonderzoek. </p>
                                  </td>
                            </tr>
                         </tbody>
@@ -2877,11 +2912,11 @@
                            <td>
                               
                               <p>De verontreiniging is door het bevoegd gezag Wbb in een beschikking vastgesteld als
-                                 ernstige verontreiniging (op basis van Wbb art. 29 gevallen van ernstige bodemverontreiniging).<br clear="none">
+                                 ernstige verontreiniging (op basis van Wbb art. 29).<br clear="none">
                                  In sommige gevallen is door het bevoegd gezag Wbb vastgesteld dat de verontreiniging
-                                 niet ernstig is. Dat zijn verontreinigingsgevallen die kleiner zijn dan 25m3 (grond)
-                                 of 100 m3 (grondwater).<br clear="none">
-                                 Het onderliggende besluit is als <em>Besluit</em> opgenomen. </p>
+                                 niet ernstig is. Dat zijn verontreinigingsgevallen waarbij het volume dat de toetsingswaarde
+                                 overschrijdt kleiner is dan 25m3 (grond) of 100 m3 (grondwater).<br clear="none">
+                                 Het onderliggende besluit is als <em>Besluit</em> opgenomen.</p>
                               </td>
                         </tr>
                      </tbody>
@@ -3482,8 +3517,17 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Een geografisch begrensde ruimte waarvoor nazorgmaatregelen zijn getroffen in verband
-                                 met vastgestelde bodemverontreiniging.</p>
+                              <p>Een geografisch begrensde ruimte waarvoor nazorgmaatregelen zijn opgelegd in verband
+                                 met een vastgestelde bodemverontreiniging.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              <p>De nazorgmaatregelen zijn door het bevoegd gezag Wbb opgelegd met een instemmingsbesluit
+                                 op het nazorgplan (op basis van Wbb art. 39d).<br clear="none">
+                                 Het onderliggende besluit is als <em>Besluit</em> opgenomen.</p>
                               </td>
                         </tr>
                      </tbody>
@@ -3709,7 +3753,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De datum waarop de nazorg is vastgesteld.</p>
+                                 <p>De datum waarop de nazorgmaatregelen in werking zijn getreden.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3738,7 +3782,8 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Dat is de datum inwerkingtreding van het onderliggende besluit. </p>
+                                 <p>Dat is de datum van het onderliggende instemmingsbesluit met het nazorgplan dat het
+                                    bevoegd gezag Wbb heeft genomen (conform Wbb art. 39d).</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -3759,7 +3804,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De datum waarop is vastgesteld dat de nazorg is afgerond. </p>
+                                 <p>De datum waarop de nazorg is afgerond.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3848,6 +3893,14 @@
                            <th>Type gegeven</th>
                            <td>Entiteit</td>
                         </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Nazorgmaatregelen bij restverontreinigingen na sanering in het kader van de Wet Bodemverontreiniging.
+                                 </p>
+                              </td>
+                        </tr>
                      </tbody>
                   </table>
                   <section id="detail_attribute_Model_Nazorgmaatregel_SIKB0101identificatie">
@@ -3869,7 +3922,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De unieke identificatie van het nazorggebied in de registratie ondergrond. </p>
+                                 <p>De unieke identificatie van de nazorgmaatregel in de registratie ondergrond. </p>
                                  </td>
                            </tr>
                            <tr>
@@ -3907,7 +3960,7 @@
                               <td>
                                  
                                  <p>Dit is de unieke identificatie, in de vorm van een zogenaamde GUID (Globally Unique
-                                    Identifier), die binnen de informatieketen milieukwaliteit aan de uitgevoerde sanering
+                                    Identifier), die binnen de informatieketen milieukwaliteit aan de nazorgmaatregel
                                     is toegekend.</p>
                                  </td>
                            </tr>
@@ -3928,6 +3981,13 @@
                            <tr>
                               <th>Type gegeven</th>
                               <td>Attribuut van Nazorgmaatregel</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De gebruiksbeperking die wordt veroorzaakt door de nazorgmaatregel van de bodemverontreiniging.</p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
@@ -4099,8 +4159,8 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht is het besluitnummer
-                                    niet altijd vastgelegd. </p>
+                                 <p>Voor archiefgegevens die zijn aangeleverd onder IMBRO/A is het besluitkenmerk niet
+                                    altijd vastgelegd. </p>
                                  </td>
                            </tr>
                         </tbody>
@@ -4152,13 +4212,6 @@
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
                            </tr>
-                           <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 
-                                 <p>Dat zijn besluiten genomen in het kader van de Wet bodembescherming.</p>
-                                 </td>
-                           </tr>
                         </tbody>
                      </table>
                      </section>
@@ -4181,7 +4234,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De datum waarop het besluit is bekend gemaakt. </p>
+                                 <p>De datum waarop het besluit bekend is gemaakt. </p>
                                  </td>
                            </tr>
                            <tr>
@@ -4214,10 +4267,8 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Dat is de datum op het besluit.<br clear="none">
-                                    Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht is de datum
-                                    bekendmaking besluit niet altijd vastgelegd. Aan het eventueel ontbreken van het gegeven
-                                    bij archiefgegevens kan geen bijzondere betekenis worden gegeven.</p>
+                                 <p>Voor archiefgegevens die zijn aangeleverd onder IMBRO/A is de datum bekendmaking besluit
+                                    niet altijd vastgelegd. </p>
                                  </td>
                            </tr>
                         </tbody>
@@ -4892,14 +4943,17 @@
                      <td>streefwaarde</td>
                      <td>v</td>
                      <td>v</td>
-                     <td></td>
+                     <td>De streefwaarden (s-waarden) zijn tot 1-1-2008 gebaseerd op 'Streefwaarden en interventiewaarden
+                        bodemsanering', en vanaf 1-1-2008 voor grondwater op de 'Circulaire bodemsanering'
+                        en voor grond zijn dat de achtergrondwaarden uit het 'Besluit bodemkwaliteit'.</td>
                   </tr>
                   <tr>
                      <td>3</td>
                      <td>interventiewaarde</td>
                      <td>v</td>
                      <td>v</td>
-                     <td></td>
+                     <td>De interventiewaarden (i-waarden) zijn tot tot 1-1-2008 gebaseerd op 'Streefwaarden
+                        en interventiewaarden bodemsanering' en vanaf 1-1-2008 op de 'Circulaire bodemsanering'.</td>
                   </tr>
                </tbody>
             </table>
