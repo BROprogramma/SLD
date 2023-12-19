@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Aanpak>
+		<Waarde>afdekkenVerontreiniging</Waarde>
+		<SIKB0101-ID></SIKB0101-ID>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Beperken of ongedaan maken van blootstelling aan een verontreiniging in de bodem middels het wegnemen van de contactmogelijkheden door het aanbrengen van een afdeklaag c.q. leeflaag op de verontreinigde bodemlaag.</Omschrijving>
+	</Aanpak>
+	<Aanpak>
+		<Waarde>alternatieveSaneringsaanpak</Waarde>
+		<SIKB0101-ID></SIKB0101-ID>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Beperken of ongedaan maken van blootstelling aan een verontreiniging in de bodem anders dan middels het afdekken van de verontreining of middels het verwijderen en afvoeren van grond. Een alternatieve aanpak is bijvoorbeeld in situ reiniging.</Omschrijving>
+	</Aanpak>
+	<Aanpak>
+		<Waarde>gecombineerdeSaneringsaanpak</Waarde>
+		<SIKB0101-ID></SIKB0101-ID>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Beperken of ongedaan maken van de blootstelling aan de verontreiniging in de bodem door een combinatie van het afdekken van de verontreining, het verwijderen en afvoeren van grond en/of het volgen van een alternatieve saneringsaanpak.</Omschrijving>
+	</Aanpak>
+	<Aanpak>
+		<Waarde>ontgravenMetSaneringsdoelstelling</Waarde>
+		<SIKB0101-ID></SIKB0101-ID>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond verwijderen en afvoeren met als oogmerk een bodemverontreiniging weg te nemen.</Omschrijving>
+	</Aanpak>
+	<Aanpak>
+		<Waarde>ontgravenZonderSaneringsdoelstelling</Waarde>
+		<SIKB0101-ID></SIKB0101-ID>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Graven in de bodem en afvoeren van ontgraven grond zonder het oogmerk om de een bodemverontreiniging weg te nemen.</Omschrijving>
+	</Aanpak>
+</domeintabel>
