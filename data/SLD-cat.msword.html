@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/Overheidsbesluit bodemverontreiniging SLD/20230314</p>
       <p>Imvertor: Nightly-build.13</p>
-      <p>Model release: Conceptualmodel-OverheidsbesluitbodemverontreinigingSLD-0.8-1-20230314-20231219-090416</p>
+      <p>Model release: Conceptualmodel-OverheidsbesluitbodemverontreinigingSLD-0.8-1-20230314-20231219-093934</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -520,7 +520,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d59404e3265">
+                  <section id="detail_d60463e3265">
                      <h4>  registratiegeschiedenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -558,7 +558,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d59404e3450">
+                  <section id="detail_d60463e3450">
                      <h4>  gestandaardiseerde locatie</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1892,7 +1892,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d59404e8419">
+                  <section id="detail_d60463e8419">
                      <h4>  bodemlocatiegeschiedenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -2682,6 +2682,10 @@
                               <td>Waardelijst uitbreidbaar</td>
                            </tr>
                            <tr>
+                              <th>&nbsp;&nbsp;Identificerend gegeven</th>
+                              <td>SIKB0101-ID</td>
+                           </tr>
+                           <tr>
                               <th>Regels</th>
                               <td>
                                  
@@ -2741,6 +2745,10 @@
                            <tr>
                               <th>&nbsp;&nbsp;Type</th>
                               <td>Waardelijst uitbreidbaar</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Identificerend gegeven</th>
+                              <td>SIKB0101-ID</td>
                            </tr>
                            <tr>
                               <th>Regels</th>
@@ -4467,6 +4475,180 @@
       </section>
       <section>
          <h1>Artikel 2 Beschrijving van uitbreidbare waardelijsten    </h1>
+         <section id="detail_class_Model_Aanpak">
+            <h3>  Aanpak</h3>
+            
+            <table style="width: 100%;" class="list">
+               <colgroup></colgroup>
+               <tbody>
+                  <tr>
+                     <td>
+                        
+                        
+                        <p>De lijst met aanpakken volgens welke er in een gebied is gesaneerd of is ontgraven
+                           zonder saneringsdoelstelling.</p>
+                        
+                        
+                        
+                        <ol>
+                           
+                           <li>
+                              <b>SIKB0101-ID</b> (identificerend): De identificatie van de waarde in de SIKB0101 domeinwaardelijsten.</li>
+                           
+                           <li>
+                              <b>Waarde</b>: De waarde in natuurlijke taal.</li>
+                           
+                           <li>
+                              <b>IMBRO</b>: De aanduiding die aangeeft of de waarde onder IMBRO geldig is.</li>
+                           
+                           <li>
+                              <b>IMBRO/A</b>: De aanduiding die aangeeft of de waarde onder IMBRO/A geldig is.</li>
+                           
+                           <li>
+                              <b>Omschrijving</b>: De omschrijving van de waarde.</li>
+                           </ol>
+                        
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <table style="width: 100%;" class="list">
+               <colgroup style="width: 20%;"></colgroup>
+               <colgroup style="width: 20%;"></colgroup>
+               <colgroup style="width: 20%;"></colgroup>
+               <colgroup style="width: 20%;"></colgroup>
+               <colgroup></colgroup>
+               <tbody>
+                  <tr>
+                     <th>SIKB0101-ID</th>
+                     <th>Waarde</th>
+                     <th>IMBRO</th>
+                     <th>IMBRO/A</th>
+                     <th>Omschrijving</th>
+                  </tr>
+                  <tr>
+                     <td>afdekkenVerontreiniging</td>
+                     <td></td>
+                     <td>v</td>
+                     <td>v</td>
+                     <td>Beperken of ongedaan maken van blootstelling aan een verontreiniging in de bodem middels
+                        het wegnemen van de contactmogelijkheden door het aanbrengen van een afdeklaag c.q.
+                        leeflaag op de verontreinigde bodemlaag.</td>
+                  </tr>
+                  <tr>
+                     <td>alternatieveSaneringsaanpak</td>
+                     <td></td>
+                     <td>v</td>
+                     <td>v</td>
+                     <td>Beperken of ongedaan maken van blootstelling aan een verontreiniging in de bodem anders
+                        dan middels het afdekken van de verontreining of middels het verwijderen en afvoeren
+                        van grond. Een alternatieve aanpak is bijvoorbeeld in situ reiniging.</td>
+                  </tr>
+                  <tr>
+                     <td>gecombineerdeSaneringsaanpak</td>
+                     <td></td>
+                     <td>v</td>
+                     <td>v</td>
+                     <td>Beperken of ongedaan maken van de blootstelling aan de verontreiniging in de bodem
+                        door een combinatie van het afdekken van de verontreining, het verwijderen en afvoeren
+                        van grond en/of het volgen van een alternatieve saneringsaanpak.</td>
+                  </tr>
+                  <tr>
+                     <td>ontgravenMetSaneringsdoelstelling</td>
+                     <td></td>
+                     <td>v</td>
+                     <td>v</td>
+                     <td>Grond verwijderen en afvoeren met als oogmerk een bodemverontreiniging weg te nemen.</td>
+                  </tr>
+                  <tr>
+                     <td>ontgravenZonderSaneringsdoelstelling</td>
+                     <td></td>
+                     <td>v</td>
+                     <td>v</td>
+                     <td>Graven in de bodem en afvoeren van ontgraven grond zonder het oogmerk om de een bodemverontreiniging
+                        weg te nemen.</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section>
+         <section id="detail_class_Model_Activiteit">
+            <h3>  Activiteit</h3>
+            
+            <table style="width: 100%;" class="list">
+               <colgroup></colgroup>
+               <tbody>
+                  <tr>
+                     <td>
+                        
+                        
+                        <p>De lijst met activiteiten die binnen een gebied uitgevoerd kunnen zijn.</p>
+                        
+                        
+                        
+                        <ol>
+                           
+                           <li>
+                              <b>SIKB0101-ID</b> (identificerend): De identificatie van de waarde in de SIKB0101 domeinwaardelijsten.</li>
+                           
+                           <li>
+                              <b>Waarde</b>: De waarde in natuurlijke taal.</li>
+                           
+                           <li>
+                              <b>IMBRO</b>: De aanduiding die aangeeft of de waarde onder IMBRO geldig is.</li>
+                           
+                           <li>
+                              <b>IMBRO/A</b>: De aanduiding die aangeeft of de waarde onder IMBRO/A geldig is.</li>
+                           
+                           <li>
+                              <b>Omschrijving</b>: De omschrijving van de waarde.</li>
+                           </ol>
+                        
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <table style="width: 100%;" class="list">
+               <colgroup style="width: 20%;"></colgroup>
+               <colgroup style="width: 20%;"></colgroup>
+               <colgroup style="width: 20%;"></colgroup>
+               <colgroup style="width: 20%;"></colgroup>
+               <colgroup></colgroup>
+               <tbody>
+                  <tr>
+                     <th>SIKB0101-ID</th>
+                     <th>Waarde</th>
+                     <th>IMBRO</th>
+                     <th>IMBRO/A</th>
+                     <th>Omschrijving</th>
+                  </tr>
+                  <tr>
+                     <td>mbaGraven</td>
+                     <td></td>
+                     <td>v</td>
+                     <td>v</td>
+                     <td>Het graven in de bodem als milieubelastende activiteit vallend onder artikel 3.48f
+                        van het Besluit activiteiten leefomgeving (Bal). Hierbij geldt dat de kwaliteit van
+                        de bodem waarin gegraven wordt boven de interventiewaarde bodemkwaliteit is, het totale
+                        bodemvolume waarin het graven plaatsvindt meer is dan 25 m3 en het graven plaatsvindt
+                        in de landbodem of op de zogenaamde droge(re) oevergebieden van de waterbodem. De
+                        activiteit vindt plaats zonder saneringsdoelstelling.</td>
+                  </tr>
+                  <tr>
+                     <td>mbaSaneren</td>
+                     <td></td>
+                     <td>v</td>
+                     <td>v</td>
+                     <td>Het beperken of ongedaan maken van de blootstelling aan de verontreiniging in de bodem
+                        als milieubelastende activiteit vallend onder artikel 3.48h van het Besluit activiteiten
+                        leefomgeving (Bal). Hierbij geldt dat het saneren plaatsvindt in de landbodem of op
+                        de zogenaamde droge(re) oevergebieden van de waterbodem. De activiteit vindt plaats
+                        met saneringsdoelstelling.</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section>
          <section id="detail_class_Model_Besluittype">
             <h3>  Besluittype</h3>
             
@@ -4675,9 +4857,7 @@
                      <td>
                         
                         
-                        <p>De saneringsmethode die is uitgevoerd in de bovengrond van 0,0 tot 0,5 m-mv.</p>
-                        
-                        <p>OPEN PUNT: relevante waarden uit SIKB codelijst te bepalen</p>
+                        <p>De lijst met saneringsmethoden die uitgevoerd in de bovengrond van 0,0 tot 0,5 m-mv.</p>
                         
                         
                         
@@ -4727,8 +4907,6 @@
                         
                         
                         <p>De saneringsmethode die is uitgevoerd in de ondergrond vanaf 0,5 m-mv en dieper.</p>
-                        
-                        <p>OPEN PUNT: relevante waarden uit SIKB codelijst te bepalen</p>
                         
                         
                         
@@ -4888,146 +5066,6 @@
                      <th>IMBRO</th>
                      <th>IMBRO/A</th>
                      <th>Omschrijving</th>
-                  </tr>
-               </tbody>
-            </table>
-            </section>
-         <section id="detail_class_Model_Aanpak">
-            <h3>  Aanpak</h3>
-            
-            <table style="width: 100%;" class="list">
-               <colgroup></colgroup>
-               <tbody>
-                  <tr>
-                     <td>
-                        
-                        <p>De lijst met de aanpakken volgens welke er in een gebied is gesaneerd of is ontgraven
-                           zonder saneringsdoelstelling.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <table style="width: 100%;" class="list">
-               <colgroup style="width: 20%;"></colgroup>
-               <colgroup style="width: 5%;"></colgroup>
-               <colgroup style="width: 5%;"></colgroup>
-               <colgroup></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Waarde</th>
-                     <th>IMBRO</th>
-                     <th>IMBRO/A</th>
-                     <th>Omschrijving</th>
-                  </tr>
-                  <tr>
-                     <td>afdekkenVerontreiniging</td>
-                     <td>✔</td>
-                     <td>✔</td>
-                     <td>
-                        
-                        <p>Beperken of ongedaan maken van blootstelling aan een verontreiniging in de bodem middels
-                           het wegnemen van de contactmogelijkheden door het aanbrengen van een afdeklaag c.q.
-                           leeflaag op de verontreinigde bodemlaag.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>alternatieveSaneringsaanpak</td>
-                     <td>✔</td>
-                     <td>✔</td>
-                     <td>
-                        
-                        <p>Beperken of ongedaan maken van blootstelling aan een verontreiniging in de bodem anders
-                           dan middels het afdekken van de verontreining of middels het verwijderen en afvoeren
-                           van grond. Een alternatieve aanpak is bijvoorbeeld in situ reiniging.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>gecombineerdeSaneringsaanpak</td>
-                     <td>✔</td>
-                     <td>✔</td>
-                     <td>
-                        
-                        <p>Beperken of ongedaan maken van de blootstelling aan de verontreiniging in de bodem
-                           door een combinatie van het afdekken van de verontreining, het verwijderen en afvoeren
-                           van grond en/of het volgen van een alternatieve saneringsaanpak.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>ontgravenMetSaneringsdoelstelling</td>
-                     <td>✔</td>
-                     <td>✔</td>
-                     <td>
-                        
-                        <p>Grond verwijderen en afvoeren met als oogmerk een bodemverontreiniging weg te nemen.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>ontgravenZonderSaneringsdoelstelling</td>
-                     <td>✔</td>
-                     <td>✔</td>
-                     <td>
-                        
-                        <p>Graven in de bodem en afvoeren van ontgraven grond zonder het oogmerk om de een bodemverontreiniging
-                           weg te nemen.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section>
-         <section id="detail_class_Model_Activiteit">
-            <h3>  Activiteit</h3>
-            
-            <table style="width: 100%;" class="list">
-               <colgroup></colgroup>
-               <tbody>
-                  <tr>
-                     <td>
-                        
-                        <p>De lijst met de activiteiten die binnen een gebied uitgevoerd kunnen zijn.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <table style="width: 100%;" class="list">
-               <colgroup style="width: 20%;"></colgroup>
-               <colgroup style="width: 5%;"></colgroup>
-               <colgroup style="width: 5%;"></colgroup>
-               <colgroup></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Waarde</th>
-                     <th>IMBRO</th>
-                     <th>IMBRO/A</th>
-                     <th>Omschrijving</th>
-                  </tr>
-                  <tr>
-                     <td>mbaGraven</td>
-                     <td>✔</td>
-                     <td>✔</td>
-                     <td>
-                        
-                        <p>Het graven in de bodem als milieubelastende activiteit vallend onder artikel 3.48f
-                           van het Besluit activiteiten leefomgeving (Bal). Hierbij geldt dat de kwaliteit van
-                           de bodem waarin gegraven wordt boven de interventiewaarde bodemkwaliteit is, het totale
-                           bodemvolume waarin het graven plaatsvindt meer is dan 25 m3 en het graven plaatsvindt
-                           in de landbodem of op de zogenaamde droge(re) oevergebieden van de waterbodem. De
-                           activiteit vindt plaats zonder saneringsdoelstelling.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>mbaSaneren</td>
-                     <td>✔</td>
-                     <td>✔</td>
-                     <td>
-                        
-                        <p>Het beperken of ongedaan maken van de blootstelling aan de verontreiniging in de bodem
-                           als milieubelastende activiteit vallend onder artikel 3.48h van het Besluit activiteiten
-                           leefomgeving (Bal). Hierbij geldt dat het saneren plaatsvindt in de landbodem of op
-                           de zogenaamde droge(re) oevergebieden van de waterbodem. De activiteit vindt plaats
-                           met saneringsdoelstelling.</p>
-                        </td>
                   </tr>
                </tbody>
             </table>
