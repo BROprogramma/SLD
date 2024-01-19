@@ -49,20 +49,6 @@ Binnen het domein Milieukwaliteit zijn twee registratieobjecten benoemd:
 
 </figure>
 
-
-
-	<table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th><figure id='Milieuhygiënisch_bodemonderzoek_tegel'><img src="./media/BRO_Registratieobject tegel_Milieuhygiënisch bodemonderzoek.png" alt="Milieuhygiënisch bodemonderzoek" width="50"/><figcaption>Het registratieobject Milieuhygiënisch bodemonderzoek (Site Assessment Data - SAD)</figcaption></figure></th>
-                     <th><figure id='Overheidsbesluit_bodemverontreiniging_tegel'><img src="./media/BRO_Registratieobject tegel_Overheidsbesluit bodemverontreiniging.png" alt="Overheidsbesluit bodemverontreiniging" width="50"/><figcaption>Het registratieobject Overheidsbesluit bodemverontreiniging (Site Legal Decision - SLD)</figcaption></figure></th>
-                  </tr>
-  		</tbody>
-		</table>
-
-
 ## Registratieobject Milieuhygiënisch bodemonderzoek
 Een milieuhygiënisch bodemonderzoek is een onderzoeksactiviteit waarbij binnen de onderzoekslocatie het voorkomen van verontreinigende stoffen in de bodem wordt onderzocht. Daarbij wordt een eventuele aard van de verontreiniging bepaald (welke stoffen komen voor in hogere concentraties dan de natuurlijke achtergrondwaarde) en wordt de mate van de verontreiniging bepaald (hoe verhouden de gemeten concentraties zich tot het toegestane gehalte op basis van een landelijk of lokaal normenkader).
 
@@ -73,7 +59,6 @@ Het resultaat van het milieuhygiënisch bodemonderzoek omvat informatie over de 
 Monitoring wordt in een volgende versie van de catalogus toegevoegd.
 
 Voor de uitvoering van een milieuhygiënisch bodemonderzoek zijn wettelijke standaarden en protocollen van toepassing (NEN en SIKB). In veel gevallen werken de uitvoerende medewerkers onder certificaat. De verschillende uitvoerende partijen (veldwerkbureau, laboratorium, adviesbureau) kunnen informatie uitwisselen via een landelijke uitwisselstandaard (SIKB0101).
-
 
 ## Registratieobject Overheidsbesluit bodemverontreiniging
 Een overheidsbesluit bodemverontreiniging is een besluit of beschikking opgesteld door bevoegd gezag in het kader van een procedure onder de Wet Bodembescherming (en Wbb overgangsrecht onder Omgevingswet) of, wanneer deze in werking is getreden, onder de Omgevingswet. Een beschikking onder de Wbb bevat doorgaans een uitspraak over de ernst en spoedeisendheid van een bodemverontreiniging of over de mate waarin een sanering is uitgevoerd. Naast besluiten en beschikkingen onder de Wbb kan het zijn dat een bevoegd gezag (veelal gemeente) vastlegt dat een locatie voldoet aan de eisen van bijvoorbeeld een bouwvergunning en er geen vervolgonderzoek nodig is. De gegevens over de ‘status’ vormen eveneens onderdeel van het registratieobject SLD. Het registratieobject bevat dus informatie over zowel verontreinigde locaties als locaties waar geen verontreinigingen zijn aangetoond.<br>Onder de Omgevingswet vervallen beschikkingen grotendeels. Er is geen formele uitspraak meer over omvang van een verontreiniging of over de evaluatie van een sanering. Er is nog wel een beschikking mogelijk die maatwerkvoorschriften stelt bij een saneringsaanpak. Ook blijft de registratieplicht op nazorg gelden.
