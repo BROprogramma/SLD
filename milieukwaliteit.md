@@ -17,7 +17,7 @@ Op basis van het onderzoeksresultaat kan het zijn dat vervolgens, vanuit een wet
 	
 Binnen het domein Milieukwaliteit zijn twee registratieobjecten benoemd:
 
-<figure>
+| <figure>
 	<!-- link within SLD repository -->
 	<img src="./media/BRO_Registratieobject tegel_Milieuhygiënisch bodemonderzoek.png" alt="Milieuhygiënisch bodemonderzoek" width="50"/>
 	<!-- link to generic location of GitHub/BROprogramma -->
@@ -28,7 +28,7 @@ Binnen het domein Milieukwaliteit zijn twee registratieobjecten benoemd:
  		Het registratieobject Milieuhygiënisch bodemonderzoek (Site Assessment Data - SAD)
   	</figcaption>
 </figure>
-
+|
 <figure>
 	<!-- link within SLD repository -->
 	<img src="./media/BRO_Registratieobject tegel_Overheidsbesluit bodemverontreiniging.png" alt="Overheidsbesluit bodemverontreiniging" width="50"/>
@@ -40,3 +40,35 @@ Binnen het domein Milieukwaliteit zijn twee registratieobjecten benoemd:
  		Het registratieobject Overheidsbesluit bodemverontreiniging (Site Legal Decision - SLD)
   	</figcaption>
 </figure>
+|
+
+## Registratieobject Milieuhygiënisch bodemonderzoek
+Een milieuhygiënisch bodemonderzoek is een onderzoeksactiviteit waarbij binnen de onderzoekslocatie het voorkomen van verontreinigende stoffen in de bodem wordt onderzocht. Daarbij wordt een eventuele aard van de verontreiniging bepaald (welke stoffen komen voor in hogere concentraties dan de natuurlijke achtergrondwaarde) en wordt de mate van de verontreiniging bepaald (hoe verhouden de gemeten concentraties zich tot het toegestane gehalte op basis van een landelijk of lokaal normenkader).
+
+Het bodemonderzoek wordt doorgaans verricht door derden, op basis van een opdracht van een bronhouder, of als onderdeel van een vergunningstraject of melding waarover een bevoegd gezag een beoordeling moet uitvoeren.
+
+Het resultaat van het milieuhygiënisch bodemonderzoek omvat informatie over de meetpunten (o.a. boringen en peilbuizen), monstername, veldwaarnemingen en laboratoriumanalyses van veldmonsters (grond en grondwater) en het bodemonderzoeksrapport.
+
+Monitoring wordt in een volgende versie van de catalogus toegevoegd.
+
+Voor de uitvoering van een milieuhygiënisch bodemonderzoek zijn wettelijke standaarden en protocollen van toepassing (NEN en SIKB). In veel gevallen werken de uitvoerende medewerkers onder certificaat. De verschillende uitvoerende partijen (veldwerkbureau, laboratorium, adviesbureau) kunnen informatie uitwisselen via een landelijke uitwisselstandaard (SIKB0101).
+
+## Registratieobject Overheidsbesluit bodemverontreiniging
+Een overheidsbesluit bodemverontreiniging is een besluit of beschikking opgesteld door bevoegd gezag in het kader van een procedure onder de Wet Bodembescherming (en Wbb overgangsrecht onder Omgevingswet) of, wanneer deze in werking is getreden, onder de Omgevingswet. Een beschikking onder de Wbb bevat doorgaans een uitspraak over de ernst en spoedeisendheid van een bodemverontreiniging of over de mate waarin een sanering is uitgevoerd. Naast besluiten en beschikkingen onder de Wbb kan het zijn dat een bevoegd gezag (veelal gemeente) vastlegt dat een locatie voldoet aan de eisen van bijvoorbeeld een bouwvergunning en er geen vervolgonderzoek nodig is. De gegevens over de ‘status’ vormen eveneens onderdeel van het registratieobject SLD. Het registratieobject bevat dus informatie over zowel verontreinigde locaties als locaties waar geen verontreinigingen zijn aangetoond.<br>Onder de Omgevingswet vervallen beschikkingen grotendeels. Er is geen formele uitspraak meer over omvang van een verontreiniging of over de evaluatie van een sanering. Er is nog wel een beschikking mogelijk die maatwerkvoorschriften stelt bij een saneringsaanpak. Ook blijft de registratieplicht op nazorg gelden.
+
+Het besluit wordt genomen op basis van door de melder/vergunningsaanvrager ingediende informatie. Welke informatie moet worden aangeleverd, is vastgelegd in landelijke en lokale wet- en regelgeving. Het resultaat van het Overheidsbesluit bodemverontreiniging (SLD) omvat de status van de verontreiniging, vastgestelde verontreinigingscontouren, saneringscontouren en nazorgcontouren met eventueel opgelegde gebruiksbeperkingen.
+
+## Samenhang met andere registratiedomeinen en -objecten
+In de BRO zijn vier registratieobjecten opgenomen die een samenhang hebben met gegevens die in het kader van milieuhygiënisch bodemonderzoek worden verzameld, dat zijn:
+- Domein Bodem- en grondonderzoek:
+	- Booronderzoek (BHR)
+- Domein Grondwatermonitoring:
+	- Grondwaterkwaliteitsonderzoek (GAR)
+	- Grondwatermonitoringnet (GMN)
+	
+Er is gekozen om een strikte scheiding aan te brengen. In de praktijk zijn deze werkvelden ook gescheiden. De wijze waarop deze registratieobjecten worden aangeleverd en zijn gemodelleerd verschillen dusdanig van het milieudomein dat dit het beheer te complex zou maken.
+
+Waar mogelijk zijn de standaarden van deze registratieobjecten geraadpleegd en/of gebruikt als basis bij het vaststellen van de standaarden voor de registratieobjecten binnen het Domein Milieukwaliteit.
+
+- Domein Bodem- en grondonderzoek: standaarden voor het vaststellen van de bodemopbouw bij milieuhygiënisch booronderzoek wijken op onderdelen af van standaarden uit bodemkundig onderzoek.
+- Domein Grondwatermonitoring: er is gekozen om de grondwatermonitoringnetten die zijn opgericht in het kader van milieuhygiënisch bodemonderzoek ondereel te laten zijn van milieuhygiënisch bodemonderzoek (SAD), en niet bij het registratieobject grondwatermonitoringnet op te nemen.
