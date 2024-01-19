@@ -30,11 +30,13 @@ Binnen het domein Milieukwaliteit zijn twee registratieobjecten benoemd:
 </figure>
 
 <figure>
+	<!-- link within SLD repository -->
+	<img src="./media/BRO_Registratieobject tegel_Overheidsbesluit bodemverontreiniging.png" alt="Overheidsbesluit bodemverontreiniging" width="50"/>
 	<!-- link to generic location of GitHub/BROprogramma -->
-	<img src="https://github.com/BROprogramma/generiek/raw/gh-pages/gm/media/BRO_Registratieobjecten_Entiteitenschema + FRD.png" alt="Grondwaterdomein" width="300"/>
+	<!-- <img src="https://github.com/BROprogramma/generiek/raw/gh-pages/mk/media/BRO_Registratieobject tegel_Overheidsbesluit bodemverontreiniging.png" alt="Overheidsbesluit bodemverontreiniging" width="50"/> -->
 	<!-- (expected) link to location on docs.geostandaarden -->
-	<!-- <img src="https://docs.geostandaarden.nl/bro/gen/gm/media/BRO_Registratieobjecten_Entiteitenschema + FRD.png" alt="Grondwaterdomein" width="300"/> -->
+	<!-- <img src="https://docs.geostandaarden.nl/bro/gen/mk/media/BRO_Registratieobject tegel_Overheidsbesluit bodemverontreiniging.png" alt="Overheidsbesluit bodemverontreiniging" width="50"/> -->
 	<figcaption>
- 		De samenhang tussen de vijf registratieobjecten binnen het grondwatermonitoring domein.
+ 		Het registratieobject Overheidsbesluit bodemverontreiniging (Site Legal Decision - SLD)
   	</figcaption>
 </figure>
