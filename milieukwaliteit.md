@@ -22,35 +22,35 @@ Binnen het domein Milieukwaliteit zijn twee registratieobjecten benoemd:
 	<colgroup style="width: 50%;"></colgroup>
 	<tbody>
         	<tr>
-			<th>test1</th>
-                     	<th>test2</th>
+			<th>
+				<figure>
+				<!-- link within SLD repository -->
+				<img src="./media/BRO_Registratieobject tegel_Milieuhygiënisch bodemonderzoek.png" alt="Milieuhygiënisch bodemonderzoek" width="50"/>
+				<!-- link to generic location of GitHub/BROprogramma -->
+				<!-- <img src="https://github.com/BROprogramma/generiek/raw/gh-pages/mk/media/BRO_Registratieobject tegel_Milieuhygiënisch bodemonderzoek.png" alt="Milieuhygiënisch bodemonderzoek" width="50"/> -->
+				<!-- (expected) link to location on docs.geostandaarden -->
+				<!-- <img src="https://docs.geostandaarden.nl/bro/gen/mk/media/BRO_Registratieobject tegel_Milieuhygiënisch bodemonderzoek.png" alt="Milieuhygiënisch bodemonderzoek" width="50"/> -->
+			 	<figcaption>
+			 		Het registratieobject Milieuhygiënisch bodemonderzoek (Site Assessment Data - SAD)
+			  	</figcaption>
+				</figure>
+			</th>
+                     	<th>
+				<figure>
+					<!-- link within SLD repository -->
+					<img src="./media/BRO_Registratieobject tegel_Overheidsbesluit bodemverontreiniging.png" alt="Overheidsbesluit bodemverontreiniging" width="50"/>
+					<!-- link to generic location of GitHub/BROprogramma -->
+					<!-- <img src="https://github.com/BROprogramma/generiek/raw/gh-pages/mk/media/BRO_Registratieobject tegel_Overheidsbesluit bodemverontreiniging.png" alt="Overheidsbesluit bodemverontreiniging" width="50"/> -->
+					<!-- (expected) link to location on docs.geostandaarden -->
+					<!-- <img src="https://docs.geostandaarden.nl/bro/gen/mk/media/BRO_Registratieobject tegel_Overheidsbesluit bodemverontreiniging.png" alt="Overheidsbesluit bodemverontreiniging" width="50"/> -->
+					<figcaption>
+				 		Het registratieobject Overheidsbesluit bodemverontreiniging (Site Legal Decision - SLD)
+				  	</figcaption>
+				</figure>				
+			</th>
                 </tr>
 	</tbody>
 </table>
-
-<figure>
-	<!-- link within SLD repository -->
-	<img src="./media/BRO_Registratieobject tegel_Milieuhygiënisch bodemonderzoek.png" alt="Milieuhygiënisch bodemonderzoek" width="50"/>
-	<!-- link to generic location of GitHub/BROprogramma -->
-	<!-- <img src="https://github.com/BROprogramma/generiek/raw/gh-pages/mk/media/BRO_Registratieobject tegel_Milieuhygiënisch bodemonderzoek.png" alt="Milieuhygiënisch bodemonderzoek" width="50"/> -->
-	<!-- (expected) link to location on docs.geostandaarden -->
-	<!-- <img src="https://docs.geostandaarden.nl/bro/gen/mk/media/BRO_Registratieobject tegel_Milieuhygiënisch bodemonderzoek.png" alt="Milieuhygiënisch bodemonderzoek" width="50"/> -->
- 	<figcaption>
- 		Het registratieobject Milieuhygiënisch bodemonderzoek (Site Assessment Data - SAD)
-  	</figcaption>
-</figure>
-
-<figure>
-	<!-- link within SLD repository -->
-	<img src="./media/BRO_Registratieobject tegel_Overheidsbesluit bodemverontreiniging.png" alt="Overheidsbesluit bodemverontreiniging" width="50"/>
-	<!-- link to generic location of GitHub/BROprogramma -->
-	<!-- <img src="https://github.com/BROprogramma/generiek/raw/gh-pages/mk/media/BRO_Registratieobject tegel_Overheidsbesluit bodemverontreiniging.png" alt="Overheidsbesluit bodemverontreiniging" width="50"/> -->
-	<!-- (expected) link to location on docs.geostandaarden -->
-	<!-- <img src="https://docs.geostandaarden.nl/bro/gen/mk/media/BRO_Registratieobject tegel_Overheidsbesluit bodemverontreiniging.png" alt="Overheidsbesluit bodemverontreiniging" width="50"/> -->
-	<figcaption>
- 		Het registratieobject Overheidsbesluit bodemverontreiniging (Site Legal Decision - SLD)
-  	</figcaption>
-</figure>
 
 ## Registratieobject Milieuhygiënisch bodemonderzoek
 Een milieuhygiënisch bodemonderzoek is een onderzoeksactiviteit waarbij binnen de onderzoekslocatie het voorkomen van verontreinigende stoffen in de bodem wordt onderzocht. Daarbij wordt een eventuele aard van de verontreiniging bepaald (welke stoffen komen voor in hogere concentraties dan de natuurlijke achtergrondwaarde) en wordt de mate van de verontreiniging bepaald (hoe verhouden de gemeten concentraties zich tot het toegestane gehalte op basis van een landelijk of lokaal normenkader).
