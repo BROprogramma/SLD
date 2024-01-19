@@ -17,7 +17,9 @@ Op basis van het onderzoeksresultaat kan het zijn dat vervolgens, vanuit een wet
 	
 Binnen het domein Milieukwaliteit zijn twee registratieobjecten benoemd:
 
-| <figure>
+| | | 
+
+<figure>
 	<!-- link within SLD repository -->
 	<img src="./media/BRO_Registratieobject tegel_Milieuhygiënisch bodemonderzoek.png" alt="Milieuhygiënisch bodemonderzoek" width="50"/>
 	<!-- link to generic location of GitHub/BROprogramma -->
@@ -28,7 +30,7 @@ Binnen het domein Milieukwaliteit zijn twee registratieobjecten benoemd:
  		Het registratieobject Milieuhygiënisch bodemonderzoek (Site Assessment Data - SAD)
   	</figcaption>
 </figure>
-|
+
 <figure>
 	<!-- link within SLD repository -->
 	<img src="./media/BRO_Registratieobject tegel_Overheidsbesluit bodemverontreiniging.png" alt="Overheidsbesluit bodemverontreiniging" width="50"/>
@@ -40,7 +42,6 @@ Binnen het domein Milieukwaliteit zijn twee registratieobjecten benoemd:
  		Het registratieobject Overheidsbesluit bodemverontreiniging (Site Legal Decision - SLD)
   	</figcaption>
 </figure>
-|
 
 ## Registratieobject Milieuhygiënisch bodemonderzoek
 Een milieuhygiënisch bodemonderzoek is een onderzoeksactiviteit waarbij binnen de onderzoekslocatie het voorkomen van verontreinigende stoffen in de bodem wordt onderzocht. Daarbij wordt een eventuele aard van de verontreiniging bepaald (welke stoffen komen voor in hogere concentraties dan de natuurlijke achtergrondwaarde) en wordt de mate van de verontreiniging bepaald (hoe verhouden de gemeten concentraties zich tot het toegestane gehalte op basis van een landelijk of lokaal normenkader).
