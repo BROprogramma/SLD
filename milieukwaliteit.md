@@ -17,8 +17,16 @@ Op basis van het onderzoeksresultaat kan het zijn dat vervolgens, vanuit een wet
 	
 Binnen het domein Milieukwaliteit zijn twee registratieobjecten benoemd:
 
-| h | h | 
-| --- | --- |
+<table style="width: 100%;">
+	<colgroup style="width: 50%;"></colgroup>
+	<colgroup style="width: 50%;"></colgroup>
+	<tbody>
+        	<tr>
+			<th>test1</th>
+                     	<th><test2</th>
+                </tr>
+	</tbody>
+</table>
 
 <figure>
 	<!-- link within SLD repository -->
