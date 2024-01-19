@@ -17,7 +17,8 @@ Op basis van het onderzoeksresultaat kan het zijn dat vervolgens, vanuit een wet
 	
 Binnen het domein Milieukwaliteit zijn twee registratieobjecten benoemd:
 
-| | | 
+| h | h | 
+| --- | --- |
 
 <figure>
 	<!-- link within SLD repository -->
