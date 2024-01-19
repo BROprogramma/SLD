@@ -17,6 +17,13 @@ Op basis van het onderzoeksresultaat kan het zijn dat vervolgens, vanuit een wet
 	
 Binnen het domein Milieukwaliteit zijn twee registratieobjecten benoemd:
 
+<figure>
+	<!-- link within SLD repository -->
+	<img src="./media/BRO_Registratieobject tegel_Milieuhygiënisch bodemonderzoek.png" alt="Milieuhygiënisch bodemonderzoek" width="50"/>
+ 	<figcaption>
+ 		Het registratieobject Milieuhygiënisch bodemonderzoek (Site Assessment Data - SAD)
+  	</figcaption>
+</figure>
 
 <figure>
 	<!-- link to generic location of GitHub/BROprogramma -->
