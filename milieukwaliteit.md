@@ -17,18 +17,13 @@ Op basis van het onderzoeksresultaat kan het zijn dat vervolgens, vanuit een wet
 	
 Binnen het domein Milieukwaliteit zijn twee registratieobjecten benoemd:
 
+
 <figure>
-	<!-- link within SLD repository -->
-	<!-- <img src="./media/BRO_Registratieobject tegel_Milieuhygiënisch bodemonderzoek.png" alt="Milieuhygiënisch bodemonderzoek" width="50"/> -->
-	
 	<!-- link to generic location of GitHub/BROprogramma -->
-	<!-- <img src="https://github.com/BROprogramma/generiek/raw/gh-pages/mk/media/BRO_Registratieobject tegel_Milieuhygiënisch bodemonderzoek.png" alt="Milieuhygiënisch bodemonderzoek" width="50"/> -->
-
+	<img src="https://github.com/BROprogramma/generiek/raw/gh-pages/gm/media/BRO_Registratieobjecten_Entiteitenschema + FRD.png" alt="Grondwaterdomein" width="300"/>
 	<!-- (expected) link to location on docs.geostandaarden -->
-	<!-- <img src="https://docs.geostandaarden.nl/bro/gen/mk/media/BRO_Registratieobject tegel_Milieuhygiënisch bodemonderzoek.png" alt="Milieuhygiënisch bodemonderzoek" width="50"/> -->
-
+	<!-- <img src="https://docs.geostandaarden.nl/bro/gen/gm/media/BRO_Registratieobjecten_Entiteitenschema + FRD.png" alt="Grondwaterdomein" width="300"/> -->
 	<figcaption>
- 		Het registratieobject Milieuhygiënisch bodemonderzoek (Site Assessment Data - SAD)
+ 		De samenhang tussen de vijf registratieobjecten binnen het grondwatermonitoring domein.
   	</figcaption>
-	
 </figure>
