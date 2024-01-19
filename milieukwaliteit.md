@@ -16,3 +16,19 @@ In het domein Milieukwaliteit van de BRO staan de bodemonderzoeken dus centraal.
 Op basis van het onderzoeksresultaat kan het zijn dat vervolgens, vanuit een wettelijke verplichting, een melding wordt gedaan en/of vergunning aangevraagd bij een bevoegd gezag. De melding wordt beoordeeld door bevoegd gezag om na te gaan of bepaalde activiteiten mogen worden uitgevoerd op de onderzoekslocatie, of er gegraven of gebouwd mag worden. In sommige gevallen wordt door het bevoegd gezag een beschikking afgegeven over bijvoorbeeld omvang en aanpak van een (geval van) bodemverontreiniging. Data over de besluiten van de overheden zijn eveneens vaak vastgelegd in een bodeminformatiesysteem en/of worden getoond op Bodemloket.nl.
 	
 Binnen het domein Milieukwaliteit zijn twee registratieobjecten benoemd:
+
+<figure>
+	<!-- link within SLD repository -->
+	<img src="./media/BRO_Registratieobject tegel_Milieuhygiënisch bodemonderzoek.png" alt="Milieuhygiënisch bodemonderzoek" width="50"/>
+	
+	<!-- link to generic location of GitHub/BROprogramma -->
+	<!-- <img src="https://github.com/BROprogramma/generiek/raw/gh-pages/mk/media/BRO_Registratieobject tegel_Milieuhygiënisch bodemonderzoek.png" alt="Milieuhygiënisch bodemonderzoek" width="50"/> -->
+
+	<!-- (expected) link to location on docs.geostandaarden -->
+	<!-- <img src="https://docs.geostandaarden.nl/bro/gen/mk/media/BRO_Registratieobject tegel_Milieuhygiënisch bodemonderzoek.png" alt="Milieuhygiënisch bodemonderzoek" width="50"/> -->
+
+	<figcaption>
+ 		Het registratieobject Milieuhygiënisch bodemonderzoek (Site Assessment Data - SAD)
+  	</figcaption>
+	
+</figure>
