@@ -23,7 +23,7 @@ Binnen het domein Milieukwaliteit zijn twee registratieobjecten benoemd:
 	<tbody>
         	<tr>
 			<th>test1</th>
-                     	<th><test2</th>
+                     	<th>test2</th>
                 </tr>
 	</tbody>
 </table>
