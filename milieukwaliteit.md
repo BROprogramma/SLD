@@ -19,7 +19,7 @@ Binnen het domein Milieukwaliteit zijn twee registratieobjecten benoemd:
 
 <figure>
 	<!-- link within SLD repository -->
-	<img src="./media/BRO_Registratieobject tegel_Milieuhygiënisch bodemonderzoek.png" alt="Milieuhygiënisch bodemonderzoek" width="50"/>
+	<!-- <img src="./media/BRO_Registratieobject tegel_Milieuhygiënisch bodemonderzoek.png" alt="Milieuhygiënisch bodemonderzoek" width="50"/> -->
 	
 	<!-- link to generic location of GitHub/BROprogramma -->
 	<!-- <img src="https://github.com/BROprogramma/generiek/raw/gh-pages/mk/media/BRO_Registratieobject tegel_Milieuhygiënisch bodemonderzoek.png" alt="Milieuhygiënisch bodemonderzoek" width="50"/> -->
