@@ -396,6 +396,12 @@ Explanation: De maximale einddiepte wordt weergegeven ten opzichte van het maaiv
                             </xs:simpleContent>
                         </xs:complexType>
                     </xs:element>
+                    <xs:element name="activityEndDate" type="xs:date" minOccurs="0" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de sanerings- of graafwerkzaamheden in het gebied zijn beëindigd.
+Explanation: Onder de Wet bodembescherming is deze datum gelijk aan de datum van het instemmingsbesluit dat het bevoegd gezag heeft genomen. Onder de Omgevingswet is deze datum gelijk aan de datum van het evaluatierapport dat door het bevoegd gezag is geaccepteerd.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
                     <xs:element name="approach" minOccurs="0" maxOccurs="1" type="sldcom:ApproachType">
                         <xs:annotation>
                             <xs:appinfo>
@@ -403,12 +409,6 @@ Explanation: De maximale einddiepte wordt weergegeven ten opzichte van het maaiv
                                 <CodeListURI/>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanpak die is gevolgd bij het saneren of ontgraven binnen het gebied.</xs:documentation>
-                        </xs:annotation>
-                    </xs:element>
-                    <xs:element name="activityEndDate" type="xs:date" minOccurs="0" maxOccurs="1">
-                        <xs:annotation>
-                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de sanerings- of graafwerkzaamheden in het gebied zijn beëindigd.
-Explanation: Onder de Wet bodembescherming is deze datum gelijk aan de datum van het instemmingsbesluit dat het bevoegd gezag heeft genomen. Onder de Omgevingswet is deze datum gelijk aan de datum van het evaluatierapport dat door het bevoegd gezag is geaccepteerd.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
                     <xs:element name="remediationVariantTopsoil" minOccurs="0" maxOccurs="1" type="sldcom:RemediationVariantTopsoilType">
