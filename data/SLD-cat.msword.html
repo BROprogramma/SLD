@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/Overheidsbesluit bodemverontreiniging SLD/20240123</p>
       <p>Imvertor: Nightly-build.13</p>
-      <p>Model release: Conceptualmodel-OverheidsbesluitbodemverontreinigingSLD-0.8-1-20240123-20240123-143246</p>
+      <p>Model release: Conceptualmodel-OverheidsbesluitbodemverontreinigingSLD-0.8-1-20240123-20240126-070450</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -1697,7 +1697,7 @@
                                     het bevoegd gezag Wbb op basis van een besluit of op basis van de onderzoeksresultaten
                                     uit het milieuhygiënisch bodemonderzoek.<br clear="none">
                                     Bij archiefgegevens onder IMBRO/A kan het voorkomen dat een niet-bevoegd gezag Wbb
-                                    de waarde <em>voldoende onderzocht</em> heeft toegekend aan de bodemlocatie op basis van een milieuhygiënisch bodemonderzoek.<br clear="none">
+                                    de waarde <em>voldoendeOnderzocht</em> heeft toegekend aan de bodemlocatie op basis van een milieuhygiënisch bodemonderzoek.<br clear="none">
                                     Wanneer de bodemlocatie voldoende is onderzocht of voldoende is gesaneerd is de aanpak
                                     van de verontreiniging in het kader van de Wbb afgerond.<br clear="none">
                                     Het gegeven kan een nieuwe waarde krijgen bij voortgang in de aanpak van de bodemverontreiniging.
@@ -2413,7 +2413,7 @@
                                  
                                  <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>kader aanlevering</em> gelijk is aan <em>OW.</em>
                                     <br clear="none">
-                                    De maximale einddiepte moet groter zijn dan de <em>begindiepte</em> van het <em>Gesaneerd gebied</em>.</p>
+                                    De <em>maximale einddiepte</em> moet groter zijn dan de <em>begindiepte</em> van het <em>Aangepakt gebied</em>.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -2653,8 +2653,8 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_association_Model_Aangepaktgebied_sadevaluatieverslag">
-                     <h4>  sad evaluatieverslag</h4>
+                  <section id="detail_association_Model_Aangepaktgebied_evaluatieverslag">
+                     <h4>  evaluatieverslag</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
                         <colgroup style="width: 70%;"></colgroup>
@@ -2686,7 +2686,7 @@
                            </tr>
                            <tr>
                               <th>Relatierol naam</th>
-                              <td>sad evaluatieverslag</td>
+                              <td>evaluatieverslag</td>
                            </tr>
                            <tr>
                               <th>Bron</th>
@@ -2973,6 +2973,55 @@
                         </tbody>
                      </table>
                      </section>
+                  <section id="detail_attribute_Model_Verontreinigdgebied_contour">
+                     <h4>  contour</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Verontreinigd gebied</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De grens van het gebied van de vastgestelde verontreiniging. </p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>GM_MultiSurface</td>
+                           </tr>
+                           <tr>
+                              <th>Materiële geschiedenis</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>De contour van de verontreiniging is met behulp van het toetsingskader, op basis van
+                                    de gemeten concentraties uit het bodemonderzoek bepaald.</p>
+                                 </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
                   <section id="detail_attribute_Model_Verontreinigdgebied_compartiment">
                      <h4>  compartiment</h4>
                      
@@ -3093,55 +3142,6 @@
                                     <em>bodemsanering</em>, en vanaf 1-1-2008 is dat voor grondwater de <em>Circulaire</em>
                                     <em>bodemsanering</em> en voor grond zijn dat de achtergrondwaarden in het <em>Besluit</em>
                                     <em>bodemkwaliteit</em> (bijlage in regeling).</p>
-                                 </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section>
-                  <section id="detail_attribute_Model_Verontreinigdgebied_contour">
-                     <h4>  contour</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Verontreinigd gebied</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>De grens van het gebied van de vastgestelde verontreiniging. </p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>GM_MultiSurface</td>
-                           </tr>
-                           <tr>
-                              <th>Materiële geschiedenis</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 
-                                 <p>De contour van de verontreiniging is met behulp van het toetsingskader, op basis van
-                                    de gemeten concentraties uit het bodemonderzoek bepaald.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -3366,8 +3366,8 @@
                                  <p>Wanneer de verontreiniging is gesaneerd, kan de bronhouder ervoor kiezen om een einddatum
                                     aan het <em>Verontreinigd gebied</em> te koppelen. Deze is gelijk aan de datum inwerkingtreding van het instemmingsbesluit
                                     evaluatieverslag sanering.<br clear="none">
-                                    Uit het ontbreken van de einddatum mag niet worden afgeleid dat de verontreiniging
-                                    is verwijderd.</p>
+                                    Uit het ontbreken van de einddatum kan niet worden afgeleid dat de verontreiniging
+                                    nog aanwezig is.</p>
                                  </td>
                            </tr>
                         </tbody>
