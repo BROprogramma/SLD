@@ -1,5 +1,5 @@
 [h2 is vereist vanwege ReSpec]: #
-<h2>Grondwatermonitoringput</h2>
+<h2>Overheidsbesluit bodemverontreiniging</h2>
 
 # Inleiding
 De catalogus voor het overheidsbesluit bodemverontreiniging beschrijft de gegevens die in de registratie ondergrond zijn opgenomen van een gebied waarin bodemverontreiniging is geconstateerd en/of aangepakt vanuit het vakgebied milieukwaliteit.
