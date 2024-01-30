@@ -43,19 +43,19 @@ Zoals aangegeven in paragraaf 4.1 kunnen gegevens onder twee verschillende kader
 ## Bodemlocatie
 Deze entiteit beschrijft de eenheid (of aggregatie van kleinere eenheden) die als één geheel is aangepakt bij het onderzoek naar en de aanpak van bodemverontreiniging. De entiteit bevat een aantal algemene gegevens die betrekking hebben op het registratieobject zelf, zoals: de unieke identificatie (zowel binnen het Bodeminformatiesysteem als in de dossiers van het bevoegd gezag), de naam en ruimtelijke begrenzing van de locatie, en het van toepassing zijnde kader van aanlevering aan de BRO. Tevens bevat deze entiteit het zogenaamde ‘SIKB-ID’ (unieke SIKB0101 Identificatie in de vorm van een GUID) waaronder de bodemlocatie in de ketensystemen is vastgelegd .Daarnaast bevat de entiteit enkele gegevens die betrekking hebben op de afhandeling door bevoegd gezag zoals de vervolgactie Wbb.
 
-## Aangepakt gebied
-Deze entiteit bevat de gegevens van de uitgevoerde bodemsanering of graafwerkzaamheden (Ow: graven in meer dan 25m3 in grond boven Interventiewaarde). Het gebied wordt beschreven aan de hand van enkele unieke kenmerken zoal SIKB-ID, locatiecode BIS, contour en compartiment. Daarnaast worden enkele gegevens over de aanpak genoemd: begin- en einddiepte, type saneringsaanpak, einddatum van de werkzaamheden. Het is mogelijk om een als milieuhygiënisch bodemonderzoek (SAD) geregistreerd bomonderzoek (evaluatierapport) te koppelen aan deze entiteit.
-
-## Verontreinigd gebied
-Deze entiteit bevat de gegevens van de bodemverontreiniging zoals afgebakend met een verontreinigingscontour. De entiteit bevat onder meer een aantal gegevens om het gebied te identificeren (SIKB-ID) en die aangeven wat de aard en omvang van de verontreiniging is: overschreden toetsingswaarde, compartiment en dieptetraject. De datum waarop de verontreiniging is vastgesteld zowel als de datum waarop de verontreiniging niet meer aanwezig is, kunnen worden geregistreerd.
-
-## Nazorggebied
-Deze entiteit bevat de gegevens van de vastgestelde nazorg en eventuele beperkingen die na afloop van de sanering zijn opgelegd. Naast identificerende kenmerken (SIKB-ID en contour) is het mogelijk aan te geven hoe lang de nazorg van toepassing is en op welke datum deze inwerking is getreden. In de bijbehorende Nazorgmaatregel kan worden gespecificeerd welke gebruiksbeperking is opgelegd.
-
 ## Besluit
 Deze entiteit bevat de gegevens van besluiten en beschikkingen zoals door het bevoegd gezag zijn vastgelegd. Dit zijn doorgaans besluiten die zijn genomen in het kader van de Wbb over de vaststelling en aanpak van de bodemverontreiniging.
 
 Deze entiteit bevat de gegevens die het besluit identificeren (SIKB-ID en kenmerk van het besluit) en inzicht geven in het besluittype en de datum waarop het besluit bekend is gemaakt.
+
+## Verontreinigd gebied
+Deze entiteit bevat de gegevens van de bodemverontreiniging zoals afgebakend met een verontreinigingscontour. De entiteit bevat onder meer een aantal gegevens om het gebied te identificeren (SIKB-ID) en die aangeven wat de aard en omvang van de verontreiniging is: overschreden toetsingswaarde, compartiment en dieptetraject. De datum waarop de verontreiniging is vastgesteld zowel als de datum waarop de verontreiniging niet meer aanwezig is, kunnen worden geregistreerd.
+
+## Aangepakt gebied
+Deze entiteit bevat de gegevens van de uitgevoerde bodemsanering of graafwerkzaamheden (Ow: graven in meer dan 25m3 in grond boven Interventiewaarde). Het gebied wordt beschreven aan de hand van enkele unieke kenmerken zoal SIKB-ID, locatiecode BIS, contour en compartiment. Daarnaast worden enkele gegevens over de aanpak genoemd: begin- en einddiepte, type saneringsaanpak, einddatum van de werkzaamheden. Het is mogelijk om een als milieuhygiënisch bodemonderzoek (SAD) geregistreerd bomonderzoek (evaluatierapport) te koppelen aan deze entiteit.
+
+## Nazorggebied
+Deze entiteit bevat de gegevens van de vastgestelde nazorg en eventuele beperkingen die na afloop van de sanering zijn opgelegd. Naast identificerende kenmerken (SIKB-ID en contour) is het mogelijk aan te geven hoe lang de nazorg van toepassing is en op welke datum deze inwerking is getreden. In de bijbehorende Nazorgmaatregel kan worden gespecificeerd welke gebruiksbeperking is opgelegd.
 
 # INSPIRE
 Het doel van de Europese kaderrichtlijn INSPIRE is het harmoniseren en openbaar maken van ruimtelijke gegevens van overheidsorganisaties ten behoeve van het milieubeleid. Het registratieobject overheidsbesluit bodemverontreiniging valt niet onder een bestaand INSPIRE-thema. Mogelijk zal hier op een later tijdstip invulling aan worden gegeven.
