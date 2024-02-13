@@ -5,9 +5,9 @@
 De catalogus voor het overheidsbesluit bodemverontreiniging beschrijft de gegevens die in de registratie ondergrond zijn opgenomen over een gebied waarin bodemverontreiniging is geconstateerd en/of aangepakt vanuit het vakgebied milieukwaliteit. 
 
 Op 1 januari 2024 is de Omgevingswet (Ow) in werking getreden. De Wet bodembescherming (Wbb) is hierin opgegaan. Een deel van de dossiers over bodemverontreinigingen is in de zogenaamde ‘warme overdracht’ overgedragen naar een nieuw bevoegd gezag (doorgaans van provincie naar een gemeente). Voor een ander deel van deze dossiers geldt overgangsbeleid onder het regime van de Wbb. Vanaf 1 januari 2024 wordt ook nieuwe informatie gegenereerd onder het regime van de Ow. We herkennen drie mogelijke categorieën van type gegevens die binnen SLD mogelijk zijn. Bij het opstellen van de catalogus is rekening gehouden met deze 3 categorieën van gegevens:
-*	Ontstaan vóór 1-1-2024 onder het regime van de Wbb, afgesloten en daarmee statisch. Zo nodig onderdeel van ‘warme overdracht’ naar nieuw bevoegd gezag Ow. 
-*	Ontstaan vóór 1-1-2024 onder het regime van de Wbb, nog lopend en vervolg onder het overgangsrecht op basis van het regime Wbb.
-*	Ontstaan na 1-1-2024 onder het regime van de Ow
+-	Ontstaan vóór 1-1-2024 onder het regime van de Wbb, afgesloten en daarmee statisch. Zo nodig onderdeel van ‘warme overdracht’ naar nieuw bevoegd gezag Ow. 
+-	Ontstaan vóór 1-1-2024 onder het regime van de Wbb, nog lopend en vervolg onder het overgangsrecht op basis van het regime Wbb.
+-	Ontstaan na 1-1-2024 onder het regime van de Ow
 
 Een overheidsbesluit bodemverontreiniging bestaat uit de gegevens die bepalend zijn geweest in de procedure van een bevoegd gezag bij de beoordeling en/of afhandeling van bodemverontreiniging. De locatie is vastgelegd in de bodemlocatie (regime Wbb) of het aangepakt gebied (regime Ow). Onder het Wbb regime kunnen besluiten en extra gegevens worden geregistreerd over de verontreinigingscontour of nazorgcontour. Onder het regime van de Ow beperkt de registratie in de BRO zich tot informatie over het aangepakt gebied.
 
@@ -20,7 +20,7 @@ De term voor het registratieobject Overheidsbesluit bodemverontreiniging heeft e
 Deze entiteit bevat twee gegevensgroepen; de _Registratiegeschiedenis_ (BRO generiek) en de _Gestandaardiseerde locatie_ (BRO generiek).
 
 ## Keuze Bodemlocatie of Aangepakt gebied
-Zoals aangegeven in de [inleiding](#inleiding) kunnen gegevens zijn ontstaan onder twee verschillende wettelijke regimes: Wbb of Ow. Registraties die ontstaan zijn onder het regime van de Wbb (ongeacht of de aanpak is afgerond of dat sprake is van overgangsrecht) worden als ‘Bodemlocatie’ opgenomen. Registraties die zijn ontstaan onder het regime van de Ow worden vastgelegd als ‘Aangepakt gebied’.
+Zoals aangegeven in de inleiding kunnen gegevens zijn ontstaan onder twee verschillende wettelijke regimes: Wbb of Ow. Registraties die ontstaan zijn onder het regime van de Wbb (ongeacht of de aanpak is afgerond of dat sprake is van overgangsrecht) worden als ‘Bodemlocatie’ opgenomen. Registraties die zijn ontstaan onder het regime van de Ow worden vastgelegd als ‘Aangepakt gebied’.
 
 ## Registratiegeschiedenis
 De registratiegeschiedenis van een overheidsbesluit bodemverontreiniging geeft de essentie van de geschiedenis van het object in de registratie ondergrond, de formele geschiedenis. De registratiegeschiedenis vertelt bijvoorbeeld wanneer een object is geregistreerd en of er na registratie correcties zijn doorgevoerd. Deze gegevensgroep wordt niet aangeleverd maar intern binnen de registratie ondergrond gegenereerd.
