@@ -425,7 +425,7 @@
                </tbody>
             </table>
             </section>
-         <section id="detail_d63872e2862">
+         <section id="detail_d64065e2862">
             <h4>  registratiegeschiedenis</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -463,7 +463,7 @@
                </tbody>
             </table>
          </section>
-         <section id="detail_d63872e3047">
+         <section id="detail_d64065e3047">
             <h4>  gestandaardiseerde locatie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -566,8 +566,8 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het <em>Overheidsbesluit bodemverontreiniging</em> betreft een <em>Bodemlocatie</em> wanneer de waarde van het attribuut <em>kader aanlevering</em> van de entiteit <em>Overheidsbesluit bodemverontreiniging</em> gelijk is aan <em>WBB</em>.<br clear="none">
-                           Het <em>Overheidsbesluit bodemverontreiniging</em> betreft een <em>Aangepakt gebied</em> wanneer de waarde van het attribuut <em>kader aanlevering</em> van de entiteit <em>Overheidsbesluit bodemverontreiniging</em> gelijk is aan <em>OW</em>.</p>
+                        <p>Het <em>Overheidsbesluit bodemverontreiniging</em> betreft een <em>Bodemlocatie</em> wanneer de waarde van het attribuut <em>kader aanlevering</em> van de entiteit <em>Overheidsbesluit bodemverontreiniging</em> gelijk is aan <em>WetBodembescherming</em>.<br clear="none">
+                           Het <em>Overheidsbesluit bodemverontreiniging</em> betreft een <em>Aangepakt gebied</em> wanneer de waarde van het attribuut <em>kader aanlevering</em> van de entiteit <em>Overheidsbesluit bodemverontreiniging</em> gelijk is aan <em>Omgevingswet</em>.</p>
                         </td>
                   </tr>
                   <tr>
@@ -1282,16 +1282,6 @@
                         door de basisregistratie ondergrond zijn getransformeerd.</p>
                      </td>
                </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     
-                     <p>De gegevens staan niet in een brondocument. De gestandaardiseerde locatie wordt door
-                        de basisregistratie ondergrond berekend ten behoeve van afnemers. Het maakt het mogelijk
-                        alle gegevens in de registratie ondergrond in één en hetzelfde referentiestelsel te
-                        ontsluiten.</p>
-                     </td>
-               </tr>
             </tbody>
          </table>
          <section id="detail_attribute_Model_Gestandaardiseerdelocatie_locatie">
@@ -1340,7 +1330,11 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>Het standaard referentiestelsel is ETRS89 (European Terrestrial Reference System 1989).</p>
+                        <p>De gegevens staan niet in een brondocument. De gestandaardiseerde locatie wordt door
+                           de basisregistratie ondergrond berekend ten behoeve van afnemers. Het maakt het mogelijk
+                           alle gegevens in de registratie ondergrond in één en hetzelfde referentiestelsel te
+                           ontsluiten.<br clear="none">
+                           Het standaard referentiestelsel is ETRS89 (European Terrestrial Reference System 1989).</p>
                         </td>
                   </tr>
                </tbody>
@@ -1423,8 +1417,10 @@
                   <th>Toelichting</th>
                   <td>
                      
-                     <p>De grens van een locatie valt niet per se samen met de grens van één geval van bodemverontreiniging.
-                        Een locatie kan meerdere gevallen bevatten.<br clear="none">
+                     <p>De grens van een bodemlocatie valt niet per se samen met de grens van één geval van
+                        bodemverontreiniging. Een locatie kan meerdere gevallen bevatten. Het kan ook voorkomen
+                        dat een bodemlocatie is aangemaakt door een niet-bevoegd gezag Wet bodembescherming
+                        op basis van een uitgevoerd milieuhygiënisch bodemonderzoek.<br clear="none">
                         Bodemlocaties kunnen elkaar overlappen.</p>
                      </td>
                </tr>
@@ -1535,14 +1531,6 @@
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Tekst 11</td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>De <em>locatiecode BIS</em> moet uniek zijn binnen de set Overheidsbesluiten bodemverontreiniging in de registratie
-                           ondergrond.</p>
-                        </td>
                   </tr>
                   <tr>
                      <th>Materiële geschiedenis</th>
@@ -1811,13 +1799,15 @@
                            Wanneer de bodemlocatie voldoende is onderzocht of voldoende is gesaneerd, is de aanpak
                            van de verontreiniging in het kader van de Wbb afgerond.<br clear="none">
                            Het gegeven kan een nieuwe waarde krijgen bij voortgang in de aanpak van de bodemverontreiniging.
-                           In dat geval blijft ook de oude waarde behouden in de registratie ondergrond.</p>
+                           In dat geval blijft ook de oude waarde behouden in de registratie ondergrond.<br clear="none">
+                           Bij gegevens aangeleverd onder IMBRO/A is de <em>vervolgactie Wbb</em> niet altijd vastgelegd. Aan het eventueel ontbreken van het gegeven kan geen bijzondere
+                           betekenis worden gegeven.</p>
                         </td>
                   </tr>
                </tbody>
             </table>
             </section>
-         <section id="detail_d63872e8309">
+         <section id="detail_d64065e8262">
             <h4>  locatiegeschiedenis</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -2155,7 +2145,7 @@
                </tbody>
             </table>
             </section>
-         <section id="detail_d63872e8855">
+         <section id="detail_d64065e8808">
             <h4>  gebeurtenis</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -2521,6 +2511,17 @@
                      <td>GM_MultiSurface</td>
                   </tr>
                   <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>Het gebied ligt in Nederland en aan de landzijde van de UNCLOS-basislijn.<br clear="none">
+                           Het referentiestelsel moet gelijk zijn aan het referentiestelsel van het attribuut<br clear="none">
+                           <em>begrenzing</em> van de entiteit <em>Bodemlocatie</em> wanneer de waarde van het attribuut <em>kader aanlevering</em> gelijk is aan <em>WetBodembescherming</em>.<br clear="none">
+                           Het referentiestelsel moet gelijk zijn aan RD of ETRS89 wanneer de waarde van het
+                           attribuut <em>kader aanlevering</em> gelijk is aan <em>Omgevingswet</em>.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Materiële geschiedenis</th>
                      <td>Nee</td>
                   </tr>
@@ -2631,8 +2632,8 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>kader aanlevering</em> gelijk is aan <em>OW.</em>
-                           </p>
+                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>kader aanlevering</em> gelijk is aan <em>Omgevingswet</em>.<br clear="none">
+                           De waarde van het attribuut mag niet groter zijn dan <em>20</em> wanneer de waarde van het attribuut <em>kader aanlevering</em> gelijk is aan <em>Omgevingswet</em>.</p>
                         </td>
                   </tr>
                   <tr>
@@ -2643,7 +2644,10 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>De begindiepte wordt weergegeven ten opzichte van het maaiveld.</p>
+                        <p>De begindiepte wordt weergegeven ten opzichte van het maaiveld.<br clear="none">
+                           Bij gegevens aangeleverd onder IMBRO/A onder het regime van de Wet bodembescherming
+                           (Wbb) is <em>begindiepte</em> niet altijd vastgelegd. Aan het eventueel ontbreken van het gegeven kan geen bijzondere
+                           betekenis worden gegeven.</p>
                         </td>
                   </tr>
                </tbody>
@@ -2690,15 +2694,16 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Waardebereik</th>
-                     <td> vanaf 0</td>
+                     <td>0 tot 50</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>kader aanlevering</em> gelijk is aan <em>OW.</em>
+                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>kader aanlevering</em> gelijk is aan <em>Omgevingswet.</em>
                            <br clear="none">
-                           De <em>maximale einddiepte</em> moet groter zijn dan de <em>begindiepte</em> van het <em>Aangepakt gebied</em>.</p>
+                           De <em>maximale einddiepte</em> moet groter zijn dan de <em>begindiepte</em> van het <em>Aangepakt gebied</em>.<br clear="none">
+                           De waarde van het attribuut mag niet groter zijn dan <em>20</em> wanneer de waarde van het attribuut <em>kader aanlevering</em> gelijk is aan <em>Omgevingswet</em>.</p>
                         </td>
                   </tr>
                   <tr>
@@ -2709,7 +2714,10 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>De maximale einddiepte wordt weergegeven ten opzichte van het maaiveld.</p>
+                        <p>De maximale einddiepte wordt weergegeven ten opzichte van het maaiveld.<br clear="none">
+                           Bij gegevens aangeleverd onder IMBRO/A onder het regime van de Wet bodembescherming
+                           (Wbb) is <em>maximale einddiepte</em> niet altijd vastgelegd. Aan het eventueel ontbreken van het gegeven kan geen bijzondere
+                           betekenis worden gegeven.</p>
                         </td>
                   </tr>
                </tbody>
@@ -2755,7 +2763,7 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>kader aanlevering</em> gelijk is aan <em>OW.</em>
+                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>kader aanlevering</em> gelijk is aan <em>Omgevingswet.</em>
                            </p>
                         </td>
                   </tr>
@@ -2770,7 +2778,10 @@
                         <p>Onder het regime van de Wet bodembescherming is deze datum gelijk aan de datum van
                            het instemmingsbesluit dat het bevoegd gezag heeft genomen. Onder het regime van de
                            Omgevingswet is deze datum gelijk aan de datum van het evaluatierapport dat door het
-                           bevoegd gezag is geaccepteerd.</p>
+                           bevoegd gezag is geaccepteerd.<br clear="none">
+                           Bij gegevens aangeleverd onder IMBRO/A onder het regime van de Wet bodembescherming
+                           (Wbb) is <em>einddatum activiteit</em> niet altijd vastgelegd. Aan het eventueel ontbreken van het gegeven kan geen bijzondere
+                           betekenis worden gegeven.</p>
                         </td>
                   </tr>
                </tbody>
@@ -2822,7 +2833,8 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>kader aanlevering</em> gelijk is aan <em>Wbb</em>.</p>
+                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>kader aanlevering</em> gelijk is aan <em>Omgevingswet</em>.<br clear="none">
+                           Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>kader aanlevering</em> gelijk is aan <em>WetBodembescherming</em>.</p>
                         </td>
                   </tr>
                   <tr>
@@ -2878,8 +2890,10 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>kader aanlevering</em> gelijk is aan <em>OW.</em>
-                           </p>
+                        <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>kader aanlevering</em> gelijk is aan <em>Omgevingswet</em>.<br clear="none">
+                           Bij gegevens aangeleverd onder IMBRO/A onder het regime van de Wet bodembescherming
+                           (Wbb) is <em>saneringsvariant bovengrond</em> niet altijd vastgelegd. Aan het eventueel ontbreken van het gegeven kan geen bijzondere
+                           betekenis worden gegeven.</p>
                         </td>
                   </tr>
                   <tr>
@@ -2935,8 +2949,10 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>kader aanlevering</em> gelijk is aan <em>OW.</em>
-                           </p>
+                        <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>kader aanlevering</em> gelijk is aan <em>Omgevingswet</em>.<br clear="none">
+                           Bij gegevens aangeleverd onder IMBRO/A onder het regime van de Wet bodembescherming
+                           (Wbb) is <em>saneringsvariant ondergrond</em> niet altijd vastgelegd. Aan het eventueel ontbreken van het gegeven kan geen bijzondere
+                           betekenis worden gegeven.</p>
                         </td>
                   </tr>
                   <tr>
@@ -3034,7 +3050,7 @@
                   <th>Regels</th>
                   <td>
                      
-                     <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>kader aanlevering</em> van de entiteit <em>Overheidsbesluit bodemverontreiniging</em> gelijk is aan <em>OW</em>.</p>
+                     <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>kader aanlevering</em> van de entiteit <em>Overheidsbesluit bodemverontreiniging</em> gelijk is aan <em>Omgevingswet</em>.</p>
                      </td>
                </tr>
                <tr>
@@ -3309,6 +3325,15 @@
                      <td>GM_MultiSurface</td>
                   </tr>
                   <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>Het gebied ligt in Nederland en aan de landzijde van de UNCLOS-basislijn.<br clear="none">
+                           Het referentiestelsel moet gelijk zijn aan het referentiestelsel van het attribuut
+                           <em>begrenzing</em> van de entiteit <em>Bodemlocatie</em>.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Materiële geschiedenis</th>
                      <td>Nee</td>
                   </tr>
@@ -3432,7 +3457,9 @@
                         
                         <p>De toetsingswaarde in het kader van de Wbb is de interventiewaarde (I-waarde).<br clear="none">
                            In sommige gevallen is een verontreinigd gebied op basis van de streefwaarde (S-waarde)
-                           geregistreerd.</p>
+                           geregistreerd.<br clear="none">
+                           Bij gegevens aangeleverd onder IMBRO/A is <em>overschreden toetsingswaarde</em> niet altijd vastgelegd. Aan het eventueel ontbreken van het gegeven kan geen bijzondere
+                           betekenis worden gegeven.</p>
                         </td>
                   </tr>
                </tbody>
@@ -3489,7 +3516,9 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>De diepte is vastgelegd ten opzichte van het maaiveld. </p>
+                        <p>De diepte is vastgelegd ten opzichte van het maaiveld.<br clear="none">
+                           Bij gegevens aangeleverd onder IMBRO/A is <em>begindiepte</em> niet altijd vastgelegd. Aan het eventueel ontbreken van het gegeven kan geen bijzondere
+                           betekenis worden gegeven.</p>
                         </td>
                   </tr>
                </tbody>
@@ -3536,7 +3565,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Waardebereik</th>
-                     <td> vanaf 0</td>
+                     <td>0 tot 50</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
@@ -3553,7 +3582,9 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>De diepte is vastgelegd ten opzichte van het maaiveld.</p>
+                        <p>De diepte is vastgelegd ten opzichte van het maaiveld.<br clear="none">
+                           Bij gegevens aangeleverd onder IMBRO/A is <em>maximale einddiepte</em> niet altijd vastgelegd. Aan het eventueel ontbreken van het gegeven kan geen bijzondere
+                           betekenis worden gegeven.</p>
                         </td>
                   </tr>
                </tbody>
@@ -3604,13 +3635,15 @@
                      <td>
                         
                         <p>Deze datum is de datum inwerkingtreding van het onderliggende besluit dat het bevoegd
-                           gezag Wet bodembescherming heeft genomen.</p>
+                           gezag Wet bodembescherming heeft genomen.<br clear="none">
+                           Bij gegevens aangeleverd onder IMBRO/A is <em>datum vastgesteld</em> niet altijd vastgelegd. Aan het eventueel ontbreken van het gegeven kan geen bijzondere
+                           betekenis worden gegeven.</p>
                         </td>
                   </tr>
                </tbody>
             </table>
             </section>
-         <section id="detail_d63872e13780">
+         <section id="detail_d64065e13927">
             <h4>  aard verontreiniging</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -3650,7 +3683,9 @@
                      <td>
                         
                         <p>De aard van de verontreiniging komt tot uiting in een lijst met de chemische stoffen
-                           die de verontreiniging kenmerken.</p>
+                           die de verontreiniging kenmerken.<br clear="none">
+                           Bij gegevens aangeleverd onder IMBRO/A is <em>aard verontreiniging</em> niet altijd vastgelegd. Aan het eventueel ontbreken van het gegeven kan geen bijzondere
+                           betekenis worden gegeven.</p>
                         </td>
                   </tr>
                </tbody>
@@ -3878,6 +3913,15 @@
                      <td>GM_MultiSurface</td>
                   </tr>
                   <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>Het gebied ligt in Nederland en aan de landzijde van de UNCLOS-basislijn.<br clear="none">
+                           Het referentiestelsel moet gelijk zijn aan het referentiestelsel van het attribuut
+                           <em>begrenzing</em> van de entiteit <em>Bodemlocatie</em>.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Materiële geschiedenis</th>
                      <td>Nee</td>
                   </tr>
@@ -3935,7 +3979,9 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>De diepte is vastgelegd ten opzichte van het maaiveld.</p>
+                        <p>De diepte is vastgelegd ten opzichte van het maaiveld.<br clear="none">
+                           Bij gegevens aangeleverd onder IMBRO/A is <em>begindiepte</em> niet altijd vastgelegd. Aan het eventueel ontbreken van het gegeven kan geen bijzondere
+                           betekenis worden gegeven.</p>
                         </td>
                   </tr>
                </tbody>
@@ -3982,7 +4028,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Waardebereik</th>
-                     <td> vanaf 0</td>
+                     <td>0 tot 50</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
@@ -3999,7 +4045,9 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>De diepte is vastgelegd ten opzichte van het maaiveld.</p>
+                        <p>De diepte is vastgelegd ten opzichte van het maaiveld.<br clear="none">
+                           Bij gegevens aangeleverd onder IMBRO/A is <em>maximale einddiepte</em> niet altijd vastgelegd. Aan het eventueel ontbreken van het gegeven kan geen bijzondere
+                           betekenis worden gegeven.</p>
                         </td>
                   </tr>
                </tbody>
@@ -4020,7 +4068,9 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>De aanduiding of de nazorg oneindig durend is.</p>
+                        <p>De aanduiding of de nazorg oneindig durend is.<br clear="none">
+                           Bij gegevens aangeleverd onder IMBRO/A is <em>nazorg oneindig</em> niet altijd vastgelegd. Aan het eventueel ontbreken van het gegeven kan geen bijzondere
+                           betekenis worden gegeven.</p>
                         </td>
                   </tr>
                   <tr>
@@ -4094,6 +4144,14 @@
                      <th>Materiële geschiedenis</th>
                      <td>Nee</td>
                   </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Dit gegeven zal alleen aanwezig zijn als nazorg niet oneindig durend is, maar kan
+                           ook dan ontbreken.</p>
+                        </td>
+                  </tr>
                </tbody>
             </table>
             </section>
@@ -4143,7 +4201,9 @@
                         
                         <p>Dit is de datum van het onderliggende instemmingsbesluit met betrekking tot de nazorgmaatregelen,
                            inclusief het nazorgplan, dat het bevoegd gezag Wet bodembescherming heeft genomen
-                           (conform Wbb art. 39d).</p>
+                           (conform Wbb art. 39d).<br clear="none">
+                           Bij gegevens aangeleverd onder IMBRO/A is <em>datum vastgesteld</em> niet altijd vastgelegd. Aan het eventueel ontbreken van het gegeven kan geen bijzondere
+                           betekenis worden gegeven.</p>
                         </td>
                   </tr>
                </tbody>
@@ -4189,8 +4249,7 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>nazorg oneindig</em> gelijk is aan <em>ja</em>.<br clear="none">
-                           De datum mag niet liggen voor de <em>datum vastgesteld</em>.<br clear="none">
+                        <p>De datum mag niet liggen voor de <em>datum vastgesteld</em>.<br clear="none">
                            De datum mag niet in de toekomst liggen.</p>
                         </td>
                   </tr>
@@ -4203,7 +4262,7 @@
                      <td>
                         
                         <p>De einddatum wordt pas vastgelegd wanneer een besluit is genomen dat de nazorg is
-                           beëindigd.<br clear="none">
+                           beëindigd of gewijzigd.<br clear="none">
                            Uit het ontbreken van de einddatum kan niet worden afgeleid dat de nazorg nog voortduurt.</p>
                         </td>
                   </tr>
@@ -4249,6 +4308,14 @@
                   <tr>
                      <th>Materiële geschiedenis</th>
                      <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Bij gegevens aangeleverd onder IMBRO/A zijn de nazorgmaatregelen niet altijd vastgelegd.
+                           Aan het eventueel ontbreken van het gegeven kan geen bijzondere betekenis worden gegeven.</p>
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -4546,6 +4613,13 @@
                      <th>Materiële geschiedenis</th>
                      <td>Nee</td>
                   </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Bij gegevens aangeleverd onder IMBRO/A is <em>besluitkenmerk</em> niet altijd vastgelegd.</p>
+                        </td>
+                  </tr>
                </tbody>
             </table>
             </section>
@@ -4595,6 +4669,13 @@
                      <th>Materiële geschiedenis</th>
                      <td>Nee</td>
                   </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Bij gegevens aangeleverd onder IMBRO/A is <em>besluittype</em> niet altijd vastgelegd.</p>
+                        </td>
+                  </tr>
                </tbody>
             </table>
             </section>
@@ -4642,6 +4723,14 @@
                      <th>Materiële geschiedenis</th>
                      <td>Nee</td>
                   </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Bij gegevens aangeleverd onder IMBRO/A is <em>datum bekendmaking</em> niet altijd vastgelegd. Aan het eventueel ontbreken van het gegeven kan geen bijzondere
+                           betekenis worden gegeven.</p>
+                        </td>
+                  </tr>
                </tbody>
             </table>
             </section>
@@ -4660,9 +4749,9 @@
                   
                   
                   <p>De lijst met aanpakken volgens welke er in een gebied wordt gesaneerd of zonder saneringsdoelstelling
-                     wordt ontgraven. De waardelijst bevat een selectie van waarden uit een nog niet bestaande
-                     SIKB0101-domeintabel waarvoor bij SIKB een wijzigingsverzoek is ingediend om die op
-                     te nemen in het SIKB0101 Uitwisselformaat.</p>
+                     wordt ontgraven. De waardelijst bevat waarden uit een nog niet bestaande SIKB0101-domeintabel
+                     waarvoor bij SIKB een wijzigingsverzoek is ingediend om die op te nemen in het SIKB0101
+                     Uitwisselformaat.</p>
                   
                   
                   
@@ -32087,7 +32176,7 @@
                <th>Omschrijving</th>
             </tr>
             <tr>
-               <td>WBB</td>
+               <td>WetBodembescherming</td>
                <td></td>
                <td>✔</td>
                <td>
@@ -32096,7 +32185,7 @@
                   </td>
             </tr>
             <tr>
-               <td>OW</td>
+               <td>Omgevingswet</td>
                <td>✔</td>
                <td>✔</td>
                <td>
