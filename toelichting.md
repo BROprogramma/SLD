@@ -20,7 +20,7 @@ De term voor het registratieobject Overheidsbesluit bodemverontreiniging heeft e
 Deze entiteit bevat twee gegevensgroepen; de _Registratiegeschiedenis_ (BRO generiek) en de _Gestandaardiseerde locatie_ (BRO generiek).
 
 ## Keuze Bodemlocatie of Aangepakt gebied
-Zoals aangegeven in de inleiding kunnen gegevens zijn ontstaan onder twee verschillende wettelijke regimes: Wbb of Ow. Registraties die ontstaan zijn onder het regime van de Wbb (ongeacht of de aanpak is afgerond of dat sprake is van overgangsrecht) worden als ‘Bodemlocatie’ opgenomen. Registraties die zijn ontstaan onder het regime van de Ow worden vastgelegd als ‘Aangepakt gebied’.
+Zoals aangegeven in de [inleiding](#inleiding-0) kunnen gegevens zijn ontstaan onder twee verschillende wettelijke regimes: Wbb of Ow. Registraties die ontstaan zijn onder het regime van de Wbb (ongeacht of de aanpak is afgerond of dat sprake is van overgangsrecht) worden als ‘Bodemlocatie’ opgenomen. Registraties die zijn ontstaan onder het regime van de Ow worden vastgelegd als ‘Aangepakt gebied’.
 
 ## Registratiegeschiedenis
 De registratiegeschiedenis van een overheidsbesluit bodemverontreiniging geeft de essentie van de geschiedenis van het object in de registratie ondergrond, de formele geschiedenis. De registratiegeschiedenis vertelt bijvoorbeeld wanneer een object is geregistreerd en of er na registratie correcties zijn doorgevoerd. Deze gegevensgroep wordt niet aangeleverd maar intern binnen de registratie ondergrond gegenereerd.
