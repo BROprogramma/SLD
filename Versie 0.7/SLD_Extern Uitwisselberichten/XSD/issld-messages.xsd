@@ -30,11 +30,11 @@
     </xs:annotation>
 
     <xs:import namespace="http://www.broservices.nl/xsd/sldcommon/1.0" schemaLocation="sldcommon.xsd"/>
-    <xs:import namespace="http://www.sikb.nl/imsikb0101" schemaLocation="imsikb0101_v14.7.1.xsd"/>
+    <xs:import namespace="http://www.sikb.nl/imsikb0101" schemaLocation="imsikb0101_v14.8.0.xsd"/>
     <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
     <!--
     <xs:import namespace="http://www.broservices.nl/xsd/sldcommon/1.0" schemaLocation="https://schema.broservices.nl/xsd/sld/1.0/sldcommon.xsd"/>
-    <xs:import namespace="http://www.sikb.nl/imsikb0101/1.1" schemaLocation="https://schema.broservices.nl/xsd/imsikb0101/14.7/imsikb0101_v14.7.1.xsd"/>
+    <xs:import namespace="http://www.sikb.nl/imsikb0101/1.1" schemaLocation="https://schema.broservices.nl/xsd/imsikb0101/14.8/imsikb0101_v14.8.0.xsd"/>
     <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
     -->
 
