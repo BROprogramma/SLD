@@ -6,7 +6,7 @@
     xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon-internal/1.0" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xsi:schemaLocation="http://www.broservices.nl/xsd/issld-internal/1.0 ../../XSD/issld-internal-messages.xsd">
-    <!--Disclaimer: dit voorbeeldbericht is gemaakt voor increment 2 (version 0.8.0) van de SLD en valideert tegen de XSD van de innameservice.
+    <!--Disclaimer: dit voorbeeldbericht is gemaakt voor increment 2 (version 0.7) van de SLD en valideert tegen de XSD van de innameservice.
         Het is niet gevalideerd door de innameservice en de inhoud is fictief en vaktechnisch/inhoudelijk niet voorbeeldig.
         xsi:schemaLocation="http://www.broservices.nl/xsd/issld-internal/1.0 https://schema.broservices.nl/xsd/issld-internal/1.0/issld-internal-messages.xsd"/>
 
@@ -16,12 +16,12 @@
     <brocom:requestReference>verzoek_1</brocom:requestReference>
     <!-- Optional: -->
     <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
-    <brocom:qualityRegime>IMBRO</brocom:qualityRegime>
+    <brocom:qualityRegime>IMBRO/A</brocom:qualityRegime>
     <sourceDocument>
         <SLD_StartReport gml:id="id_0001">
             <!-- optional -->
             <objectIdAccountableParty>12345</objectIdAccountableParty>
-            <deliveryContext codeSpace="urn:bro:sld:DeliveryContext">OW</deliveryContext>
+            <deliveryContext codeSpace="urn:bro:sld:DeliveryContext">WBB</deliveryContext>
             <!-- optional -->
             <informationProvider>
                 <!-- Choose one of these 2 options:

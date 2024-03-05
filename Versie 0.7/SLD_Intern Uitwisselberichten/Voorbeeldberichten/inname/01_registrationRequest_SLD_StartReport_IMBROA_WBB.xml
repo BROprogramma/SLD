@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registrationRequest 
+    xmlns="http://www.broservices.nl/xsd/issld-internal/1.0" 
+    xmlns:gml="http://www.opengis.net/gml/3.2" 
+    xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0" 
+    xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon-internal/1.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.broservices.nl/xsd/issld-internal/1.0 ../../XSD/issld-internal-messages.xsd">
+    <!--Disclaimer: dit voorbeeldbericht is gemaakt voor increment 2 (version 0.7) van de SLD en valideert tegen de XSD van de innameservice.
+        Het is niet gevalideerd door de innameservice en de inhoud is fictief en vaktechnisch/inhoudelijk niet voorbeeldig.
+        xsi:schemaLocation="http://www.broservices.nl/xsd/issld-internal/1.0 https://schema.broservices.nl/xsd/issld-internal/1.0/issld-internal-messages.xsd"/>
+
+        Inhoud:
+         * SLD object conform OW volgens intern formaat.
+    -->
+    <brocom:requestReference>verzoek_1</brocom:requestReference>
+    <!-- Optional: -->
+    <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
+    <brocom:qualityRegime>IMBRO/A</brocom:qualityRegime>
+    <sourceDocument>
+        <SLD_StartReport gml:id="id_0001">
+            <!-- optional -->
+            <objectIdAccountableParty>12345</objectIdAccountableParty>
+            <deliveryContext codeSpace="urn:bro:sld:DeliveryContext">WBB</deliveryContext>
+            <!-- optional -->
+            <informationProvider>
+                <!-- Choose one of these 2 options:
+                <brocom:chamberOfCommerceNumber>?</brocom:chamberOfCommerceNumber>
+                <brocom:europeanCompanyRegistrationNumber>?</brocom:europeanCompanyRegistrationNumber>
+                -->
+                <brocom:chamberOfCommerceNumber>12345678</brocom:chamberOfCommerceNumber>
+            </informationProvider>
+            <legalDecisionType>
+                <sldcom:LegalDecisionType>
+                    <!-- Choose one of these 2 options:
+                    <sldcom:SoilLocation gml:id="">?</sldcom:SoilLocation> if <deliveryContext= WBB
+                    <sldcom:HandledArea gml:id="">?</sldcom:HandledArea> if <deliveryContext = OW
+                    -->
+                    <sldcom:SoilLocation gml:id="_f205306d-0260-4b10-9bb5-05368b660446">
+                        <sldcom:identification>f205306d-0260-4b10-9bb5-05368b660446</sldcom:identification>
+                        <sldcom:dossierIdSoilInformationSystem>ZL071500060</sldcom:dossierIdSoilInformationSystem>
+                        <!-- optional -->
+                        <sldcom:dossierIdLocalAuthority>ZL071500060</sldcom:dossierIdLocalAuthority>
+                        <!-- optional -->
+                        <sldcom:followUpWbb codeSpace="urn:bro:sld:FollowUpWbb">registrerenRestverontreiniging</sldcom:followUpWbb>
+                        <!-- optional -->
+                        <sldcom:name>Axelsestraat 163-165</sldcom:name>
+                        <sldcom:deliveredBoundary>                            
+                            <gml:MultiSurface gml:id="_cdc53818-fb86-4037-a36a-902dcc2bfda5" srsName="urn:ogc:def:crs:EPSG::28992">
+                                <gml:surfaceMember>
+                                    <gml:Polygon gml:id="_d3acc364-51ba-4fb3-a19a-cf98bf9f944e" srsName="urn:ogc:def:crs:EPSG::28992">
+                                        <gml:exterior>
+                                            <gml:LinearRing>
+                                                <gml:posList>46889.1 372038.5 46898.8 372028.0 46909.4 372039.7 46915.5 372048.0 46906.7 372059.1 46900.0 372058.3 46890.8 372056.5 46880.8 372050.9 46885.3 372049.7 46889.1 372038.5</gml:posList>
+                                            </gml:LinearRing>
+                                        </gml:exterior>
+                                    </gml:Polygon>
+                                </gml:surfaceMember>
+                            </gml:MultiSurface>
+                        </sldcom:deliveredBoundary>
+                        <!-- 0 or more repetitions -->
+                        <sldcom:handledArea>
+                            <sldcom:HandledArea gml:id="_9867c501-61ba-4a8e-84ba-9734c93cce43">
+                                <sldcom:identification>9867c501-61ba-4a8e-84ba-9734c93cce43</sldcom:identification>
+                                <!-- optional, only for OW not for WBB -->
+                                <!-- <sldcom:dossierIdSoilInformationSystem>AA123412345</sldcom:dossierIdSoilInformationSystem> -->
+                                <sldcom:boundary>
+                                    <gml:MultiSurface gml:id="_1c7dd359-75f9-45d8-b32f-84ac4408bb80">
+                                        <gml:surfaceMember>
+                                            <gml:Polygon gml:id="_a4012463-dc88-4f4c-a99d-866ba2b51884" srsName="urn:ogc:def:crs:EPSG::28992">
+                                                <gml:exterior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList>46897.21 372058.68 46890.68 372056.42 46888.34 372054.7 46888.93 372055.09 46884.55 372052.04 46883.5 372050.09 46884.51 372046.15 46888.22 372040.84 46893.3 372036.62 46902.17 372036.89 46910.37 372042.24 46914.16 372046.73 46910.87 372053.06 46904.98 372057.98 46897.21 372058.68</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:exterior>
+                                                <gml:interior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList>46907.46 372053.26 46908.94 372046.2 46896.88 372040.61 46891.29 372041.49 46886.88 372049.43 46887.17 372050.61 46898.94 372058.39 46907.46 372053.26</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:interior>
+                                            </gml:Polygon>
+                                        </gml:surfaceMember>
+                                    </gml:MultiSurface>
+                                </sldcom:boundary>                                    
+                                <sldcom:compartment codeSpace="urn:bro:sld:Compartment">grond</sldcom:compartment>
+                                <!-- optional -->
+                                <sldcom:beginDepth uom="m">0</sldcom:beginDepth>
+                                <!-- optional -->
+                                <sldcom:maximumEndDepth uom="m">0</sldcom:maximumEndDepth>
+                                <!-- optional -->
+                                <sldcom:activityEndDate>2004-12-13</sldcom:activityEndDate>                                
+                                <!-- optional; only for OW not for WBB  -->
+                                <!-- <sldcom:approach codeSpace="urn:bro:sld:Approach">gecombineerdeSaneringsaanpak</sldcom:approach>-->
+                                <!-- optional; not allowed if <deliveryContext = OW -->
+                                <sldcom:remediationVariantTopsoil codeSpace="urn:bro:sld:RemediationVariantTopsoil">volledigVerwijderdAanvulgrondSchoon</sldcom:remediationVariantTopsoil>
+                                <!-- optional; not allowed if <deliveryContext = OW -->
+                                <sldcom:remediationVariantSubsoil codeSpace="urn:bro:sld:RemediationVariantSubsoil">stabielGeenRestverontreiniging</sldcom:remediationVariantSubsoil>
+                                <!-- not needed for WBB; mandatory if <deliveryContext = OW -->
+                                <!-- <sldcom:sad_evaluationReport>
+                                    <sldcom:SAD_EvaluationReport gml:id="id_0008">
+                                        <sldcom:broId>SAD00000012345</sldcom:broId>
+                                        <sldcom:reportNumber>SAD00000012345</sldcom:reportNumber>
+                                    </sldcom:SAD_EvaluationReport>
+                                </sldcom:sad_evaluationReport>
+                                 -->
+                            </sldcom:HandledArea>
+                        </sldcom:handledArea>
+                        <sldcom:handledArea>
+                            <sldcom:HandledArea gml:id="_f7eee423-38fc-4f39-b40e-3eafb93335ff">
+                                <sldcom:identification>f7eee423-38fc-4f39-b40e-3eafb93335ff</sldcom:identification>
+                                <!-- optional, only for OW not for WBB -->
+                                <!-- <sldcom:dossierIdSoilInformationSystem>AA123412345</sldcom:dossierIdSoilInformationSystem> -->
+                                <sldcom:boundary>
+                                    <gml:MultiSurface gml:id="_0c7dd359-75f9-45d8-b32f-84ac4408bb80">
+                                        <gml:surfaceMember>
+                                            <gml:Polygon gml:id="_94012463-dc88-4f4c-a99d-866ba2b51884" srsName="urn:ogc:def:crs:EPSG::28992">
+                                                <gml:exterior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList>46897.21 372058.68 46890.68 372056.42 46888.34 372054.7 46888.93 372055.09 46884.55 372052.04 46883.5 372050.09 46884.51 372046.15 46888.22 372040.84 46893.3 372036.62 46902.17 372036.89 46910.37 372042.24 46914.16 372046.73 46910.87 372053.06 46904.98 372057.98 46897.21 372058.68</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:exterior>
+                                                <gml:interior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList>46907.46 372053.26 46908.94 372046.2 46896.88 372040.61 46891.29 372041.49 46886.88 372049.43 46887.17 372050.61 46898.94 372058.39 46907.46 372053.26</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:interior>
+                                            </gml:Polygon>
+                                        </gml:surfaceMember>
+                                    </gml:MultiSurface>
+                                </sldcom:boundary>                                    
+                                <sldcom:compartment codeSpace="urn:bro:sld:Compartment">grond</sldcom:compartment>
+                                <!-- optional -->
+                                <sldcom:beginDepth uom="m">0</sldcom:beginDepth>
+                                <!-- optional -->
+                                <sldcom:maximumEndDepth uom="m">0</sldcom:maximumEndDepth>
+                                <!-- optional -->
+                                <sldcom:activityEndDate>2004-12-13</sldcom:activityEndDate>                                
+                                <!-- optional; only for OW not for WBB  -->
+                                <!-- <sldcom:approach codeSpace="urn:bro:sld:Approach">gecombineerdeSaneringsaanpak</sldcom:approach>-->
+                                <!-- optional; not allowed if <deliveryContext = OW -->
+                                <sldcom:remediationVariantTopsoil codeSpace="urn:bro:sld:RemediationVariantTopsoil">aangebrachtVerhardingslaag</sldcom:remediationVariantTopsoil>
+                                <!-- optional; not allowed if <deliveryContext = OW -->
+                                <sldcom:remediationVariantSubsoil codeSpace="urn:bro:sld:RemediationVariantSubsoil">restverontreinigingMonitoring</sldcom:remediationVariantSubsoil>
+                                <!-- not needed for WBB; mandatory if <deliveryContext = OW -->
+                                <!-- <sldcom:sad_evaluationReport>
+                                    <sldcom:SAD_EvaluationReport gml:id="id_0008">
+                                        <sldcom:broId>SAD00000012345</sldcom:broId>
+                                        <sldcom:reportNumber>SAD00000012345</sldcom:reportNumber>
+                                    </sldcom:SAD_EvaluationReport>
+                                </sldcom:sad_evaluationReport>
+                                 -->
+                            </sldcom:HandledArea>
+                        </sldcom:handledArea>
+                        <!-- 0 or more repetitions -->
+                        <sldcom:contaminatedArea>
+                            <sldcom:ContaminatedArea gml:id="_ddd148bf-0f8e-4326-9625-8e4f3020c73c">
+                                <sldcom:identification>ddd148bf-0f8e-4326-9625-8e4f3020c73c</sldcom:identification>
+                                <sldcom:compartment codeSpace="urn:bro:sld:Compartment">grond</sldcom:compartment>
+                                <!-- optional -->
+                                <sldcom:permissibleLimit codeSpace="urn:bro:sld:BenchmarkValue">interventiewaarde</sldcom:permissibleLimit>
+                                <sldcom:boundary>
+                                    <gml:MultiSurface gml:id="_80620516-17e3-413e-90aa-04aebe4a893f">
+                                        <gml:surfaceMember>
+                                            <gml:Polygon gml:id="_9fa3d86c-bdda-4130-979d-76ebc02d6e86" srsName="urn:ogc:def:crs:EPSG::28992">
+                                                <gml:exterior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList>46886.86 372048.12 46887.37 372046.28 46890.65 372046.28 46891.26 372046.18 46903.64 372044.64 46909.07 372045.97 46909.68 372048.43 46907.12 372053.24 46899.96 372055.59 46893.41 372054.77 46887.99 372050.88 46886.86 372048.12</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:exterior>
+                                            </gml:Polygon>
+                                        </gml:surfaceMember>
+                                    </gml:MultiSurface>
+                                </sldcom:boundary>
+                                <!-- optional -->
+                                <sldcom:beginDepth uom="m">0.00</sldcom:beginDepth>
+                                <!-- optional -->
+                                <sldcom:maximumEndDepth uom="m">0.00</sldcom:maximumEndDepth>
+                                <!-- optional -->
+                                <sldcom:dateDecreed>2004-11-11</sldcom:dateDecreed>
+                                <!-- optional -->
+                                <sldcom:endDate>2004-12-13</sldcom:endDate>
+                                <!-- optional -->
+                                <sldcom:contaminationNature>
+                                    <sldcom:ContaminationNature gml:id="id_0011">
+                                        <!-- 1 or more repetitions -->
+                                        <sldcom:chemicalSubstance codeSpace="urn:bro:sld:Parameter">1693</sldcom:chemicalSubstance>
+                                    </sldcom:ContaminationNature>
+                                </sldcom:contaminationNature>
+                            </sldcom:ContaminatedArea>
+                        </sldcom:contaminatedArea>
+                        <sldcom:contaminatedArea>
+                            <sldcom:ContaminatedArea gml:id="_4b5aaf21-1a3c-467f-9916-2ae64e75fbc8">
+                                <sldcom:identification>4b5aaf21-1a3c-467f-9916-2ae64e75fbc8</sldcom:identification>
+                                <sldcom:compartment codeSpace="urn:bro:sld:Compartment">grond</sldcom:compartment>
+                                <!-- optional -->
+                                <sldcom:permissibleLimit codeSpace="urn:bro:sld:BenchmarkValue">interventiewaarde</sldcom:permissibleLimit>
+                                <sldcom:boundary>
+                                    <gml:MultiSurface gml:id="_1e407302-155e-4fd6-a494-b08b35a8aa66" srsName="urn:ogc:def:crs:EPSG::28992">
+                                        <gml:surfaceMember>
+                                            <gml:Polygon gml:id="_a0f1d4b7-a4d1-4e6f-a142-40703b8db31c" srsName="urn:ogc:def:crs:EPSG::28992">
+                                                <gml:exterior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList>46843.64 371998.55 46833.35 372014.73 46822.46 372007.67 46822.46 372007.08 46833.64 371991.49 46843.64 371998.55</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:exterior>
+                                            </gml:Polygon>
+                                        </gml:surfaceMember>
+                                        <gml:surfaceMember>
+                                            <gml:Polygon gml:id="_0da94277-d4d7-43c0-b2df-05ae8e60e3c6" srsName="urn:ogc:def:crs:EPSG::28992">
+                                                <gml:exterior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList>46824.52 372016.2 46818.94 372022.96 46805.7 372013.55 46809.82 372007.37 46824.52 372016.2</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:exterior>
+                                            </gml:Polygon>
+                                        </gml:surfaceMember>
+                                        <gml:surfaceMember>
+                                            <gml:Polygon gml:id="_386a014e-658c-46a5-8ad3-6372ac4595e7" srsName="urn:ogc:def:crs:EPSG::28992">
+                                                <gml:exterior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList>46833.05 372023.26 46830.99 372024.73 46828.05 372021.2 46828.64 372020.9 46829.23 372019.43 46830.7 372020.02 46833.05 372021.49 46833.05 372023.26</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:exterior>
+                                            </gml:Polygon>
+                                        </gml:surfaceMember>
+                                        <gml:surfaceMember>
+                                            <gml:Polygon gml:id="_550ee927-aaee-4f2e-9ccb-60e05976842d" srsName="urn:ogc:def:crs:EPSG::28992">
+                                                <gml:exterior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList>46902.17 372055.61 46898.64 372057.37 46886.88 372049.73 46886.29 372049.43 46887.46 372045.9 46893.05 372040.9 46898.35 372041.79 46903.35 372043.26 46909.52 372047.67 46907.76 372053.26 46902.17 372055.61</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:exterior>
+                                            </gml:Polygon>
+                                        </gml:surfaceMember>
+                                    </gml:MultiSurface>
+                                </sldcom:boundary>
+                                <!-- optional -->
+                                <sldcom:beginDepth uom="m">0.00</sldcom:beginDepth>
+                                <!-- optional -->
+                                <sldcom:maximumEndDepth uom="m">0.00</sldcom:maximumEndDepth>                                
+                                <!-- optional -->
+                                <sldcom:contaminationNature>
+                                    <sldcom:ContaminationNature gml:id="id_0015">
+                                        <!-- 1 or more repetitions -->
+                                        <sldcom:chemicalSubstance codeSpace="urn:bro:sld:Parameter">1116</sldcom:chemicalSubstance>                                        
+                                    </sldcom:ContaminationNature>
+                                </sldcom:contaminationNature>
+                            </sldcom:ContaminatedArea>
+                        </sldcom:contaminatedArea>
+                        <!-- 0 or more repetitions -->
+                        <sldcom:aftercareArea>
+                            <sldcom:AftercareArea gml:id="_8bfe8e65-f886-4e59-9e6c-ef64b498efc7">
+                                <sldcom:identification>8bfe8e65-f886-4e59-9e6c-ef64b498efc7</sldcom:identification>
+                                <!-- optional -->
+                                <sldcom:aftercareInfinite>ja</sldcom:aftercareInfinite>
+                                <sldcom:boundary>
+                                    <gml:MultiSurface gml:id="_98c2d914-b56a-4ae1-b924-194b743da618">
+                                        <gml:surfaceMember>
+                                            <gml:Polygon gml:id="_6f2d188f-0248-40e2-b50b-818b27cda6cf" srsName="urn:ogc:def:crs:EPSG::28992">
+                                                <gml:exterior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList>46843.61 371998.56 46833.52 372014.91 46822.56 372007.85 46822.68 372007.79 46822.62 372007.3 46833.77 371991.56 46843.61 371998.56</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:exterior>
+                                            </gml:Polygon>
+                                        </gml:surfaceMember>
+                                        <gml:surfaceMember>
+                                            <gml:Polygon gml:id="_bfe5c250-9fc6-447f-9a05-846558e71883" srsName="urn:ogc:def:crs:EPSG::28992">
+                                                <gml:exterior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList>46824.54 372016.34 46819.21 372022.72 46805.84 372013.61 46809.86 372007.48 46824.54 372016.34</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:exterior>
+                                            </gml:Polygon>
+                                        </gml:surfaceMember>
+                                        <gml:surfaceMember>
+                                            <gml:Polygon gml:id="_38b5e810-4bc6-4c0c-88c3-5d36cbd2a5ea" srsName="urn:ogc:def:crs:EPSG::28992">
+                                                <gml:exterior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList>46833.15 372023.15 46831.17 372024.7 46828.19 372021.42 46828.87 372020.73 46829.25 372019.25 46830.48 372019.99 46833.02 372021.42 46833.15 372023.15</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:exterior>
+                                            </gml:Polygon>
+                                        </gml:surfaceMember>
+                                    </gml:MultiSurface>
+                                </sldcom:boundary>
+                                <!-- optional -->
+                                <!--<sldcom:durationAftercare>17</sldcom:durationAftercare>-->
+                                <!-- optional -->
+                                <sldcom:dateDecreed>2004-12-13</sldcom:dateDecreed>
+                                <!-- optional -->
+                                <!--<sldcom:endDate>2031-12-30</sldcom:endDate>-->
+                                <!-- 0 or more repetitions -->
+                                <sldcom:aftercareMeasure>
+                                    <sldcom:AftercareMeasure gml:id="_518285df-73bb-4804-ac41-6c2978321902">
+                                        <sldcom:identification>518285df-73bb-4804-ac41-6c2978321902</sldcom:identification>
+                                        <sldcom:usageRestriction codeSpace="urn:bro:sld:UsageRestriction">handhavenGeslotenVerharding</sldcom:usageRestriction>
+                                    </sldcom:AftercareMeasure>
+                                </sldcom:aftercareMeasure>
+                            </sldcom:AftercareArea>
+                        </sldcom:aftercareArea>
+                         <sldcom:aftercareArea>
+                            <sldcom:AftercareArea gml:id="_c7b1c2d6-476d-4289-9792-3bedf303d107">
+                                <sldcom:identification>c7b1c2d6-476d-4289-9792-3bedf303d107</sldcom:identification>
+                                <!-- optional -->
+                                <sldcom:aftercareInfinite>ja</sldcom:aftercareInfinite>
+                                <sldcom:boundary>
+                                    ..TODO
+                                </sldcom:boundary>
+                                <!-- optional -->
+                                <!--<sldcom:durationAftercare>17</sldcom:durationAftercare>-->
+                                <!-- optional -->
+                                <sldcom:dateDecreed>2004-12-13</sldcom:dateDecreed>
+                                <!-- optional -->
+                                <sldcom:endDate>2021-10-15</sldcom:endDate>
+                                <!-- 0 or more repetitions -->
+                                <sldcom:aftercareMeasure>
+                                    <sldcom:AftercareMeasure gml:id="_919e793b-18f8-4901-ac88-c6eba940d9d9">
+                                        <sldcom:identification>919e793b-18f8-4901-ac88-c6eba940d9d9</sldcom:identification>
+                                        <sldcom:usageRestriction codeSpace="urn:bro:sld:UsageRestriction">monitoringGrondwater</sldcom:usageRestriction>
+                                    </sldcom:AftercareMeasure>
+                                </sldcom:aftercareMeasure>
+                            </sldcom:AftercareArea>
+                        </sldcom:aftercareArea>
+                        <!-- 0 or more repetitions -->
+                        <sldcom:decision>
+                            <sldcom:Decision gml:id="id_0021">
+                                <sldcom:identification>695d6a25-9d30-43c2-9889-55525c246f22</sldcom:identification>
+                                <!-- optional
+                                <sldcom:decisionReference>?</sldcom:decisionReference>
+                                -->
+                                <sldcom:decisionType codeSpace="urn:bro:sld:DecisionType">
+                                    uitvoerenOO
+                                </sldcom:decisionType>
+                                <!-- optional
+                                <sldcom:publicationDate>2008-09-11</sldcom:publicationDate>
+                                -->
+                            </sldcom:Decision>
+                        </sldcom:decision>
+                        <sldcom:decision>
+                            <sldcom:Decision gml:id="id_0022">
+                                <sldcom:identification>e764a0d4-f493-4e13-8601-eb20c0571163</sldcom:identification>
+                                <!-- optional -->
+                                <sldcom:decisionReference>UT_2001_14957</sldcom:decisionReference>
+                                <sldcom:decisionType codeSpace="urn:bro:sld:DecisionType">
+                                    vaststellenRapportageOO
+                                </sldcom:decisionType>
+                                <!-- optional -->
+                                <sldcom:publicationDate>2001-09-11</sldcom:publicationDate>
+                            </sldcom:Decision>
+                        </sldcom:decision>
+                        <sldcom:decision>
+                            <sldcom:Decision gml:id="id_0023">
+                                <sldcom:identification>9cae2f27-0961-4870-ac22-bd0e052bbda8</sldcom:identification>
+                                <!-- optional -->
+                                <sldcom:decisionReference>UT_2001_17539</sldcom:decisionReference>
+                                <sldcom:decisionType codeSpace="urn:bro:sld:DecisionType">
+                                    vaststellingVerontreinigingErnstigUrgentSanerenBinnen4jaar
+                                </sldcom:decisionType>
+                                <!-- optional -->
+                                <sldcom:publicationDate>2001-11-29</sldcom:publicationDate>
+                            </sldcom:Decision>
+                        </sldcom:decision>
+                        <sldcom:decision>
+                            <sldcom:Decision gml:id="id_0024">
+                                <sldcom:identification>651d6d33-fe6e-4861-8814-690d38233ccc</sldcom:identification>
+                                <!-- optional -->
+                                <sldcom:decisionReference>UT_2001_85247</sldcom:decisionReference>
+                                <sldcom:decisionType codeSpace="urn:bro:sld:DecisionType">
+                                    uitvoerenSanering
+                                </sldcom:decisionType>
+                                <!-- optional -->
+                                <sldcom:publicationDate>2001-12-06</sldcom:publicationDate>
+                            </sldcom:Decision>
+                        </sldcom:decision>
+                        <sldcom:decision>
+                            <sldcom:Decision gml:id="id_0025">
+                                <sldcom:identification>82218c74-439a-404d-9881-49a5137353f3</sldcom:identification>
+                                <!-- optional -->
+                                <sldcom:decisionReference>UT_2019_00004</sldcom:decisionReference>
+                                <sldcom:decisionType codeSpace="urn:bro:sld:DecisionType">
+                                    instemmingUitgevoerdeSanering
+                                </sldcom:decisionType>
+                                <!-- optional -->
+                                <sldcom:publicationDate>2019-01-02</sldcom:publicationDate>
+                            </sldcom:Decision>
+                        </sldcom:decision>
+                    </sldcom:SoilLocation>
+                </sldcom:LegalDecisionType>
+            </legalDecisionType>
+        </SLD_StartReport>
+    </sourceDocument>
+</registrationRequest>
