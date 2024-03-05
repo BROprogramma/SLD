@@ -54,13 +54,11 @@
                         <!-- SIKB0101 feature collection. -->
                         <imsikb0101:FeatureCollectionIMSIKB0101 gml:id="LIBTEST" xmlns:imsikb0101="http://www.sikb.nl/imsikb0101" xmlns:immetingen="http://www.sikb.nl/immetingen" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:om="http://www.opengis.net/om/2.0" xmlns:sam="http://www.opengis.net/sampling/2.0" xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sikb.nl/imsikb0101 ../../XSD/imsikb0101_v14.8.0.xsd">
                             <imsikb0101:metaData>
-                                <imsikb0101:application>urn:imsikb0101:Application:id:1</imsikb0101:application>
+                                <imsikb0101:application>urn:imsikb0101:Application:id:23</imsikb0101:application>
                                 <imsikb0101:date>2013-09-07</imsikb0101:date>
                                 <imsikb0101:organisation>De organisatie</imsikb0101:organisation>
                                 <imsikb0101:remarks> Voorbeeldbestand LIB</imsikb0101:remarks>
-                                <imsikb0101:reportDate>2013-07-07</imsikb0101:reportDate>
-                                <imsikb0101:sender>urn:imsikb0101:Bronhouders:id:54</imsikb0101:sender>
-                                <imsikb0101:supplier>urn:imsikb0101:Leveranciers:id:1</imsikb0101:supplier>
+                                <imsikb0101:supplier>urn:imsikb0101:Leveranciers:id:26</imsikb0101:supplier>
                                 <imsikb0101:version>14.8.0</imsikb0101:version>
                                 <imsikb0101:dataflow>urn:imsikb0101:DatastroomType:id:10</imsikb0101:dataflow>
                             </imsikb0101:metaData>
