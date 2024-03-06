@@ -45,7 +45,7 @@
                         <sldcom:followUpWbb codeSpace="urn:bro:sld:FollowUpWbb">registrerenRestverontreiniging</sldcom:followUpWbb>
                         <!-- optional -->
                         <sldcom:name>Axelsestraat 163-165</sldcom:name>
-                        <sldcom:deliveredBoundary>                            
+                        <sldcom:deliveredBoundary>
                             <gml:MultiSurface gml:id="_cdc53818-fb86-4037-a36a-902dcc2bfda5" srsName="urn:ogc:def:crs:EPSG::28992">
                                 <gml:surfaceMember>
                                     <gml:Polygon gml:id="_d3acc364-51ba-4fb3-a19a-cf98bf9f944e" srsName="urn:ogc:def:crs:EPSG::28992">
@@ -305,10 +305,38 @@
                                 <!-- optional -->
                                 <sldcom:aftercareInfinite>ja</sldcom:aftercareInfinite>
                                 <sldcom:boundary>
-                                    ..TODO
+                                    <gml:MultiSurface gml:id="_a8c2d914-b56a-4ae1-b924-194b743da618">
+                                        <gml:surfaceMember>
+                                            <gml:Polygon gml:id="_7f2d188f-0248-40e2-b50b-818b27cda6cf" srsName="urn:ogc:def:crs:EPSG::28992">
+                                                <gml:exterior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList>46843.61 371998.56 46833.52 372014.91 46822.56 372007.85 46822.68 372007.79 46822.62 372007.3 46833.77 371991.56 46843.61 371998.56</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:exterior>
+                                            </gml:Polygon>
+                                        </gml:surfaceMember>
+                                        <gml:surfaceMember>
+                                            <gml:Polygon gml:id="_cfe5c250-9fc6-447f-9a05-846558e71883" srsName="urn:ogc:def:crs:EPSG::28992">
+                                                <gml:exterior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList>46824.54 372016.34 46819.21 372022.72 46805.84 372013.61 46809.86 372007.48 46824.54 372016.34</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:exterior>
+                                            </gml:Polygon>
+                                        </gml:surfaceMember>
+                                        <gml:surfaceMember>
+                                            <gml:Polygon gml:id="_48b5e810-4bc6-4c0c-88c3-5d36cbd2a5ea" srsName="urn:ogc:def:crs:EPSG::28992">
+                                                <gml:exterior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList>46833.15 372023.15 46831.17 372024.7 46828.19 372021.42 46828.87 372020.73 46829.25 372019.25 46830.48 372019.99 46833.02 372021.42 46833.15 372023.15</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:exterior>
+                                            </gml:Polygon>
+                                        </gml:surfaceMember>
+                                    </gml:MultiSurface>
                                 </sldcom:boundary>
                                 <!-- optional -->
-                                <!--<sldcom:durationAftercare>17</sldcom:durationAftercare>-->
+                                <sldcom:durationAftercare>99</sldcom:durationAftercare>
                                 <!-- optional -->
                                 <sldcom:dateDecreed>2004-12-13</sldcom:dateDecreed>
                                 <!-- optional -->
@@ -324,67 +352,23 @@
                         </sldcom:aftercareArea>
                         <!-- 0 or more repetitions -->
                         <sldcom:decision>
-                            <sldcom:Decision gml:id="id_0021">
-                                <sldcom:identification>695d6a25-9d30-43c2-9889-55525c246f22</sldcom:identification>
-                                <!-- optional
-                                <sldcom:decisionReference>?</sldcom:decisionReference>
-                                -->
-                                <sldcom:decisionType codeSpace="urn:bro:sld:DecisionType">
-                                    uitvoerenOO
-                                </sldcom:decisionType>
-                                <!-- optional
-                                <sldcom:publicationDate>2008-09-11</sldcom:publicationDate>
-                                -->
+                            <sldcom:Decision gml:id="_838befd2-1b51-416e-bf5a-51317ebdfdbe">
+                                <sldcom:identification>838befd2-1b51-416e-bf5a-51317ebdfdbe</sldcom:identification>                                
+                                <!-- optional -->
+                                <sldcom:decisionReference>RMW0210320</sldcom:decisionReference>                                
+                                <sldcom:decisionType codeSpace="urn:bro:sld:DecisionType">instemmingSP</sldcom:decisionType>                                
+                                <sldcom:publicationDate>2002-10-15</sldcom:publicationDate>                                
                             </sldcom:Decision>
                         </sldcom:decision>
                         <sldcom:decision>
-                            <sldcom:Decision gml:id="id_0022">
-                                <sldcom:identification>e764a0d4-f493-4e13-8601-eb20c0571163</sldcom:identification>
+                            <sldcom:Decision gml:id="_426f7ea5-c871-478b-a702-4d3120a5ba0b">
+                                <sldcom:identification>426f7ea5-c871-478b-a702-4d3120a5ba0b</sldcom:identification>                                
                                 <!-- optional -->
-                                <sldcom:decisionReference>UT_2001_14957</sldcom:decisionReference>
-                                <sldcom:decisionType codeSpace="urn:bro:sld:DecisionType">
-                                    vaststellenRapportageOO
-                                </sldcom:decisionType>
-                                <!-- optional -->
-                                <sldcom:publicationDate>2001-09-11</sldcom:publicationDate>
+                                <sldcom:decisionReference>RMW0210320</sldcom:decisionReference>                                
+                                <sldcom:decisionType codeSpace="urn:bro:sld:DecisionType">vaststellingVerontreinigingErnstigUrgentSanerenBinnen4jaar</sldcom:decisionType>                                
+                                <sldcom:publicationDate>2002-10-15</sldcom:publicationDate>                                
                             </sldcom:Decision>
-                        </sldcom:decision>
-                        <sldcom:decision>
-                            <sldcom:Decision gml:id="id_0023">
-                                <sldcom:identification>9cae2f27-0961-4870-ac22-bd0e052bbda8</sldcom:identification>
-                                <!-- optional -->
-                                <sldcom:decisionReference>UT_2001_17539</sldcom:decisionReference>
-                                <sldcom:decisionType codeSpace="urn:bro:sld:DecisionType">
-                                    vaststellingVerontreinigingErnstigUrgentSanerenBinnen4jaar
-                                </sldcom:decisionType>
-                                <!-- optional -->
-                                <sldcom:publicationDate>2001-11-29</sldcom:publicationDate>
-                            </sldcom:Decision>
-                        </sldcom:decision>
-                        <sldcom:decision>
-                            <sldcom:Decision gml:id="id_0024">
-                                <sldcom:identification>651d6d33-fe6e-4861-8814-690d38233ccc</sldcom:identification>
-                                <!-- optional -->
-                                <sldcom:decisionReference>UT_2001_85247</sldcom:decisionReference>
-                                <sldcom:decisionType codeSpace="urn:bro:sld:DecisionType">
-                                    uitvoerenSanering
-                                </sldcom:decisionType>
-                                <!-- optional -->
-                                <sldcom:publicationDate>2001-12-06</sldcom:publicationDate>
-                            </sldcom:Decision>
-                        </sldcom:decision>
-                        <sldcom:decision>
-                            <sldcom:Decision gml:id="id_0025">
-                                <sldcom:identification>82218c74-439a-404d-9881-49a5137353f3</sldcom:identification>
-                                <!-- optional -->
-                                <sldcom:decisionReference>UT_2019_00004</sldcom:decisionReference>
-                                <sldcom:decisionType codeSpace="urn:bro:sld:DecisionType">
-                                    instemmingUitgevoerdeSanering
-                                </sldcom:decisionType>
-                                <!-- optional -->
-                                <sldcom:publicationDate>2019-01-02</sldcom:publicationDate>
-                            </sldcom:Decision>
-                        </sldcom:decision>
+                        </sldcom:decision>                        
                     </sldcom:SoilLocation>
                 </sldcom:LegalDecisionType>
             </legalDecisionType>

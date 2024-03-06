@@ -224,7 +224,37 @@
                                 <imsikb0101:duration uom="urn:immetingen:Eenheid:id:137">9999</imsikb0101:duration>
                                 <!-- optioneel -->
                                 <imsikb0101:endTime>2021-10-15</imsikb0101:endTime>                                
-                                <!-- <imsikb0101:geometry /> -->                                    
+                                <imsikb0101:geometry>                                    
+                                    <gml:MultiSurface gml:id="_a8c2d914-b56a-4ae1-b924-194b743da618">
+                                        <gml:surfaceMember>
+                                            <gml:Polygon gml:id="_7f2d188f-0248-40e2-b50b-818b27cda6cf" srsName="urn:ogc:def:crs:EPSG::28992">
+                                                <gml:exterior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList srsDimension="2">46843.61 371998.56 46833.52 372014.91 46822.56 372007.85 46822.68 372007.79 46822.62 372007.3 46833.77 371991.56 46843.61 371998.56</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:exterior>
+                                            </gml:Polygon>
+                                        </gml:surfaceMember>
+                                        <gml:surfaceMember>
+                                            <gml:Polygon gml:id="_cfe5c250-9fc6-447f-9a05-846558e71883" srsName="urn:ogc:def:crs:EPSG::28992">
+                                                <gml:exterior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList srsDimension="2">46824.54 372016.34 46819.21 372022.72 46805.84 372013.61 46809.86 372007.48 46824.54 372016.34</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:exterior>
+                                            </gml:Polygon>
+                                        </gml:surfaceMember>
+                                        <gml:surfaceMember>
+                                            <gml:Polygon gml:id="_48b5e810-4bc6-4c0c-88c3-5d36cbd2a5ea" srsName="urn:ogc:def:crs:EPSG::28992">
+                                                <gml:exterior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList srsDimension="2">46833.15 372023.15 46831.17 372024.7 46828.19 372021.42 46828.87 372020.73 46829.25 372019.25 46830.48 372019.99 46833.02 372021.42 46833.15 372023.15</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:exterior>
+                                            </gml:Polygon>
+                                        </gml:surfaceMember>
+                                    </gml:MultiSurface>
+                                </imsikb0101:geometry>    
                                 <imsikb0101:identification>
                                     <immetingen:NEN3610ID>
                                         <immetingen:namespace>SIKB</immetingen:namespace>
