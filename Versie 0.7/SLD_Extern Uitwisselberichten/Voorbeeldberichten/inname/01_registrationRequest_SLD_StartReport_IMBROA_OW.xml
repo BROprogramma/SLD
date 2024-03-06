@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registrationRequest 
+    xmlns="http://www.broservices.nl/xsd/issld/1.0" 
+    xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon/1.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.broservices.nl/xsd/issld/1.0 ../../XSD/issld-messages.xsd">
+    <!--Disclaimer: dit voorbeeldbericht is gemaakt voor increment 2 (version 0.7) van de SLD en valideert tegen de XSD van de innameservice.
+        Het is niet gevalideerd door de innameservice en de inhoud is fictief en vaktechnisch/inhoudelijk niet voorbeeldig.
+        xsi:schemaLocation="http://www.broservices.nl/xsd/issld-internal/1.0 https://schema.broservices.nl/xsd/issld-internal/1.0/issld-internal-messages.xsd"/>
+
+        Inhoud:
+         * SLD object conform OW volgens extern formaat.
+    -->
+    <sldcom:requestReference>verzoek_1</sldcom:requestReference>
+    <!-- optioneel: KVK nummer van de aanleverende partij. -->
+    <sldcom:deliveryAccountableParty>27376655</sldcom:deliveryAccountableParty>
+    <sldcom:qualityRegime>IMBRO/A</sldcom:qualityRegime>
+    <sourceDocument>
+        <SourceDocument>
+            <SLD_StartReport>
+                <!-- optioneel: identificatie van het Overheidsbesluit bodemverontreiniging in de eigen administratie. -->
+                <objectIdAccountableParty>12345</objectIdAccountableParty>
+                <!-- Kader aanlevering; WBB of OW -->
+                <deliveryContext codeSpace="urn:bro:sld:DeliveryContext">OW</deliveryContext>
+                <featureCollection>
+                    <!-- SIKB0101 feature collection. -->
+                    <imsikb0101:FeatureCollectionIMSIKB0101 gml:id="LIBTEST" xmlns:imsikb0101="http://www.sikb.nl/imsikb0101" xmlns:immetingen="http://www.sikb.nl/immetingen" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:om="http://www.opengis.net/om/2.0" xmlns:sam="http://www.opengis.net/sampling/2.0" xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sikb.nl/imsikb0101 ../../XSD/imsikb0101_v14.8.0.xsd">
+                        <imsikb0101:metaData>
+                            <imsikb0101:application>urn:imsikb0101:Application:id:1</imsikb0101:application>
+                            <imsikb0101:date>2013-09-07</imsikb0101:date>
+                            <imsikb0101:organisation>De organisatie</imsikb0101:organisation>
+                            <imsikb0101:remarks> Voorbeeldbestand LIB</imsikb0101:remarks>
+                            <imsikb0101:reportDate>2013-07-07</imsikb0101:reportDate>
+                            <imsikb0101:sender>urn:imsikb0101:Bronhouders:id:54</imsikb0101:sender>
+                            <imsikb0101:supplier>urn:imsikb0101:Leveranciers:id:1</imsikb0101:supplier>
+                            <imsikb0101:version>14.8.0</imsikb0101:version>
+                            <imsikb0101:dataflow>urn:imsikb0101:DatastroomType:id:10</imsikb0101:dataflow>
+                        </imsikb0101:metaData>
+                        <!--Dossier-->
+                        <!--/Dossier-->
+                        <!-- Project -->
+                        <imsikb0101:featureMember>
+                            <imsikb0101:Dossier gml:id="_f205306d-0260-4b10-9bb5-05368b660446">
+                                <imsikb0101:identification>
+                                    <immetingen:NEN3610ID>
+                                        <immetingen:namespace>SIKB</immetingen:namespace>
+                                        <immetingen:lokaalID>f205306d-0260-4b10-9bb5-05368b660446</immetingen:lokaalID>
+                                    </immetingen:NEN3610ID>
+                                </imsikb0101:identification>
+                                <!-- optioneel -->
+                                <imsikb0101:projects xlink:href="#_f6fac78d-6772-4490-9602-238a757614ac"/>     
+                                <!-- optioneel, only used for WBB deliveryContext -->                     
+                                <imsikb0101:soilLocation/>
+                                <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>
+                                <!-- optioneel, only used for WBB deliveryContext -->
+                                <!--<imsikb0101:dossierIdLocalAuthority>ZL071500060</imsikb0101:dossierIdLocalAuthority>-->
+                                <imsikb0101:dossierIdNotLocalAuthority>ZL071500060</imsikb0101:dossierIdNotLocalAuthority>
+                                <!-- optioneel, only used for WBB deliveryContext -->
+                                <!--<imsikb0101:followUpWBB codeSpace="www.sikb.nl">urn:imsikb0101:VervolgWBB:id:11</imsikb0101:followUpWBB>-->
+                                <!-- optioneel, only used for WBB deliveryContext -->                                
+                                <!--<imsikb0101:decisions/>-->
+                                <!-- optioneel, only used for WBB deliveryContext -->
+                                <imsikb0101:sitemanagements/>                                
+                                <!-- optioneel, only used for WBB deliveryContext -->
+                                <imsikb0101:contaminationInfos/>
+                                <!-- optioneel -->
+                                <imsikb0101:remediations xlink:href="#_9867c501-61ba-4a8e-84ba-9734c93cce43"/>
+                            </imsikb0101:Dossier>
+                        </imsikb0101:featureMember>                        
+                        <imsikb0101:featureMember>
+                            <imsikb0101:Project gml:id="_f6fac78d-6772-4490-9602-238a757614ac">
+                                <imsikb0101:identification>
+                                    <immetingen:NEN3610ID>
+                                        <immetingen:namespace>SIKB</immetingen:namespace>
+                                        <immetingen:lokaalID>f6fac78d-6772-4490-9602-238a757614ac</immetingen:lokaalID>
+                                    </immetingen:NEN3610ID>
+                                </imsikb0101:identification>
+                                <!-- optional -->
+                                <imsikb0101:name>VO Van Putten</imsikb0101:name>
+                                <imsikb0101:projectCode/>
+                                <!-- required for OW deliveryContext   -->
+                                <imsikb0101:broId>SAD00000012345</imsikb0101:broId>
+                            </imsikb0101:Project>
+                        </imsikb0101:featureMember>                                                                                                
+                        <!-- remediation -->
+                        <imsikb0101:featureMember>
+                            <imsikb0101:Remediation gml:id="_9867c501-61ba-4a8e-84ba-9734c93cce43">
+                                <!-- required for OW deliveryContext -->                                
+                                <imsikb0101:contourType codeSpace="www.sikb.nl">urn:imsikb0101:ContourType:id:1</imsikb0101:contourType>
+                                <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>
+                                <!-- optioneel -->                                
+                                <imsikb0101:endTime>2004-12-13</imsikb0101:endTime>
+                                <imsikb0101:geometry>
+                                    <gml:MultiSurface gml:id="_1c7dd359-75f9-45d8-b32f-84ac4408bb80">
+                                        <gml:surfaceMember>
+                                            <gml:Polygon gml:id="_a4012463-dc88-4f4c-a99d-866ba2b51884" srsName="urn:ogc:def:crs:EPSG::28992">
+                                                <gml:exterior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList srsDimension="2">46897.21 372058.68 46890.68 372056.42 46888.34 372054.7 46888.93 372055.09 46884.55 372052.04 46883.5 372050.09 46884.51 372046.15 46888.22 372040.84 46893.3 372036.62 46902.17 372036.89 46910.37 372042.24 46914.16 372046.73 46910.87 372053.06 46904.98 372057.98 46897.21 372058.68</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:exterior>
+                                                <gml:interior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList srsDimension="2">46907.46 372053.26 46908.94 372046.2 46896.88 372040.61 46891.29 372041.49 46886.88 372049.43 46887.17 372050.61 46898.94 372058.39 46907.46 372053.26</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:interior>
+                                            </gml:Polygon>
+                                        </gml:surfaceMember>
+                                    </gml:MultiSurface>
+                                </imsikb0101:geometry>
+                                <imsikb0101:identification>
+                                    <immetingen:NEN3610ID>
+                                        <immetingen:namespace>SIKB</immetingen:namespace>
+                                        <immetingen:lokaalID>9867c501-61ba-4a8e-84ba-9734c93cce43</immetingen:lokaalID>
+                                    </immetingen:NEN3610ID>
+                                </imsikb0101:identification>
+                                <!-- optioneel -->                                
+                                <imsikb0101:lowerDepth>
+                                    <immetingen:Depth>
+                                        <immetingen:value uom="urn:immetingen:Eenheid:id:115">0</immetingen:value>
+                                        <immetingen:condition codeSpace="www.sikb.nl">urn:immetingen:Hoedanigheid:id:11</immetingen:condition>
+                                    </immetingen:Depth>
+                                </imsikb0101:lowerDepth>
+                                <!-- optioneel, only used for WBB deliveryContext -->                                
+                                <!-- <imsikb0101:realizedVariationSubsoil codeSpace="www.sikb.nl">urn:imsikb0101:san_ondergrond:id:1</imsikb0101:realizedVariationSubsoil> -->
+                                <!-- optioneel, only used for WBB deliveryContext -->                                
+                                <!-- <imsikb0101:realizedVariationTopsoil codeSpace="www.sikb.nl">urn:imsikb0101:san_bovengrond:id:1</imsikb0101:realizedVariationTopsoil> -->
+                                <!-- optioneel -->                                
+                                <imsikb0101:upperDepth>
+                                    <immetingen:Depth>
+                                        <immetingen:value uom="urn:immetingen:Eenheid:id:115">0</immetingen:value>
+                                        <immetingen:condition codeSpace="www.sikb.nl">urn:immetingen:Hoedanigheid:id:11</immetingen:condition>
+                                    </immetingen:Depth>
+                                </imsikb0101:upperDepth>
+                            </imsikb0101:Remediation>
+                        </imsikb0101:featureMember>                        
+                    </imsikb0101:FeatureCollectionIMSIKB0101>
+                </featureCollection>
+            </SLD_StartReport>
+        </SourceDocument>
+    </sourceDocument>
+</registrationRequest>

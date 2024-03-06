@@ -107,6 +107,7 @@
                                         <immetingen:lokaalID>f6fac78d-6772-4490-9602-238a757614ac</immetingen:lokaalID>
                                     </immetingen:NEN3610ID>
                                 </imsikb0101:identification>
+                                <!-- optional -->
                                 <imsikb0101:name>VO Van Putten</imsikb0101:name>
                                 <imsikb0101:projectCode/>
                                 <!-- optioneel; voor OW wel verwacht, voor WBB niet nodig -->
@@ -426,8 +427,7 @@
                         </imsikb0101:featureMember>
                         <!-- remediation -->
                         <imsikb0101:featureMember>
-                            <imsikb0101:Remediation gml:id="_9867c501-61ba-4a8e-84ba-9734c93cce43">
-                                <!-- optioneel -->                                
+                            <imsikb0101:Remediation gml:id="_9867c501-61ba-4a8e-84ba-9734c93cce43">                                
                                 <imsikb0101:contourType codeSpace="www.sikb.nl">urn:imsikb0101:ContourType:id:1</imsikb0101:contourType>
                                 <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>
                                 <!-- optioneel -->                                
@@ -478,8 +478,7 @@
                         </imsikb0101:featureMember>
                         <!-- remediation -->
                         <imsikb0101:featureMember>
-                            <imsikb0101:Remediation gml:id="_f7eee423-38fc-4f39-b40e-3eafb93335ff">
-                                 <!-- optioneel --> 
+                            <imsikb0101:Remediation gml:id="_f7eee423-38fc-4f39-b40e-3eafb93335ff">                                 
                                 <imsikb0101:contourType codeSpace="www.sikb.nl">urn:imsikb0101:ContourType:id:1</imsikb0101:contourType>
                                 <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>
                                  <!-- optioneel --> 

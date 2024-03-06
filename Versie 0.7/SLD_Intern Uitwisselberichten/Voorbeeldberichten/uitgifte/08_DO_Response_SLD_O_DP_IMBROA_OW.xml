@@ -1,36 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<registrationRequest 
-    xmlns="http://www.broservices.nl/xsd/issld-internal/1.0" 
-    xmlns:gml="http://www.opengis.net/gml/3.2" 
-    xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0" 
-    xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon-internal/1.0" 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:schemaLocation="http://www.broservices.nl/xsd/issld-internal/1.0 ../../XSD/issld-internal-messages.xsd">
-    <!--Disclaimer: dit voorbeeldbericht is gemaakt voor increment 2 (version 0.7) van de SLD en valideert tegen de XSD van de innameservice.
-        Het is niet gevalideerd door de innameservice en de inhoud is fictief en vaktechnisch/inhoudelijk niet voorbeeldig.
-        xsi:schemaLocation="http://www.broservices.nl/xsd/issld-internal/1.0 https://schema.broservices.nl/xsd/issld-internal/1.0/issld-internal-messages.xsd"/>
-
-        Inhoud:
-         * SLD object conform OW volgens intern formaat.
+<dssld:dispatchDataResponse
+        xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+        xmlns:dssld="http://www.broservices.nl/xsd/dssld-internal/1.0"
+        xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon-internal/1.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.broservices.nl/xsd/dssld-internal/1.0 ../../XSD/dssld-internal-messages.xsd">
+    <!--Disclaimer: dit voorbeeldbericht is gemaakt voor increment 0.5 van de SLD en valideert tegen de XSD van de uitgifteservice.
+        Het is niet gevalideerd door de uitgifteservice en de inhoud is fictief en vaktechnisch/inhoudelijk niet voorbeeldig.
+        xsi:schemaLocation="http://www.broservices.nl/xsd/dssld-internal/1.0 https://schema.broservices.nl/xsd/dssld-internal/1.0/dssld-internal-messages.xsd"/>
     -->
-    <brocom:requestReference>verzoek_1</brocom:requestReference>
-    <!-- Optional: -->
-    <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
-    <brocom:qualityRegime>IMBRO/A</brocom:qualityRegime>
-    <sourceDocument>
-        <SLD_StartReport gml:id="id_0001">
+    <brocom:responseType>dispatch</brocom:responseType>
+    <brocom:requestReference>Verzoek_1</brocom:requestReference>
+    <dssld:dispatchDocument>
+        <dssld:SLD_O_DP xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="id_001">
+            <brocom:broId>SLD0123456789012</brocom:broId>
+            <brocom:qualityRegime>IMBRO/A</brocom:qualityRegime>
+            <dssld:deliveryContext codeSpace="urn:bro:sld:DeliveryContext">OW</dssld:deliveryContext>
             <!-- optional -->
-            <objectIdAccountableParty>12345</objectIdAccountableParty>
-            <deliveryContext codeSpace="urn:bro:sld:DeliveryContext">OW</deliveryContext>
-            <!-- optional -->
-            <informationProvider>
+            <dssld:informationProvider>
                 <!-- Choose one of these 2 options:
                 <brocom:chamberOfCommerceNumber>?</brocom:chamberOfCommerceNumber>
                 <brocom:europeanCompanyRegistrationNumber>?</brocom:europeanCompanyRegistrationNumber>
                 -->
                 <brocom:chamberOfCommerceNumber>27376655</brocom:chamberOfCommerceNumber>
-            </informationProvider>
-            <legalDecisionType>
+            </dssld:informationProvider>
+            <dssld:registrationHistory>
+                <brocom:objectRegistrationTime>2023-01-13T13:15:57+01:00</brocom:objectRegistrationTime>
+                <brocom:registrationStatus codeSpace="urn:bro:RegistrationStatus">voltooid</brocom:registrationStatus>
+                <brocom:corrected>nee</brocom:corrected>
+                <brocom:underReview>nee</brocom:underReview>
+                <brocom:deregistered>nee</brocom:deregistered>
+                <brocom:reregistered>nee</brocom:reregistered>
+            </dssld:registrationHistory>
+            <dssld:standardizedLocation>
+                <brocom:location>
+                    <gml:MultiSurface gml:id="id_0002" srsName="urn:ogc:def:crs:EPSG::4258">
+                        <gml:surfaceMember>
+                            <gml:Polygon gml:id="id_0003">
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>
+                                            51.13770 6.03017
+                                            51.13682 6.17304
+                                            51.31658 6.17612
+                                            51.31746 6.03269
+                                            51.13770 6.03017
+                                        </gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:Polygon>
+                        </gml:surfaceMember>
+                    </gml:MultiSurface>
+                </brocom:location>
+                <brocom:coordinateTransformation codeSpace="urn:bro:CoordinateTransformation">RDNAPTRANS2018MV0</brocom:coordinateTransformation>
+            </dssld:standardizedLocation>
+            <dssld:legalDecisionType>
                 <sldcom:LegalDecisionType>
                     <!-- Choose one of these 2 options:
                     <sldcom:SoilLocation gml:id="">?</sldcom:SoilLocation> if <deliveryContext= WBB
@@ -82,7 +106,7 @@
                         </sldcom:sad_evaluationReport>
                     </sldcom:HandledArea>
                 </sldcom:LegalDecisionType>
-            </legalDecisionType>
-        </SLD_StartReport>
-    </sourceDocument>
-</registrationRequest>
+            </dssld:legalDecisionType>
+        </dssld:SLD_O_DP>
+    </dssld:dispatchDocument>
+</dssld:dispatchDataResponse>
