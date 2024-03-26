@@ -511,7 +511,7 @@
                                  <!-- optioneel --> 
                                 <imsikb0101:lowerDepth>
                                     <immetingen:Depth>
-                                        <immetingen:value uom="urn:immetingen:Eenheid:id:115">0</immetingen:value>
+                                        <immetingen:value uom="urn:immetingen:Eenheid:id:115">3</immetingen:value>
                                         <immetingen:condition codeSpace="www.sikb.nl">urn:immetingen:Hoedanigheid:id:11</immetingen:condition>
                                     </immetingen:Depth>
                                 </imsikb0101:lowerDepth>

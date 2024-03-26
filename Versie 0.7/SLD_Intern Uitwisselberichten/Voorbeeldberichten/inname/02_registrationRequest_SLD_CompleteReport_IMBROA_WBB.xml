@@ -84,9 +84,9 @@
                                 </sldcom:boundary>                                    
                                 <sldcom:compartment codeSpace="urn:bro:sld:Compartment">grond</sldcom:compartment>
                                 <!-- optional -->
-                                <sldcom:beginDepth uom="m">0</sldcom:beginDepth>
+                                <!--<sldcom:beginDepth uom="m">0</sldcom:beginDepth>-->
                                 <!-- optional -->
-                                <sldcom:maximumEndDepth uom="m">0</sldcom:maximumEndDepth>
+                                <!--<sldcom:maximumEndDepth uom="m">0</sldcom:maximumEndDepth>-->
                                 <!-- optional -->
                                 <sldcom:activityEndDate>2004-12-13</sldcom:activityEndDate>                                
                                 <!-- optional; only for OW not for WBB  -->
@@ -132,7 +132,7 @@
                                 <!-- optional -->
                                 <sldcom:beginDepth uom="m">0</sldcom:beginDepth>
                                 <!-- optional -->
-                                <sldcom:maximumEndDepth uom="m">0</sldcom:maximumEndDepth>
+                                <sldcom:maximumEndDepth uom="m">3</sldcom:maximumEndDepth>
                                 <!-- optional -->
                                 <sldcom:activityEndDate>2004-12-13</sldcom:activityEndDate>                                
                                 <!-- optional; only for OW not for WBB  -->
@@ -172,9 +172,9 @@
                                     </gml:MultiSurface>
                                 </sldcom:boundary>
                                 <!-- optional -->
-                                <sldcom:beginDepth uom="m">0.00</sldcom:beginDepth>
+                                <!--<sldcom:beginDepth uom="m">0.00</sldcom:beginDepth>-->
                                 <!-- optional -->
-                                <sldcom:maximumEndDepth uom="m">0.00</sldcom:maximumEndDepth>
+                                <!--<sldcom:maximumEndDepth uom="m">0.00</sldcom:maximumEndDepth>-->
                                 <!-- optional -->
                                 <sldcom:dateDecreed>2004-11-11</sldcom:dateDecreed>
                                 <!-- optional -->
@@ -235,9 +235,9 @@
                                     </gml:MultiSurface>
                                 </sldcom:boundary>
                                 <!-- optional -->
-                                <sldcom:beginDepth uom="m">0.00</sldcom:beginDepth>
+                                <!--<sldcom:beginDepth uom="m">0.00</sldcom:beginDepth>-->
                                 <!-- optional -->
-                                <sldcom:maximumEndDepth uom="m">0.00</sldcom:maximumEndDepth>                                
+                                <!--<sldcom:maximumEndDepth uom="m">0.00</sldcom:maximumEndDepth>-->
                                 <!-- optional -->
                                 <sldcom:contaminationNature>
                                     <sldcom:ContaminationNature gml:id="id_0015">

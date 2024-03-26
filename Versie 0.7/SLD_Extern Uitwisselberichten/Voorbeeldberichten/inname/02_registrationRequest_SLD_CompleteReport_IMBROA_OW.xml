@@ -78,6 +78,7 @@
                                 <!-- optional -->
                                 <imsikb0101:name>VO Van Putten</imsikb0101:name>
                                 <imsikb0101:projectCode/>
+                                <imsikb0101:reportNumber>Rapport VO Van Putten</imsikb0101:reportNumber>
                                 <!-- required for OW deliveryContext   -->
                                 <imsikb0101:broId>SAD00000012345</imsikb0101:broId>
                             </imsikb0101:Project>
@@ -117,7 +118,7 @@
                                 <!-- optioneel -->                                
                                 <imsikb0101:lowerDepth>
                                     <immetingen:Depth>
-                                        <immetingen:value uom="urn:immetingen:Eenheid:id:115">0</immetingen:value>
+                                        <immetingen:value uom="urn:immetingen:Eenheid:id:115">1.20</immetingen:value>
                                         <immetingen:condition codeSpace="www.sikb.nl">urn:immetingen:Hoedanigheid:id:11</immetingen:condition>
                                     </immetingen:Depth>
                                 </imsikb0101:lowerDepth>
