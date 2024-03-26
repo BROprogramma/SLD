@@ -21,7 +21,7 @@
                 <!-- optional: identificatie van het Overheidsbesluit bodemverontreiniging in de eigen administratie. -->
                 <objectIdAccountableParty>12345</objectIdAccountableParty>
                 <!-- Kader aanlevering; WBB of OW -->
-                <deliveryContext codeSpace="urn:bro:sld:DeliveryContext">OW</deliveryContext>
+                <deliveryContext codeSpace="urn:bro:sld:DeliveryContext">WBB</deliveryContext>
                 <featureCollection>
                     <!-- SIKB0101 feature collection, letterlijk overgenomen vanuit het BIS. -->
                     <!-- SIKB0101 feature collection. -->

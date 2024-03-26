@@ -17,7 +17,7 @@
     <sldcom:qualityRegime>IMBRO/A</sldcom:qualityRegime>
     <sourceDocument>
         <SourceDocument>
-            <SLD_StartReport>
+            <SLD_CompleteReport>
                 <!-- optioneel: identificatie van het Overheidsbesluit bodemverontreiniging in de eigen administratie. -->
                 <objectIdAccountableParty>12345</objectIdAccountableParty>
                 <!-- Kader aanlevering; WBB of OW -->
@@ -136,7 +136,7 @@
                         </imsikb0101:featureMember>                        
                     </imsikb0101:FeatureCollectionIMSIKB0101>
                 </featureCollection>
-            </SLD_StartReport>
+            </SLD_CompleteReport>
         </SourceDocument>
     </sourceDocument>
 </registrationRequest>

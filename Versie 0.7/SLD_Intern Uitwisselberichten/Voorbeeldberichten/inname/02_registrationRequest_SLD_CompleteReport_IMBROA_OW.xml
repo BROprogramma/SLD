@@ -18,7 +18,7 @@
     <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
     <brocom:qualityRegime>IMBRO/A</brocom:qualityRegime>
     <sourceDocument>
-        <SLD_StartReport gml:id="id_0001">
+        <SLD_CompleteReport gml:id="id_0001">
             <!-- optional -->
             <objectIdAccountableParty>12345</objectIdAccountableParty>
             <deliveryContext codeSpace="urn:bro:sld:DeliveryContext">OW</deliveryContext>
@@ -83,6 +83,6 @@
                     </sldcom:HandledArea>
                 </sldcom:LegalDecisionType>
             </legalDecisionType>
-        </SLD_StartReport>
+        </SLD_CompleteReport>
     </sourceDocument>
 </registrationRequest>
