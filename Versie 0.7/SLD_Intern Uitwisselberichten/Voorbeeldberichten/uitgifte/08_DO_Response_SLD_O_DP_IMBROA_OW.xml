@@ -100,7 +100,7 @@
                         <!-- optional; mandatory if <deliveryContext = OW -->
                         <sldcom:sad_evaluationReport>
                             <sldcom:SAD_EvaluationReport gml:id="_f6fac78d-6772-4490-9602-238a757614ac">
-                                <sldcom:broId>SAD00000012345</sldcom:broId>
+                                <sldcom:broId>SAD000000012345</sldcom:broId>
                                 <sldcom:reportNumber>Rapport VO Van Putten</sldcom:reportNumber>
                             </sldcom:SAD_EvaluationReport>
                         </sldcom:sad_evaluationReport>

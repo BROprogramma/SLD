@@ -80,7 +80,7 @@
                                 <imsikb0101:projectCode/>
                                 <imsikb0101:reportNumber>Rapport VO Van Putten</imsikb0101:reportNumber>
                                 <!-- required for OW deliveryContext   -->
-                                <imsikb0101:broId>SAD00000012345</imsikb0101:broId>
+                                <imsikb0101:broId>SAD000000012345</imsikb0101:broId>
                             </imsikb0101:Project>
                         </imsikb0101:featureMember>                                                                                                
                         <!-- remediation -->
