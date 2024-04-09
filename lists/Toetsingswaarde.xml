@@ -14,4 +14,11 @@
 		<IMBROA>v</IMBROA>
 		<Omschrijving>De interventiewaarden (i-waarden) zijn tot tot 1-1-2008 gebaseerd op 'Streefwaarden en interventiewaarden bodemsanering' en vanaf 1-1-2008 op de 'Circulaire bodemsanering'.</Omschrijving>
 	</Toetsingswaarde>
+	<Toetsingswaarde>
+		<SIKB0101ID>11</SIKB0101ID>
+		<Waarde>AW2000</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Achtergrondwaarde Besluit bodemkwaliteit</Omschrijving>
+	</Toetsingswaarde>
 </domeintabel>
