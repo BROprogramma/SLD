@@ -14,6 +14,9 @@
 			<xsl:if test="not( (lower-case(//imsikb0101:metaData/imsikb0101:dataflow) = lower-case('urn:imsikb0101:DatastroomType:id:5'))  or  (lower-case(//imsikb0101:metaData/imsikb0101:dataflow) = lower-case('urn:imsikb0101:DatastroomType:id:10'))  )">			
 				<xsl:copy-of select="sikb:createRecord('WARNING','imsikb0101:metaData/imsikb0101:dataflow','Het veld metadata/dataflow zou ingevuld moeten zijn met: urn:imsikb0101:DatastroomType:id:5 or 10. Als dit geen LIB-xml of SLD is, kies dan voor een andere controle xslt.')"/>		
 			</xsl:if>				
+			<xsl:if test="not(lower-case(//imsikb0101:metaData/imsikb0101:version) = lower-case('14.8.0'))">
+                <xsl:copy-of select="sikb:createRecord('ERROR','imsikb0101:metaData/imsikb0101:version','Het veld metadata/versie moet versie 14.8.0 zijn')"/>
+            </xsl:if>  
 			<xsl:apply-templates select="//imsikb0101:metaData"/>
 			<xsl:apply-templates select="//imsikb0101:SoilLocation"/>
 			<xsl:apply-templates select="//imsikb0101:Project"/>
