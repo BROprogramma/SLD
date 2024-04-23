@@ -12,7 +12,7 @@
          * SLD object conform OW volgens extern formaat.
     -->
     <sldcom:requestReference>verzoek_1</sldcom:requestReference>
-    <!-- optioneel: KVK nummer van de aanleverende partij. -->
+    <!-- optioneel: KVK nummer van de bronhouder, nodig indien de uploader niet de bronhouder is -->
     <sldcom:deliveryAccountableParty>27376655</sldcom:deliveryAccountableParty>
     <sldcom:qualityRegime>IMBRO/A</sldcom:qualityRegime>
     <sourceDocument>
