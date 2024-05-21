@@ -5,20 +5,20 @@
 		<Waarde>streefwaarde</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>De streefwaarden (s-waarden) zijn tot 1-1-2008 gebaseerd op 'Streefwaarden en interventiewaarden bodemsanering', en vanaf 1-1-2008 voor grondwater op de 'Circulaire bodemsanering' en voor grond zijn dat de achtergrondwaarden uit het 'Besluit bodemkwaliteit'.</Omschrijving>
+		<Omschrijving>Toetsing heeft plaatsgevonden tegen concentraties van stoffen waarbij sprake is van een duurzame bodemkwaliteit.</Omschrijving>
 	</Toetsingswaarde>
 	<Toetsingswaarde>
 		<SIKB0101ID>3</SIKB0101ID>
 		<Waarde>interventiewaarde</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>De interventiewaarden (i-waarden) zijn tot 1-1-2008 gebaseerd op 'Streefwaarden en interventiewaarden bodemsanering' en vanaf 1-1-2008 op de 'Circulaire bodemsanering'.</Omschrijving>
+		<Omschrijving>Toetsing heeft plaatsgevonden tegen concentraties van stoffen waarboven significante risico's voor mens, plant of dier bestaan als gevolg van verontreiniging van de bodem.</Omschrijving>
 	</Toetsingswaarde>
 	<Toetsingswaarde>
 		<SIKB0101ID>11</SIKB0101ID>
 		<Waarde>AW2000</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Achtergrondwaarde Besluit bodemkwaliteit</Omschrijving>
+		<Omschrijving>Toetsing heeft plaatsgevonden tegen concentraties van stoffen zoals die van nature in de bodem voorkomen.</Omschrijving>
 	</Toetsingswaarde>
 </domeintabel>
