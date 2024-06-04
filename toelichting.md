@@ -19,7 +19,7 @@ Een overheidsbesluit bodemverontreiniging bestaat uit de gegevens die bepalend z
 ## Verontreinigingscontouren (Wbb) in de registratie
 De registratie van de aanpak van een verontreiniging onder de Wet bodembescherming (Wbb) gebeurt in de huidige praktijk op verschillende manieren. 
 Wanneer een verontreiniging in zijn geheel is verwijderd, krijgt de verontreinigingscontour een einddatum. In het verleden is deze einddatum niet altijd vastgelegd.
-Wanneer in de aanpak van een bodemverontreiniging de verontreiniging gedeeltelijk is verwijderd, kan dat op verschillende manieren worden geregistreerd. In het verleden werd de historie vaak niet vastgelegd, en bleef de bestaande verontreinigingscountour ongewijzigd bestaan in de registatie (manier A). In de nieuwe praktijk wordt de bestaande verontreinigingscontour verkleind (manier B) of de bestaande verontreinigingscontour wordt beeindigd, en de restverontreiniging wordt als nieuwe contour geregistreerd (manier C).
+Wanneer in de aanpak van een bodemverontreiniging de verontreiniging gedeeltelijk is verwijderd, kan dat op verschillende manieren worden geregistreerd. In het verleden werd de historie vaak niet vastgelegd, en bleef de bestaande verontreinigingscontour ongewijzigd bestaan in de registratie (manier A). In de nieuwe praktijk wordt de bestaande verontreinigingscontour verkleind (manier B) of de bestaande verontreinigingscontour wordt beëindigd, en de restverontreiniging wordt als nieuwe contour geregistreerd (manier C).
 
 <figure>
 	<img src="./media/BRO_SLD_figuur_registratie_aanpak_verontreiniging.png" alt="Registratie_contouren" width="350"/>
