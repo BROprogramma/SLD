@@ -12,10 +12,8 @@ Op 1 januari 2024 is de Omgevingswet (Ow) in werking getreden. De Wet bodembesch
 Een overheidsbesluit bodemverontreiniging bestaat uit de gegevens die bepalend zijn geweest in de procedure van een bevoegd gezag bij de beoordeling en/of afhandeling van bodemverontreiniging. De locatie is vastgelegd bij [Bodemlocatie](#bodemlocatie) (regime Wbb) of bij [Aangepakt gebied](#aangepakt-gebied) (regime Ow). Onder het Wbb regime kunnen besluiten en extra gegevens worden geregistreerd over de verontreinigingscontour of nazorgcontour. Onder het regime van de Ow beperkt de registratie in de BRO zich tot Aangepakt gebied.
 
 <figure>
-	<img src="./media/figuur_scope_SLD.png" alt="Bodemonderzoek" width="350"/>
-	<figcaption>
-		Milieuhygiënisch bodemonderzoek.
-	</figcaption>
+	<img src="./media/figuur_scope_SLD.png" alt="SLD_scope" width="500"/>
+	<figcaption>Overheidsbesluit bodemverontreiniging in deze versie van de catalogus; nazorg onder de Omgevingswet is nog buiten scope.</figcaption>
 </figure>
 
 ## Registratie contouren
@@ -24,21 +22,12 @@ De registratie van de aanpak van een verontreiniging onder de Wet bodembeschermi
 Wanneer een verontreiniging gedeeltelijk is verwijderd, en er een restverontreiniging overblijft, zijn er twee manieren mogelijk. 1) De bestaande verontreinigingscontour wordt aangepast (verkleind) of 2) de bestaande verontreinigingscontour wordt beëindigd (krijgt een einddatum) en de restverontreiniging wordt als nieuwe verontreinigingscontour geregistreerd. In het verleden is de einddatum niet altijd vastgelegd, en kan het gegeven ontbreken. 
 
 <figure>
-	<img src="./media/BRO_SLD_figuur_registratie_aanpak_verontreiniging.png" alt="Bodemonderzoek" width="350"/>
+	<img src="./media/BRO_SLD_figuur_registratie_aanpak_verontreiniging.png" alt="Registratie_contouren" width="500"/>
 	<figcaption>
-		Milieuhygiënisch bodemonderzoek.
+		Registratie contouren aanpak bodemverontreiniging onder de Wbb.
 	</figcaption>
 </figure>
 
-
-
-
-<figure>
-	<img src="./media/figuur_scope_SLD.png" alt="Bodemonderzoek" width="350"/>
-	<figcaption>
-		Milieuhygiënisch bodemonderzoek.
-	</figcaption>
-</figure>
 
 
 # Belangrijkste entiteiten
