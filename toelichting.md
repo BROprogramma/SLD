@@ -9,7 +9,7 @@ Op 1 januari 2024 is de Omgevingswet (Ow) in werking getreden. De Wet bodembesch
 - Ontstaan vóór 1-1-2024 onder het regime van de Wbb, nog lopend en vervolg onder het overgangsrecht op basis van het regime Wbb.
 - Ontstaan na 1-1-2024 onder het regime van de Ow
 
-Een overheidsbesluit bodemverontreiniging bestaat uit de gegevens die bepalend zijn geweest in de procedure van een bevoegd gezag bij de beoordeling en/of afhandeling van bodemverontreiniging. De locatie is vastgelegd in de bodemlocatie (regime Wbb) of het aangepakt gebied (regime Ow). Onder het Wbb regime kunnen besluiten en extra gegevens worden geregistreerd over de verontreinigingscontour of nazorgcontour. Onder het regime van de Ow beperkt de registratie in de BRO zich tot informatie over het aangepakt gebied.
+Een overheidsbesluit bodemverontreiniging bestaat uit de gegevens die bepalend zijn geweest in de procedure van een bevoegd gezag bij de beoordeling en/of afhandeling van bodemverontreiniging. De locatie is vastgelegd bij [Bodemlocatie](#bodemlocatie) (regime Wbb) of bij [Aangepakt gebied](#aangepakt-gebied) (regime Ow). Onder het Wbb regime kunnen besluiten en extra gegevens worden geregistreerd over de verontreinigingscontour of nazorgcontour. Onder het regime van de Ow beperkt de registratie in de BRO zich tot Aangepakt gebied.
 
 # Belangrijkste entiteiten
 
@@ -20,15 +20,13 @@ De term voor het registratieobject Overheidsbesluit bodemverontreiniging heeft e
 Deze entiteit bevat twee gegevensgroepen; de _Registratiegeschiedenis_ (BRO generiek) en de _Gestandaardiseerde locatie_ (BRO generiek).
 
 ## Keuze Bodemlocatie of Aangepakt gebied
-Zoals aangegeven in de [inleiding](#inleiding-0) kunnen gegevens zijn ontstaan onder twee verschillende wettelijke regimes: Wbb of Ow. Registraties die ontstaan zijn onder het regime van de Wbb (ongeacht of de aanpak is afgerond of dat sprake is van overgangsrecht) worden als ‘Bodemlocatie’ opgenomen. Registraties die zijn ontstaan onder het regime van de Ow worden vastgelegd als ‘Aangepakt gebied’.
+Zoals aangegeven in de [inleiding](#inleiding-0) kunnen gegevens zijn ontstaan onder twee verschillende wettelijke regimes: Wbb of Ow. Registraties die ontstaan zijn onder het regime van de Wbb (ongeacht of de aanpak is afgerond of dat sprake is van overgangsrecht) worden als Bodemlocatie opgenomen. Registraties die zijn ontstaan onder het regime van de Ow worden vastgelegd als Aangepakt gebied.
 
 ## Registratiegeschiedenis
 De registratiegeschiedenis van een overheidsbesluit bodemverontreiniging geeft de essentie van de geschiedenis van het object in de registratie ondergrond, de formele geschiedenis. De registratiegeschiedenis vertelt bijvoorbeeld wanneer een object is geregistreerd en of er na registratie correcties zijn doorgevoerd. Deze gegevensgroep wordt niet aangeleverd maar intern binnen de registratie ondergrond gegenereerd.
 
 ## Gestandaardiseerde locatie
-Locaties die zijn ontstaan onder het regime van de Ow worden geregistreerd via aangepakt gebied (zie [Aangepakt gebied](#aangepakt-gebied)). Overige locaties (ontstaan onder het regime van de Wbb) worden als bodemlocatie geregistreerd (zie [Bodemlocatie](#bodemlocatie)). De gestandaardiseerde locatie geeft de geografische afbakening van de locatie.
-
-De geometrie kan worden aangeleverd ten opzichte van twee referentiestelsels (RD en ETRS89). Binnen de basisregistratie ondergrond worden gegevens die aangeleverd zijn op basis van RD volgens een gedefinieerde methodiek omgezet naar ETRS89. Deze bewerking vindt plaats binnen de BRO zodat aan de uitgiftekant altijd kan worden uitgeleverd in ETRS89 én het oorspronkelijk aangeleverde referentiestelsel. De gestandaardiseerde locatie wordt op basis van de aanlevering automatisch vastgelegd, evenals de methode volgens welke de transformatie is uitgevoerd. 
+De geometrie van een overheidsbesluit bodemverontreiniging kan worden aangeleverd ten opzichte van twee referentiestelsels (RD en ETRS89). Binnen de BRO worden gegevens die aangeleverd zijn op basis van RD volgens een gedefinieerde methodiek omgezet naar ETRS89. Deze bewerking vindt plaats binnen de BRO zodat aan de uitgiftekant altijd kan worden uitgeleverd in ETRS89 én het oorspronkelijk aangeleverde referentiestelsel. De gestandaardiseerde locatie wordt op basis van de aanlevering automatisch vastgelegd, evenals de methode volgens welke de transformatie is uitgevoerd.
 
 ## Bodemlocatie
 Deze entiteit beschrijft de eenheid (of aggregatie van kleinere eenheden) die als één geheel is aangepakt bij het onderzoek naar en de aanpak van bodemverontreiniging onder de Wbb. De entiteit bevat een aantal algemene gegevens die betrekking hebben op het registratieobject zelf, zoals: de unieke identificatie (zowel binnen het bodeminformatiesysteem als in de dossiers van het bevoegd gezag), de naam en de ruimtelijke begrenzing van de locatie. Tevens bevat deze entiteit het zogenaamde ‘SIKB-ID’ (unieke SIKB0101 identificatie in de vorm van een GUID) waaronder de bodemlocatie in de ketensystemen is vastgelegd. Daarnaast bevat de entiteit enkele gegevens die betrekking hebben op de afhandeling door bevoegd gezag zoals de vervolgactie Wbb.
