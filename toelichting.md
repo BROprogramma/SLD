@@ -11,6 +11,10 @@ Op 1 januari 2024 is de Omgevingswet (Ow) in werking getreden. De Wet bodembesch
 
 Een overheidsbesluit bodemverontreiniging bestaat uit de gegevens die bepalend zijn geweest in de procedure van een bevoegd gezag bij de beoordeling en/of afhandeling van bodemverontreiniging. De locatie is vastgelegd bij [Bodemlocatie](#bodemlocatie) (regime Wbb) of bij [Aangepakt gebied](#aangepakt-gebied) (regime Ow). Onder het Wbb regime kunnen besluiten en extra gegevens worden geregistreerd over de verontreinigingscontour of nazorgcontour. Onder het regime van de Ow beperkt de registratie in de BRO zich tot Aangepakt gebied.
 
+## Registratie contouren bij aanpak verontreiniging Wbb
+...
+
+
 # Belangrijkste entiteiten
 
 ## Overheidsbesluit bodemverontreiniging
