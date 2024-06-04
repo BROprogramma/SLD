@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/Overheidsbesluit bodemverontreiniging SLD/20240409</p>
       <p>Imvertor: Nightly-build.14</p>
-      <p>Model release: Conceptualmodel-OverheidsbesluitbodemverontreinigingSLD-1.0-1-20240409-20240604-071439</p>
+      <p>Model release: Conceptualmodel-OverheidsbesluitbodemverontreinigingSLD-1.0-1-20240409-20240604-135716</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -453,7 +453,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d66829e2860">
+                  <section id="detail_d67054e2860">
                      <h4>  registratiegeschiedenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -491,7 +491,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d66829e3045">
+                  <section id="detail_d67054e3045">
                      <h4>  gestandaardiseerde locatie</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1814,7 +1814,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d66829e8275">
+                  <section id="detail_d67054e8275">
                      <h4>  locatiegeschiedenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -2153,6 +2153,10 @@
                                  </td>
                            </tr>
                            <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td>1 januari 1980 tot heden</td>
+                           </tr>
+                           <tr>
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
                            </tr>
@@ -2167,7 +2171,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d66829e8874">
+                  <section id="detail_d67054e8893">
                      <h4>  gebeurtenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -2307,6 +2311,10 @@
                               <td>
                                  Datum
                                  </td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td>1 januari 1980 tot heden</td>
                            </tr>
                            <tr>
                               <th>Materiële geschiedenis</th>
@@ -2785,6 +2793,10 @@
                                  </td>
                            </tr>
                            <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td>1 januari 1980 tot heden</td>
+                           </tr>
+                           <tr>
                               <th>Regels</th>
                               <td>
                                  
@@ -3084,7 +3096,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>Het besluit waarin het aangepakt gebied is aangewezen.</p>
+                                 <p>Het besluit waarin het aangepakt gebied is aangewezen, gewijzigd of beëindigd.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3093,11 +3105,11 @@
                            </tr>
                            <tr>
                               <th>Kardinaliteit</th>
-                              <td>0..1</td>
+                              <td>0..3</td>
                            </tr>
                            <tr>
                               <th>Relatiesoort naam</th>
-                              <td>is aangewezen in</td>
+                              <td>is vemeld in</td>
                            </tr>
                            <tr>
                               <th>Relatierol naam</th>
@@ -3117,7 +3129,10 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>Het gegeven mag niet aanwezig zijn wanneer de waarde van het attribuut kader aanlevering</p>
+                                 <p>Het gegeven mag niet aanwezig zijn wanneer de waarde van het attribuut <em>kader aanlevering</em> van de entiteit Overheidsbesluit bodemverontreiniging gelijk is aan <em>Omgevingswet</em>
+                                    <em>.</em>
+                                    **
+                                    *</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3128,14 +3143,17 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Voor gegevens aangeleverd onder de Wet bodembescherming (Wbb) worden genomen besluiten
-                                    vastgelegd bij de entiteit Bodemlocatie. Daarnaast kan bij een aangepakt gebied worden
-                                    vastgelegd in welk van die besluiten dat gebied is aangewezen. Het besluit waarin
-                                    het aangepakt gebied is aangewezen, is in ieder geval aanwezig als de betreffende
-                                    bodemlocatie onder overgangsrecht valt en dat besluit is genomen nadat gegevens in
-                                    het kader van archiefoverdracht zijn aangeleverd. Is het besluit genomen vóór dat
-                                    moment van aanleveren, dan is het besluit weliswaar aanwezig bij de entiteit Bodemlocatie,
-                                    maar niet direct gerelateerd aan het aangepakt gebied.</p>
+                                 <p>*
+                                    <em>Voor gegevens aangeleverd onder de Wet bodembescherming (Wbb) worden genomen besluiten
+                                       vastgelegd bij de entiteit Bodemlocatie. Daarnaast kan bij een aangepakt gebied worden
+                                       vastgelegd in welk van die besluiten dat gebied is aangewezen, gewijzigd of beëindigd.
+                                       Een besluit met betrekking tot het aangepakt gebied is in ieder geval aanwezig als
+                                       de betreffende bodemlocatie onder overgangsrecht valt en dat besluit is genomen nadat
+                                       gegevens over de bodemlocatie in het kader van archiefoverdracht zijn aangeleverd.
+                                       Is het besluit genomen vóór dat moment van aanleveren, dan is het besluit weliswaar
+                                       aanwezig bij de entiteit Bodemlocatie, maar niet direct gerelateerd aan het aangepakt
+                                       gebied.</em>
+                                    </p>
                                  </td>
                            </tr>
                         </tbody>
@@ -3231,7 +3249,7 @@
                               <td>
                                  
                                  <p>Het BRO-ID moet bekend zijn binnen de basisregistratie ondergrond als milieuhygiënisch
-                                    bodemonderzoek waarbij de waarde van het attribuut <em>type onderzoek</em> gelijk is aan <em>evaluatieverslagGravenOw</em>, <em>evaluatieverslagSanerenOw</em> of <em>saneringsEvaluatie</em>.</p>
+                                    bodemonderzoek waarbij de waarde van het attribuut <em>type onderzoek</em> gelijk is aan <em>evaluatieverslagGraven</em> of <em>evaluatieverslagSaneren</em>.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3741,6 +3759,10 @@
                                  </td>
                            </tr>
                            <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td>1 januari 1980 tot heden</td>
+                           </tr>
+                           <tr>
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
                            </tr>
@@ -3795,7 +3817,7 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> tot heden</td>
+                              <td>1 januari 1980 tot heden</td>
                            </tr>
                            <tr>
                               <th>Regels</th>
@@ -3813,7 +3835,7 @@
                               <td>
                                  
                                  <p>De einddatum wordt pas vastgelegd wanneer een besluit is genomen dat het verontreinigd
-                                    gebied is beëindigd of gewijzigd.<br clear="none">
+                                    gebied is beëindigd.<br clear="none">
                                     Uit het ontbreken van de einddatum kan niet worden afgeleid dat de verontreiniging
                                     nog aanwezig is.</p>
                                  </td>
@@ -3821,7 +3843,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d66829e14658">
+                  <section id="detail_d67054e14756">
                      <h4>  aard verontreiniging</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -3883,7 +3905,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>Het besluit waarin het verontreinigd gebied is aangewezen.</p>
+                                 <p>Het besluit waarin het verontreinigd gebied is aangewezen, gewijzigd of beëindigd.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3892,11 +3914,11 @@
                            </tr>
                            <tr>
                               <th>Kardinaliteit</th>
-                              <td>0..1</td>
+                              <td>0..3</td>
                            </tr>
                            <tr>
                               <th>Relatiesoort naam</th>
-                              <td>is aangewezen in</td>
+                              <td>is vemeld in</td>
                            </tr>
                            <tr>
                               <th>Relatierol naam</th>
@@ -3922,12 +3944,13 @@
                                  
                                  <p>Voor gegevens aangeleverd onder de Wet bodembescherming (Wbb) worden genomen besluiten
                                     vastgelegd bij de entiteit Bodemlocatie. Daarnaast kan bij een verontreinigd gebied
-                                    worden vastgelegd in welk van die besluiten dat gebied is aangewezen. Het besluit
-                                    waarin het verontreinigd gebied is aangewezen, is in ieder geval aanwezig als de betreffende
-                                    bodemlocatie onder overgangsrecht valt en dat besluit is genomen nadat gegevens in
-                                    het kader van archiefoverdracht zijn aangeleverd. Is het besluit genomen vóór dat
-                                    moment van aanleveren, dan is het besluit weliswaar aanwezig bij de entiteit Bodemlocatie,
-                                    maar niet direct gerelateerd aan het verontreinigd gebied.</p>
+                                    worden vastgelegd in welk van die besluiten dat gebied is aangewezen, gewijzigd of
+                                    beëindigd. Een besluit met betrekking tot het verontreinigd gebied is in ieder geval
+                                    aanwezig als de betreffende bodemlocatie onder overgangsrecht valt en dat besluit
+                                    is genomen nadat gegevens over de bodemlocatie in het kader van archiefoverdracht
+                                    zijn aangeleverd. Is het besluit genomen vóór dat moment van aanleveren, dan is het
+                                    besluit weliswaar aanwezig bij de entiteit Bodemlocatie, maar niet direct gerelateerd
+                                    aan het verontreinigd gebied.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -4446,6 +4469,10 @@
                                  </td>
                            </tr>
                            <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td>1 januari 1980 tot heden</td>
+                           </tr>
+                           <tr>
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
                            </tr>
@@ -4501,7 +4528,7 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> tot heden</td>
+                              <td>1 januari 1980 tot heden</td>
                            </tr>
                            <tr>
                               <th>Regels</th>
@@ -4598,7 +4625,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>Het besluit waarin het nazorggebied is aangewezen.</p>
+                                 <p>Het besluit waarin het nazorggebied is aangewezen, gewijzigd of beëindigd.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -4607,11 +4634,11 @@
                            </tr>
                            <tr>
                               <th>Kardinaliteit</th>
-                              <td>0..1</td>
+                              <td>0..3</td>
                            </tr>
                            <tr>
                               <th>Relatiesoort naam</th>
-                              <td>is aangewezen in</td>
+                              <td>is vemeld in</td>
                            </tr>
                            <tr>
                               <th>Relatierol naam</th>
@@ -4637,12 +4664,12 @@
                                  
                                  <p>Voor gegevens aangeleverd onder de Wet bodembescherming (Wbb) worden genomen besluiten
                                     vastgelegd bij de entiteit Bodemlocatie. Daarnaast kan bij een nazorggebied worden
-                                    vastgelegd in welk van die besluiten dat gebied is aangewezen. Het besluit waarin
-                                    het nazorggebied is aangewezen, is in ieder geval aanwezig als de betreffende bodemlocatie
-                                    onder overgangsrecht valt en dat besluit is genomen nadat gegevens in het kader van
-                                    archiefoverdracht zijn aangeleverd. Is het besluit genomen vóór dat moment van aanleveren,
-                                    dan is het besluit weliswaar aanwezig bij de entiteit Bodemlocatie, maar niet direct
-                                    gerelateerd aan het nazorggebied.</p>
+                                    vastgelegd in welk van die besluiten dat gebied is aangewezen, gewijzigd of beëindigd.
+                                    Een besluit met betrekking tot het nazorggebied is in ieder geval aanwezig als de
+                                    betreffende bodemlocatie onder overgangsrecht valt en dat besluit is genomen nadat
+                                    gegevens over de bodemlocatie in het kader van archiefoverdracht zijn aangeleverd.
+                                    Is het besluit genomen vóór dat moment van aanleveren, dan is het besluit weliswaar
+                                    aanwezig bij de entiteit Bodemlocatie, maar niet direct gerelateerd aan het nazorggebied.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -5054,7 +5081,7 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> tot heden</td>
+                              <td>1 januari 1980 tot heden</td>
                            </tr>
                            <tr>
                               <th>Materiële geschiedenis</th>
