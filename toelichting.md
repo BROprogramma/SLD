@@ -14,6 +14,17 @@ Een overheidsbesluit bodemverontreiniging bestaat uit de gegevens die bepalend z
 ## Registratie contouren bij aanpak verontreiniging Wbb
 ...
 
+<figure>
+					<!-- link to generic location of GitHub/BROprogramma -->
+					<!-- <img src="https://github.com/BROprogramma/generiek/raw/gh-pages/mk/media/BRO_Registratieobject tegel_Overheidsbesluit bodemverontreiniging.png" alt="Overheidsbesluit bodemverontreiniging" width="50"/> -->
+					<!-- link to location on docs.geostandaarden -->
+					<img src="https://github.com/BROprogramma/SLD/blob/2a3f5bb10746ae36fe93951e393c43820e3339dc/media/BRO_SLD%20figuur%20registratie%20aanpak%20verontreiniging%20Wbb.png" width="50"/>
+					<figcaption>
+				 		Registratie contouren aanpak verontreiniging onder de Wbb
+				  	</figcaption>
+				</figure>	
+
+
 
 # Belangrijkste entiteiten
 
