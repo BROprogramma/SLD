@@ -27,6 +27,13 @@ Wanneer een verontreiniging gedeeltelijk is verwijderd, en er een restverontrein
 				</figure>	
 
 
+<figure>
+	<img src="./media/figuur_scope_SLD.png" alt="Bodemonderzoek" width="350"/>
+	<figcaption>
+		Milieuhygiënisch bodemonderzoek.
+	</figcaption>
+</figure>
+
 
 # Belangrijkste entiteiten
 
