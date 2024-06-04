@@ -17,14 +17,17 @@ Een overheidsbesluit bodemverontreiniging bestaat uit de gegevens die bepalend z
 </figure>
 
 ## Registratie contouren
-De registratie van de aanpak van een verontreiniging onder de Wet bodembescherming (Wbb) gebeurt in de huidige praktijk op verschillende manieren. Wanneer een verontreiniging in zijn geheel is verwijderd, krijgt de verontreinigingscontour een einddatum. In het verleden is deze einddatum niet altijd vastgelegd, en kan het gegeven ontbreken.
+De registratie van de aanpak van een verontreiniging onder de Wet bodembescherming (Wbb) gebeurt in de huidige praktijk op verschillende manieren. Wanneer een verontreiniging in zijn geheel is verwijderd, krijgt de verontreinigingscontour een einddatum. In het verleden is deze einddatum niet altijd vastgelegd.
 
-Wanneer een verontreiniging gedeeltelijk is verwijderd, en er een restverontreiniging overblijft, zijn er twee manieren mogelijk. 1) De bestaande verontreinigingscontour wordt aangepast (verkleind) of 2) de bestaande verontreinigingscontour wordt beëindigd (krijgt een einddatum) en de restverontreiniging wordt als nieuwe verontreinigingscontour geregistreerd. In het verleden is de einddatum niet altijd vastgelegd, en kan het gegeven ontbreken. 
+Wanneer een verontreiniging gedeeltelijk is verwijderd, en er een restverontreiniging overblijft, zijn er twee manieren mogelijk. 1) De bestaande verontreinigingscontour wordt aangepast (verkleind) of 2) de bestaande verontreinigingscontour wordt beëindigd (krijgt een einddatum) en de restverontreiniging wordt als nieuwe verontreinigingscontour geregistreerd. In het verleden is de einddatum niet altijd vastgelegd. 
 
 <figure>
 	<img src="./media/BRO_SLD_figuur_registratie_aanpak_verontreiniging.png" alt="Registratie_contouren" width="500"/>
 	<figcaption>
-		Registratie contouren aanpak bodemverontreiniging onder de Wbb.
+		Registratie contouren aanpak bodemverontreiniging onder de Wbb.<br>
+		A: De verontreiniging is gedeeltelijk verwijderd, de bestaande verontreinigingscountour blijft ongewijzigd bestaan; 
+		B: De verontreiniging is gedeeltelijk verwijderd, de bestaande verontreinigingscontour is aangepast (verkleind);
+		C: De verontreiniging is gedeeltelijk verwijderd, de bestaande verontreinigingscontour is beeindigd, en de restverontreiniging is als nieuwe contour geregistreerd.
 	</figcaption>
 </figure>
 
