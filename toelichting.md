@@ -11,20 +11,26 @@ Op 1 januari 2024 is de Omgevingswet (Ow) in werking getreden. De Wet bodembesch
 
 Een overheidsbesluit bodemverontreiniging bestaat uit de gegevens die bepalend zijn geweest in de procedure van een bevoegd gezag bij de beoordeling en/of afhandeling van bodemverontreiniging. De locatie is vastgelegd bij [Bodemlocatie](#bodemlocatie) (regime Wbb) of bij [Aangepakt gebied](#aangepakt-gebied) (regime Ow). Onder het Wbb regime kunnen besluiten en extra gegevens worden geregistreerd over de verontreinigingscontour of nazorgcontour. Onder het regime van de Ow beperkt de registratie in de BRO zich tot Aangepakt gebied.
 
+<figure>
+	<img src="./media/figuur_scope_SLD.png" alt="Bodemonderzoek" width="350"/>
+	<figcaption>
+		Milieuhygiënisch bodemonderzoek.
+	</figcaption>
+</figure>
+
 ## Registratie contouren
 De registratie van de aanpak van een verontreiniging onder de Wet bodembescherming (Wbb) gebeurt in de huidige praktijk op verschillende manieren. Wanneer een verontreiniging in zijn geheel is verwijderd, krijgt de verontreinigingscontour een einddatum. In het verleden is deze einddatum niet altijd vastgelegd, en kan het gegeven ontbreken.
 
 Wanneer een verontreiniging gedeeltelijk is verwijderd, en er een restverontreiniging overblijft, zijn er twee manieren mogelijk. 1) De bestaande verontreinigingscontour wordt aangepast (verkleind) of 2) de bestaande verontreinigingscontour wordt beëindigd (krijgt een einddatum) en de restverontreiniging wordt als nieuwe verontreinigingscontour geregistreerd. In het verleden is de einddatum niet altijd vastgelegd, en kan het gegeven ontbreken. 
 
 <figure>
-					<!-- link to generic location of GitHub/BROprogramma -->
-					<!-- <img src="https://github.com/BROprogramma/generiek/raw/gh-pages/mk/media/BRO_Registratieobject tegel_Overheidsbesluit bodemverontreiniging.png" alt="Overheidsbesluit bodemverontreiniging" width="50"/> -->
-					<!-- link to location on docs.geostandaarden -->
-					<img src="https://github.com/BROprogramma/SLD/blob/2a3f5bb10746ae36fe93951e393c43820e3339dc/media/BRO_SLD%20figuur%20registratie%20aanpak%20verontreiniging%20Wbb.png" width="700"/>
-					<figcaption>
-				 		Registratie contouren aanpak verontreiniging onder de Wbb
-				  	</figcaption>
-				</figure>	
+	<img src="./media/BRO_SLD_figuur_registratie_aanpak_verontreiniging.png" alt="Bodemonderzoek" width="350"/>
+	<figcaption>
+		Milieuhygiënisch bodemonderzoek.
+	</figcaption>
+</figure>
+
+
 
 
 <figure>
