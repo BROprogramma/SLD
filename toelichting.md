@@ -9,29 +9,27 @@ Op 1 januari 2024 is de Omgevingswet (Ow) in werking getreden. De Wet bodembesch
 - Ontstaan vóór 1-1-2024 onder het regime van de Wbb, nog lopend en vervolg onder het overgangsrecht op basis van het regime Wbb.
 - Ontstaan na 1-1-2024 onder het regime van de Ow
 
-Een overheidsbesluit bodemverontreiniging bestaat uit de gegevens die bepalend zijn geweest in de procedure van een bevoegd gezag bij de beoordeling en/of afhandeling van bodemverontreiniging. De locatie is vastgelegd bij [Bodemlocatie](#bodemlocatie) (regime Wbb) of bij [Aangepakt gebied](#aangepakt-gebied) (regime Ow). Onder het Wbb regime kunnen besluiten en extra gegevens worden geregistreerd over de verontreinigingscontour of nazorgcontour. Onder het regime van de Ow beperkt de registratie in de BRO zich tot Aangepakt gebied.
+Een overheidsbesluit bodemverontreiniging bestaat uit de gegevens die bepalend zijn geweest in de procedure van een bevoegd gezag bij de beoordeling en/of afhandeling van bodemverontreiniging. De locatie is vastgelegd bij [Bodemlocatie](#bodemlocatie) (regime Wbb) of bij [Aangepakt gebied](#aangepakt-gebied) (regime Ow). Onder het Wbb regime kunnen besluiten en extra gegevens worden geregistreerd over de verontreinigingscontour of nazorgcontour. Onder het regime van de Ow beperkt de registratie in de BRO zich tot Aangepakt gebied. Nazorg onder de Omgevingswet is in deze versie van de catalogus buiten scope.
 
 <figure>
-	<img src="./media/figuur_scope_SLD.png" alt="SLD_scope" width="500"/>
-	<figcaption>Overheidsbesluit bodemverontreiniging in deze versie van de catalogus; nazorg onder de Omgevingswet is nog buiten scope.</figcaption>
+	<img src="./media/figuur_scope_SLD.png" alt="SLD_scope" width="350"/>
+	<figcaption>Overheidsbesluit bodemverontreiniging in deze versie van de catalogus; nazorg onder de Omgevingswet is buiten scope.</figcaption>
 </figure>
 
-## Registratie contouren
-De registratie van de aanpak van een verontreiniging onder de Wet bodembescherming (Wbb) gebeurt in de huidige praktijk op verschillende manieren. Wanneer een verontreiniging in zijn geheel is verwijderd, krijgt de verontreinigingscontour een einddatum. In het verleden is deze einddatum niet altijd vastgelegd.
-
-Wanneer een verontreiniging gedeeltelijk is verwijderd, en er een restverontreiniging overblijft, zijn er twee manieren mogelijk. 1) De bestaande verontreinigingscontour wordt aangepast (verkleind) of 2) de bestaande verontreinigingscontour wordt beëindigd (krijgt een einddatum) en de restverontreiniging wordt als nieuwe verontreinigingscontour geregistreerd. In het verleden is de einddatum niet altijd vastgelegd. 
+## Verontreinigingscontouren (Wbb) in de registratie
+De registratie van de aanpak van een verontreiniging onder de Wet bodembescherming (Wbb) gebeurt in de huidige praktijk op verschillende manieren. 
+Wanneer een verontreiniging in zijn geheel is verwijderd, krijgt de verontreinigingscontour een einddatum. In het verleden is deze einddatum niet altijd vastgelegd.
+Wanneer in de aanpak van een bodemverontreiniging de verontreiniging gedeeltelijk is verwijderd, kan dat op verschillende manieren worden geregistreerd. In het verleden werd de historie vaak niet vastgelegd, en bleef de bestaande verontreinigingscountour ongewijzigd bestaan in de registatie (manier A). In de nieuwe praktijk wordt de bestaande verontreinigingscontour verkleind (manier B) of de bestaande verontreinigingscontour wordt beeindigd, en de restverontreiniging wordt als nieuwe contour geregistreerd (manier C).
 
 <figure>
-	<img src="./media/BRO_SLD_figuur_registratie_aanpak_verontreiniging.png" alt="Registratie_contouren" width="500"/>
-	<figcaption>
-		Registratie contouren aanpak bodemverontreiniging onder de Wbb.<br>
-		A: De verontreiniging is gedeeltelijk verwijderd, de bestaande verontreinigingscountour blijft ongewijzigd bestaan; 
-		B: De verontreiniging is gedeeltelijk verwijderd, de bestaande verontreinigingscontour is aangepast (verkleind);
-		C: De verontreiniging is gedeeltelijk verwijderd, de bestaande verontreinigingscontour is beeindigd, en de restverontreiniging is als nieuwe contour geregistreerd.
-	</figcaption>
+	<img src="./media/BRO_SLD_figuur_registratie_aanpak_verontreiniging.png" alt="Registratie_contouren" width="350"/>
+	<figcaption>Registratie contouren aanpak bodemverontreiniging onder de Wet bodembescherming.</figcaption>
 </figure>
 
+## Aangepakte gebieden (Ow) in de registratie
+Wanneer een De bronhouder kan bepalen hoe .
 
+Figuur X: Registratie aangepakt gebied onder de Omgevingswet.
 
 # Belangrijkste entiteiten
 
