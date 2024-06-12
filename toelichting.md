@@ -30,7 +30,7 @@ Wanneer in de aanpak van een bodemverontreiniging de verontreiniging gedeeltelij
 Het aangepakt gebied onder de Omgevingswet is het resultaat van een uitgevoerde bodemsanering of ontgraving (in meer dan 25m<sup>3</sup> grond boven de interventiewaarde). Wanneer binnen een sanering verschillende aanpakken worden toegepast, bijvoorbeeld een deel van de verontreiniging wordt ontgraven en een ander deel wordt afgedekt, kan dat op twee verschillende manieren worden geregistreerd. De deelgebieden worden apart geregistreerd met ieder een eigen aanpak, of de gebieden worden als één geheel geregistreerd met de aanduiding 'gecombineerde aanpak'.
 
 <figure>
-	<img src="./media/BRO_SLD_figuur_registratie_aangepakt_gebied.png" alt="Registratie_aangepakt_gebied" width="350"/>
+	<img src="./media/BRO_SLD_figuur_registratie_aangepakt_gebied.png" alt="Registratie_aangepakt_gebied" width="150"/>
 	<figcaption>Registratie aangepakt gebied onder de Omgevingswet; als twee aparte deelgebieden met ieder een eigen aanpak, of als één geheel met de aanduiding 'gecombineerde aanpak'.</figcaption>
 </figure>
 
