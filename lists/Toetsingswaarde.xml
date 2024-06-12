@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Toetsingswaarde>
-		<SIKB0101ID>1</SIKB0101ID>
 		<Waarde>streefwaarde</Waarde>
+		<SIKB0101ID>1</SIKB0101ID>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving>Toetsing heeft plaatsgevonden met concentraties van stoffen waarbij de streefwaarde is overschreden.</Omschrijving>
 	</Toetsingswaarde>
 	<Toetsingswaarde>
-		<SIKB0101ID>3</SIKB0101ID>
 		<Waarde>interventiewaarde</Waarde>
+		<SIKB0101ID>3</SIKB0101ID>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving>Toetsing heeft plaatsgevonden met concentraties van stoffen waarbij de internventiewaarde is overschreden. Er bestaan significante risico's voor mens, plant of dier als gevolg van verontreiniging van de bodem.</Omschrijving>
 	</Toetsingswaarde>
 	<Toetsingswaarde>
-		<SIKB0101ID>11</SIKB0101ID>
 		<Waarde>achtergrondwaarde</Waarde>
+		<SIKB0101ID>11</SIKB0101ID>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving>Toetsing heeft plaatsgevonden met concentraties van stoffen waarbij de achtergrondwaarde is overschreden.</Omschrijving>
