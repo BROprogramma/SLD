@@ -9,29 +9,29 @@ Op 1 januari 2024 is de Omgevingswet (Ow) in werking getreden. De Wet bodembesch
 - Ontstaan vóór 1-1-2024 onder het regime van de Wbb, nog lopend en vervolg onder het overgangsrecht op basis van het regime Wbb.
 - Ontstaan na 1-1-2024 onder het regime van de Ow.
 
-De term voor het registratieobject ‘Overheidsbesluit bodemverontreiniging’ heeft een bredere betekenis dan alleen het formele besluit dat door de overheid is genomen. Een overheidsbesluit bodemverontreiniging bestaat uit de gegevens die bepalend zijn geweest in de procedure van een bevoegd gezag bij de beoordeling en/of afhandeling van bodemverontreiniging. Dit omvat de gegevens die onderdeel zijn van een formele beschikking, maar ook gegevens die een bevoegd gezag vastlegt zonder dat er een formele beschikking op is afgegeven (zoals bijvoorbeeld onder het regime van de Ow). De locatie is vastgelegd bij [Bodemlocatie](#bodemlocatie) (regime Wbb) of bij [Aangepakt gebied](#aangepakt-gebied) (regime Ow). Onder het Wbb regime kunnen besluiten en extra gegevens worden geregistreerd over het verontreinigd gebied, aangepakt gebied of nazorggebied. Onder het regime van de Ow beperkt de registratie in de BRO zich tot het aangepakt gebied. Nazorg onder de Omgevingswet is in deze versie van de catalogus buiten scope.
+De term voor het registratieobject ‘Overheidsbesluit bodemverontreiniging’ heeft een bredere betekenis dan alleen het formele besluit dat door de overheid is genomen. Een overheidsbesluit bodemverontreiniging bestaat uit de gegevens die bepalend zijn geweest in de procedure van een bevoegd gezag bij de beoordeling en/of afhandeling van bodemverontreiniging. Dit omvat de gegevens die onderdeel zijn van een formele beschikking, maar ook gegevens die een bevoegd gezag vastlegt zonder dat er een formele beschikking op is afgegeven (zoals bijvoorbeeld onder het regime van de Ow). De locatie is vastgelegd bij [Bodemlocatie](#bodemlocatie) (regime Wbb) of bij [Aangepakt gebied](#aangepakt-gebied) (regime Ow). Onder het Wbb regime kunnen besluiten en extra gegevens worden geregistreerd over het verontreinigd gebied, aangepakt gebied of nazorggebied. Onder het regime van de Ow beperkt de registratie in de BRO zich tot het aangepakt gebied. Nazorg onder de Ow is in deze versie van de catalogus buiten scope.
 
 <figure>
 	<img src="./media/figuur_scope_SLD.png" alt="SLD_scope" width="350"/>
-	<figcaption>Overheidsbesluit bodemverontreiniging in deze versie van de catalogus; nazorg onder de Omgevingswet is buiten scope.</figcaption>
+	<figcaption>Overheidsbesluit bodemverontreiniging in deze versie van de catalogus; nazorg onder de Ow is buiten scope.</figcaption>
 </figure>
 
 ## Verontreinigingscontouren (Wbb) in de registratie
-De registratie van de aanpak van een verontreiniging onder de Wet bodembescherming (Wbb) gebeurt in de huidige praktijk op verschillende manieren. 
+De registratie van de aanpak van een verontreiniging onder de Wbb gebeurt in de huidige praktijk op verschillende manieren. 
 Wanneer een verontreiniging in zijn geheel is verwijderd, krijgt de verontreinigingscontour een einddatum. In het verleden is deze einddatum niet altijd vastgelegd.
 Wanneer in de aanpak van een bodemverontreiniging de verontreiniging gedeeltelijk is verwijderd, kan dat op verschillende manieren worden geregistreerd. In het verleden werd de historie vaak niet vastgelegd en bleef de bestaande verontreinigingscontour ongewijzigd bestaan in de registratie (manier A). In de nieuwe praktijk wordt de bestaande verontreinigingscontour verkleind (manier B) of de bestaande verontreinigingscontour wordt beëindigd en de restverontreiniging wordt als nieuwe contour geregistreerd (manier C).
 
 <figure>
 	<img src="./media/BRO_SLD_figuur_registratie_aanpak_verontreiniging.png" alt="Registratie_contouren" width="350"/>
-	<figcaption>Registratie contouren aanpak bodemverontreiniging onder de Wet bodembescherming.</figcaption>
+	<figcaption>Registratie contouren aanpak bodemverontreiniging onder de Wbb.</figcaption>
 </figure>
 
 ## Aangepakte gebieden (Ow) in de registratie
-Het aangepakt gebied onder de Omgevingswet is het resultaat van een uitgevoerde bodemsanering of ontgraving (in meer dan 25m<sup>3</sup> grond boven de interventiewaarde). Wanneer binnen een sanering verschillende aanpakken worden toegepast, bijvoorbeeld een deel van de verontreiniging wordt ontgraven en een ander deel wordt afgedekt, kan dat op twee verschillende manieren worden geregistreerd. De deelgebieden worden apart geregistreerd met ieder een eigen aanpak, of de gebieden worden als één geheel geregistreerd met de aanduiding 'gecombineerde aanpak'.
+Het aangepakt gebied onder de Ow is het resultaat van een uitgevoerde bodemsanering of ontgraving (in meer dan 25m<sup>3</sup> grond boven de interventiewaarde). Wanneer binnen een sanering verschillende aanpakken worden toegepast, bijvoorbeeld een deel van de verontreiniging wordt ontgraven en een ander deel wordt afgedekt, kan dat op twee verschillende manieren worden geregistreerd. De deelgebieden worden apart geregistreerd met ieder een eigen aanpak, of de gebieden worden als één geheel geregistreerd met de aanduiding 'gecombineerde aanpak'.
 
 <figure>
 	<img src="./media/BRO_SLD_figuur_registratie_aangepakt_gebied.png" alt="Registratie_aangepakt_gebied" width="150"/>
-	<figcaption>Registratie aangepakt gebied onder de Omgevingswet; als twee aparte deelgebieden met ieder een eigen aanpak, of als één geheel met de aanduiding 'gecombineerde aanpak'.</figcaption>
+	<figcaption>Registratie aangepakt gebied onder de Ow; als twee aparte deelgebieden met ieder een eigen aanpak, of als één geheel met de aanduiding 'gecombineerde aanpak'.</figcaption>
 </figure>
 
 
