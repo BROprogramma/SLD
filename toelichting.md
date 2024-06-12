@@ -9,12 +9,15 @@ Op 1 januari 2024 is de Omgevingswet (Ow) in werking getreden. De Wet bodembesch
 - Ontstaan vóór 1-1-2024 onder het regime van de Wbb, nog lopend en vervolg onder het overgangsrecht op basis van het regime Wbb.
 - Ontstaan na 1-1-2024 onder het regime van de Ow.
 
-De term voor het registratieobject ‘Overheidsbesluit bodemverontreiniging’ heeft een bredere betekenis dan alleen het formele besluit dat door de overheid is genomen. Een overheidsbesluit bodemverontreiniging bestaat uit de gegevens die bepalend zijn geweest in de procedure van een bevoegd gezag bij de beoordeling en/of afhandeling van bodemverontreiniging. Dit omvat de gegevens die onderdeel zijn van een formele beschikking, maar ook gegevens die een bevoegd gezag vastlegt zonder dat er een formele beschikking op is afgegeven (zoals bijvoorbeeld onder het regime van de Ow). De locatie is vastgelegd bij [Bodemlocatie](#bodemlocatie) (regime Wbb) of bij [Aangepakt gebied](#aangepakt-gebied) (regime Ow). Onder het Wbb regime kunnen besluiten en extra gegevens worden geregistreerd over het verontreinigd gebied, aangepakt gebied of nazorggebied. Onder het regime van de Ow beperkt de registratie in de BRO zich tot het aangepakt gebied. Nazorg onder de Ow is in deze versie van de catalogus buiten scope.
+De term voor het registratieobject ‘Overheidsbesluit bodemverontreiniging’ heeft een bredere betekenis dan alleen het formele besluit dat door de overheid is genomen. Een overheidsbesluit bodemverontreiniging bestaat uit de gegevens die bepalend zijn geweest in de procedure van een bevoegd gezag bij de beoordeling en/of afhandeling van bodemverontreiniging. Dit omvat de gegevens die onderdeel zijn van een formele beschikking, maar ook gegevens die een bevoegd gezag vastlegt zonder dat er een formele beschikking op is afgegeven (zoals bijvoorbeeld onder het regime van de Ow). De locatie is vastgelegd bij [Bodemlocatie](#bodemlocatie) (regime Wbb) of bij [Aangepakt gebied](#aangepakt-gebied) (regime Ow). Onder het Wbb regime kunnen besluiten en extra gegevens worden geregistreerd in de BRO over het verontreinigd gebied, aangepakt gebied of nazorggebied. De door het bevoegd gezag vastgestelde gevallen van ernstige verontreiniging en door het bevoegd gezag opgelegde nazorg na een sanering hebben ook een registratieplicht in het kader van de Wkpb, en worden als publiekrechtelijke beperking in de BRK-PB geregistreerd.  
+Onder het regime van de Ow beperkt de registratie in de BRO zich tot het aangepakt gebied. Nazorg onder de Ow is in deze versie van de catalogus buiten scope.
 
 <figure>
 	<img src="./media/figuur_scope_SLD.png" alt="SLD_scope" width="350"/>
 	<figcaption>Overheidsbesluit bodemverontreiniging in deze versie van de catalogus; nazorg onder de Ow is buiten scope.</figcaption>
 </figure>
+
+De door het bevoegd gezag vastgestelde gevallen van ernstige verontreiniging en door het bevoegd gezag opgelegde nazorg na een sanering hebben ook een registratieplicht in het kader van de Wkpb, en worden als publiekrechtelijke beperking in de BRK-PB geregistreerd.  
 
 ## Verontreinigingscontouren (Wbb) in de registratie
 De registratie van de aanpak van een verontreiniging onder de Wbb gebeurt in de huidige praktijk op verschillende manieren. 
