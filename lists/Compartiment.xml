@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Compartiment>
-		<SIKB0101ID>1</SIKB0101ID>
 		<Waarde>grond</Waarde>
+		<SIKB0101ID>1</SIKB0101ID>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving></Omschrijving>
 	</Compartiment>
 	<Compartiment>
-		<SIKB0101ID>2</SIKB0101ID>
 		<Waarde>grondwater</Waarde>
+		<SIKB0101ID>2</SIKB0101ID>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving></Omschrijving>
