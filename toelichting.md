@@ -17,7 +17,7 @@ Onder het regime van de Ow beperkt de registratie in de BRO zich tot het aangepa
 	<figcaption>Overheidsbesluit bodemverontreiniging in deze versie van de catalogus; nazorg onder de Ow is buiten scope.</figcaption>
 </figure>
 
-De door het bevoegd gezag vastgestelde gevallen van ernstige verontreiniging (onder het regime van de Wbb) en de door het bevoegd gezag opgelegde nazorg na een sanering hebben ook een registratieplicht in het kader van de Wkpb, en worden als publiekrechtelijke beperking in de BRK-PB geregistreerd.  
+De door het bevoegd gezag vastgestelde gevallen van ernstige verontreiniging (onder het regime van de Wbb) en de door het bevoegd gezag opgelegde nazorg na een sanering hebben ook een registratieplicht in het kader van de Wkpb, en worden als publiekrechtelijke beperking in de Basisregistratie Kadaster Publiekrechtelijke beperkingen (BRK-PB) geregistreerd.  
 
 ## Verontreinigingscontouren (Wbb) in de registratie
 De registratie van de aanpak van een verontreiniging onder de Wbb gebeurt in de huidige praktijk op verschillende manieren. 
