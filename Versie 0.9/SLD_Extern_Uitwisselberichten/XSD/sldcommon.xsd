@@ -601,7 +601,7 @@ Explanation: De registerbeheerder kan een object eenmalig uit registratie nemen,
     </xs:complexType>
     <xs:complexType name="StandardizedLocationV2Type">
         <xs:sequence>
-            <xs:element name="location" type="sldcom:StandardizedGeometryPropertyType" minOccurs="1" maxOccurs="1">
+            <xs:element name="location" type="sldcom:StandardizedGeometryType" minOccurs="1" maxOccurs="1">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geometrie in het standaard referentiestelsel.</xs:documentation>
                 </xs:annotation>
@@ -841,7 +841,7 @@ Explanation: Het attribute uom moet aanwezig zijn als een gegeven met dit dataty
     <xs:complexType name="DeliveryContextType">
         <xs:simpleContent>
             <xs:restriction base="gml:CodeWithAuthorityType">
-                <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+                <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:sld:DeliveryContext"/>
             </xs:restriction>
         </xs:simpleContent>
     </xs:complexType>
@@ -873,56 +873,12 @@ Explanation: Het attribute uom moet aanwezig zijn als een gegeven met dit dataty
         </xs:annotation>
     </xs:element>
     <xs:complexType name="SourceDocumentType">
-        <xs:sequence>
-            <xs:element name="SLD_CompleteReport" minOccurs="1" maxOccurs="1">
-                <xs:complexType>
-                    <xs:complexContent>
-                        <xs:extension base="gml:AbstractMemberType">
-                            <xs:sequence>
-                                <xs:element ref="sldcom:SLD_CompleteReport"/>
-                            </xs:sequence>
-                            <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-                        </xs:extension>
-                    </xs:complexContent>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="SLD_StartReport" minOccurs="1" maxOccurs="1">
-                <xs:complexType>
-                    <xs:complexContent>
-                        <xs:extension base="gml:AbstractMemberType">
-                            <xs:sequence>
-                                <xs:element ref="sldcom:SLD_StartReport"/>
-                            </xs:sequence>
-                            <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-                        </xs:extension>
-                    </xs:complexContent>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="SLD_NewDecision" minOccurs="1" maxOccurs="1">
-                <xs:complexType>
-                    <xs:complexContent>
-                        <xs:extension base="gml:AbstractMemberType">
-                            <xs:sequence>
-                                <xs:element ref="sldcom:SLD_NewDecision"/>
-                            </xs:sequence>
-                            <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-                        </xs:extension>
-                    </xs:complexContent>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="SLD_SoilLocationClosure" minOccurs="1" maxOccurs="1">
-                <xs:complexType>
-                    <xs:complexContent>
-                        <xs:extension base="gml:AbstractMemberType">
-                            <xs:sequence>
-                                <xs:element ref="sldcom:SLD_SoilLocationClosure"/>
-                            </xs:sequence>
-                            <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-                        </xs:extension>
-                    </xs:complexContent>
-                </xs:complexType>
-            </xs:element>
-        </xs:sequence>
+        <xs:choice minOccurs="1" maxOccurs="1">
+            <xs:element ref="sldcom:SLD_CompleteReport"/>
+            <xs:element ref="sldcom:SLD_StartReport"/>
+            <xs:element ref="sldcom:SLD_NewDecision"/>
+            <xs:element ref="sldcom:SLD_SoilLocationClosure"/>
+         </xs:choice>
     </xs:complexType>
     <xs:complexType name="SourceDocumentPropertyType">
         <xs:sequence minOccurs="0">

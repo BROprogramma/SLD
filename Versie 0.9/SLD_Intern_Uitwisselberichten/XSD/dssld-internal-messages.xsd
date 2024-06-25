@@ -365,15 +365,37 @@ Explanation: De aanpak van bodemverontreiniging onder de Wbb doorloopt een aanta
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De SIKB0101-identificatie van de bodemlocatie waarop het overheidsbesluit bodemverontreiniging van toepassing moet zijn.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
+                    <!-- TODO analyse and fix cause
                     <xs:element name="dossierIdSoilInformationSystem" type="brocom:Text11Type" minOccurs="0" maxOccurs="1">
                         <xs:annotation>
-                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De locatiecode uit het BIS van de bodemlocatie waarop het overheidsbesluit bodemverontreiniging van toepassing moet zijn.</xs:documentation>
+                            <xs:documentation source="<http://www.imvertor.org/model-info/technical-documentation>">Definition: De locatiecode uit het BIS van de bodemlocatie waarop het overheidsbesluit bodemverontreiniging van toepassing moet zijn.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
                     <xs:element name="dossierIdLocalAuthority" type="brocom:Text11Type" minOccurs="0" maxOccurs="1">
                         <xs:annotation>
+                            <xs:documentation source="<http://www.imvertor.org/model-info/technical-documentation>">Definition: De door het bevoegd gezag toegekende locatiecode van de bodemlocatie waarop het overheidsbesluit bodemverontreiniging van toepassing moet zijn.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    -->
+                    <xs:element name="dossierIdSoilInformationSystem" minOccurs="0" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De locatiecode uit het BIS van de bodemlocatie waarop het overheidsbesluit bodemverontreiniging van toepassing moet zijn.</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="11"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="dossierIdLocalAuthority" minOccurs="0" maxOccurs="1">
+                        <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De door het bevoegd gezag toegekende locatiecode van de bodemlocatie waarop het overheidsbesluit bodemverontreiniging van toepassing moet zijn.</xs:documentation>
                         </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="11"/>
+                            </xs:restriction>
+                        </xs:simpleType>
                     </xs:element>
                     <xs:element name="followUpWbb" minOccurs="0" maxOccurs="1" type="sldcom:FollowUpWbbType">
                         <xs:annotation>

@@ -35,7 +35,9 @@
     <xs:import namespace="http://www.sikb.nl/imsikb0101" schemaLocation="imsikb0101_v14.8.0.xsd"/>
     <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
 
-    <xs:element name="DispatchDataRequest" type="dssld:DispatchDataRequestType" substitutionGroup="sldcom:DispatchDataRequest">
+    <xs:element name="parseFault" type="sldcom:ParseFaultType"/>
+
+    <xs:element name="dispatchDataRequest" type="dssld:DispatchDataRequestType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het DispatchDataRequest is een specialisatie van de abstract klasse DispatchDataRequest in de package brocommon, waaraan het een element dataToBeDelivered toevoegt.</xs:documentation>
         </xs:annotation>
@@ -53,14 +55,8 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    <xs:complexType name="DispatchDataRequestPropertyType">
-        <xs:sequence minOccurs="0">
-            <xs:element ref="dssld:DispatchDataRequest"/>
-        </xs:sequence>
-        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-    </xs:complexType>
 
-    <xs:element name="DispatchDataResponse" type="dssld:DispatchDataResponseType" substitutionGroup="sldcom:DispatchResponse">
+    <xs:element name="dispatchDataResponse" type="dssld:DispatchDataResponseType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht DispatchDataResponse is een specialisatie van de abstract klasse DispatchResponse uit de package brocommon, waaraan het een dispatchDocument toevoegt. Met dit bericht worden, als response op een DispatchDataRequest, de gegevens over een specifiek bodemonderzoek registratieobject verzonden naar de aanvrager.</xs:documentation>
         </xs:annotation>
@@ -79,12 +75,6 @@ Explanation: Het gegeven ontbreekt als de BRO geen registratieobject bevat met h
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    <xs:complexType name="DispatchDataResponsePropertyType">
-        <xs:sequence minOccurs="0">
-            <xs:element ref="dssld:DispatchDataResponse"/>
-        </xs:sequence>
-        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-    </xs:complexType>
 
     <xs:element name="SLD_PO" type="dssld:SLD_POType" substitutionGroup="dssld:SLD_PO_DP">
         <xs:annotation>
@@ -98,10 +88,9 @@ Explanation: Voor de attributen met materiële geschiedenis wordt de actuele waa
         </xs:complexContent>
     </xs:complexType>
     <xs:complexType name="SLD_POPropertyType">
-        <xs:sequence minOccurs="0">
+        <xs:sequence minOccurs="1">
             <xs:element ref="dssld:SLD_PO"/>
         </xs:sequence>
-        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
     </xs:complexType>
 
     <xs:element name="SLD_PO_DP" type="dssld:SLD_PO_DPType" substitutionGroup="sldcom:RegistrationObject">
@@ -147,10 +136,9 @@ Explanation: Het gegeven staat niet in een brondocument, maar wordt automatisch 
         </xs:complexContent>
     </xs:complexType>
     <xs:complexType name="SLD_PO_DPPropertyType">
-        <xs:sequence minOccurs="0">
+        <xs:sequence minOccurs="1">
             <xs:element ref="dssld:SLD_PO_DP"/>
         </xs:sequence>
-        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
     </xs:complexType>
 
     <xs:element name="SLD_PPO" type="dssld:SLD_PPOType" substitutionGroup="dssld:SLD_PPO_DP">
@@ -165,10 +153,9 @@ Explanation: Het registratieobject bevat niet de actuele gegevens, maar de gegev
         </xs:complexContent>
     </xs:complexType>
     <xs:complexType name="SLD_PPOPropertyType">
-        <xs:sequence minOccurs="0">
+        <xs:sequence minOccurs="1">
             <xs:element ref="dssld:SLD_PPO"/>
         </xs:sequence>
-        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
     </xs:complexType>
 
     <xs:element name="SLD_PPO_DP" type="dssld:SLD_PPO_DPType" substitutionGroup="dssld:SLD_PO_DP">
@@ -183,10 +170,9 @@ Explanation: Het registratieobject bevat niet de actuele gegevens, maar de gegev
         </xs:complexContent>
     </xs:complexType>
     <xs:complexType name="SLD_PPO_DPPropertyType">
-        <xs:sequence minOccurs="0">
+        <xs:sequence minOccurs="1">
             <xs:element ref="dssld:SLD_PPO_DP"/>
         </xs:sequence>
-        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
     </xs:complexType>
 
     <xs:complexType name="EventType">

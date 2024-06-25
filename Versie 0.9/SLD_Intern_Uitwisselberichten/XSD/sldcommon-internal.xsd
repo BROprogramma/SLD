@@ -1228,7 +1228,7 @@ Explanation: De identificatie van het besluit verwijst naar een Besluit dat is v
     </xs:complexType>
 
     <xs:complexType name="SourceDocumentType">
-        <!-- analyse cause and fix it ...
+        <!-- TODO analyse cause and fix it ...
         <xs:choice minOccurs="1" maxOccurs="1">
             <xs:element name="SLD_CompleteReport" minOccurs="1" maxOccurs="1">
                 <xs:complexType>
