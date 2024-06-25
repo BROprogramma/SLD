@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright 2012-2024 TNO Geologische Dienst Nederland
+
+
+    Alle rechten voorbehouden.
+
+    Niets uit deze software mag worden vermenigvuldigd en/of openbaar gemaakt door middel van druk, fotokopie,
+    microfilm of op welke andere wijze dan ook, zonder voorafgaande toestemming van TNO.
+
+
+    Indien deze software in opdracht werd uitgebracht, wordt voor de rechten en verplichtingen van opdrachtgever
+    en opdrachtnemer verwezen naar de Algemene Voorwaarden voor opdrachten aan TNO, dan wel de betreffende
+    terzake tussen de partijen gesloten overeenkomst.
+
+-->
+<xs:schema xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+        xmlns:gml="http://www.opengis.net/gml/3.2"
+        xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+        xmlns:issld="http://www.broservices.nl/xsd/issld-internal/1.0"
+        xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon-internal/1.0"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.broservices.nl/xsd/issld-internal/1.0"
+        elementFormDefault="qualified"
+        attributeFormDefault="unqualified"
+        version="0.9.0">
+    <xs:annotation>
+        <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
+            <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
+        </xs:appinfo>
+    </xs:annotation>
+
+    <xs:import namespace="http://www.broservices.nl/xsd/sldcommon-internal/1.0" schemaLocation="https://schema.broservices.nl/xsd/sldcommon-internal/1.0/sldcommon-internal.xsd"/>
+    <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
+    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
+    
+    <xs:element name="intakeResponse" type="brocom:IntakeResponseType"/>
+    <xs:element name="parseFault" type="brocom:ParseFaultType"/>
+
+    <xs:element name="registrationRequest" type="issld:RegistrationRequestType">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht RegistrationRequest is een specialisatie van de abstract klasse RegistrationRequest uit de package brocommon, waaraan het een sourceDocument toevoegt. Met dit bericht kan een nog niet geregistreerd Milieuhygienisch bodemonderzoek in de BRO worden opgenomen.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="RegistrationRequestType">
+        <xs:complexContent>
+            <xs:extension base="brocom:RegistrationRequestType">
+                <xs:sequence>
+                    <xs:element name="sourceDocument" type="sldcom:SourceDocumentType" minOccurs="1" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het element sourceDocument bevat gegevens die in het BRO-systeem geregistreerd zullen worden en die in de catalogus van het registratieobject zijn gespecificeerd, met uitzondering van de gegevens die door het BRO-systeem worden gegenereerd of afgeleid uit het registratieverzoek.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+</xs:schema>
