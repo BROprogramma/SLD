@@ -4,7 +4,7 @@
     xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon/1.0" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xsi:schemaLocation="http://www.broservices.nl/xsd/issld/1.0 ../../XSD/issld-messages.xsd">
-    <!--Disclaimer: dit voorbeeldbericht is gemaakt voor increment 2 (version 0.7) van de SLD en valideert tegen de XSD van de innameservice.
+    <!--Disclaimer: dit voorbeeldbericht is gemaakt voor increment 3 (version 0.9) van de SLD en valideert tegen de XSD van de innameservice.
         Het is niet gevalideerd door de innameservice en de inhoud is fictief en vaktechnisch/inhoudelijk niet voorbeeldig.
         xsi:schemaLocation="http://www.broservices.nl/xsd/issld-internal/1.0 https://schema.broservices.nl/xsd/issld-internal/1.0/issld-internal-messages.xsd"/>
 
@@ -51,9 +51,10 @@
                             <!-- optioneel, only used for WBB deliveryContext -->                     
                             <imsikb0101:soilLocation/>
                             <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>
-                            <!-- optioneel, only used for WBB deliveryContext -->
+                            <!-- only used for WBB deliveryContext -->
                             <!--<imsikb0101:dossierIdLocalAuthority>ZL071500060</imsikb0101:dossierIdLocalAuthority>-->
-                            <imsikb0101:dossierIdNotLocalAuthority>ZL071500060</imsikb0101:dossierIdNotLocalAuthority>
+                            <!-- only used for WBB deliveryContext -->
+                            <!--<imsikb0101:dossierIdNotLocalAuthority>ZL071500060</imsikb0101:dossierIdNotLocalAuthority>-->
                             <!-- optioneel, only used for WBB deliveryContext -->
                             <!--<imsikb0101:followUpWBB codeSpace="www.sikb.nl">urn:imsikb0101:VervolgWBB:id:11</imsikb0101:followUpWBB>-->
                             <!-- optioneel, only used for WBB deliveryContext -->                                
@@ -77,6 +78,7 @@
                             <!-- optional -->
                             <imsikb0101:name>VO Van Putten</imsikb0101:name>
                             <imsikb0101:projectCode/>
+                            <!-- required for OW deliveryContext   -->
                             <imsikb0101:reportNumber>Rapport VO Van Putten</imsikb0101:reportNumber>
                             <!-- required for OW deliveryContext   -->
                             <imsikb0101:broId>SAD000000012345</imsikb0101:broId>

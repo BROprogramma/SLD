@@ -4,7 +4,7 @@
     xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon/1.0" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xsi:schemaLocation="http://www.broservices.nl/xsd/issld/1.0 ../../XSD/issld-messages.xsd">
-    <!--Disclaimer: dit voorbeeldbericht is gemaakt voor increment 2 (version 0.7) van de SLD en valideert tegen de XSD van de innameservice.
+    <!--Disclaimer: dit voorbeeldbericht is gemaakt voor increment 3 (version 0.9) van de SLD en valideert tegen de XSD van de innameservice.
         Het is niet gevalideerd door de innameservice en de inhoud is fictief en vaktechnisch/inhoudelijk niet voorbeeldig.
         xsi:schemaLocation="http://www.broservices.nl/xsd/issld-internal/1.0 https://schema.broservices.nl/xsd/issld-internal/1.0/issld-internal-messages.xsd"/>
 
@@ -109,6 +109,8 @@
                             <!-- optional -->
                             <imsikb0101:name>VO Van Putten</imsikb0101:name>
                             <imsikb0101:projectCode/>
+                            <!-- optioneel; voor OW wel verplicht, voor WBB optioneel-->
+                            <imsikb0101:reportNumber>Rapport VO Van Putten</imsikb0101:reportNumber>
                             <!-- optioneel; voor OW wel verwacht, voor WBB niet nodig -->
                             <imsikb0101:broId>SAD00000012345</imsikb0101:broId>
                         </imsikb0101:Project>
@@ -311,6 +313,8 @@
                                     <immetingen:condition codeSpace="www.sikb.nl">urn:immetingen:Hoedanigheid:id:11</immetingen:condition>
                                 </immetingen:Depth>
                             </imsikb0101:lowerDepth>
+                            <!-- optioneel -->
+                            <imsikb0101:startTime>2004-11-11</imsikb0101:startTime>
                             <!-- optioneel -->                                
                             <imsikb0101:upperDepth>
                                 <immetingen:Depth>
@@ -397,6 +401,8 @@
                                     <immetingen:condition codeSpace="www.sikb.nl">urn:immetingen:Hoedanigheid:id:11</immetingen:condition>
                                 </immetingen:Depth>
                             </imsikb0101:lowerDepth>
+                            <!-- optioneel -->
+                            <imsikb0101:startTime>2004-11-11</imsikb0101:startTime>
                             <!-- optioneel -->                                
                             <imsikb0101:upperDepth>
                                 <immetingen:Depth>
