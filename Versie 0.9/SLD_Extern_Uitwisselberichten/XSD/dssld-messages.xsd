@@ -232,7 +232,7 @@ Explanation: De identificatie van het besluit verwijst naar een Besluit dat is v
     <xs:complexType name="EventNameType">
         <xs:simpleContent>
             <xs:restriction base="gml:CodeWithAuthorityType">
-                <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+                <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:sld:EventName"/>
             </xs:restriction>
         </xs:simpleContent>
     </xs:complexType>

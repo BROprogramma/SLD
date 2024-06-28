@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registrationRequest
+    xmlns="http://www.broservices.nl/xsd/issld-internal/1.0" 
+    xmlns:gml="http://www.opengis.net/gml/3.2" 
+    xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0" 
+    xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon-internal/1.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.broservices.nl/xsd/issld-internal/1.0 ../../XSD/issld-internal-messages.xsd">
+    <!--Disclaimer: dit voorbeeldbericht is gemaakt voor increment 3 (version 0.9) van de SLD en valideert tegen de XSD van de innameservice.
+        Het is niet gevalideerd door de innameservice en de inhoud is fictief en vaktechnisch/inhoudelijk niet voorbeeldig.
+        xsi:schemaLocation="http://www.broservices.nl/xsd/issld-internal/1.0 https://schema.broservices.nl/xsd/issld-internal/1.0/issld-internal-messages.xsd"/>
+
+        Inhoud:
+         * SLD object conform OW volgens intern formaat.
+    -->
+    <brocom:requestReference>verzoek_1</brocom:requestReference>
+    <!-- optioneel: KVK nummer van de aanleverende partij. -->
+    <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
+    <brocom:qualityRegime>IMBRO/A</brocom:qualityRegime>
+    <sourceDocument>
+        <sldcom:SLD_CompleteReport gml:id="id_0001">
+            <!-- optioneel: identificatie van het Overheidsbesluit bodemverontreiniging in de eigen administratie. -->
+            <sldcom:objectIdAccountableParty>Dossier f205306d-0260-4b10-9bb5-05368b660446</sldcom:objectIdAccountableParty>
+            <!-- Kader aanlevering; WBB of OW -->
+            <sldcom:deliveryContext codeSpace="urn:bro:sld:DeliveryContext">OW</sldcom:deliveryContext>
+            <sldcom:soilLocationOrHandledArea>
+                <sldcom:SoilLocationOrHandledArea>
+                    <sldcom:HandledArea gml:id="id_0002">
+                        <sldcom:identification>9867c501-61ba-4a8e-84ba-9734c93cce43</sldcom:identification>
+                        <sldcom:boundary>
+                            <gml:MultiSurface gml:id="_1c7dd359-75f9-45d8-b32f-84ac4408bb80">
+                                <gml:surfaceMember>
+                                    <gml:Polygon gml:id="_a4012463-dc88-4f4c-a99d-866ba2b51884" srsName="urn:ogc:def:crs:EPSG::28992" srsDimension="2">
+                                        <gml:exterior>
+                                            <gml:LinearRing>
+                                                <gml:posList>46897.21 372058.68 46890.68 372056.42 46888.34 372054.7 46888.93 372055.09 46884.55 372052.04 46883.5 372050.09 46884.51 372046.15 46888.22 372040.84 46893.3 372036.62 46902.17 372036.89 46910.37 372042.24 46914.16 372046.73 46910.87 372053.06 46904.98 372057.98 46897.21 372058.68</gml:posList>
+                                            </gml:LinearRing>
+                                        </gml:exterior>
+                                        <gml:interior>
+                                            <gml:LinearRing>
+                                                <gml:posList>46907.46 372053.26 46908.94 372046.2 46896.88 372040.61 46891.29 372041.49 46886.88 372049.43 46887.17 372050.61 46898.94 372058.39 46907.46 372053.26</gml:posList>
+                                            </gml:LinearRing>
+                                        </gml:interior>
+                                    </gml:Polygon>
+                                </gml:surfaceMember>
+                            </gml:MultiSurface>
+                        </sldcom:boundary>
+                        <sldcom:compartment codeSpace="urn:bro:sld:Compartment">grond</sldcom:compartment>
+                        <!-- Optional -->
+                        <sldcom:beginDepth uom="m">0</sldcom:beginDepth>
+                        <!-- Optional -->
+                        <sldcom:maximumEndDepth uom="m">1.20</sldcom:maximumEndDepth>
+                        <!-- Optional -->
+                        <sldcom:activityEndDate>2004-12-13</sldcom:activityEndDate>
+                        <!-- Optional
+                        <sldcom:approach codeSpace="https://raw.githubusercontent.com/BROprogramma/SLD/gh-pages/lists/Aanpak.xml">?</sldcom:approach>
+                        -->
+                        <!-- Optional; not used when deliveryContext = OW
+                        <sldcom:remediationVariantTopsoil codeSpace="">?</sldcom:remediationVariantTopsoil>
+                        -->
+                        <!-- Optional; not used when deliveryContext = OW
+                        <sldcom:remediationVariantSubsoil codeSpace="">?</sldcom:remediationVariantSubsoil>
+                        -->
+                        <!-- Optional -->
+                        <sldcom:evaluationReport>
+                            <sldcom:EvaluationReport gml:id="id_0003">
+                                <sldcom:broId>SAD000000012345</sldcom:broId>
+                                <sldcom:reportNumber>Rapport VO Van Putten</sldcom:reportNumber>
+                            </sldcom:EvaluationReport>
+                        </sldcom:evaluationReport>
+                    </sldcom:HandledArea>
+                </sldcom:SoilLocationOrHandledArea>
+            </sldcom:soilLocationOrHandledArea>
+        </sldcom:SLD_CompleteReport>
+    </sourceDocument>
+</registrationRequest>
