@@ -3,6 +3,10 @@
 	<Compartiment>
 		<SIKB0101-ID>1</SIKB0101-ID>
 		<Waarde>grond</Waarde>
+<<<<<<< HEAD
+=======
+		<SIKB0101ID>1</SIKB0101ID>
+>>>>>>> gh-pages
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving></Omschrijving>
@@ -10,6 +14,10 @@
 	<Compartiment>
 		<SIKB0101-ID>2</SIKB0101-ID>
 		<Waarde>grondwater</Waarde>
+<<<<<<< HEAD
+=======
+		<SIKB0101ID>2</SIKB0101ID>
+>>>>>>> gh-pages
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving></Omschrijving>

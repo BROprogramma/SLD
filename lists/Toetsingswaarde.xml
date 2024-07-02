@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Toetsingswaarde>
+<<<<<<< HEAD
 		<SIKB0101-ID>1</SIKB0101-ID>
 		<Waarde>streefwaarde</Waarde>
 		<IMBRO>v</IMBRO>
@@ -13,5 +14,26 @@
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving>De interventiewaarden (i-waarden) zijn tot tot 1-1-2008 gebaseerd op 'Streefwaarden en interventiewaarden bodemsanering' en vanaf 1-1-2008 op de 'Circulaire bodemsanering'.</Omschrijving>
+=======
+		<Waarde>streefwaarde</Waarde>
+		<SIKB0101ID>1</SIKB0101ID>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Toetsing heeft plaatsgevonden met concentraties van stoffen waarbij de streefwaarde is overschreden.</Omschrijving>
+	</Toetsingswaarde>
+	<Toetsingswaarde>
+		<Waarde>interventiewaarde</Waarde>
+		<SIKB0101ID>3</SIKB0101ID>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Toetsing heeft plaatsgevonden met concentraties van stoffen waarbij de internventiewaarde is overschreden. Er bestaan significante risico's voor mens, plant of dier als gevolg van verontreiniging van de bodem.</Omschrijving>
+	</Toetsingswaarde>
+	<Toetsingswaarde>
+		<Waarde>achtergrondwaarde</Waarde>
+		<SIKB0101ID>11</SIKB0101ID>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Toetsing heeft plaatsgevonden met concentraties van stoffen waarbij de achtergrondwaarde is overschreden.</Omschrijving>
+>>>>>>> gh-pages
 	</Toetsingswaarde>
 </domeintabel>
