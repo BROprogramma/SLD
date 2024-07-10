@@ -1,169 +1,99 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<SaneringsvariantBovengrond>
-<<<<<<< HEAD
-		<SIKB0101-ID>1</SIKB0101-ID>
-		<Waarde>volledigVerwijderdAanvulgrondSchoon</Waarde>
-=======
 		<Waarde>volledigVerwijderdAanvulgrondSchoon</Waarde>
 		<SIKB0101ID>1</SIKB0101ID>
->>>>>>> gh-pages
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving>De volgende saneringsvariant voor de bovengrond is/wordt uitgevoerd: de vastgestelde verontreiniging is volledig verwijderd. De ontgraven bodemlaag is aangevuld met schone grond.</Omschrijving>
 	</SaneringsvariantBovengrond>
 	<SaneringsvariantBovengrond>
-<<<<<<< HEAD
-		<SIKB0101-ID>2</SIKB0101-ID>
-		<Waarde>volledigVerwijderdAanvulgrondAchtergrondwaarde</Waarde>
-=======
 		<Waarde>volledigVerwijderdAanvulgrondAchtergrondwaarde</Waarde>
 		<SIKB0101ID>2</SIKB0101ID>
->>>>>>> gh-pages
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving>De volgende saneringsvariant voor de bovengrond is/wordt uitgevoerd: de vastgestelde verontreiniging is volledig verwijderd. De ontgraven bodemlaag is aangevuld met grond waarvan de kwaliteit vergelijkbaar is met de kwaliteit van de bovengrond in de omgeving (achtergrondwaarde).</Omschrijving>
 	</SaneringsvariantBovengrond>
 	<SaneringsvariantBovengrond>
-<<<<<<< HEAD
-		<SIKB0101-ID>3</SIKB0101-ID>
-		<Waarde>volledigVerwijderdAanvulgrondBGW</Waarde>
-=======
 		<Waarde>volledigVerwijderdAanvulgrondBGW</Waarde>
 		<SIKB0101ID>3</SIKB0101ID>
->>>>>>> gh-pages
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving>De volgende saneringsvariant voor de bovengrond is/wordt uitgevoerd: de vastgestelde verontreiniging is volledig verwijderd. De ontgraven bodemlaag is aangevuld met grond waarvan de kwaliteit voldoet aan de BodemGebruiksWaarden (BGW) voor de betreffende locatie.</Omschrijving>
 	</SaneringsvariantBovengrond>
 	<SaneringsvariantBovengrond>
-<<<<<<< HEAD
-		<SIKB0101-ID>4</SIKB0101-ID>
-		<Waarde>aangebrachtLeeflaagSchoon</Waarde>
-=======
 		<Waarde>aangebrachtLeeflaagSchoon</Waarde>
 		<SIKB0101ID>4</SIKB0101ID>
->>>>>>> gh-pages
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving>De volgende saneringsvariant voor de bovengrond is/wordt uitgevoerd: op de vastgestelde verontreiniging is een leeflaag van schone grond aangebracht.</Omschrijving>
 	</SaneringsvariantBovengrond>
 	<SaneringsvariantBovengrond>
-<<<<<<< HEAD
-		<SIKB0101-ID>5</SIKB0101-ID>
-		<Waarde>aangebrachtLeeflaagAchtergrondwaarde</Waarde>
-=======
 		<Waarde>aangebrachtLeeflaagAchtergrondwaarde</Waarde>
 		<SIKB0101ID>5</SIKB0101ID>
->>>>>>> gh-pages
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving>De volgende saneringsvariant voor de bovengrond is/wordt uitgevoerd: op de vastgestelde verontreiniging is een leeflaag aangebracht waarvan de kwaliteit vergelijkbaar is met de kwaliteit van de bovengrond in de omgeving (achtergrondwaarde).</Omschrijving>
 	</SaneringsvariantBovengrond>
 	<SaneringsvariantBovengrond>
-<<<<<<< HEAD
-		<SIKB0101-ID>6</SIKB0101-ID>
-		<Waarde>aangebrachtLeeflaagBGW</Waarde>
-=======
 		<Waarde>aangebrachtLeeflaagBGW</Waarde>
 		<SIKB0101ID>6</SIKB0101ID>
->>>>>>> gh-pages
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving>De volgende saneringsvariant voor de bovengrond is/wordt uitgevoerd: op de vastgestelde verontreiniging is een leeflaag aangebracht waarvan de kwaliteit voldoet aan de BodemGebruiksWaarden (BGW) voor de betreffende locatie.</Omschrijving>
 	</SaneringsvariantBovengrond>
 	<SaneringsvariantBovengrond>
-<<<<<<< HEAD
-		<SIKB0101-ID>7</SIKB0101-ID>
-		<Waarde>aangebrachtVerhardingslaag</Waarde>
-=======
 		<Waarde>aangebrachtVerhardingslaag</Waarde>
 		<SIKB0101ID>7</SIKB0101ID>
->>>>>>> gh-pages
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving>De volgende saneringsvariant voor de bovengrond is/wordt uitgevoerd: op de vastgestelde verontreiniging is een verhardingslaag aangebracht waardoor de verontreiniging is geïsoleerd.</Omschrijving>
 	</SaneringsvariantBovengrond>
 	<SaneringsvariantBovengrond>
-<<<<<<< HEAD
-		<SIKB0101-ID>8</SIKB0101-ID>
-		<Waarde>nvt</Waarde>
-=======
 		<Waarde>nvt</Waarde>
 		<SIKB0101ID>8</SIKB0101ID>
->>>>>>> gh-pages
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving>Er is geen saneringsvariant voor de bovengrond van toepassing.</Omschrijving>
 	</SaneringsvariantBovengrond>
 	<SaneringsvariantBovengrond>
-<<<<<<< HEAD
-		<SIKB0101-ID>9</SIKB0101-ID>
-		<Waarde>volledigVerwijderdAanvulgrondMaxWaarde</Waarde>
-=======
 		<Waarde>volledigVerwijderdAanvulgrondMaxWaarde</Waarde>
 		<SIKB0101ID>9</SIKB0101ID>
->>>>>>> gh-pages
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving>De volgende saneringsvariant voor de bovengrond is/wordt uitgevoerd: de verontreiniging is volledig verwijderd. De ontgraven bodemlaag is aangevuld met grond met een kwaliteit gelijk of beter dan de Maximale Waarde die geldt op de betreffende locatie (zie Besluit bodemkwaliteit en/of de bodemfunctieklassenkaart).</Omschrijving>
 	</SaneringsvariantBovengrond>
 	<SaneringsvariantBovengrond>
-<<<<<<< HEAD
-		<SIKB0101-ID>10</SIKB0101-ID>
-		<Waarde>aangebrachtLeeflaagMaxWaarde</Waarde>
-=======
 		<Waarde>aangebrachtLeeflaagMaxWaarde</Waarde>
 		<SIKB0101ID>10</SIKB0101ID>
->>>>>>> gh-pages
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving>De volgende saneringsvariant voor de bovengrond is/wordt uitgevoerd: op de vastgestelde verontreiniging is een leeflaaf aangebracht waarvan de kwaliteit gelijk of beter dan de Maximale Waarde die geldt op de betreffende locatie (zie Besluit bodemkwaliteit en/of de bodemfunctieklassenkaart).</Omschrijving>
 	</SaneringsvariantBovengrond>
 	<SaneringsvariantBovengrond>
-<<<<<<< HEAD
-		<SIKB0101-ID>11</SIKB0101-ID>
-		<Waarde>verwijderdTotMaxWaardeAanvulgrondSchoon</Waarde>
-=======
 		<Waarde>verwijderdTotMaxWaardeAanvulgrondSchoon</Waarde>
 		<SIKB0101ID>11</SIKB0101ID>
->>>>>>> gh-pages
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving>De volgende saneringsvariant voor de bovengrond is/wordt uitgevoerd: de verontreiniging is gedeeltelijke verwijderd tot de Maximale Waarde die geldt voor de betreffende locatie (zie Besluit Bodemkwaliteit en bodemfunctieklassenkaart), waarna schone aanvulgrond is aangebracht.</Omschrijving>
 	</SaneringsvariantBovengrond>
 	<SaneringsvariantBovengrond>
-<<<<<<< HEAD
-		<SIKB0101-ID>12</SIKB0101-ID>
-		<Waarde>verwijderdTotMaxWaardeAanvulgrondAchtergrondwaarde</Waarde>
-=======
 		<Waarde>verwijderdTotMaxWaardeAanvulgrondAchtergrondwaarde</Waarde>
 		<SIKB0101ID>12</SIKB0101ID>
->>>>>>> gh-pages
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving>De volgende saneringsvariant voor de bovengrond is/wordt uitgevoerd: de verontreiniging is gedeeltelijk verwijderd tot de Maximale Waarde die geldt voor de betreffende locatie (zie Besluit Bodemkwaliteit en bodemfunctieklassenkaart), waarna aanvulgrond is aangebracht gelijk aan of schoner dan de kwaliteit van de bovengrond in de omgeving (achtergrondwaarde).</Omschrijving>
 	</SaneringsvariantBovengrond>
 	<SaneringsvariantBovengrond>
-<<<<<<< HEAD
-		<SIKB0101-ID>13</SIKB0101-ID>
-		<Waarde>verwijderdTotMaxWaardeAanvulgrondMaxWaarde</Waarde>
-=======
 		<Waarde>verwijderdTotMaxWaardeAanvulgrondMaxWaarde</Waarde>
 		<SIKB0101ID>13</SIKB0101ID>
->>>>>>> gh-pages
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving>De volgende saneringsvariant voor de bovengrond is/wordt uitgevoerd: de verontreiniging is gedeeltelijk verwijderd tot de Maximale Waarde die geldt voor de betreffende locatie (zie Besluit Bodemkwaliteit en bodemfunctieklassenkaart), waarna aanvulgrond is aangebracht gelijk aan of schoner dan de geldende Maximale Waarde.</Omschrijving>
 	</SaneringsvariantBovengrond>
 	<SaneringsvariantBovengrond>
-<<<<<<< HEAD
-		<SIKB0101-ID>14</SIKB0101-ID>
-		<Waarde>volledigVerwijderdGeenAanvulgrond</Waarde>
-=======
 		<Waarde>volledigVerwijderdGeenAanvulgrond</Waarde>
 		<SIKB0101ID>14</SIKB0101ID>
->>>>>>> gh-pages
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving>De verontreiniging in de grond is volledig verwijderd, er heeft echter geen aanvulling plaatsgevonden.</Omschrijving>
