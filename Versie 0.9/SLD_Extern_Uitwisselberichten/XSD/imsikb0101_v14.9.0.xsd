@@ -2,7 +2,7 @@
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:immetingen="http://www.sikb.nl/immetingen" xmlns:imsikb0101="http://www.sikb.nl/imsikb0101" xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" targetNamespace="http://www.sikb.nl/imsikb0101" elementFormDefault="qualified">
     <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
     <import namespace="http://www.opengis.net/samplingSpatial/2.0" schemaLocation="http://schemas.opengis.net/samplingSpatial/2.0/spatialSamplingFeature.xsd"/>
-    <import namespace="http://www.sikb.nl/immetingen" schemaLocation="immetingen_v14.8.0.xsd"/>
+    <import namespace="http://www.sikb.nl/immetingen" schemaLocation="immetingen_v14.9.0.xsd"/>
     <element name="Activity" type="imsikb0101:ActivityType" substitutionGroup="gml:AbstractObject">
         <annotation>
             <documentation>Activiteit - (Verdachte) activiteit waarop de locatie is onderzocht</documentation>
@@ -425,6 +425,12 @@ codes.sikb.nl/0101/gebruik.xml</documentation>
                             <documentation>Kenmerk van het document waaronder die bekend is bij desbetreffende organisatie.</documentation>
                         </annotation>
                     </element>
+                    <element name="documentType" type="gml:CodeType" minOccurs="0">
+                        <annotation>
+                            <documentation>soort document/ soort bijlage - Beschrijving van het soort document wat als bijlage gekoppeld kan worden
+Domeintabel: DocumentBijlageType</documentation>
+                        </annotation>
+                    </element>
                     <element name="identification" type="immetingen:NEN3610IDPropertyType">
                         <annotation>
                             <documentation>Een unieke code die wordt aangemaakt als het object voor het eerst wordt aangemaakt.</documentation>
@@ -480,6 +486,13 @@ Domeintabel: Bronhouders</documentation>
                         <annotation>
                             <documentation>stat_maatr - Het type zorgmaatregel dat is genomen voor de bodemverontreiniging - zorg_c
 codes.sikb.nl/0101/zorg.xml</documentation>
+                        </annotation>
+                    </element>
+                    <element name="authorisedAuthority" type="gml:CodeType" minOccurs="0">
+                        <annotation>
+                            <documentation>Het bevoegd gezag (inclusief bijbehorend Kvk-nummer in de domeintabel) met betrekking tot bodem in het kader van vigerende wet en regelgeving (Omgevingswet of Wet Bodembescherming). 
+
+Gebruikt domeintabel: BevoegdGezag</documentation>
                         </annotation>
                     </element>
                     <element name="conclusion" type="string" minOccurs="0">
@@ -1010,6 +1023,13 @@ Domeintabel: Bronhouders</documentation>
                             <documentation>hoeveelheidGereinigd - De hoeveelheid afgegraven grond (bij voorkeur in tonnen) dat is afgevoerd naar een bevoegd grondverwerkingsbedrijf (grondreiniger).</documentation>
                         </annotation>
                     </element>
+                    <element name="authorisedAuthority" type="gml:CodeType" minOccurs="0">
+                        <annotation>
+                            <documentation>Het bevoegd gezag (inclusief bijbehorend Kvk-nummer in de domeintabel) met betrekking tot bodem in het kader van vigerende wet en regelgeving (Omgevingswet of Wet Bodembescherming). 
+
+Gebruikt domeintabel: BevoegdGezag</documentation>
+                        </annotation>
+                    </element>
                     <element name="amountDeposited" type="gml:MeasureType" minOccurs="0">
                         <annotation>
                             <documentation>hoeveelheidGestort - De hoeveelheid afgegraven grond (in tonnen) dat is afgevoerd naar een bevoegd grondverwerkingsbedrijf (grondstort).</documentation>
@@ -1071,6 +1091,12 @@ Mag alleen GM_Point of GM_MultiPolygon zijn.</documentation>
                             <documentation>Een unieke code die wordt aangemaakt als het object voor het eerst wordt aangemaakt.</documentation>
                         </annotation>
                     </element>
+                    <element name="approachType" type="gml:CodeType" minOccurs="0">
+                        <annotation>
+                            <documentation>Type aanpak volgens welke er in een gebied wordt gesaneerd of zonder saneringsdoelstelling wordt ontgraven.
+Gebruikt Domeintabel: AanpakVerontreiniging</documentation>
+                        </annotation>
+                    </element>
                     <element name="lowerDepth" type="immetingen:DepthPropertyType" minOccurs="0">
                         <annotation>
                             <documentation>onderkant van de saneringscontour in meters ten opzichte van het referentievlak</documentation>
@@ -1080,6 +1106,11 @@ Mag alleen GM_Point of GM_MultiPolygon zijn.</documentation>
                         <annotation>
                             <documentation>melding - De enige melding die kan worden gedaan is die in het kader van het Besluit Uniforme Saneringen (BUS). Het BUS is een landelijke uniforme regeling voor eenvoudige, gelijksoortige saneringen die in korte tijd afgerond kunnen worden.
 codes.sikb.nl/0101/melding.xml</documentation>
+                        </annotation>
+                    </element>
+                    <element name="broId" type="string" minOccurs="0">
+                        <annotation>
+                            <documentation>De identificatie van deze contour als een SLD registratieobject onder de Ow in het BRO-loket.</documentation>
                         </annotation>
                     </element>
                     <element name="postRemediationValue" type="gml:CodeType" minOccurs="0">
@@ -1248,6 +1279,11 @@ Mag alleen GM_Point of GM_MultiPolygon zijn.</documentation>
                             <documentation>Opmerking</documentation>
                         </annotation>
                     </element>
+                    <element name="lowerDepth" type="immetingen:DepthPropertyType" minOccurs="0">
+                        <annotation>
+                            <documentation>onderkant - onderkant van het traject van de zorgmaatregel in meters ten opzichte van het referentievlak</documentation>
+                        </annotation>
+                    </element>
                     <element name="startTime" type="date" minOccurs="0">
                         <annotation>
                             <documentation>startdatum - De datum waarop de (na)zorgmaatregelen op de locatie van start zijn gegaan (meestal 1e beschikkingsdatum van het bevoegd gezag Wet bodembescherming).</documentation>
@@ -1257,6 +1293,12 @@ Mag alleen GM_Point of GM_MultiPolygon zijn.</documentation>
                         <annotation>
                             <documentation>Soort zorgmaatregel: IBC (Isoleren, Beheersen, Controleren), monitoring of registratie
 codes.sikb.nl/0101/zorg.xml</documentation>
+                        </annotation>
+                    </element>
+                    <element name="upperDepth" type="immetingen:DepthPropertyType" minOccurs="0">
+                        <annotation>
+                            <documentation>bovenkant - bovenkant van het traject van de zorgmaatregel in meters ten
+opzichte van het referentievlak</documentation>
                         </annotation>
                     </element>
                     <element name="usageRestrictions" type="imsikb0101:UsageRestrictionPropertyType" minOccurs="0" maxOccurs="unbounded"/>
