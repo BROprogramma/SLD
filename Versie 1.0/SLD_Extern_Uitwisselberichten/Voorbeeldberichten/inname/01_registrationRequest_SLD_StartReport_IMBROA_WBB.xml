@@ -54,6 +54,7 @@
                             <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>
                             <!-- optioneel -->
                             <imsikb0101:dossierIdLocalAuthority>ZL071500060</imsikb0101:dossierIdLocalAuthority>
+                            <!-- optioneel -->
                             <imsikb0101:dossierIdNotLocalAuthority>ZL071500060</imsikb0101:dossierIdNotLocalAuthority>
                             <!-- optioneel -->
                             <imsikb0101:followUpWBB codeSpace="www.sikb.nl">urn:imsikb0101:VervolgWBB:id:11</imsikb0101:followUpWBB>
@@ -69,7 +70,13 @@
                                             <immetingen:lokaalID>838befd2-1b51-416e-bf5a-51317ebdfdbe</immetingen:lokaalID>
                                         </immetingen:NEN3610ID>
                                     </imsikb0101:identification>
-                                    <imsikb0101:startTime>2002-10-15</imsikb0101:startTime>                                        
+                                    <imsikb0101:startTime>2002-10-15</imsikb0101:startTime>
+                                    <!-- Optional Link to ContaminationInformation  ContaminatedArea -->
+                                    <imsikb0101:contaminationInfos xlink:href="#_ddd148bf-0f8e-4326-9625-8e4f3020c73c"/>
+                                    <!-- Optional Link to sitemanagementMeasure   AftercareArea -->
+                                    <imsikb0101:sitemanagements xlink:href="#_8bfe8e65-f886-4e59-9e6c-ef64b498efc7"/>
+                                    <!-- Optional Link to Remediation  HandledArea--> 
+                                    <imsikb0101:remediations xlink:href="#_9867c501-61ba-4a8e-84ba-9734c93cce43"/>                                    
                                 </imsikb0101:Decision>
                             </imsikb0101:decisions>
                             <imsikb0101:decisions>
@@ -83,7 +90,13 @@
                                             <immetingen:lokaalID>426f7ea5-c871-478b-a702-4d3120a5ba0b</immetingen:lokaalID>
                                         </immetingen:NEN3610ID>
                                     </imsikb0101:identification>
-                                    <imsikb0101:startTime>2002-10-15</imsikb0101:startTime>                                        
+                                    <imsikb0101:startTime>2002-10-15</imsikb0101:startTime>
+                                    <!-- Optional Link to ContaminationInformation  ContaminatedArea -->
+                                    <imsikb0101:contaminationInfos xlink:href="#_c7b1c2d6-476d-4289-9792-3bedf303d107"/>
+                                    <!-- Optional Link to sitemanagementMeasure   AftercareArea -->
+                                    <imsikb0101:sitemanagements xlink:href="#_4b5aaf21-1a3c-467f-9916-2ae64e75fbc8"/>
+                                    <!-- Optional Link to Remediation  HandledArea--> 
+                                    <imsikb0101:remediations xlink:href="#_f7eee423-38fc-4f39-b40e-3eafb93335ff"/>
                                 </imsikb0101:Decision>
                             </imsikb0101:decisions>
                             <!-- optioneel -->
@@ -131,7 +144,7 @@
                     </imsikb0101:featureMember>
                     <!-- soilLocation -->
                     <imsikb0101:featureMember>
-                        <imsikb0101:SoilLocation gml:id="_92efc58e-b8e1-4917-babf-42f4ba195354">                            
+                        <imsikb0101:SoilLocation gml:id="_92efc58e-b8e1-4917-babf-42f4ba195354">
                             <!-- optioneel -->                                
                             <imsikb0101:geometry>
                                 <gml:MultiSurface gml:id="_cdc53818-fb86-4037-a36a-902dcc2bfda5">
@@ -201,8 +214,22 @@
                                     <immetingen:lokaalID>8bfe8e65-f886-4e59-9e6c-ef64b498efc7</immetingen:lokaalID>
                                 </immetingen:NEN3610ID>
                             </imsikb0101:identification>    
+                            <!-- optioneel -->        
+                            <imsikb0101:lowerDepth>
+                                <immetingen:Depth>
+                                    <immetingen:value uom="urn:immetingen:eenheid:id:19">100.5</immetingen:value> <!-- cm -->
+                                    <immetingen:condition>urn:immetingen:hoedanigheid:id:11</immetingen:condition> <!--maaiveld -->
+                                </immetingen:Depth>
+                            </imsikb0101:lowerDepth>
                             <!-- optioneel -->                                                   
                             <imsikb0101:startTime>2004-12-13</imsikb0101:startTime>   
+                            <!-- optioneel -->        
+                            <imsikb0101:upperDepth>
+                                <immetingen:Depth>
+                                    <immetingen:value uom="urn:immetingen:eenheid:id:19">55.0</immetingen:value> <!-- cm -->
+                                    <immetingen:condition>urn:immetingen:hoedanigheid:id:11</immetingen:condition> <!--maaiveld -->
+                                </immetingen:Depth>
+                            </imsikb0101:upperDepth>
                             <!-- optioneel -->                                 
                             <imsikb0101:usageRestrictions>
                                 <imsikb0101:UsageRestriction gml:id="_518285df-73bb-4804-ac41-6c2978321902">
@@ -284,7 +311,9 @@
                     <imsikb0101:featureMember>
                         <imsikb0101:ContaminationInformation gml:id="_ddd148bf-0f8e-4326-9625-8e4f3020c73c">                                
                             <imsikb0101:contourType codeSpace="www.sikb.nl">urn:imsikb0101:ContourType:id:1</imsikb0101:contourType>
-                            <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>                                                            
+                            <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>
+                            <!-- optioneel -->
+                            <imsikb0101:endTime>2034-11-11</imsikb0101:endTime>
                             <imsikb0101:exceededClass codeSpace="www.sikb.nl">urn:imsikb0101:overschrijding:id:3</imsikb0101:exceededClass>                                              
                             <imsikb0101:geometry>
                                 <gml:MultiSurface gml:id="_80620516-17e3-413e-90aa-04aebe4a893f">
