@@ -14,7 +14,7 @@
     <sldcom:requestReference>verzoek_2</sldcom:requestReference>
     <!-- Optional: KVK nummer van de aanleverende partij. -->
     <sldcom:deliveryAccountableParty>27376655</sldcom:deliveryAccountableParty>
-    <sldcom:qualityRegime>IMBRO</sldcom:qualityRegime>
+    <sldcom:qualityRegime>IMBRO/A</sldcom:qualityRegime>
     <sourceDocument>
         <sldcom:SLD_CompleteReport>
             <!-- optional: identificatie van het Overheidsbesluit bodemverontreiniging in de eigen administratie. -->
@@ -26,7 +26,7 @@
                 <!-- SIKB0101 feature collection. -->
                 <imsikb0101:FeatureCollectionIMSIKB0101 gml:id="LIBTEST" xmlns:imsikb0101="http://www.sikb.nl/imsikb0101" xmlns:immetingen="http://www.sikb.nl/immetingen" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:om="http://www.opengis.net/om/2.0" xmlns:sam="http://www.opengis.net/sampling/2.0" xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sikb.nl/imsikb0101 ../../XSD/imsikb0101_v14.9.0.xsd">
                     <imsikb0101:metaData>
-                        <imsikb0101:application>urn:imsikb0101:Application:id:1</imsikb0101:application>
+                        <imsikb0101:application>urn:imsikb0101:Applicaties:id:1</imsikb0101:application>
                         <imsikb0101:date>2013-09-07</imsikb0101:date>
                         <imsikb0101:organisation>De organisatie</imsikb0101:organisation>
                         <imsikb0101:remarks> Voorbeeldbestand LIB</imsikb0101:remarks>
@@ -122,9 +122,7 @@
                             <!-- optional -->
                             <imsikb0101:name>VO Van Putten</imsikb0101:name>
                             <imsikb0101:projectCode/>
-                            <!-- optioneel; voor OW wel verplicht, voor WBB optioneel-->
-                            <imsikb0101:reportNumber>Rapport VO Van Putten</imsikb0101:reportNumber>
-                            <!-- optioneel; voor OW wel verwacht, voor WBB niet nodig -->
+                            <imsikb0101:reportNumber>Rapport VO Van Putten</imsikb0101:reportNumber>                            
                             <imsikb0101:broId>SAD00000012345</imsikb0101:broId>
                         </imsikb0101:Project>
                     </imsikb0101:featureMember>                                                                        
@@ -139,7 +137,7 @@
                             </imsikb0101:identification>
                             <imsikb0101:name>AVBO Van Putten</imsikb0101:name>                            
                             <imsikb0101:projectCode/>
-                            <!-- optioneel -->
+                            <imsikb0101:reportNumber>Rapport AVBO Van Putten</imsikb0101:reportNumber>                            
                             <imsikb0101:broId>SAD0000012346</imsikb0101:broId>
                         </imsikb0101:Project>
                     </imsikb0101:featureMember>
@@ -241,7 +239,7 @@
                                         </immetingen:NEN3610ID>
                                     </imsikb0101:identification>
                                     <!-- optioneel -->
-                                    <imsikb0101:restriction codeSpace="www.sikb.nl">urn:imsikb0101:gebruiksbeperking:id:3</imsikb0101:restriction>                                        
+                                    <imsikb0101:restriction codeSpace="www.sikb.nl">urn:imsikb0101:Gebruiksbeperkingen:id:3</imsikb0101:restriction>                                        
                                 </imsikb0101:UsageRestriction>
                             </imsikb0101:usageRestrictions>
                         </imsikb0101:SitemanagementMeasure>
@@ -303,7 +301,7 @@
                                         </immetingen:NEN3610ID>
                                     </imsikb0101:identification>
                                     <!-- optioneel -->        
-                                    <imsikb0101:restriction codeSpace="www.sikb.nl">urn:imsikb0101:gebruiksbeperking:id:14</imsikb0101:restriction>
+                                    <imsikb0101:restriction codeSpace="www.sikb.nl">urn:imsikb0101:Gebruiksbeperkingen:id:14</imsikb0101:restriction>
                                 </imsikb0101:UsageRestriction>
                             </imsikb0101:usageRestrictions>
                         </imsikb0101:SitemanagementMeasure>

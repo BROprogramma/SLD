@@ -14,7 +14,7 @@
     <sldcom:requestReference>verzoek_1</sldcom:requestReference>
     <!-- optioneel: KVK nummer van de aanleverende partij. -->
     <sldcom:deliveryAccountableParty>27376655</sldcom:deliveryAccountableParty>
-    <sldcom:qualityRegime>IMBRO/A</sldcom:qualityRegime>
+    <sldcom:qualityRegime>IMBRO</sldcom:qualityRegime>
     <sourceDocument>
         <sldcom:SLD_CompleteReport>
             <!-- optioneel: identificatie van het Overheidsbesluit bodemverontreiniging in de eigen administratie. -->
