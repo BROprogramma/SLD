@@ -169,7 +169,7 @@
 		<Omschrijving>Het bevoegd gezag Wet bodembescherming heeft met een beschikking aangegeven dat de vastgestelde verontreiniging ernstig is. Gezien de risicobeoordeling moet de verontreiniging binnen 4 jaar worden gesaneerd. Dit besluit verwijst naar Wbb-artikel 29, 37(oud).</Omschrijving>
 	</Besluittype>
 	<Besluittype>
-		<Waarde>vaststellingVerontreinigingUrgentSanerenTussen5-10jaar</Waarde>
+		<Waarde>vaststellingVerontreinigingUrgentSanerenTussen5en10jaar</Waarde>
 		<SIKB0101ID>29</SIKB0101ID>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
