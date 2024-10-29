@@ -1,30 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-
-    Copyright 2012-2024 TNO Geologische Dienst Nederland
-
-
-    Alle rechten voorbehouden.
-
-    Niets uit deze software mag worden vermenigvuldigd en/of openbaar gemaakt door middel van druk, fotokopie,
-    microfilm of op welke andere wijze dan ook, zonder voorafgaande toestemming van TNO.
-
-
-    Indien deze software in opdracht werd uitgebracht, wordt voor de rechten en verplichtingen van opdrachtgever
-    en opdrachtnemer verwezen naar de Algemene Voorwaarden voor opdrachten aan TNO, dan wel de betreffende
-    terzake tussen de partijen gesloten overeenkomst.
-
--->
 <xs:schema xmlns:dssld="http://www.broservices.nl/xsd/dssld/1.0"
-        xmlns:gml="http://www.opengis.net/gml/3.2"
-        xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
-        xmlns:imsikb0101="http://www.sikb.nl/imsikb0101"
-        xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon/1.0"
-        xmlns:xs="http://www.w3.org/2001/XMLSchema"
-        targetNamespace="http://www.broservices.nl/xsd/dssld/1.0"
-        elementFormDefault="qualified"
-        attributeFormDefault="unqualified"
-        version="0.9.0">
+           xmlns:gml="http://www.opengis.net/gml/3.2"
+           xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+           xmlns:imsikb0101="http://www.sikb.nl/imsikb0101"
+           xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon/1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.broservices.nl/xsd/dssld/1.0"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           version="1.0.0">
     <xs:annotation>
         <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
             <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
@@ -34,6 +18,11 @@
     <xs:import namespace="http://www.broservices.nl/xsd/sldcommon/1.0" schemaLocation="sldcommon.xsd"/>
     <xs:import namespace="http://www.sikb.nl/imsikb0101" schemaLocation="imsikb0101_v14.9.0.xsd"/>
     <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+    <!--
+    <xs:import namespace="http://www.broservices.nl/xsd/sldcommon/1.0" schemaLocation="https://schema.broservices.nl/xsd/sld/1.0/sldcommon.xsd"/>
+    <xs:import namespace="http://www.sikb.nl/imsikb0101/1.1" schemaLocation="https://schema.broservices.nl/xsd/imsikb0101/14.8/imsikb0101_v14.8.0.xsd"/>
+    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
+    -->
 
     <xs:element name="parseFault" type="sldcom:ParseFaultType"/>
 
@@ -76,23 +65,6 @@ Explanation: Het gegeven ontbreekt als de BRO geen registratieobject bevat met h
         </xs:complexContent>
     </xs:complexType>
 
-    <xs:element name="SLD_PO" type="dssld:SLD_POType" substitutionGroup="dssld:SLD_PO_DP">
-        <xs:annotation>
-            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument met de actuele gegevens in de basisregistratie ondergrond van een Overheidsbesluit bodemverontreiniging, dat wordt uitgeleverd als de afnemer niet de bronhouder noch de dataleverancier is van het registratieobject en het registratieobject niet uit registratie is genomen.
-Explanation: Voor de attributen met materiële geschiedenis wordt de actuele waarde getoond (boundary (begrenzing) en followUpWbb (vervolgactie Wbb), beide attributen van de entiteit SoilLocation (Bodemlocatie)). Het attribuut sourceDocument (brondocument) binnen de gegevensgroep Event (Gebeurtenis) is niet aanwezig.</xs:documentation>
-        </xs:annotation>
-    </xs:element>
-    <xs:complexType name="SLD_POType">
-        <xs:complexContent>
-            <xs:extension base="dssld:SLD_PO_DPType"/>
-        </xs:complexContent>
-    </xs:complexType>
-    <xs:complexType name="SLD_POPropertyType">
-        <xs:sequence minOccurs="1">
-            <xs:element ref="dssld:SLD_PO"/>
-        </xs:sequence>
-    </xs:complexType>
-
     <xs:element name="SLD_PO_DP" type="dssld:SLD_PO_DPType" substitutionGroup="sldcom:RegistrationObject">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument met de actuele gegevens in de basisregistratie ondergrond van een Overheidsbesluit bodemverontreiniging, dat wordt uitgeleverd als de afnemer tevens de bronhouder en/of dataleverancier is van het registratieobject, ongeacht of het registratieobject uit registratie is genomen of niet.
@@ -107,7 +79,7 @@ Explanation: Voor de attributen met materiële geschiedenis wordt de actuele waa
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>DeliveryContext</CodeListName>
-                                <CodeListURI/>
+                                <CodeListURI>urn:bro:sld:DeliveryContext</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De rechtsgrond op basis waarvan, of bij afwezigheid daarvan, de activiteit naar aanleiding waarvan, het betreffende gegeven is aangeleverd aan de basisregistratie ondergrond.
 Explanation: De wetgever stipuleert dat het gegeven moet zijn vastgelegd om inzicht te geven in de relatie met de taken van een bestuursorgaan. Het gegeven geeft inzicht in de maatschappelijke betekenis van de informatie.</xs:documentation>
@@ -126,8 +98,8 @@ Explanation: Het gegeven staat niet in een brondocument. De gestandaardiseerde l
                     </xs:element>
                     <xs:element minOccurs="0" maxOccurs="1" name="locationHistory" nillable="false" type="dssld:LocationHistoryType">
                         <xs:annotation>
-                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geschiedenis van de bodemlocatie in de werkelijkheid.
-Explanation: Het gegeven staat niet in een brondocument, maar wordt automatisch door de basisregistratie ondergrond gegenereerd. Bodemlocaties die op het moment voorafgaand aan opname in de basisregistratie ondergrond onder het overgangsrecht Wbb vallen, bouwen in de registratie ondergrond een geschiedenis op. Voor bodemlocaties die voorafgaand aan opname in de basisregistratie ondergrond zijn afgerond en overgedragen (in de warme overdracht) is geen locatiegeschiedenis opgenomen in de registratie ondergrond.</xs:documentation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geschiedenis van de bodemlocatie in de werkelijkheid na opname ervan in de registratie ondergrond.
+Explanation: De locatiegeschiedenis geeft de materiële geschiedenis van de bodemlocatie weer. Deze geschiedenis omvat gebeurtenissen die hebben plaatsgevonden vanaf het moment van opname in de basisregistratie ondergrond, en de datum waarop de bodemlocatie is afgerond. In de registratie ondergrond is niet voor alle bodemlocaties het gegeven locatiegeschiedenis aanwezig. Dit is alleen het geval voor bodemlocaties die op het moment voorafgaand aan opname in de basisregistratie ondergrond onder het overgangsrecht vallen en waarbij na opname besluiten zijn genomen. Het gegeven locatiegeschiedenis omvat alleen de geschiedenis van een bodemlocatie vanaf het moment van opname in de basisregistratie ondergrond. De gegevens die gedurende de levensduur van een bodemlocatie zijn ontstaan, zijn weliswaar aanwezig in de vorm van bijvoorbeeld besluiten, maar dus niet in de vorm van het gegeven locatiegeschiedenis. In de registratie ondergrond is in het geheel geen locatiegeschiedenis opgenomen voor bodemlocaties die voorafgaand aan opname in de basisregistratie ondergrond zijn afgerond en overgedragen (in de warme overdracht).</xs:documentation>
                         </xs:annotation>
                     </xs:element>
                     <xs:element minOccurs="1" maxOccurs="1" name="featureCollection" nillable="false" type="imsikb0101:FeatureCollectionIMSIKB0101PropertyType"/>
@@ -141,20 +113,20 @@ Explanation: Het gegeven staat niet in een brondocument, maar wordt automatisch 
         </xs:sequence>
     </xs:complexType>
 
-    <xs:element name="SLD_PPO" type="dssld:SLD_PPOType" substitutionGroup="dssld:SLD_PPO_DP">
+    <xs:element name="SLD_PO" type="dssld:SLD_POType" substitutionGroup="dssld:SLD_PO_DP">
         <xs:annotation>
-            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument met de chronologisch geordende historische gegevens in de basisregistratie ondergrond van een Overheidsbesluit bodemverontreiniging, dat wordt uitgeleverd als de afnemer niet de bronhouder noch de dataleverancier is van het registratieobject en het registratieobject niet uit registratie is genomen.
-Explanation: Het registratieobject bevat niet de actuele gegevens, maar de gegevens zoals aangeleverd in het brondocument waarmee de registratie werd gestart, aangevuld met de gegevens die op dat moment zijn afgeleid door de basisregistratie ondergrond. Voor iedere gegevensgroep Event (Gebeurtenis) van de gegevensgroep locationHistory (Locatiegeschiedenis) van de SoilLocation (Bodemlocatie) is het attribuut sourceDcoument (brondocument) aanwezig, met daarin het desbetreffende aangeleverde brondocument.</xs:documentation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument met de actuele gegevens in de basisregistratie ondergrond van een Overheidsbesluit bodemverontreiniging, dat wordt uitgeleverd als de afnemer niet de bronhouder noch de dataleverancier is van het registratieobject en het registratieobject niet uit registratie is genomen.
+Explanation: Voor de attributen met materiële geschiedenis wordt de actuele waarde getoond (boundary (begrenzing) en followUpWbb (vervolgactie Wbb), beide attributen van de entiteit SoilLocation (Bodemlocatie)). Het attribuut sourceDocument (brondocument) binnen de gegevensgroep Event (Gebeurtenis) is niet aanwezig.</xs:documentation>
         </xs:annotation>
     </xs:element>
-    <xs:complexType name="SLD_PPOType">
+    <xs:complexType name="SLD_POType">
         <xs:complexContent>
-            <xs:extension base="dssld:SLD_PPO_DPType"/>
+            <xs:extension base="dssld:SLD_PO_DPType"/>
         </xs:complexContent>
     </xs:complexType>
-    <xs:complexType name="SLD_PPOPropertyType">
+    <xs:complexType name="SLD_POPropertyType">
         <xs:sequence minOccurs="1">
-            <xs:element ref="dssld:SLD_PPO"/>
+            <xs:element ref="dssld:SLD_PO"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -172,6 +144,23 @@ Explanation: Het registratieobject bevat niet de actuele gegevens, maar de gegev
     <xs:complexType name="SLD_PPO_DPPropertyType">
         <xs:sequence minOccurs="1">
             <xs:element ref="dssld:SLD_PPO_DP"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="SLD_PPO" type="dssld:SLD_PPOType" substitutionGroup="dssld:SLD_PPO_DP">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument met de chronologisch geordende historische gegevens in de basisregistratie ondergrond van een Overheidsbesluit bodemverontreiniging, dat wordt uitgeleverd als de afnemer niet de bronhouder noch de dataleverancier is van het registratieobject en het registratieobject niet uit registratie is genomen.
+Explanation: Het registratieobject bevat niet de actuele gegevens, maar de gegevens zoals aangeleverd in het brondocument waarmee de registratie werd gestart, aangevuld met de gegevens die op dat moment zijn afgeleid door de basisregistratie ondergrond. Voor iedere gegevensgroep Event (Gebeurtenis) van de gegevensgroep locationHistory (Locatiegeschiedenis) van de SoilLocation (Bodemlocatie) is het attribuut sourceDcoument (brondocument) aanwezig, met daarin het desbetreffende aangeleverde brondocument.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="SLD_PPOType">
+        <xs:complexContent>
+            <xs:extension base="dssld:SLD_PPO_DPType"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="SLD_PPOPropertyType">
+        <xs:sequence minOccurs="1">
+            <xs:element ref="dssld:SLD_PPO"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -194,10 +183,10 @@ Explanation: Het registratieobject bevat niet de actuele gegevens, maar de gegev
             <xs:element name="identificationDecision" minOccurs="0" maxOccurs="1" type="xs:string">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie van het besluit.
-Explanation: De identificatie van het besluit verwijst naar een Besluit dat is vastgelegd bij de Bodemlocatie waar de gebeurtenis betrekking op heeft. De identificatie van het besluit is alleen aanwezig bij de gebeurtenis nieuwBesluitBekendgemaakt. Deze identificatie is de SIKB0101 invulling van het NEN3610-ID en heeft de vorm van een GUID (Globally Unique Identifier). De opbouw bestaat uit 32 letters en cijfers, ingedeeld in vijf groepen gescheiden door koppeltekens: 8-4-4-4-12.</xs:documentation>
+Explanation: De identificatie besluit bevat het SIKB0101ID van het besluit waar de gebeurtenis mee verband houdt. Hiermee wordt een koppeling gelegd tussen de gebeurtenis en het besluit, die beide gerelateerd zijn aan dezelfde bodemlocatie.</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="sourceDocument" type="sldcom:SourceDocumentPropertyType" minOccurs="0" maxOccurs="1">
+            <xs:element name="sourceDocument" type="sldcom:SourceDocumentType" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het brondocument dat ten gevolge van een gebeurtenis in de werkelijkheid is aangeleverd en heeft geleid tot de registratie van deze gebeurtenis. Dit gegeven wordt alleen uitgeleverd als de waarde van het attribuut dataToBeDelivered in het dispatchDataRequest gelijk is aan 'actueelHistorisch'.</xs:documentation>
                 </xs:annotation>
@@ -208,12 +197,13 @@ Explanation: De identificatie van het besluit verwijst naar een Besluit dat is v
         <xs:sequence>
             <xs:element name="closureDate" type="xs:date" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
-                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de aanpak van de bodemlocatie is afgerond, en de bodemlocatie is gesloten.</xs:documentation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de aanpak van de bodemlocatie onder het regime van de Wet bodembescherming is afgerond.
+Explanation: Wanneer de bodemlocatie voldoende is onderzocht of voldoende is gesaneerd, is de aanpak van de verontreiniging in het kader van de Wbb afgerond.</xs:documentation>
                 </xs:annotation>
             </xs:element>
             <xs:element minOccurs="1" maxOccurs="unbounded" name="event" nillable="false" type="dssld:EventType">
                 <xs:annotation>
-                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een gebeurtenis die tijdens de levensduur van de bodemlocatie heeft plaatsgevonden.</xs:documentation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een gebeurtenis die tijdens de levensduur van de bodemlocatie heeft plaatsgevonden vanaf opname in de registratie ondergrond.</xs:documentation>
                 </xs:annotation>
             </xs:element>
         </xs:sequence>
@@ -228,7 +218,6 @@ Explanation: De identificatie van het besluit verwijst naar een Besluit dat is v
             <xs:enumeration value="actueelHistorisch"/>
         </xs:restriction>
     </xs:simpleType>
-
     <xs:complexType name="EventNameType">
         <xs:simpleContent>
             <xs:restriction base="gml:CodeWithAuthorityType">

@@ -1,29 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-
-    Copyright 2012-2024 TNO Geologische Dienst Nederland
-
-
-    Alle rechten voorbehouden.
-
-    Niets uit deze software mag worden vermenigvuldigd en/of openbaar gemaakt door middel van druk, fotokopie,
-    microfilm of op welke andere wijze dan ook, zonder voorafgaande toestemming van TNO.
-
-
-    Indien deze software in opdracht werd uitgebracht, wordt voor de rechten en verplichtingen van opdrachtgever
-    en opdrachtnemer verwezen naar de Algemene Voorwaarden voor opdrachten aan TNO, dan wel de betreffende
-    terzake tussen de partijen gesloten overeenkomst.
-
--->
 <xs:schema xmlns:gml="http://www.opengis.net/gml/3.2"
-        xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
-        xmlns:imsikb0101="http://www.sikb.nl/imsikb0101"
-        xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon/1.0"
-        xmlns:xs="http://www.w3.org/2001/XMLSchema"
-        targetNamespace="http://www.broservices.nl/xsd/sldcommon/1.0"
-        elementFormDefault="qualified"
-        attributeFormDefault="unqualified"
-        version="0.9.0">
+           xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+           xmlns:imsikb0101="http://www.sikb.nl/imsikb0101"
+           xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon/1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.broservices.nl/xsd/sldcommon/1.0"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           version="1.0.0">
     <xs:annotation>
         <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
             <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
@@ -32,10 +16,15 @@
 
     <xs:import namespace="http://www.sikb.nl/imsikb0101" schemaLocation="imsikb0101_v14.9.0.xsd"/>
     <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+    <!--
+    <xs:import namespace="http://www.sikb.nl/imsikb0101" schemaLocation="imsikb0101_v14.9.0.xsd"/>
+    <xs:import namespace="http://www.sikb.nl/imsikb0101" schemaLocation="https://schema.broservices.nl/xsd/imsikb0101/14.9/imsikb0101_v14.9.0.xsd"/>
+    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+    -->
 
     <xs:element name="SLD_CompleteReport" type="sldcom:SLD_CompleteReportType" substitutionGroup="gml:AbstractFeature">
         <xs:annotation>
-            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het brondocument SLD_CompleteReport wordt gebruikt om een SLD in één keer volledig te registreren. Dat is het geval bij een SLD onder de Ow, en kan het geval zijn bij een SLD onder de Wbb. De registratie is met dit brondocument direct voltooid.</xs:documentation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het brondocument SLD_CompleteReport wordt gebruikt om een SLD in één keer volledig te registreren. Er is daarbij geen sprake van een gebeurtenis. Er wordt geen geschiedenis opgebouwd. Dat is het geval bij een SLD onder de Ow, en kan het geval zijn bij een SLD onder de Wbb. Met dit brondocument is de registratiestatus direct voltooid.</xs:documentation>
         </xs:annotation>
     </xs:element>
     <xs:complexType name="SLD_CompleteReportType">
@@ -52,7 +41,7 @@ Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de b
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>DeliveryContext</CodeListName>
-                                <CodeListURI/>
+                                <CodeListURI>urn:bro:sld:DeliveryContext</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De rechtsgrond op basis waarvan, of bij afwezigheid daarvan, de activiteit naar aanleiding waarvan, het betreffende gegeven is aangeleverd aan de basisregistratie ondergrond.
 Explanation: De wetgever stipuleert dat het gegeven moet zijn vastgelegd om inzicht te geven in de relatie met de taken van een bestuursorgaan. Het gegeven geeft inzicht in de maatschappelijke betekenis van de informatie.</xs:documentation>
@@ -71,7 +60,7 @@ Explanation: De wetgever stipuleert dat het gegeven moet zijn vastgelegd om inzi
 
     <xs:element name="SLD_StartReport" type="sldcom:SLD_StartReportType" substitutionGroup="gml:AbstractFeature">
         <xs:annotation>
-            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het brondocument SLD_StartReport wordt gebruikt om de registratie van een nieuw SLD te starten. Dit kan alleen het geval zijn bij een SLD onder de Wbb. De registratie is met dit brondocument gestart.</xs:documentation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het brondocument SLD_StartReport wordt gebruikt om de registratie van een nieuw SLD te starten. Dit kan alleen het geval zijn bij een SLD onder de Wbb. Met dit brondocument is de registratiestatus geregistreerd.</xs:documentation>
         </xs:annotation>
     </xs:element>
     <xs:complexType name="SLD_StartReportType">
@@ -88,7 +77,7 @@ Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de b
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>DeliveryContext</CodeListName>
-                                <CodeListURI/>
+                                <CodeListURI>urn:bro:sld:DeliveryContext</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De rechtsgrond op basis waarvan, of bij afwezigheid daarvan, de activiteit naar aanleiding waarvan, het betreffende gegeven is aangeleverd aan de basisregistratie ondergrond.
 Explanation: De wetgever stipuleert dat het gegeven moet zijn vastgelegd om inzicht te geven in de relatie met de taken van een bestuursorgaan. Het gegeven geeft inzicht in de maatschappelijke betekenis van de informatie.</xs:documentation>
@@ -130,12 +119,12 @@ Explanation: De wetgever stipuleert dat het gegeven moet zijn vastgelegd om inzi
         </xs:sequence>
     </xs:complexType>
 
-    <xs:element name="SLD_SoilLocationClosure" type="sldcom:SLD_SoilLocationClosureType" substitutionGroup="gml:AbstractFeature">
+    <xs:element name="SLD_SoilLocationFinalisation" type="sldcom:SLD_SoilLocationFinalisationType" substitutionGroup="gml:AbstractFeature">
         <xs:annotation>
-            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het brondocument SLD_SoilLocationClosure wordt gebruikt om de bodemlocatie te sluiten. Dit kan alleen het geval zijn bij een SLD onder de Wbb. Met dit brondocument is de registratiestatus voltooid.</xs:documentation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het brondocument SLD_SoilLocationFinalisation wordt gebruikt om te registreren dat de aanpak van de bodemlocatie is afgerond. Dit kan alleen het geval zijn bij een SLD onder de Wbb. Met dit brondocument is de registratiestatus voltooid.</xs:documentation>
         </xs:annotation>
     </xs:element>
-    <xs:complexType name="SLD_SoilLocationClosureType">
+    <xs:complexType name="SLD_SoilLocationFinalisationType">
         <xs:complexContent>
             <xs:extension base="gml:AbstractFeatureType">
                 <xs:sequence>
@@ -148,9 +137,9 @@ Explanation: De wetgever stipuleert dat het gegeven moet zijn vastgelegd om inzi
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    <xs:complexType name="SLD_SoilLocationClosurePropertyType">
+    <xs:complexType name="SLD_SoilLocationFinalisationPropertyType">
         <xs:sequence minOccurs="1">
-            <xs:element ref="sldcom:SLD_SoilLocationClosure"/>
+            <xs:element ref="sldcom:SLD_SoilLocationFinalisation"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -581,24 +570,6 @@ Explanation: De registerbeheerder kan een object eenmalig uit registratie nemen,
             </xs:element>
         </xs:sequence>
     </xs:complexType>
-    <xs:complexType name="StandardizedLocationType">
-        <xs:sequence>
-            <xs:element name="location" type="gml:PointPropertyType" minOccurs="1" maxOccurs="1">
-                <xs:annotation>
-                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De coördinaten in het standaard referentiestelsel.</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="coordinateTransformation" minOccurs="1" maxOccurs="1" type="sldcom:CoordinateTransformationType">
-                <xs:annotation>
-                    <xs:appinfo>
-                        <CodeListName>CoordinateTransformation</CodeListName>
-                        <CodeListURI>urn:bro:CoordinateTransformation</CodeListURI>
-                    </xs:appinfo>
-                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De methode die de basisregistratie ondergrond heeft gebruikt voor het omzetten van de aangeleverde coördinaten.</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-        </xs:sequence>
-    </xs:complexType>
     <xs:complexType name="StandardizedLocationV2Type">
         <xs:sequence>
             <xs:element name="location" type="sldcom:StandardizedGeometryType" minOccurs="1" maxOccurs="1">
@@ -738,7 +709,6 @@ Explanation: Een gebied bestaat uit een omsluitende rechthoek of een omsluitende
             </xs:element>
         </xs:sequence>
     </xs:complexType>
-
     <xs:simpleType name="ChamberOfCommerceNumberType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het domein KvK-nummer geeft het identificerende gegeven van een onderneming in het Handelsregister. De opbouw is NNNNNNNN.</xs:documentation>
@@ -867,23 +837,13 @@ Explanation: Het attribute uom moet aanwezig zijn als een gegeven met dit dataty
         </xs:simpleContent>
     </xs:complexType>
 
-    <xs:element name="SourceDocument" type="sldcom:SourceDocumentType">
-        <xs:annotation>
-            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:   Het datatype SourceDocument biedt de keuze uit een aantal verschillende types brondocumenten, waarvan er één opgenomen is in een registrationRequest (registratieverzoek).</xs:documentation>
-        </xs:annotation>
-    </xs:element>
     <xs:complexType name="SourceDocumentType">
         <xs:choice minOccurs="1" maxOccurs="1">
             <xs:element ref="sldcom:SLD_CompleteReport"/>
             <xs:element ref="sldcom:SLD_StartReport"/>
             <xs:element ref="sldcom:SLD_NewDecision"/>
-            <xs:element ref="sldcom:SLD_SoilLocationClosure"/>
-         </xs:choice>
-    </xs:complexType>
-    <xs:complexType name="SourceDocumentPropertyType">
-        <xs:sequence minOccurs="0">
-            <xs:element ref="sldcom:SourceDocument"/>
-        </xs:sequence>
+            <xs:element ref="sldcom:SLD_SoilLocationFinalisation"/>
+        </xs:choice>
     </xs:complexType>
 
     <xs:element name="DeliveredGeometry" type="sldcom:DeliveredGeometryType">
@@ -922,11 +882,6 @@ Explanation: Het attribute uom moet aanwezig zijn als een gegeven met dit dataty
         </xs:sequence>
     </xs:complexType>
 
-    <xs:element name="Organization" type="sldcom:OrganizationType">
-        <xs:annotation>
-            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die voor de bronhouder geldt als verantwoordelijk voor de uitvoering van het wandonderzoek, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.</xs:documentation>
-        </xs:annotation>
-    </xs:element>
     <xs:complexType name="OrganizationType">
         <xs:choice minOccurs="1" maxOccurs="1">
             <xs:element name="chamberOfCommerceNumber" type="sldcom:ChamberOfCommerceNumberType" minOccurs="1" maxOccurs="1">
@@ -941,17 +896,6 @@ Explanation: Het attribute uom moet aanwezig zijn als een gegeven met dit dataty
             </xs:element>
         </xs:choice>
     </xs:complexType>
-    <xs:complexType name="OrganizationPropertyType">
-        <xs:sequence minOccurs="0">
-            <xs:element ref="sldcom:Organization"/>
-        </xs:sequence>
-    </xs:complexType>
-
-    <xs:element name="PartialDate" type="sldcom:PartialDateType">
-        <xs:annotation>
-            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Voor gegevens die onder het kwaliteitsregime IMBRO/A aangeleverd worden, geldt een derde domein met vier keuzemogelijkheden.</xs:documentation>
-        </xs:annotation>
-    </xs:element>
     <xs:complexType name="PartialDateType">
         <xs:choice minOccurs="1" maxOccurs="1">
             <xs:element name="date" type="xs:date" minOccurs="1" maxOccurs="1">
@@ -975,11 +919,6 @@ Explanation: Het attribute uom moet aanwezig zijn als een gegeven met dit dataty
                 </xs:annotation>
             </xs:element>
         </xs:choice>
-    </xs:complexType>
-    <xs:complexType name="PartialDatePropertyType">
-        <xs:sequence minOccurs="0">
-            <xs:element ref="sldcom:PartialDate"/>
-        </xs:sequence>
     </xs:complexType>
 
     <xs:element name="Area" type="sldcom:AreaType">
