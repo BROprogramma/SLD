@@ -71044,8 +71044,8 @@
 			<Groep>ReferentieVlak</Groep>
 			<broSadImbroA>true</broSadImbroA>
 			<broSadImbro>true</broSadImbro>
-			<broSldImbroA>false</broSldImbroA>
-			<broSldImbro>false</broSldImbro>
+			<broSldImbroA>true</broSldImbroA>
+			<broSldImbro>true</broSldImbro>
 		</Hoedanigheid>
 		<Hoedanigheid versie="14.7.0" datum="2024-07-10" status="Gewijzigd">
 			<ID>12</ID>
