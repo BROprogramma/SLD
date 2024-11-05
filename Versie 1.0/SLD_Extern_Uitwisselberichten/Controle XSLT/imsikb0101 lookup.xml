@@ -948,8 +948,8 @@
 			<Groep></Groep>
 			<broSadImbroA>false</broSadImbroA>
 			<broSadImbro>false</broSadImbro>
-			<broSldImbroA>false</broSldImbroA>
-			<broSldImbro>false</broSldImbro>
+			<broSldImbroA>true</broSldImbroA>
+			<broSldImbro>true</broSldImbro>
 		</ContourType>
 		<ContourType versie="14.7.0" datum="2023-12-13" status="Gewijzigd">
 			<ID>2</ID>
@@ -959,8 +959,8 @@
 			<Groep></Groep>
 			<broSadImbroA>false</broSadImbroA>
 			<broSadImbro>false</broSadImbro>
-			<broSldImbroA>false</broSldImbroA>
-			<broSldImbro>false</broSldImbro>
+			<broSldImbroA>true</broSldImbroA>
+			<broSldImbro>true</broSldImbro>
 		</ContourType>
 		<ContourType versie="14.7.0" datum="2023-12-13" status="Gewijzigd">
 			<ID>3</ID>
