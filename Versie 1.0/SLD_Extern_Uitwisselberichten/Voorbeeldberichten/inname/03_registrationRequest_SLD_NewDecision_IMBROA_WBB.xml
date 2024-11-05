@@ -14,13 +14,12 @@
     <sldcom:requestReference>verzoek_1</sldcom:requestReference>
     <!-- optioneel: KVK nummer van de bronhouder, nodig indien de uploader niet de bronhouder is -->
     <sldcom:deliveryAccountableParty>27376655</sldcom:deliveryAccountableParty>
+    <!-- broId required for SLD_NewDecision -->
+    <sldcom:broId>SLD123456789012</sldcom:broId>
     <sldcom:qualityRegime>IMBRO/A</sldcom:qualityRegime>
     <sourceDocument>
-        <sldcom:SLD_StartReport>
-            <!-- optioneel: identificatie van het Overheidsbesluit bodemverontreiniging in de eigen administratie. -->
-            <sldcom:objectIdAccountableParty>12345</sldcom:objectIdAccountableParty>
-            <!-- Kader aanlevering; WBB of OW -->
-            <sldcom:deliveryContext codeSpace="urn:bro:sld:DeliveryContext">WBB</sldcom:deliveryContext>
+        <sldcom:SLD_NewDecision>
+            <sldcom:eventDate>2024-11-01</sldcom:eventDate>
             <sldcom:featureCollection>
                 <!-- SIKB0101 feature collection. -->
                 <imsikb0101:FeatureCollectionIMSIKB0101 gml:id="LIBTEST" xmlns:imsikb0101="http://www.sikb.nl/imsikb0101" xmlns:immetingen="http://www.sikb.nl/immetingen" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:om="http://www.opengis.net/om/2.0" xmlns:sam="http://www.opengis.net/sampling/2.0" xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sikb.nl/imsikb0101 ../../XSD/imsikb0101_v14.9.0.xsd">
@@ -564,6 +563,6 @@
                     </imsikb0101:featureMember>
                 </imsikb0101:FeatureCollectionIMSIKB0101>
             </sldcom:featureCollection>
-        </sldcom:SLD_StartReport>
+        </sldcom:SLD_NewDecision>
     </sourceDocument>
 </registrationRequest>
