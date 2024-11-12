@@ -36,8 +36,6 @@
                         <imsikb0101:dataflow>urn:imsikb0101:DatastroomType:id:10</imsikb0101:dataflow>
                     </imsikb0101:metaData>
                     <!--Dossier-->
-                    <!--/Dossier-->
-                    <!-- Project -->
                     <imsikb0101:featureMember>
                         <imsikb0101:Dossier gml:id="_f205306d-0260-4b10-9bb5-05368b660446">
                             <imsikb0101:identification>
@@ -92,9 +90,9 @@
                                     </imsikb0101:identification>
                                     <imsikb0101:startTime>2002-10-15</imsikb0101:startTime>
                                     <!-- Optional Link to ContaminationInformation  ContaminatedArea -->
-                                    <imsikb0101:contaminationInfos xlink:href="#_c7b1c2d6-476d-4289-9792-3bedf303d107"/>
+                                    <imsikb0101:contaminationInfos xlink:href="#_4b5aaf21-1a3c-467f-9916-2ae64e75fbc8"/>
                                     <!-- Optional Link to sitemanagementMeasure   AftercareArea -->
-                                    <imsikb0101:sitemanagements xlink:href="#_4b5aaf21-1a3c-467f-9916-2ae64e75fbc8"/>
+                                    <imsikb0101:sitemanagements xlink:href="#_c7b1c2d6-476d-4289-9792-3bedf303d107"/>
                                     <!-- Optional Link to Remediation  HandledArea--> 
                                     <imsikb0101:remediations xlink:href="#_f7eee423-38fc-4f39-b40e-3eafb93335ff"/>
                                 </imsikb0101:Decision>
@@ -110,6 +108,7 @@
                             <imsikb0101:remediations xlink:href="#_f7eee423-38fc-4f39-b40e-3eafb93335ff"/>
                         </imsikb0101:Dossier>
                     </imsikb0101:featureMember>                        
+                    <!-- Project -->
                     <imsikb0101:featureMember>
                         <imsikb0101:Project gml:id="_f6fac78d-6772-4490-9602-238a757614ac">
                             <imsikb0101:identification>
@@ -125,8 +124,8 @@
                             <imsikb0101:broId>SAD000000123456</imsikb0101:broId>
                         </imsikb0101:Project>
                     </imsikb0101:featureMember>                                                                        
-                     <!-- Project -->
-                     <imsikb0101:featureMember>
+                    <!-- Project -->
+                    <imsikb0101:featureMember>
                         <imsikb0101:Project gml:id="_1cdafa32-38fe-4a27-8396-f0db5adc7bfa">                            
                             <imsikb0101:identification>
                                 <immetingen:NEN3610ID>
