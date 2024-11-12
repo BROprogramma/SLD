@@ -40,13 +40,8 @@
 			<xsl:apply-templates select="//imsikb0101:ContaminationInformation"/>	
             <xsl:apply-templates select="//imsikb0101:Nature"/>			
 			<xsl:apply-templates select="//imsikb0101:SitemanagementMeasure"/>
-			<xsl:apply-templates select="//imsikb0101:UsageRestriction"/>
-			
-			
+			<xsl:apply-templates select="//imsikb0101:UsageRestriction"/>						
 			<xsl:apply-templates select="//imsikb0101:Decision"/>			
-
-			
-			
 			
 		</ArrayOfLogRecord>
 	</xsl:template>
