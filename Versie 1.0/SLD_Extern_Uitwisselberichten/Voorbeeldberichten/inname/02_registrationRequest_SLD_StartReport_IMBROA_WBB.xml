@@ -90,9 +90,9 @@
                                     </imsikb0101:identification>
                                     <imsikb0101:startTime>2002-10-15</imsikb0101:startTime>
                                     <!-- Optional Link to ContaminationInformation  ContaminatedArea -->
-                                    <imsikb0101:contaminationInfos xlink:href="#_c7b1c2d6-476d-4289-9792-3bedf303d107"/>
+                                    <imsikb0101:contaminationInfos xlink:href="#_4b5aaf21-1a3c-467f-9916-2ae64e75fbc8"/>
                                     <!-- Optional Link to sitemanagementMeasure   AftercareArea -->
-                                    <imsikb0101:sitemanagements xlink:href="#_4b5aaf21-1a3c-467f-9916-2ae64e75fbc8"/>
+                                    <imsikb0101:sitemanagements xlink:href="#_c7b1c2d6-476d-4289-9792-3bedf303d107"/>
                                     <!-- Optional Link to Remediation  HandledArea--> 
                                     <imsikb0101:remediations xlink:href="#_f7eee423-38fc-4f39-b40e-3eafb93335ff"/>
                                 </imsikb0101:Decision>
