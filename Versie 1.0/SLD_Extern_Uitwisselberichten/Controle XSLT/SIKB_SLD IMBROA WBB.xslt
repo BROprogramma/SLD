@@ -34,17 +34,19 @@
 			<xsl:apply-templates select="//imsikb0101:Dossier"/>
 			<xsl:apply-templates select="//imsikb0101:Remediation"/>			
             <xsl:apply-templates select="//immetingen:Depth"/>
-			
-			<xsl:apply-templates select="//imsikb0101:Project"/>
-			<xsl:apply-templates select="//imsikb0101:Decision"/>						
-			<xsl:apply-templates select="//imsikb0101:UsageRestriction"/>
-			<xsl:apply-templates select="//imsikb0101:ContaminationInformation"/>		
-			<xsl:apply-templates select="//imsikb0101:SitemanagementMeasure"/>
-			<xsl:apply-templates select="//imsikb0101:Nature"/>
-			<xsl:apply-templates select="//imsikb0101:Nature/immetingen:PhysicalProperty"/>
-			<xsl:apply-templates select="//imsikb0101:geometry"/>
-			<xsl:apply-templates select="//imsikb0101:GeographicPosition"/>
 			<xsl:apply-templates select="//imsikb0101:featureMember" />
+			<xsl:apply-templates select="//imsikb0101:Project"/>
+			<xsl:apply-templates select="//imsikb0101:geometry"/>
+			<xsl:apply-templates select="//imsikb0101:ContaminationInformation"/>	
+            <xsl:apply-templates select="//imsikb0101:Nature"/>			
+			<xsl:apply-templates select="//imsikb0101:SitemanagementMeasure"/>
+			<xsl:apply-templates select="//imsikb0101:UsageRestriction"/>
+			
+			
+			<xsl:apply-templates select="//imsikb0101:Decision"/>			
+
+			
+			
 			
 		</ArrayOfLogRecord>
 	</xsl:template>
@@ -94,7 +96,7 @@
 		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'contourType', 'ERROR')"/>
 		<xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'contourType', 'ContourType', 'ERROR')"/>
 				
-		<xsl:copy-of select="sikb:checkDateAfterDate(., $prGUID, 'endTime', '1979-12-31', 'ERROR')"/>
+		<xsl:copy-of select="sikb:checkDateAfterDate(., $prGUID, 'endTime', '1980-01-01T00:00:00.00', 'ERROR')"/>
 		<xsl:copy-of select="sikb:checkDateBeforeDate(., $prGUID, 'endTime', 'current', 'ERROR')"/>
 				
 		<xsl:copy-of select="sikb:checkExistence(., $prGUID,'realizedVariationTopsoil','WARNING')" />
@@ -111,18 +113,33 @@
         <xsl:copy-of select="sikb:checkLookupId(./value, 'immetingen:Depth', '@uom', 'Eenheid', 'ERROR')"/>
         <xsl:copy-of select="sikb:checkLookupId(., 'immetingen:Depth', 'condition', 'Hoedanigheid', 'ERROR')"/>
     </xsl:template>
-	
-	
-	
-	
-	
-	
-	
-	<xsl:template match="imsikb0101:SitemanagementMeasure">
-		<xsl:variable name="prGUID" select="@gml:id"/>
-        <xsl:copy-of select="sikb:checkExistence(., $prGUID, 'geometry', 'ERROR')"/>
-		<xsl:copy-of select="sikb:checkGeometryElements(.,$prGUID,'gml:Polygon','gml:MultiSurface','ERROR')"/>
+    <!-- every featuremember -->
+    <xsl:template match="imsikb0101:featureMember">
+        <xsl:variable name="GmlId" select="substring-after(./*/@gml:id,'_')"/>
+        <xsl:variable name="IdentificationImmetingen" select="./*/immetingen:identification/immetingen:NEN3610ID/immetingen:lokaalID"/>
+        <xsl:variable name="IdentificationImSikb" select="./*/imsikb0101:identification/immetingen:NEN3610ID/immetingen:lokaalID"/>
+        <xsl:variable name="ElementName" select="name(./*)"/>
+        <xsl:choose>
+        
+            <xsl:when test="$IdentificationImmetingen != ''">
+                <xsl:if test="$IdentificationImmetingen != $GmlId">
+                   <xsl:copy-of select="sikb:createRecord('ERROR',$ElementName,string-join(($ElementName,'met gml:id (',$GmlId,') heeft een afwijkend lokaalId (',$IdentificationImmetingen,').' ),' '))" />
+                </xsl:if>			
+            </xsl:when>
+            
+            <xsl:otherwise>
+                <xsl:if test="$IdentificationImSikb != $GmlId">
+                    <xsl:copy-of select="sikb:createRecord('ERROR',$ElementName,string-join(($ElementName,'met gml:id (',$GmlId,') heeft een afwijkend lokaalId (',$IdentificationImSikb,').' ),' '))" />
+                </xsl:if>
+            </xsl:otherwise>     
+             
+        </xsl:choose>
+    </xsl:template>	
+    <xsl:template match="imsikb0101:geometry">
+		<xsl:variable name="prGUID" select=".//@gml:id"/>
+		<xsl:copy-of select="sikb:checkCoordinates(., $prGUID, 'ERROR')"/>
 	</xsl:template>
+    <!-- optioneel Project -->
 	<xsl:template match="imsikb0101:Project">
 		<xsl:variable name="prGUID" select="@gml:id"/>
 
@@ -133,6 +150,57 @@
 		<xsl:copy-of select="sikb:checkExistence(., $prGUID,'broId','ERROR')"/>
 		<xsl:copy-of select="sikb:checkFilled(., $prGUID,'broId', 'ERROR')"/>
 		<xsl:copy-of select="sikb:checkLength(., $prGUID, 'broId', 20, 'ERROR')"/>
+	</xsl:template>
+	<xsl:template match="imsikb0101:ContaminationInformation">
+		<xsl:variable name="prGUID" select="@gml:id"/>
+
+        <xsl:copy-of select="sikb:checkExistence(., $prGUID, 'geometry', 'ERROR')"/>
+		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'geometry', 'ERROR')"/>
+		<xsl:copy-of select="sikb:checkGeometryElements(.,$prGUID,'gml:Polygon','gml:MultiSurface','ERROR')"/>
+		
+        <xsl:copy-of select="sikb:checkExistence(., $prGUID,'contourType','ERROR')" />
+		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'contourType', 'ERROR')"/>
+		<xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'contourType', 'ContourType', 'ERROR')"/>
+        
+		<xsl:copy-of select="sikb:checkExistence(., $prGUID,'exceededClass','ERROR')" />
+		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'exceededClass', 'ERROR')"/>
+		<xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'exceededClass', 'Overschrijding', 'ERROR')"/>
+		
+		<xsl:copy-of select="sikb:checkDateAfterDate(., $prGUID, 'startTime', '1980-01-01T00:00:00.00', 'ERROR')"/>
+		<xsl:copy-of select="sikb:checkDateBeforeDate(., $prGUID, 'startTime', 'current', 'ERROR')"/>
+		
+		<xsl:copy-of select="sikb:checkDateAfterDate(., $prGUID, 'endTime', '1980-01-01T00:00:00.00', 'ERROR')"/>
+		<xsl:copy-of select="sikb:checkDateBeforeDate(., $prGUID, 'endTime', 'current', 'ERROR')"/>
+		
+		<xsl:if test="count(./imsikb0101:natures//imsikb0101:Nature) &lt; 1">            
+            <xsl:copy-of select="sikb:createRecord('ERROR', 'imsikb0101:Nature', string-join(('Een imsikb0101:ContaminationInformation moet minimaal 1 imsikb0101:Nature hebben. ContaminationInformation gml:id =',  $prGUID), ' ') )"/>
+        </xsl:if>
+	</xsl:template>
+    <xsl:template match="imsikb0101:Nature">
+		<xsl:variable name="prGUID" select="./imsikb0101:identification/immetingen:NEN3610ID/immetingen:lokaalID"/>
+		
+		<xsl:copy-of select="sikb:checkExistence(., $prGUID, 'physicalProperty', 'ERROR')"/>
+		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'physicalProperty', 'ERROR')"/>				
+		<xsl:copy-of select="sikb:checkLookupId(./imsikb0101:physicalProperty/immetingen:PhysicalProperty, string-join(('bij Nature',$prGUID),' '), 'parameter', 'Parameter', 'ERROR')"/>
+	</xsl:template>	
+    <xsl:template match="imsikb0101:SitemanagementMeasure">
+		<xsl:variable name="prGUID" select="@gml:id"/>
+        <xsl:copy-of select="sikb:checkExistence(., $prGUID, 'geometry', 'ERROR')"/>
+		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'geometry', 'ERROR')"/>
+		<xsl:copy-of select="sikb:checkGeometryElements(.,$prGUID,'gml:Polygon','gml:MultiSurface','ERROR')"/>
+				
+		<xsl:copy-of select="sikb:checkDateAfterDate(., $prGUID, 'startTime', '1980-01-01T00:00:00.00', 'ERROR')"/>
+		<xsl:copy-of select="sikb:checkDateBeforeDate(., $prGUID, 'startTime', 'current', 'ERROR')"/>
+		
+		<xsl:copy-of select="sikb:checkDateAfterDate(., $prGUID, 'endTime', '1980-01-01T00:00:00.00', 'ERROR')"/>
+		<xsl:copy-of select="sikb:checkDateBeforeDate(., $prGUID, 'endTime', 'current', 'ERROR')"/>
+	</xsl:template>	
+	<xsl:template match="imsikb0101:UsageRestriction">
+		<xsl:variable name="prGUID" select="@gml:id" />
+		
+		<xsl:copy-of select="sikb:checkExistence(., $prGUID,'restriction','ERROR')" />		
+		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'restriction', 'ERROR')"/>
+		<xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'restriction', 'Gebruiksbeperkingen', 'ERROR')"/>								
 	</xsl:template>
 	<xsl:template match="imsikb0101:Decision">
 		<xsl:variable name="prGUID" select="./imsikb0101:identification/immetingen:NEN3610ID/immetingen:lokaalID"/>
@@ -146,63 +214,11 @@
 		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'decisionType', 'ERROR')" />
 		<xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'decisionType', 'Besluit', 'ERROR')"/>
 		
-		<xsl:copy-of select="sikb:checkExistence(., $prGUID, 'startTime', 'ERROR')"/>
-		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'startTime', 'ERROR')"/>
-		<xsl:copy-of select="sikb:checkDateBeforeDate(., $prGUID, 'startTime', 'current', 'WARNING')"/>
-		<xsl:copy-of select="sikb:checkDateAfterDate(., $prGUID, 'startTime', '1975-01-01', 'WARNING')"/>					
-	</xsl:template>
-    <!-- verplichte velden -->
-	<xsl:template match="imsikb0101:UsageRestriction">
-		<xsl:variable name="prGUID" select="@gml:id" />
+		<xsl:copy-of select="sikb:checkDateBeforeDate(., $prGUID, 'startTime', 'current', 'ERROR')"/>
+		<xsl:copy-of select="sikb:checkDateAfterDate(., $prGUID, 'startTime', '1980-01-01T00:00:00.00', 'ERROR')"/>									
 		
-		<xsl:copy-of select="sikb:checkExistence(., $prGUID,'restriction','ERROR')" />
-		<xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'restriction', 'Gebruiksbeperkingen', 'ERROR')"/>								
 	</xsl:template>
-
-	<xsl:template match="imsikb0101:ContaminationInformation">
-		<xsl:variable name="prGUID" select="@gml:id"/>
-
-        <xsl:copy-of select="sikb:checkExistence(., $prGUID, 'geometry', 'ERROR')"/>
-		<xsl:copy-of select="sikb:checkGeometryElements(.,$prGUID,'gml:Polygon','gml:MultiSurface','ERROR')"/>
-
-        <xsl:copy-of select="sikb:checkExistence(., $prGUID, 'contourType', 'ERROR')"/>
-        <xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'contourType', 'ContourType', 'ERROR')"/>
-        
-		<xsl:copy-of select="sikb:checkExistence(., $prGUID,'exceededClass','ERROR')" />
-		<xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'exceededClass', 'Overschrijding', 'ERROR')"/>
-	</xsl:template>
-	<xsl:template match="imsikb0101:Nature">
-		<xsl:variable name="prGUID" select="./imsikb0101:identification/immetingen:NEN3610ID/immetingen:lokaalID"/>
-		<xsl:copy-of select="sikb:checkLookupId(./imsikb0101:physicalProperty/immetingen:PhysicalProperty, string-join(('bij Nature',$prGUID),' '), 'parameter', 'Parameter', 'ERROR')"/>
-	</xsl:template>	
-	<xsl:template match="imsikb0101:geometry">
-		<xsl:variable name="prGUID" select=".//@gml:id"/>
-		<xsl:copy-of select="sikb:checkCoordinates(., $prGUID, 'ERROR')"/>
-	</xsl:template>
-	
-<xsl:template match="imsikb0101:featureMember">
-	<xsl:variable name="GmlId" select="substring-after(./*/@gml:id,'_')"/>
-	<xsl:variable name="IdentificationImmetingen" select="./*/immetingen:identification/immetingen:NEN3610ID/immetingen:lokaalID"/>
-	<xsl:variable name="IdentificationImSikb" select="./*/imsikb0101:identification/immetingen:NEN3610ID/immetingen:lokaalID"/>
-	<xsl:variable name="ElementName" select="name(./*)"/>
-	<xsl:choose>
-	
-		<xsl:when test="$IdentificationImmetingen != ''">
-			<xsl:if test="$IdentificationImmetingen != $GmlId">
-			   <xsl:copy-of select="sikb:createRecord('ERROR',$ElementName,string-join(($ElementName,'met gml:id (',$GmlId,') heeft een afwijkend lokaalId (',$IdentificationImmetingen,').' ),' '))" />
-			</xsl:if>			
-		</xsl:when>
-		
-		<xsl:otherwise>
-			<xsl:if test="$IdentificationImSikb != $GmlId">
-				<xsl:copy-of select="sikb:createRecord('ERROR',$ElementName,string-join(($ElementName,'met gml:id (',$GmlId,') heeft een afwijkend lokaalId (',$IdentificationImSikb,').' ),' '))" />
-			</xsl:if>
-		</xsl:otherwise>     
-         
-	</xsl:choose>
-</xsl:template>	
-	
-	
+    
 	<!-- FUNCTIONS -->
 	<xsl:function name="sikb:createRecord">
 		<!-- function for creating LOG-records -->
