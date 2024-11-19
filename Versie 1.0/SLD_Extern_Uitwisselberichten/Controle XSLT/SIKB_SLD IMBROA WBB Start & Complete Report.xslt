@@ -101,7 +101,8 @@
 				
 		<xsl:for-each select="./imsikb0101:project">
             <xsl:variable name="projectId" select="replace(./@xlink:href, '#','')"/>            
-            <xsl:variable name="project" select="//imsikb0101:Project[(@gml:id = $projectId and (contains(imsikb0101:projectType, 'id:11') or contains(imsikb0101:projectType, 'id:44')))]"/>                     
+            <!-- voor WBB alleen 11 accepteren, voor OW: 11 en 44 -->
+            <xsl:variable name="project" select="//imsikb0101:Project[(@gml:id = $projectId and (contains(imsikb0101:projectType, 'id:11')))]"/>                     
             <xsl:apply-templates select="$project"/>
         </xsl:for-each>			
 	</xsl:template>
