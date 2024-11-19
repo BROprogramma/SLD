@@ -35,7 +35,6 @@
 			<xsl:apply-templates select="//imsikb0101:Remediation"/>			
             <xsl:apply-templates select="//immetingen:Depth"/>
 			<xsl:apply-templates select="//imsikb0101:featureMember" />
-			<xsl:apply-templates select="//imsikb0101:Project"/>
 			<xsl:apply-templates select="//imsikb0101:geometry"/>
 			<xsl:apply-templates select="//imsikb0101:ContaminationInformation"/>	
             <xsl:apply-templates select="//imsikb0101:Nature"/>			
@@ -98,7 +97,13 @@
 		<xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'realizedVariationTopsoil', 'San_bovengrond', 'ERROR')"/>				
 		<xsl:copy-of select="sikb:checkExistence(., $prGUID,'realizedVariationSubsoil','WARNING')" />
 		<xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'realizedVariationSubsoil', 'San_ondergrond', 'ERROR')"/>
-		<xsl:copy-of select="sikb:checkExistenceEither(., $prGUID, 'realizedVariationTopsoil', 'realizedVariationSubsoil', 'WARNING')"/>										
+		<xsl:copy-of select="sikb:checkExistenceEither(., $prGUID, 'realizedVariationTopsoil', 'realizedVariationSubsoil', 'WARNING')"/>	
+				
+		<xsl:for-each select="./imsikb0101:project">
+            <xsl:variable name="projectId" select="replace(./@xlink:href, '#','')"/>            
+            <xsl:variable name="project" select="//imsikb0101:Project[(@gml:id = $projectId and (contains(imsikb0101:projectType, 'id:11') or contains(imsikb0101:projectType, 'id:44')))]"/>                     
+            <xsl:apply-templates select="$project"/>
+        </xsl:for-each>			
 	</xsl:template>
     <!-- Diepte-->
     <xsl:template match="immetingen:Depth">                
@@ -137,6 +142,10 @@
     <!-- optioneel Project -->
 	<xsl:template match="imsikb0101:Project">
 		<xsl:variable name="prGUID" select="@gml:id"/>
+		
+        <xsl:copy-of select="sikb:checkExistence(., $prGUID,'projectType','ERROR')"/>
+		<xsl:copy-of select="sikb:checkFilled(., $prGUID,'projectType', 'ERROR')"/>
+		<xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'projectType', 'OnderzoekType', 'ERROR')"/>
 
 		<xsl:copy-of select="sikb:checkExistence(., $prGUID,'reportNumber','ERROR')"/>
 		<xsl:copy-of select="sikb:checkFilled(., $prGUID,'reportNumber', 'ERROR')"/>
@@ -145,6 +154,7 @@
 		<xsl:copy-of select="sikb:checkExistence(., $prGUID,'broId','ERROR')"/>
 		<xsl:copy-of select="sikb:checkFilled(., $prGUID,'broId', 'ERROR')"/>
 		<xsl:copy-of select="sikb:checkLength(., $prGUID, 'broId', 20, 'ERROR')"/>
+				
 	</xsl:template>
 	<xsl:template match="imsikb0101:ContaminationInformation">
 		<xsl:variable name="prGUID" select="@gml:id"/>

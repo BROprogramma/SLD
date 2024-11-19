@@ -1484,8 +1484,8 @@
 			<Groep></Groep>
 			<broSadImbroA>true</broSadImbroA>
 			<broSadImbro>true</broSadImbro>
-			<broSldImbroA>false</broSldImbroA>
-			<broSldImbro>false</broSldImbro>
+			<broSldImbroA>true</broSldImbroA>
+			<broSldImbro>true</broSldImbro>
 		</OnderzoekType>
 		<OnderzoekType versie="14.7.0" datum="2024-07-10" status="Gewijzigd">
 			<ID>12</ID>
@@ -1847,8 +1847,8 @@
 			<Groep>undefined</Groep>
 			<broSadImbroA>true</broSadImbroA>
 			<broSadImbro>true</broSadImbro>
-			<broSldImbroA>false</broSldImbroA>
-			<broSldImbro>false</broSldImbro>
+			<broSldImbroA>true</broSldImbroA>
+			<broSldImbro>true</broSldImbro>
 		</OnderzoekType>
 	</sikb.OnderzoekType_c>
 	<sikb.OnderzoeksfaseType_c categorie="OnderzoeksfaseType" techName="OnderzoeksfaseType" beschrijving="zie codes.sikb.nl" versie="14.7.0" datum="2022-06-24">

@@ -37,8 +37,6 @@
                         <imsikb0101:dataflow>urn:imsikb0101:DatastroomType:id:10</imsikb0101:dataflow>
                     </imsikb0101:metaData>
                     <!--Dossier-->
-                    <!--/Dossier-->
-                    <!-- Project -->
                     <imsikb0101:featureMember>
                         <imsikb0101:Dossier gml:id="_f205306d-0260-4b10-9bb5-05368b660446">
                             <imsikb0101:identification>
@@ -49,7 +47,6 @@
                             </imsikb0101:identification>
                             <!-- optioneel -->
                             <imsikb0101:projects xlink:href="#_f6fac78d-6772-4490-9602-238a757614ac"/>
-                            <!-- optioneel -->
                             <imsikb0101:projects xlink:href="#_1cdafa32-38fe-4a27-8396-f0db5adc7bfa"/>
                             <imsikb0101:soilLocation xlink:href="#_92efc58e-b8e1-4917-babf-42f4ba195354"/>
                             <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>
@@ -110,7 +107,9 @@
                             <imsikb0101:remediations xlink:href="#_9867c501-61ba-4a8e-84ba-9734c93cce43"/>
                             <imsikb0101:remediations xlink:href="#_f7eee423-38fc-4f39-b40e-3eafb93335ff"/>                            
                         </imsikb0101:Dossier>
-                    </imsikb0101:featureMember>                        
+                    </imsikb0101:featureMember>      
+                    <!--/Dossier-->
+                    <!-- Project -->                  
                     <imsikb0101:featureMember>
                         <imsikb0101:Project gml:id="_f6fac78d-6772-4490-9602-238a757614ac">
                             <imsikb0101:identification>
@@ -120,10 +119,11 @@
                                 </immetingen:NEN3610ID>
                             </imsikb0101:identification>
                             <!-- optional -->
-                            <imsikb0101:name>VO Van Putten</imsikb0101:name>
+                            <imsikb0101:name>EV Van Putten</imsikb0101:name>
                             <imsikb0101:projectCode/>
-                            <imsikb0101:reportNumber>Rapport VO Van Putten</imsikb0101:reportNumber>                            
-                            <imsikb0101:broId>SAD00000012345</imsikb0101:broId>
+                            <imsikb0101:projectType>urn:imsikb0101:OnderzoekType:id:11</imsikb0101:projectType>
+                            <imsikb0101:reportNumber>Rapport EV Van Putten</imsikb0101:reportNumber>                                                       
+                            <imsikb0101:broId>SAD000000012345</imsikb0101:broId>                            
                         </imsikb0101:Project>
                     </imsikb0101:featureMember>                                                                        
                      <!-- Project -->
@@ -135,10 +135,11 @@
                                     <immetingen:lokaalID>1cdafa32-38fe-4a27-8396-f0db5adc7bfa</immetingen:lokaalID>
                                 </immetingen:NEN3610ID>
                             </imsikb0101:identification>
-                            <imsikb0101:name>AVBO Van Putten</imsikb0101:name>                            
+                            <imsikb0101:name>EVG Van Putten</imsikb0101:name>                        
                             <imsikb0101:projectCode/>
-                            <imsikb0101:reportNumber>Rapport AVBO Van Putten</imsikb0101:reportNumber>                            
-                            <imsikb0101:broId>SAD0000012346</imsikb0101:broId>
+                            <imsikb0101:projectType>urn:imsikb0101:OnderzoekType:id:44</imsikb0101:projectType>    
+                            <imsikb0101:reportNumber>Rapport EVG Van Putten</imsikb0101:reportNumber>                            
+                            <imsikb0101:broId>SAD000000012346</imsikb0101:broId>
                         </imsikb0101:Project>
                     </imsikb0101:featureMember>
                     <!-- soilLocation -->
@@ -312,7 +313,7 @@
                             <imsikb0101:contourType codeSpace="www.sikb.nl">urn:imsikb0101:ContourType:id:1</imsikb0101:contourType>
                             <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>    
                             <!-- optioneel -->
-                            <imsikb0101:endTime>2034-11-11</imsikb0101:endTime>
+                            <imsikb0101:endTime>2024-11-11</imsikb0101:endTime>
                             <imsikb0101:exceededClass codeSpace="www.sikb.nl">urn:imsikb0101:overschrijding:id:3</imsikb0101:exceededClass>                                                             
                             <imsikb0101:geometry>
                                 <gml:MultiSurface gml:id="_80620516-17e3-413e-90aa-04aebe4a893f">
@@ -506,6 +507,8 @@
                                     <immetingen:condition codeSpace="www.sikb.nl">urn:immetingen:Hoedanigheid:id:11</immetingen:condition>
                                 </immetingen:Depth>
                             </imsikb0101:upperDepth>
+                            <!-- optioneel -->
+                            <imsikb0101:project xlink:href="#_f6fac78d-6772-4490-9602-238a757614ac"/>
                         </imsikb0101:Remediation>
                     </imsikb0101:featureMember>
                     <!-- remediation -->
@@ -558,6 +561,8 @@
                                     <immetingen:condition codeSpace="www.sikb.nl">urn:immetingen:Hoedanigheid:id:11</immetingen:condition>
                                 </immetingen:Depth>
                             </imsikb0101:upperDepth>
+                            <!-- optioneel -->
+                            <imsikb0101:project xlink:href="#_1cdafa32-38fe-4a27-8396-f0db5adc7bfa"/>
                         </imsikb0101:Remediation>
                     </imsikb0101:featureMember>
                 </imsikb0101:FeatureCollectionIMSIKB0101>
