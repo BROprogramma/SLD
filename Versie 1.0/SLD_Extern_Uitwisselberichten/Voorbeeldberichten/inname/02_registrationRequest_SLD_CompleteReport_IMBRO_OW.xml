@@ -76,10 +76,11 @@
                                 </immetingen:NEN3610ID>
                             </imsikb0101:identification>
                             <!-- optional -->
-                            <imsikb0101:name>VO Van Putten</imsikb0101:name>
+                            <imsikb0101:name>EV Van Putten</imsikb0101:name>
                             <imsikb0101:projectCode/>
+                            <imsikb0101:projectType>urn:imsikb0101:OnderzoekType:id:11</imsikb0101:projectType>
                             <!-- required for OW deliveryContext   -->
-                            <imsikb0101:reportNumber>Rapport VO Van Putten</imsikb0101:reportNumber>
+                            <imsikb0101:reportNumber>Rapport EV Van Putten</imsikb0101:reportNumber>
                             <!-- required for OW deliveryContext   -->
                             <imsikb0101:broId>SAD000000012345</imsikb0101:broId>
                         </imsikb0101:Project>
@@ -90,8 +91,9 @@
                             <!-- required for OW deliveryContext -->                                
                             <imsikb0101:contourType codeSpace="www.sikb.nl">urn:imsikb0101:ContourType:id:1</imsikb0101:contourType>
                             <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>
-                            <!-- optioneel -->                                
+                            <!-- verplicht -->                                
                             <imsikb0101:endTime>2004-12-13</imsikb0101:endTime>
+                            <!-- verplicht -->                                
                             <imsikb0101:geometry>
                                 <gml:MultiSurface gml:id="_1c7dd359-75f9-45d8-b32f-84ac4408bb80">
                                     <gml:surfaceMember>
@@ -116,24 +118,27 @@
                                     <immetingen:lokaalID>9867c501-61ba-4a8e-84ba-9734c93cce43</immetingen:lokaalID>
                                 </immetingen:NEN3610ID>
                             </imsikb0101:identification>
-                            <!-- optioneel -->                                
+                            <!-- verplicht -->                                
+                            <imsikb0101:approachType codeSpace="www.sikb.nl">urn:imsikb0101:AanpakVerontreiniging:id:1</imsikb0101:approachType>
+                            <!-- verplicht -->                                
                             <imsikb0101:lowerDepth>
                                 <immetingen:Depth>
                                     <immetingen:value uom="urn:immetingen:Eenheid:id:115">1.20</immetingen:value>
                                     <immetingen:condition codeSpace="www.sikb.nl">urn:immetingen:Hoedanigheid:id:11</immetingen:condition>
                                 </immetingen:Depth>
                             </imsikb0101:lowerDepth>
-                            <!-- optioneel, only used for WBB deliveryContext -->                                
+                            <!-- only used for WBB deliveryContext -->                                
                             <!-- <imsikb0101:realizedVariationSubsoil codeSpace="www.sikb.nl">urn:imsikb0101:san_ondergrond:id:1</imsikb0101:realizedVariationSubsoil> -->
-                            <!-- optioneel, only used for WBB deliveryContext -->                                
+                            <!-- only used for WBB deliveryContext -->                                
                             <!-- <imsikb0101:realizedVariationTopsoil codeSpace="www.sikb.nl">urn:imsikb0101:san_bovengrond:id:1</imsikb0101:realizedVariationTopsoil> -->
-                            <!-- optioneel -->                                
+                            <!-- verplicht -->                                                           
                             <imsikb0101:upperDepth>
                                 <immetingen:Depth>
                                     <immetingen:value uom="urn:immetingen:Eenheid:id:115">0</immetingen:value>
                                     <immetingen:condition codeSpace="www.sikb.nl">urn:immetingen:Hoedanigheid:id:11</immetingen:condition>
                                 </immetingen:Depth>
-                            </imsikb0101:upperDepth>
+                            </imsikb0101:upperDepth>   
+                            <imsikb0101:project xlink:href="#_f6fac78d-6772-4490-9602-238a757614ac"/>                         
                         </imsikb0101:Remediation>
                     </imsikb0101:featureMember>                        
                 </imsikb0101:FeatureCollectionIMSIKB0101>
