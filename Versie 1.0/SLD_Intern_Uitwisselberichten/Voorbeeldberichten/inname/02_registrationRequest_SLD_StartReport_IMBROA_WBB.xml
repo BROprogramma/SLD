@@ -399,10 +399,9 @@
                                 <sldcom:maximumEndDepth uom="">?</sldcom:maximumEndDepth>
                                 -->
                                 <!-- optioneel: nazorg oneindig = imsikb0101:SitemanagementMeasure/imsikb0101:duration -->
-                                <sldcom:aftercareInfinite>ja</sldcom:aftercareInfinite>
-                                <!-- optioneel: duur nazorg = imsikb0101:SitemanagementMeasure/imsikb0101:duration
-                                <sldcom:durationAftercare>?</sldcom:durationAftercare>
-                                -->
+                                <sldcom:aftercareInfinite>nee</sldcom:aftercareInfinite>
+                                <!-- optioneel: duur nazorg = imsikb0101:SitemanagementMeasure/imsikb0101:duration-->
+                                <sldcom:durationAftercare>88</sldcom:durationAftercare>                                
                                 <!-- optioneel: datum inwerking = imsikb0101:SitemanagementMeasure/imsikb0101:startTime -->
                                 <sldcom:effectiveDate>2004-12-13</sldcom:effectiveDate>
                                 <!-- optioneel: einddatum = imsikb0101:SitemanagementMeasure/imsikb0101:endTime -->

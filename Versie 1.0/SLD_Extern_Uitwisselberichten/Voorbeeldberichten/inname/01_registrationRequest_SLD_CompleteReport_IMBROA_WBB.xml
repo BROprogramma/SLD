@@ -250,7 +250,7 @@
                         <imsikb0101:SitemanagementMeasure gml:id="_c7b1c2d6-476d-4289-9792-3bedf303d107">
                             <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>
                             <!-- optioneel -->
-                            <imsikb0101:duration uom="urn:immetingen:Eenheid:id:137">9999</imsikb0101:duration>
+                            <imsikb0101:duration uom="urn:immetingen:Eenheid:id:137">88</imsikb0101:duration>
                             <!-- optioneel -->
                             <imsikb0101:endTime>2021-10-15</imsikb0101:endTime>                                
                             <imsikb0101:geometry>                                    
