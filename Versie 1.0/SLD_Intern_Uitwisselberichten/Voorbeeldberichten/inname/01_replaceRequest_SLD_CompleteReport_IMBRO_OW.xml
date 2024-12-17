@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<registrationRequest 
+<replaceRequest 
     xmlns="http://www.broservices.nl/xsd/issld-internal/1.0" 
     xmlns:gml="http://www.opengis.net/gml/3.2"
     xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
@@ -12,11 +12,16 @@
 
         Inhoud:
          * SLD object conform OW volgens intern formaat.
+        Replace correctie:
+         * correctuereden = eigenCorrectie
+         * HandledArea/beginDepth -> Gewijzigd van 1.2 in 1.3.
     -->
-    <brocom:requestReference>verzoek_1</brocom:requestReference>
+    <brocom:requestReference>correctie verzoek_1</brocom:requestReference>
     <!-- optioneel: KVK nummer van de aanleverende partij. -->
     <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
+    <brocom:broId>SLD000000012347</brocom:broId>
     <brocom:qualityRegime>IMBRO</brocom:qualityRegime>
+    <correctionReason codeSpace="urn:bro:sld:CorrectionReason">eigenCorrectie</correctionReason>
     <sourceDocument>
         <sldcom:SLD_CompleteReport gml:id="id0001">
             <!-- optioneel: identificatie van het Overheidsbesluit bodemverontreiniging in de eigen administratie. -->
@@ -56,7 +61,7 @@
                         <sldcom:beginDepth uom="m">0.0</sldcom:beginDepth>
                         <!-- maximale einddiepte = imsikb0101:Remediation/imsikb0101:lowerDepth/immetingen:Depth/immetingen:value -->
                         <!-- Waarbij immetingen:Depth/immetingen:condition moet zijn: t.o.v. maaiveld (ID: 11) -->
-                        <sldcom:maximumEndDepth uom="m">1.2</sldcom:maximumEndDepth>
+                        <sldcom:maximumEndDepth uom="m">1.3</sldcom:maximumEndDepth>
                         <!-- einddatum activiteit = imsikb0101:Remediation/imsikb0101:endTime -->
                         <sldcom:activityEndDate>2004-12-13</sldcom:activityEndDate>
                         <!-- saneringsvariant bovengrond = niet aanwezig bij OW
@@ -86,4 +91,4 @@
             </sldcom:soilLocationOrHandledArea>
         </sldcom:SLD_CompleteReport>
     </sourceDocument>
-</registrationRequest>
+</replaceRequest>

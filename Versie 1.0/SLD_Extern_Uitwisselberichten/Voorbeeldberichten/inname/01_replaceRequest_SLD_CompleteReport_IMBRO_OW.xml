@@ -13,14 +13,15 @@
         Replace correctie:
          * Remediation -> lowerdepth -> Aangepaste diepte naar 1.30: 9867c501-61ba-4a8e-84ba-9734c93cce43
     -->
-    <sldcom:requestReference>verzoek_1</sldcom:requestReference>
+    <sldcom:requestReference>correctie verzoek_1</sldcom:requestReference>
     <!-- optioneel: KVK nummer van de aanleverende partij. -->
     <sldcom:deliveryAccountableParty>27376655</sldcom:deliveryAccountableParty>
     <sldcom:broId>SLD000000012347</sldcom:broId>
     <sldcom:qualityRegime>IMBRO</sldcom:qualityRegime>
-    <!-- optioneel -->
-    <sldcom:underPrivilege>nee</sldcom:underPrivilege>
-    <correctionReason codeSpace="urn:bro:sld:CorrectionReason">eigenCorrectie</correctionReason>        
+    <!-- not allowed in SLD / only allowed in GMW
+    <sldcom:underPrivilege>?</sldcom:underPrivilege>
+     -->
+    <correctionReason codeSpace="urn:bro:sld:CorrectionReason">eigenCorrectie</correctionReason>
     <sourceDocument>
         <sldcom:SLD_CompleteReport>
             <!-- optioneel: identificatie van het Overheidsbesluit bodemverontreiniging in de eigen administratie. -->
