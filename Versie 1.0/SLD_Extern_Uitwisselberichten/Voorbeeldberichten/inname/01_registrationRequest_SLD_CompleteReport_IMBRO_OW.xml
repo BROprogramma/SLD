@@ -36,8 +36,6 @@
                         <imsikb0101:dataflow>urn:imsikb0101:DatastroomType:id:10</imsikb0101:dataflow>
                     </imsikb0101:metaData>
                     <!--Dossier-->
-                    <!--/Dossier-->
-                    <!-- Project -->
                     <imsikb0101:featureMember>
                         <imsikb0101:Dossier gml:id="_f205306d-0260-4b10-9bb5-05368b660446">
                             <imsikb0101:identification>
@@ -67,6 +65,7 @@
                             <imsikb0101:remediations xlink:href="#_9867c501-61ba-4a8e-84ba-9734c93cce43"/>
                         </imsikb0101:Dossier>
                     </imsikb0101:featureMember>                        
+                    <!-- Project -->
                     <imsikb0101:featureMember>
                         <imsikb0101:Project gml:id="_f6fac78d-6772-4490-9602-238a757614ac">
                             <imsikb0101:identification>
