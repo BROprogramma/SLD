@@ -11,7 +11,7 @@
         xsi:schemaLocation="http://www.broservices.nl/xsd/issld-internal/1.0 https://schema.broservices.nl/xsd/issld-internal/1.0/issld-internal-messages.xsd"/>
 
         Inhoud:
-         * SLD object conform afgerond WBB dossier volgens intern formaat.
+         * Starten van een SLD object conform lopend WBB dossier volgens intern formaat.
             bodemlocatie        f205306d-0260-4b10-9bb5-05368b660446
                 handledArea         9867c501-61ba-4a8e-84ba-9734c93cce43
                 handledArea         f7eee423-38fc-4f39-b40e-3eafb93335ff
@@ -22,28 +22,29 @@
                 decision            838befd2-1b51-416e-bf5a-51317ebdfdbe
                 decision            426f7ea5-c871-478b-a702-4d3120a5ba0b
         Replace correctie:
-         * correctuereden = eigenCorrectie
-         * ContaminationInformation/Nature -> Toevoeging extra parameter: 288aec24-70a0-43e5-9232-e8b7edbffd16; parameter 1200.
+         * correctuereden = inOnderzoek
+         * aftercareArea/endDate -> waarde is nu bekend: 2021-10-15.
     -->
-    <brocom:requestReference>correctie verzoek_2</brocom:requestReference>
+    <brocom:requestReference>correctie verzoek_3a</brocom:requestReference>
     <!-- optioneel: KVK nummer van de aanleverende partij. -->
     <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
-    <brocom:broId>SLD000000012348</brocom:broId>
+    <brocom:broId>SLD000000012349</brocom:broId>
     <brocom:qualityRegime>IMBRO/A</brocom:qualityRegime>
-    <correctionReason codeSpace="urn:bro:sld:CorrectionReason">eigenCorrectie</correctionReason>
+    <correctionReason codeSpace="urn:bro:sld:CorrectionReason">inOnderzoek</correctionReason>
     <sourceDocument>
-        <sldcom:SLD_CompleteReport gml:id="id0001">
+        <sldcom:SLD_StartReport gml:id="id0001">
             <!-- optioneel: identificatie van het Overheidsbesluit bodemverontreiniging in de eigen administratie. -->
             <sldcom:objectIdAccountableParty>12345</sldcom:objectIdAccountableParty>
             <!-- Kader aanlevering; WBB of OW -->
             <sldcom:deliveryContext codeSpace="urn:bro:sld:DeliveryContext">WBB</sldcom:deliveryContext>
-            <sldcom:soilLocationOrHandledArea>
+            <sldcom:soilLocation>
                 <sldcom:SoilLocationOrHandledArea>
                     <!-- DeliveryContext = WBB dus bodemlocatie / SoilLocation -->
                     <sldcom:SoilLocation gml:id="id0002">
                         <!-- SIKB0101-identificatie = imsikb0101:Dossier/imsikb0101:identification/immetingen:NEN3610ID/immetingen:lokaalID -->
                         <sldcom:identification>f205306d-0260-4b10-9bb5-05368b660446</sldcom:identification>
                         <!-- locatiecode BIS = imsikb0101:Dossier/imsikb0101:dossierIdNotLocalAuthority -->
+                        <sldcom:dossierIdSoilInformationSystem>ZL071500060</sldcom:dossierIdSoilInformationSystem>
                         <!-- locatiecode bevoegd gezag = imsikb0101:Dossier/imsikb0101:dossierIdLocalAuthority -->
                         <sldcom:dossierIdLocalAuthority>ZL071500060</sldcom:dossierIdLocalAuthority>
                         <!-- naam = imsikb0101:SoilLocation/imsikb0101:name -->
@@ -105,7 +106,7 @@
                                 <!-- optioneel: saneringsvariant ondergrond = imsikb0101:Remediation/imsikb0101:realizedVariationSubsoil; 1 = stabielGeenRestverontreiniging-->
                                 <sldcom:remediationVariantSubsoil codeSpace="urn:bro:sld:RemediationVariantSubsoil">stabielGeenRestverontreiniging</sldcom:remediationVariantSubsoil>
                                 <!-- aanpak = niet aanwezig bij WBB -->
-                                <!-- optioneel: is vermeld in (relaties naar Besluit) = imsikb0101:Dossier/imsikb0101:decisions/imsikb0101:Decision[imsikb0101:remediations/@xlink:href = '#<imsikb0101:Remediation/@gml:id>'] -->
+                                <!-- optioneel: is vermeld in (relaties naar Besluit) = imsikb0101:Dossier/imsikb0101:decisions[]//imsikb0101:Decision[imsikb0101:remediations/@xlink:href = '#<imsikb0101:Remediation/@gml:id>'] -->
                                 <sldcom:referencedByDecisions>
                                     <sldcom:identification>838befd2-1b51-416e-bf5a-51317ebdfdbe</sldcom:identification>
                                 </sldcom:referencedByDecisions>
@@ -210,7 +211,6 @@
                                 <sldcom:contaminationNature>
                                     <!-- 1 or more repetitions: chemische stof = imsikb0101:Nature/immetingen:physicalProperty/immetingen:parameter -->
                                     <sldcom:chemicalSubstance codeSpace="urn:bro:sld:Parameter">1693</sldcom:chemicalSubstance>
-                                    <sldcom:chemicalSubstance codeSpace="urn:bro:sld:Parameter">1200</sldcom:chemicalSubstance>
                                 </sldcom:contaminationNature>
                                 <!-- 0 or more repetitions: is vermeld in (relaties naar Besluit) = imsikb0101:Dossier/imsikb0101:decisions[]//imsikb0101:Decision[imsikb0101:contaminationInfos/@xlink:href = '#<imsikb0101:ContaminationInformation/@gml:id>'] -->
                                 <sldcom:referencedByDecisions>
@@ -330,7 +330,7 @@
                                 </sldcom:boundary>
                                 <!-- optioneel: begindiepte = imsikb0101:SitemanagementMeasure/imsikb0101:upperDepth/immetingen:Depth/immetingen:value -->
                                 <!-- Waarbij immetingen:Depth/immetingen:condition moet zijn: t.o.v. maaiveld (ID: 11) -->
-                                <!-- Bijbehorend SIKB0101 voorbeeldbericht heeft een waarde van 55.0 cm tov maaivled. Dat is dus 0.6 meter tov maaiveld. -->
+                                <!-- Bijbehorend SIKB0101 voorbeeldbericht heeft een waarde van 55.0 cm (urn:immetingen:eenheid:id:19) tov maaivled. Dat is dus 0.6 meter tov maaiveld. -->
                                 <sldcom:beginDepth uom="m">0.6</sldcom:beginDepth>
                                 <!-- optioneel: maximale einddiepte = imsikb0101:SitemanagementMeasure/imsikb0101:lowerDepth/immetingen:Depth/immetingen:value -->
                                 <!-- Waarbij immetingen:Depth/immetingen:condition moet zijn: t.o.v. maaiveld (ID: 11) -->
@@ -406,7 +406,7 @@
                                      Waarbij immetingen:Depth/immetingen:condition moet zijn: t.o.v. maaiveld (ID: 11)
                                 <sldcom:maximumEndDepth uom="">?</sldcom:maximumEndDepth>
                                 -->
-                                <!-- optioneel: nazorg oneindig = imsikb0101:SitemanagementMeasure/imsikb0101:duration -->
+                                <!-- optioneel: nazorg oneindig = imsikb0101:SitemanagementMeasure/imsikb0101:duration == -1 -->
                                 <sldcom:aftercareInfinite>nee</sldcom:aftercareInfinite>
                                 <!-- optioneel: duur nazorg = imsikb0101:SitemanagementMeasure/imsikb0101:duration-->
                                 <sldcom:durationAftercare>88</sldcom:durationAftercare>                                
@@ -457,7 +457,7 @@
                         </sldcom:decision>
                     </sldcom:SoilLocation>
                 </sldcom:SoilLocationOrHandledArea>
-            </sldcom:soilLocationOrHandledArea>
-        </sldcom:SLD_CompleteReport>
+            </sldcom:soilLocation>
+        </sldcom:SLD_StartReport>
     </sourceDocument>
 </replaceRequest>
