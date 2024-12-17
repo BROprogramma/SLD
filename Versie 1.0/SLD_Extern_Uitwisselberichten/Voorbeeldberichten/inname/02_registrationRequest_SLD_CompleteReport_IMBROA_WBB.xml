@@ -9,7 +9,7 @@
         xsi:schemaLocation="http://www.broservices.nl/xsd/issld-internal/1.0 https://schema.broservices.nl/xsd/issld-internal/1.0/issld-internal-messages.xsd"/>
 
         Inhoud:
-         * SLD object conform WBB volgens extern formaat.
+         * SLD object conform afgerond WBB dossier volgens extern formaat.
     -->
     <sldcom:requestReference>verzoek_2</sldcom:requestReference>
     <!-- Optional: KVK nummer van de aanleverende partij. -->

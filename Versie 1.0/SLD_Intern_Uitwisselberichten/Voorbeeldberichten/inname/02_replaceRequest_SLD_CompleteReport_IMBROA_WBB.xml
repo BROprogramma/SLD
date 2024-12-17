@@ -21,6 +21,8 @@
                 aftercareArea       c7b1c2d6-476d-4289-9792-3bedf303d107
                 decision            838befd2-1b51-416e-bf5a-51317ebdfdbe
                 decision            426f7ea5-c871-478b-a702-4d3120a5ba0b
+        Replace correctie:
+         * ContaminationInformation/Nature -> Toevoeging extra parameter: 288aec24-70a0-43e5-9232-e8b7edbffd16; parameter 1200.
     -->
     <brocom:requestReference>verzoek_2</brocom:requestReference>
     <!-- optioneel: KVK nummer van de aanleverende partij. -->
@@ -205,6 +207,7 @@
                                 <sldcom:contaminationNature>
                                     <!-- 1 or more repetitions: chemische stof = imsikb0101:Nature/immetingen:physicalProperty/immetingen:parameter -->
                                     <sldcom:chemicalSubstance codeSpace="urn:bro:sld:Parameter">1693</sldcom:chemicalSubstance>
+                                    <sldcom:chemicalSubstance codeSpace="urn:bro:sld:Parameter">1200</sldcom:chemicalSubstance>
                                 </sldcom:contaminationNature>
                                 <!-- 0 or more repetitions: is vermeld in (relaties naar Besluit) = imsikb0101:Dossier/imsikb0101:decisions[]//imsikb0101:Decision[imsikb0101:contaminationInfos/@xlink:href = '#<imsikb0101:ContaminationInformation/@gml:id>'] -->
                                 <sldcom:referencedByDecisions>
