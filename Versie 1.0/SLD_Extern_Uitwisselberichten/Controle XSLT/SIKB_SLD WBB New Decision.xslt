@@ -23,9 +23,14 @@
                 <xsl:variable name="message" select="'In het xml-bestand moet minimaal 1 SoilLocation zijn opgenomen.'"/>
                 <xsl:copy-of select="sikb:createRecord('ERROR', 'xml-bestand', $message)"/>
             </xsl:if>     
-            <xsl:if test="not(//imsikb0101:Dossier)">
+            <xsl:if test="count(//imsikb0101:Dossier) != 1">
                 <!-- Check existence Project -->
-                <xsl:variable name="message" select="'In het xml-bestand moet minimaal 1 Dossier zijn opgenomen.'"/>
+                <xsl:variable name="message" select="'In het xml-bestand moet minimaal en mag maximaal 1 Dossier zijn opgenomen.'"/>
+                <xsl:copy-of select="sikb:createRecord('ERROR', 'xml-bestand', $message)"/>
+            </xsl:if>  
+            <xsl:if test="count(//imsikb0101:Decision) != 1">
+                <!-- Check existence Project -->
+                <xsl:variable name="message" select="'In het xml-bestand moet minimaal en mag maximaal 1 Decision zijn opgenomen.'"/>
                 <xsl:copy-of select="sikb:createRecord('ERROR', 'xml-bestand', $message)"/>
             </xsl:if>                                    
                         
@@ -82,7 +87,9 @@
 		
 		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'followUpWBB', 'WARNING')"/>
 		<xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'followUpWBB', 'VervolgWBB', 'ERROR')"/>
-							
+						
+        <xsl:copy-of select="sikb:checkExistence(., $prGUID, 'broId', 'ERROR')" />
+        <xsl:copy-of select="sikb:checkFilled(., $prGUID, 'broId', 'ERROR')"/>	
 		<xsl:copy-of select="sikb:checkExactLength(., $prGUID, 'broId', 15, 'ERROR')"/>				
 	</xsl:template>		
 	<xsl:template match="imsikb0101:Remediation">
