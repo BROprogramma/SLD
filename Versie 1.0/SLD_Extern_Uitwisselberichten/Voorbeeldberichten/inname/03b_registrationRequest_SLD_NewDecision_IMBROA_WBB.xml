@@ -13,6 +13,7 @@
         1 Nieuw besluit: RMW0210330
          * SitemanagementMeasure -> endTime -> Einddatum ingevuld: <c7b1c2d6-476d-4289-9792-3bedf303d107
          * Nieuwe SitemanagementMeasure zonder einddatum: d7b1c2d6-476d-4289-9792-3bedf303d108
+         * broId voor Dossier gevuld
     -->
     <sldcom:requestReference>verzoek_3</sldcom:requestReference>
     <!-- optioneel: KVK nummer van de bronhouder, nodig indien de uploader niet de bronhouder is -->
@@ -55,7 +56,8 @@
                             <!-- optioneel -->          
                             <imsikb0101:dossierIdNotLocalAuthority>ZL071500060</imsikb0101:dossierIdNotLocalAuthority>
                             <!-- optioneel -->
-                            <imsikb0101:followUpWBB codeSpace="www.sikb.nl">urn:imsikb0101:VervolgWBB:id:11</imsikb0101:followUpWBB>                                                        
+                            <imsikb0101:followUpWBB codeSpace="www.sikb.nl">urn:imsikb0101:VervolgWBB:id:11</imsikb0101:followUpWBB>        
+                            <imsikb0101:broId>SLD123456789012</imsikb0101:broId>                                                
                             <imsikb0101:decisions>
                                 <imsikb0101:Decision>
                                     <imsikb0101:characteristic>RMW0210330</imsikb0101:characteristic>
@@ -83,7 +85,7 @@
                             <!-- optioneel 
                             <imsikb0101:contaminationInfos xlink:href="#_ddd148bf-0f8e-4326-9625-8e4f3020c73c"/>-->                            
                             <!-- optioneel                             
-                            <imsikb0101:remediations xlink:href="#_f7eee423-38fc-4f39-b40e-3eafb93335ff"/>-->
+                            <imsikb0101:remediations xlink:href="#_f7eee423-38fc-4f39-b40e-3eafb93335ff"/>-->                            
                         </imsikb0101:Dossier>
                     </imsikb0101:featureMember>      
                     <!--/Dossier-->                    
