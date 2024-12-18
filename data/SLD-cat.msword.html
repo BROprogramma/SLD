@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/Overheidsbesluit bodemverontreiniging SLD/20240613</p>
       <p>Imvertor: 3.0.0</p>
-      <p>Model release: Conceptualmodel-OverheidsbesluitbodemverontreinigingSLD-1.0-3-20240613-20241218-094017</p>
+      <p>Model release: Conceptualmodel-OverheidsbesluitbodemverontreinigingSLD-1.0-3-20240613-20241218-110244</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -444,7 +444,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d65322e2877">
+                  <section id="detail_d65299e2877">
                      <h4>  registratiegeschiedenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -490,7 +490,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d65322e3103">
+                  <section id="detail_d65299e3103">
                      <h4>  gestandaardiseerde locatie</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1826,7 +1826,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d65322e8325">
+                  <section id="detail_d65299e8325">
                      <h4>  locatiegeschiedenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -2173,7 +2173,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d65322e8929">
+                  <section id="detail_d65299e8929">
                      <h4>  gebeurtenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -3844,7 +3844,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d65322e14866">
+                  <section id="detail_d65299e14866">
                      <h4>  aard verontreiniging</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -41653,13 +41653,34 @@
                </tbody>
             </table>
             
-            <table style="width: 100%;">
+            <table style="width: 100%;" class="list">
+               <colgroup style="width: 25%;"></colgroup>
+               <colgroup style="width: 25%;"></colgroup>
+               <colgroup style="width: 25%;"></colgroup>
+               <colgroup></colgroup>
                <tbody>
                   <tr>
                      <th>Waarde</th>
                      <th>IMBRO</th>
                      <th>IMBRO/A</th>
                      <th>Omschrijving</th>
+                  </tr>
+                  <tr>
+                     <td>nietGetransformeerd</td>
+                     <td>v</td>
+                     <td>v</td>
+                     <td>De gegevens zijn aangeleverd in ETRS89; transformatie was niet nodig.</td>
+                  </tr>
+                  <tr>
+                     <td>RDNAPTRANS2018MV0</td>
+                     <td>v</td>
+                     <td>v</td>
+                     <td>De gegevens zijn getransformeerd van RD naar ETRS89, gebruikmakend van de transformatie
+                        RDNAPTRANS™, versie 2018. De positie van het aardoppervlak is onbekend, bij transformatie
+                        is uitgegaan van 0 m NAP. RDNAPTRANS™ is de officiële transformatie tussen RD/NAP
+                        en ETRS89 afkomstig van het Kadaster, Rijkswaterstaat en de Dienst der Hydrografie
+                        van de Koninklijke Marine in het samenwerkingsverband NSGI (Nederlandse Samenwerking
+                        Geodetische Infrastructuur).</td>
                   </tr>
                </tbody>
             </table>
@@ -41700,13 +41721,29 @@
                </tbody>
             </table>
             
-            <table style="width: 100%;">
+            <table style="width: 100%;" class="list">
+               <colgroup style="width: 25%;"></colgroup>
+               <colgroup style="width: 25%;"></colgroup>
+               <colgroup style="width: 25%;"></colgroup>
+               <colgroup></colgroup>
                <tbody>
                   <tr>
                      <th>Waarde</th>
                      <th>IMBRO</th>
                      <th>IMBRO/A</th>
                      <th>Omschrijving</th>
+                  </tr>
+                  <tr>
+                     <td>Omgevingswet</td>
+                     <td>v</td>
+                     <td>v</td>
+                     <td>De gegevens zijn tot stand gekomen onder het regime van de Omgevingswet.</td>
+                  </tr>
+                  <tr>
+                     <td>WetBodembescherming</td>
+                     <td>&nbsp;</td>
+                     <td>v</td>
+                     <td>De gegevens zijn tot stand gekomen onder het regime van de Wet bodembescherming.</td>
                   </tr>
                </tbody>
             </table>
@@ -41747,13 +41784,36 @@
                </tbody>
             </table>
             
-            <table style="width: 100%;">
+            <table style="width: 100%;" class="list">
+               <colgroup style="width: 25%;"></colgroup>
+               <colgroup style="width: 25%;"></colgroup>
+               <colgroup style="width: 25%;"></colgroup>
+               <colgroup></colgroup>
                <tbody>
                   <tr>
                      <th>Waarde</th>
                      <th>IMBRO</th>
                      <th>IMBRO/A</th>
                      <th>Omschrijving</th>
+                  </tr>
+                  <tr>
+                     <td>bodemlocatieGeregistreerd</td>
+                     <td>v</td>
+                     <td>v</td>
+                     <td>De eerste registratie van de gegevens van de bodemlocatie in de registratie ondergrond.</td>
+                  </tr>
+                  <tr>
+                     <td>bodemlocatieAfgerond</td>
+                     <td>v</td>
+                     <td>v</td>
+                     <td>De aanpak van de bodemlocatie onder het regime van de Wet bodembescherming is afgerond.</td>
+                  </tr>
+                  <tr>
+                     <td>nieuwBesluitBekendgemaakt</td>
+                     <td>v</td>
+                     <td>v</td>
+                     <td>Door het bevoegd gezag is een nieuw besluit genomen met betrekking tot de aanpak van
+                        de bodemlocatie onder het regime van de Wet bodembescherming.</td>
                   </tr>
                </tbody>
             </table>
@@ -41793,13 +41853,29 @@
                </tbody>
             </table>
             
-            <table style="width: 100%;">
+            <table style="width: 100%;" class="list">
+               <colgroup style="width: 25%;"></colgroup>
+               <colgroup style="width: 25%;"></colgroup>
+               <colgroup style="width: 25%;"></colgroup>
+               <colgroup></colgroup>
                <tbody>
                   <tr>
                      <th>Waarde</th>
                      <th>IMBRO</th>
                      <th>IMBRO/A</th>
                      <th>Omschrijving</th>
+                  </tr>
+                  <tr>
+                     <td>ETRS89</td>
+                     <td>v</td>
+                     <td>v</td>
+                     <td>European Terrestrial Reference System 1989 (EPSG 4258).</td>
+                  </tr>
+                  <tr>
+                     <td>RD</td>
+                     <td>v</td>
+                     <td>v</td>
+                     <td>Rijks Driehoeksmeting – Amersfoort RD New (EPSG 28992).</td>
                   </tr>
                </tbody>
             </table>
@@ -41839,13 +41915,40 @@
                </tbody>
             </table>
             
-            <table style="width: 100%;">
+            <table style="width: 100%;" class="list">
+               <colgroup style="width: 25%;"></colgroup>
+               <colgroup style="width: 25%;"></colgroup>
+               <colgroup style="width: 25%;"></colgroup>
+               <colgroup></colgroup>
                <tbody>
                   <tr>
                      <th>Waarde</th>
                      <th>IMBRO</th>
                      <th>IMBRO/A</th>
                      <th>Omschrijving</th>
+                  </tr>
+                  <tr>
+                     <td>aangevuld</td>
+                     <td>v</td>
+                     <td>v</td>
+                     <td>Het registeren van de gegevens van het object heeft na de start van de registratie
+                        een vervolg gekregen. De gegevens in de registratie ondergrond zijn minimaal een keer
+                        aangevuld met nieuwe gegevens.</td>
+                  </tr>
+                  <tr>
+                     <td>geregistreerd</td>
+                     <td>v</td>
+                     <td>v</td>
+                     <td>Het registeren van de gegevens van het object is gestart. De gegevens uit het eerste
+                        brondocument zijn in de registratie ondergrond vastgelegd. Er zijn daarna geen nieuwe
+                        gegevens geregistreerd.</td>
+                  </tr>
+                  <tr>
+                     <td>voltooid</td>
+                     <td>v</td>
+                     <td>v</td>
+                     <td>Het registeren van de gegevens van het object is voltooid. Alle gegevens zijn in de
+                        registratie ondergrond vastgelegd en er kunnen geen nieuwe gegevens meer worden geregistreerd.</td>
                   </tr>
                </tbody>
             </table>
