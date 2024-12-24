@@ -11,7 +11,7 @@
         xsi:schemaLocation="http://www.broservices.nl/xsd/issld-internal/1.0 https://schema.broservices.nl/xsd/issld-internal/1.0/issld-internal-messages.xsd"/>
 
         Inhoud:
-         * Starten van een SLD object conform WBB volgens intern formaat.
+         * Starten van een SLD object conform lopend WBB dossier volgens intern formaat.
             bodemlocatie        f205306d-0260-4b10-9bb5-05368b660446
                 handledArea         9867c501-61ba-4a8e-84ba-9734c93cce43
                 handledArea         f7eee423-38fc-4f39-b40e-3eafb93335ff
@@ -22,14 +22,14 @@
                 decision            838befd2-1b51-416e-bf5a-51317ebdfdbe
                 decision            426f7ea5-c871-478b-a702-4d3120a5ba0b
     -->
-    <brocom:requestReference>verzoek_1</brocom:requestReference>
+    <brocom:requestReference>verzoek_3a</brocom:requestReference>
     <!-- optioneel: KVK nummer van de aanleverende partij. -->
     <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
-    <brocom:qualityRegime>IMBRO</brocom:qualityRegime>
+    <brocom:qualityRegime>IMBRO/A</brocom:qualityRegime>
     <sourceDocument>
         <sldcom:SLD_StartReport gml:id="id0001">
             <!-- optioneel: identificatie van het Overheidsbesluit bodemverontreiniging in de eigen administratie. -->
-            <sldcom:objectIdAccountableParty>54321</sldcom:objectIdAccountableParty>
+            <sldcom:objectIdAccountableParty>12345</sldcom:objectIdAccountableParty>
             <!-- Kader aanlevering; WBB of OW -->
             <sldcom:deliveryContext codeSpace="urn:bro:sld:DeliveryContext">WBB</sldcom:deliveryContext>
             <sldcom:soilLocation>
@@ -39,6 +39,7 @@
                         <!-- SIKB0101-identificatie = imsikb0101:Dossier/imsikb0101:identification/immetingen:NEN3610ID/immetingen:lokaalID -->
                         <sldcom:identification>f205306d-0260-4b10-9bb5-05368b660446</sldcom:identification>
                         <!-- locatiecode BIS = imsikb0101:Dossier/imsikb0101:dossierIdNotLocalAuthority -->
+                        <sldcom:dossierIdSoilInformationSystem>ZL071500060</sldcom:dossierIdSoilInformationSystem>
                         <!-- locatiecode bevoegd gezag = imsikb0101:Dossier/imsikb0101:dossierIdLocalAuthority -->
                         <sldcom:dossierIdLocalAuthority>ZL071500060</sldcom:dossierIdLocalAuthority>
                         <!-- naam = imsikb0101:SoilLocation/imsikb0101:name -->
@@ -92,7 +93,7 @@
                                 <sldcom:beginDepth uom="m">0.0</sldcom:beginDepth>
                                 <!-- optioneel: maximale einddiepte = imsikb0101:Remediation/imsikb0101:lowerDepth/immetingen:Depth/immetingen:value -->
                                 <!-- Waarbij immetingen:Depth/immetingen:condition moet zijn: t.o.v. maaiveld (ID: 11) -->
-                                <sldcom:maximumEndDepth uom="m">3.0</sldcom:maximumEndDepth>
+                                <sldcom:maximumEndDepth uom="m">0.0</sldcom:maximumEndDepth>
                                 <!-- optioneel: einddatum activiteit = imsikb0101:Remediation/imsikb0101:endTime -->
                                 <sldcom:activityEndDate>2004-12-13</sldcom:activityEndDate>
                                 <!-- optioneel: saneringsvariant bovengrond = imsikb0101:Remediation/imsikb0101:realizedVariationTopsoil; 1 = volledigVerwijderdAanvulgrondSchoon -->
@@ -104,13 +105,13 @@
                                 <sldcom:referencedByDecisions>
                                     <sldcom:identification>838befd2-1b51-416e-bf5a-51317ebdfdbe</sldcom:identification>
                                 </sldcom:referencedByDecisions>
-                                <!-- optioneel: relatie naar Evaluatieverslag = imsikb0101:Dossier/imsikb0101:projects[1] -->
+                                <!-- optioneel: relatie naar Evaluatieverslag = imsikb0101:Dossier/imsikb0101:projects[imsikb0101:projectType=urn:imsikb0101:OnderzoekType:id:11][1] -->
                                 <sldcom:evaluationReport>
                                     <sldcom:EvaluationReport gml:id="id_0004">
                                         <!-- BRO-ID = imsikb0101:Project/imsikb0101:bro-id -->
                                         <sldcom:broId>SAD00000012345</sldcom:broId>
                                         <!-- rapportnummer = imsikb0101:Project/imsikb0101:reportNumber -->
-                                        <sldcom:reportNumber>Rapport VO Van Putten</sldcom:reportNumber>
+                                        <sldcom:reportNumber>Rapport EV Van Putten</sldcom:reportNumber>
                                     </sldcom:EvaluationReport>
                                 </sldcom:evaluationReport>
                             </sldcom:HandledArea>
@@ -121,22 +122,22 @@
                                 <sldcom:identification>f7eee423-38fc-4f39-b40e-3eafb93335ff</sldcom:identification>
                                 <!-- contour = imsikb0101:Remediation/imsikb0101:geometry -->
                                 <sldcom:boundary>
-                                <gml:MultiSurface gml:id="_0c7dd359-75f9-45d8-b32f-84ac4408bb80">
-                                    <gml:surfaceMember>
-                                        <gml:Polygon gml:id="_94012463-dc88-4f4c-a99d-866ba2b51884" srsName="urn:ogc:def:crs:EPSG::28992" srsDimension="2">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                    <gml:posList>46897.21 372058.68 46890.68 372056.42 46888.34 372054.7 46888.93 372055.09 46884.55 372052.04 46883.5 372050.09 46884.51 372046.15 46888.22 372040.84 46893.3 372036.62 46902.17 372036.89 46910.37 372042.24 46914.16 372046.73 46910.87 372053.06 46904.98 372057.98 46897.21 372058.68</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                            <gml:interior>
-                                                <gml:LinearRing>
-                                                    <gml:posList>46907.46 372053.26 46908.94 372046.2 46896.88 372040.61 46891.29 372041.49 46886.88 372049.43 46887.17 372050.61 46898.94 372058.39 46907.46 372053.26</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:interior>
-                                        </gml:Polygon>
-                                    </gml:surfaceMember>
-                                </gml:MultiSurface>
+                                    <gml:MultiSurface gml:id="_0c7dd359-75f9-45d8-b32f-84ac4408bb80">
+                                        <gml:surfaceMember>
+                                            <gml:Polygon gml:id="_94012463-dc88-4f4c-a99d-866ba2b51884" srsName="urn:ogc:def:crs:EPSG::28992" srsDimension="2">
+                                                <gml:exterior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList>46897.21 372058.68 46890.68 372056.42 46888.34 372054.7 46888.93 372055.09 46884.55 372052.04 46883.5 372050.09 46884.51 372046.15 46888.22 372040.84 46893.3 372036.62 46902.17 372036.89 46910.37 372042.24 46914.16 372046.73 46910.87 372053.06 46904.98 372057.98 46897.21 372058.68</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:exterior>
+                                                <gml:interior>
+                                                    <gml:LinearRing>
+                                                        <gml:posList>46907.46 372053.26 46908.94 372046.2 46896.88 372040.61 46891.29 372041.49 46886.88 372049.43 46887.17 372050.61 46898.94 372058.39 46907.46 372053.26</gml:posList>
+                                                    </gml:LinearRing>
+                                                </gml:interior>
+                                            </gml:Polygon>
+                                        </gml:surfaceMember>
+                                    </gml:MultiSurface>
                                 </sldcom:boundary>
                                 <!-- compartiment = imsikb0101:Remediation/imsikb0101:contourType; 1 = grond -->
                                 <sldcom:compartment codeSpace="urn:bro:sld:Compartment">grond</sldcom:compartment>
@@ -145,7 +146,7 @@
                                 <sldcom:beginDepth uom="m">0.0</sldcom:beginDepth>
                                 <!-- optioneel: maximale einddiepte = imsikb0101:Remediation/imsikb0101:lowerDepth/immetingen:Depth/immetingen:value -->
                                 <!-- Waarbij immetingen:Depth/immetingen:condition moet zijn: t.o.v. maaiveld (ID: 11) -->
-                                <sldcom:maximumEndDepth uom="m">0.0</sldcom:maximumEndDepth>
+                                <sldcom:maximumEndDepth uom="m">3.0</sldcom:maximumEndDepth>
                                 <!-- optioneel: einddatum activiteit = imsikb0101:Remediation/imsikb0101:endTime -->
                                 <sldcom:activityEndDate>2004-12-13</sldcom:activityEndDate>
                                 <!-- optioneel: saneringsvariant bovengrond = imsikb0101:Remediation/imsikb0101:realizedVariationTopsoil; 7 = aangebrachtVerhardingslaag -->
@@ -157,13 +158,13 @@
                                 <sldcom:referencedByDecisions>
                                     <sldcom:identification>426f7ea5-c871-478b-a702-4d3120a5ba0</sldcom:identification>
                                 </sldcom:referencedByDecisions>
-                                <!-- optioneel: relatie naar Evaluatieverslag = imsikb0101:Dossier/imsikb0101:projects[1] -->
+                                <!-- optioneel: relatie naar Evaluatieverslag = imsikb0101:Dossier/imsikb0101:projects[imsikb0101:projectType=urn:imsikb0101:OnderzoekType:id:11][1] -->
                                 <sldcom:evaluationReport>
                                     <sldcom:EvaluationReport gml:id="id_0006">
                                         <!-- BRO-ID = imsikb0101:Project/imsikb0101:bro-id -->
                                         <sldcom:broId>SAD00000012345</sldcom:broId>
                                         <!-- rapportnummer = imsikb0101:Project/imsikb0101:reportNumber -->
-                                        <sldcom:reportNumber>Rapport VO Van Putten</sldcom:reportNumber>
+                                        <sldcom:reportNumber>Rapport EV Van Putten</sldcom:reportNumber>
                                     </sldcom:EvaluationReport>
                                 </sldcom:evaluationReport>
                             </sldcom:HandledArea>
@@ -200,7 +201,7 @@
                                 <!-- optioneel: datum vastgesteld = imsikb0101:ContaminationInformation/imsikb0101:startTime -->
                                 <sldcom:dateDecreed>2004-11-11</sldcom:dateDecreed>
                                 <!-- optioneel: einddatum = imsikb0101:ContaminationInformation/imsikb0101:endTime -->
-                                <sldcom:endDate>2034-11-11</sldcom:endDate>
+                                <sldcom:endDate>2024-11-11</sldcom:endDate>
                                 <!-- optioneel: relatie naar Aard verontreiniging = imsikb0101:ContaminationInformation/imsikb0101:natures[] -->
                                 <sldcom:contaminationNature>
                                     <!-- 1 or more repetitions: chemische stof = imsikb0101:Nature/immetingen:physicalProperty/immetingen:parameter -->
@@ -324,11 +325,13 @@
                                 </sldcom:boundary>
                                 <!-- optioneel: begindiepte = imsikb0101:SitemanagementMeasure/imsikb0101:upperDepth/immetingen:Depth/immetingen:value -->
                                 <!-- Waarbij immetingen:Depth/immetingen:condition moet zijn: t.o.v. maaiveld (ID: 11) -->
-                                <sldcom:beginDepth uom="m">55.0</sldcom:beginDepth>
+                                <!-- Bijbehorend SIKB0101 voorbeeldbericht heeft een waarde van 55.0 cm (urn:immetingen:eenheid:id:19) tov maaivled. Dat is dus 0.6 meter tov maaiveld. -->
+                                <sldcom:beginDepth uom="m">0.6</sldcom:beginDepth>
                                 <!-- optioneel: maximale einddiepte = imsikb0101:SitemanagementMeasure/imsikb0101:lowerDepth/immetingen:Depth/immetingen:value -->
                                 <!-- Waarbij immetingen:Depth/immetingen:condition moet zijn: t.o.v. maaiveld (ID: 11) -->
-                                <sldcom:maximumEndDepth uom="m">100.5</sldcom:maximumEndDepth>
-                                <!-- optioneel: nazorg oneindig = imsikb0101:SitemanagementMeasure/imsikb0101:duration -->
+                                <!-- Bijbehorend SIKB0101 voorbeeldbericht heeft een waarde van 100.5 cm tov maaivled. Dat is dus 1.0 meter tov maaiveld. -->
+                                <sldcom:maximumEndDepth uom="m">1.0</sldcom:maximumEndDepth>
+                                <!-- optioneel: nazorg oneindig = imsikb0101:SitemanagementMeasure/imsikb0101:duration == -1 -->
                                 <sldcom:aftercareInfinite>ja</sldcom:aftercareInfinite>
                                 <!-- optioneel: duur nazorg = imsikb0101:SitemanagementMeasure/imsikb0101:duration
                                 <sldcom:durationAftercare>?</sldcom:durationAftercare>
@@ -398,14 +401,15 @@
                                      Waarbij immetingen:Depth/immetingen:condition moet zijn: t.o.v. maaiveld (ID: 11)
                                 <sldcom:maximumEndDepth uom="">?</sldcom:maximumEndDepth>
                                 -->
-                                <!-- optioneel: nazorg oneindig = imsikb0101:SitemanagementMeasure/imsikb0101:duration -->
+                                <!-- optioneel: nazorg oneindig = imsikb0101:SitemanagementMeasure/imsikb0101:duration == -1 -->
                                 <sldcom:aftercareInfinite>nee</sldcom:aftercareInfinite>
                                 <!-- optioneel: duur nazorg = imsikb0101:SitemanagementMeasure/imsikb0101:duration-->
                                 <sldcom:durationAftercare>88</sldcom:durationAftercare>                                
                                 <!-- optioneel: datum inwerking = imsikb0101:SitemanagementMeasure/imsikb0101:startTime -->
                                 <sldcom:effectiveDate>2004-12-13</sldcom:effectiveDate>
-                                <!-- optioneel: einddatum = imsikb0101:SitemanagementMeasure/imsikb0101:endTime -->
-                                <sldcom:endDate>2021-10-15</sldcom:endDate>
+                                <!-- optioneel: einddatum = imsikb0101:SitemanagementMeasure/imsikb0101:endTime
+                                <sldcom:endDate>?</sldcom:endDate>
+                                -->
                                 <!-- 0 or more repetitions: is vermeld in (relaties naar Besluit) = imsikb0101:Dossier/imsikb0101:decisions[]//imsikb0101:Decision[imsikb0101:sitemanagements/@xlink:href = '#<imsikb0101:SitemanagementMeasure/@gml:id>'] -->
                                 <sldcom:referencedByDecisions>
                                     <!-- SIKB0101-identificatie = imsikb0101:Decision/imsikb0101:identification/immetingen:NEN3610ID/immetingen:lokaalID -->
@@ -415,7 +419,7 @@
                                 <sldcom:aftercareMeasure>
                                     <sldcom:AftercareMeasure gml:id="id0012">
                                         <!-- SIKB0101-identificatie = imsikb0101:UsageRestriction/imsikb0101:identification/immetingen:NEN3610ID/immetingen:lokaalID -->
-                                        <sldcom:identification></sldcom:identification>
+                                        <sldcom:identification>919e793b-18f8-4901-ac88-c6eba940d9d9</sldcom:identification>
                                         <!-- gebruiksbeperking = imsikb0101:UsageRestriction/imsikb0101:restriction; 14 = monitoringGrondwater -->
                                         <sldcom:usageRestriction codeSpace="urn:bro:sld:UsageRestriction">monitoringGrondwater</sldcom:usageRestriction>
                                     </sldcom:AftercareMeasure>

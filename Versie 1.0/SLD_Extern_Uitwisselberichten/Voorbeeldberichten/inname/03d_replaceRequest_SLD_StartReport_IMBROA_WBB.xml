@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<registrationRequest 
+<replaceRequest 
     xmlns="http://www.broservices.nl/xsd/issld/1.0" 
     xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon/1.0" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -9,20 +9,24 @@
         xsi:schemaLocation="http://www.broservices.nl/xsd/issld-internal/1.0 https://schema.broservices.nl/xsd/issld-internal/1.0/issld-internal-messages.xsd"/>
 
         Inhoud:
-         * SLD object conform afgerond WBB dossier volgens extern formaat.
+         * Starten van een SLD object conform lopend WBB dossier volgens extern formaat.
+        Replace correctie:
+         * correctuereden = inOnderzoek
+         * SitemanagementMeasure/endTime -> waarde is nu bekend: 2021-10-15.
     -->
-    <sldcom:requestReference>verzoek_2</sldcom:requestReference>
-    <!-- Optional: KVK nummer van de aanleverende partij. -->
+    <sldcom:requestReference>correctie verzoek_3a</sldcom:requestReference>
+    <!-- optioneel: KVK nummer van de bronhouder, nodig indien de uploader niet de bronhouder is -->
     <sldcom:deliveryAccountableParty>27376655</sldcom:deliveryAccountableParty>
+    <sldcom:broId>SLD000000012349</sldcom:broId>
     <sldcom:qualityRegime>IMBRO/A</sldcom:qualityRegime>
+    <correctionReason codeSpace="urn:bro:sld:CorrectionReason">inOnderzoek</correctionReason>
     <sourceDocument>
-        <sldcom:SLD_CompleteReport>
-            <!-- optional: identificatie van het Overheidsbesluit bodemverontreiniging in de eigen administratie. -->
+        <sldcom:SLD_StartReport>
+            <!-- optioneel: identificatie van het Overheidsbesluit bodemverontreiniging in de eigen administratie. -->
             <sldcom:objectIdAccountableParty>12345</sldcom:objectIdAccountableParty>
             <!-- Kader aanlevering; WBB of OW -->
             <sldcom:deliveryContext codeSpace="urn:bro:sld:DeliveryContext">WBB</sldcom:deliveryContext>
-            <sldcom:featureCollection>
-                <!-- SIKB0101 feature collection, letterlijk overgenomen vanuit het BIS. -->
+            <sldcom:featureCollection>                
                 <!-- SIKB0101 feature collection. -->
                 <imsikb0101:FeatureCollectionIMSIKB0101 gml:id="LIBTEST" xmlns:imsikb0101="http://www.sikb.nl/imsikb0101" xmlns:immetingen="http://www.sikb.nl/immetingen" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:om="http://www.opengis.net/om/2.0" xmlns:sam="http://www.opengis.net/sampling/2.0" xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sikb.nl/imsikb0101 ../../XSD/imsikb0101_v14.9.0.xsd">
                     <imsikb0101:metaData>
@@ -251,8 +255,8 @@
                             <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>
                             <!-- optioneel -->
                             <imsikb0101:duration uom="urn:immetingen:Eenheid:id:137">88</imsikb0101:duration>
-                            <!-- optioneel -->
-                            <imsikb0101:endTime>2021-10-15</imsikb0101:endTime>                                
+                            <!-- optioneel, Nu is de waarde wel bekend -->
+                            <imsikb0101:endTime>2021-10-15</imsikb0101:endTime>
                             <imsikb0101:geometry>                                    
                                 <gml:MultiSurface gml:id="_a8c2d914-b56a-4ae1-b924-194b743da618">
                                     <gml:surfaceMember>
@@ -567,6 +571,6 @@
                     </imsikb0101:featureMember>
                 </imsikb0101:FeatureCollectionIMSIKB0101>
             </sldcom:featureCollection>
-        </sldcom:SLD_CompleteReport>
+        </sldcom:SLD_StartReport>
     </sourceDocument>
-</registrationRequest>
+</replaceRequest>
