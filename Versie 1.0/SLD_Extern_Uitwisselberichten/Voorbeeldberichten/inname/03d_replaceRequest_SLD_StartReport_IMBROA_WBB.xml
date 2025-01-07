@@ -14,7 +14,7 @@
          * correctuereden = inOnderzoek
          * SitemanagementMeasure/endTime -> waarde is nu bekend: 2021-10-15.
     -->
-    <sldcom:requestReference>correctie verzoek_3a</sldcom:requestReference>
+    <sldcom:requestReference>correctie verzoek_3d</sldcom:requestReference>
     <!-- optioneel: KVK nummer van de bronhouder, nodig indien de uploader niet de bronhouder is -->
     <sldcom:deliveryAccountableParty>27376655</sldcom:deliveryAccountableParty>
     <sldcom:broId>SLD000000012349</sldcom:broId>

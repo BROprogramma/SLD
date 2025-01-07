@@ -15,11 +15,11 @@
          * Nieuwe SitemanagementMeasure zonder einddatum: d7b1c2d6-476d-4289-9792-3bedf303d108
          * broId voor Dossier gevuld
     -->
-    <sldcom:requestReference>verzoek_3</sldcom:requestReference>
+    <sldcom:requestReference>verzoek_3b</sldcom:requestReference>
     <!-- optioneel: KVK nummer van de bronhouder, nodig indien de uploader niet de bronhouder is -->
     <sldcom:deliveryAccountableParty>27376655</sldcom:deliveryAccountableParty>
     <!-- broId required for SLD_NewDecision -->
-    <sldcom:broId>SLD123456789012</sldcom:broId>
+    <sldcom:broId>SLD000000012349</sldcom:broId>
     <sldcom:qualityRegime>IMBRO/A</sldcom:qualityRegime>
     <sourceDocument>
         <sldcom:SLD_NewDecision>
