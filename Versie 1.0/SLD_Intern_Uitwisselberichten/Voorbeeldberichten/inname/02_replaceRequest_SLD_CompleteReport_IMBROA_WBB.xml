@@ -29,6 +29,7 @@
     <!-- optioneel: KVK nummer van de aanleverende partij. -->
     <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
     <brocom:broId>SLD000000012348</brocom:broId>
+    <!-- qualityRegime is always IMBRO/A for WBB SLD objects. -->
     <brocom:qualityRegime>IMBRO/A</brocom:qualityRegime>
     <correctionReason codeSpace="urn:bro:sld:CorrectionReason">eigenCorrectie</correctionReason>
     <sourceDocument>

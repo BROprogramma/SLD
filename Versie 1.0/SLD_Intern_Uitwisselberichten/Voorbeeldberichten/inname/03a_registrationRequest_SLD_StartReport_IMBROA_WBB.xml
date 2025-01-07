@@ -25,6 +25,7 @@
     <brocom:requestReference>verzoek_3a</brocom:requestReference>
     <!-- optioneel: KVK nummer van de aanleverende partij. -->
     <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
+    <!-- qualityRegime is always IMBRO/A for WBB SLD objects. -->
     <brocom:qualityRegime>IMBRO/A</brocom:qualityRegime>
     <sourceDocument>
         <sldcom:SLD_StartReport gml:id="id0001">
