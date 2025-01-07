@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope 
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://schemas.xmlsoap.org/soap/envelope/ http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <dispatchDataResponse
+                xmlns="http://www.broservices.nl/xsd/dssld-internal/1.0"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+                xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon-internal/1.0" 
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.broservices.nl/xsd/dssld-internal/1.0 ../../XSD/dssld-internal-messages.xsd">
+            <!--Disclaimer: dit voorbeeldbericht is gemaakt voor versie 1.0 van de SLD en valideert tegen de XSD van de uitgifteservice.
+                Het is niet gevalideerd door de uitgifteservice en de inhoud is fictief en vaktechnisch/inhoudelijk niet voorbeeldig.
+                xsi:schemaLocation="http://www.broservices.nl/xsd/dssld-internal/1.0 https://schema.broservices.nl/xsd/dssld-internal/1.0/dssld-internal-messages.xsd"/>
+            -->
+            <brocom:responseType>dispatch</brocom:responseType>
+            <brocom:requestReference>Verzoek_1</brocom:requestReference>
+            <dispatchDocument>
+                <SLD_PO_DP gml:id="id_001">
+                    <brocom:broId>sld123456789012</brocom:broId>
+                    <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
+                    <!-- optional; present in SLD_O_DP -->
+                    <brocom:objectIdAccountableParty>12345</brocom:objectIdAccountableParty>
+                    <!-- optional; present in SLD_O_DP -->
+                    <brocom:deliveryResponsibleParty>12345678</brocom:deliveryResponsibleParty>
+                    <brocom:qualityRegime>IMBRO/A</brocom:qualityRegime>
+                    <deliveryContext codeSpace="urn:bro:sld:DeliveryContext">Kader Aanlevering</deliveryContext>
+                    <registrationHistory>
+                        <brocom:objectRegistrationTime>2023-01-13T13:15:57+01:00</brocom:objectRegistrationTime>
+                        <brocom:registrationStatus codeSpace="urn:bro:RegistrationStatus">voltooid</brocom:registrationStatus>
+                        <brocom:corrected>nee</brocom:corrected>
+                        <brocom:underReview>nee</brocom:underReview>
+                        <brocom:deregistered>nee</brocom:deregistered>
+                        <brocom:reregistered>nee</brocom:reregistered>
+                    </registrationHistory>
+                    <standardizedLocation>
+                        <brocom:location>
+                            <gml:MultiSurface gml:id="_cdc53818-fb86-4037-a36a-902dcc2bfda6" srsName="urn:ogc:def:crs:EPSG::28992" srsDimension="2">
+                                <gml:surfaceMember>
+                                    <gml:Polygon gml:id="_d3acc364-51ba-4fb3-a19a-cf98bf9f944f">
+                                        <gml:exterior>
+                                            <gml:LinearRing>
+                                                <gml:posList>46889.1 372038.5 46898.8 372028.0 46909.4 372039.7 46915.5 372048.0 46906.7 372059.1 46900.0 372058.3 46890.8 372056.5 46880.8 372050.9 46885.3 372049.7 46889.1 372038.5</gml:posList>
+                                            </gml:LinearRing>
+                                        </gml:exterior>
+                                    </gml:Polygon>
+                                </gml:surfaceMember>
+                            </gml:MultiSurface>
+                        </brocom:location>
+                        <brocom:coordinateTransformation codeSpace="urn:bro:CoordinateTransformation">RDNAPTRANS2018MV0	</brocom:coordinateTransformation>
+                    </standardizedLocation>
+                    <!-- TODO add more .... -->
+                </SLD_PO_DP>
+            </dispatchDocument>
+        </dispatchDataResponse>
+    </soap:Body>
+</soap:Envelope>
