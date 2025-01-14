@@ -14,7 +14,7 @@
                 xsi:schemaLocation="http://www.broservices.nl/xsd/dssld-internal/1.0 https://schema.broservices.nl/xsd/dssld-internal/1.0/dssld-internal-messages.xsd"/>
             -->
             <brocom:requestReference>sld uitgifte 1</brocom:requestReference>
-            <brocom:broId>sld123456789012</brocom:broId>
+            <brocom:broId>SLD123456789012</brocom:broId>
             <dataToBeDelivered>actueel</dataToBeDelivered>            
         </dispatchDataRequest>
     </soap:Body>

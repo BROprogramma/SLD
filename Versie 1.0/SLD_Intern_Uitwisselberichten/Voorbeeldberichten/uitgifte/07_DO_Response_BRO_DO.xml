@@ -35,7 +35,7 @@
                 <sld_O_DP gml:id="?">?</sld_O_DP>
                 -->
                 <brocom:BRO_DO gml:id="id_0001">
-                    <brocom:broId>sld123456789012</brocom:broId>
+                    <brocom:broId>SLD123456789012</brocom:broId>
                     <brocom:deregistered>ja</brocom:deregistered>
                     <brocom:deregistrationTime>2023-01-13T13:15:57+01:00</brocom:deregistrationTime>
                 </brocom:BRO_DO>
