@@ -82,7 +82,7 @@ Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de b
 Explanation: De wetgever stipuleert dat het gegeven moet zijn vastgelegd om inzicht te geven in de relatie met de taken van een bestuursorgaan. Het gegeven geeft inzicht in de maatschappelijke betekenis van de informatie.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="soilLocation" type="sldcom:SoilLocationOrHandledAreaPropertyType" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="soilLocationOrHandledArea" type="sldcom:SoilLocationOrHandledAreaPropertyType" minOccurs="1" maxOccurs="1"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>

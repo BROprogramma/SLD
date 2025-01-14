@@ -33,7 +33,7 @@
             <sldcom:objectIdAccountableParty>12345</sldcom:objectIdAccountableParty>
             <!-- Kader aanlevering; WBB of OW -->
             <sldcom:deliveryContext codeSpace="urn:bro:sld:DeliveryContext">WBB</sldcom:deliveryContext>
-            <sldcom:soilLocation>
+            <sldcom:soilLocationOrHandledArea>
                 <sldcom:SoilLocationOrHandledArea>
                     <!-- DeliveryContext = WBB dus bodemlocatie / SoilLocation -->
                     <sldcom:SoilLocation gml:id="id0002">
@@ -454,7 +454,7 @@
                         </sldcom:decision>
                     </sldcom:SoilLocation>
                 </sldcom:SoilLocationOrHandledArea>
-            </sldcom:soilLocation>
+            </sldcom:soilLocationOrHandledArea>
         </sldcom:SLD_StartReport>
     </sourceDocument>
 </registrationRequest>

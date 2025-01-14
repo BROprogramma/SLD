@@ -52,12 +52,6 @@
 Explanation: De registratie van een object met een levenscyclus, zoals bij een overheidsbesluit bodemverontreiniging, wordt initieel gestart, eventueel aangevuld en eventueel uiteindelijk voltooid. Met een registrationRequest wordt de registratie gestart, aangevuld of voltooid. Met een replaceRequest worden in de registratie opgenomen gegevens vervangen. Met een insertRequest worden gegevens tussengevoegd in de tijdlijn. Met een moveRequest worden gegevens verplaatst op de tijdlijn. Met een deleteRequest worden gegevens op een bepaald moment in de tijdlijn verwijderd.</xs:documentation>
         </xs:annotation>
     </xs:element>
-    <xs:element name="insertRequest" type="issld:CorrectionRequestType">
-        <xs:annotation>
-            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht insertRequest is een specialisatie van brocom:CorrectionRequest, waaraan het een correctiereden en een brondocument toevoegt. Met een insertRequest, dat een dataleverancier (ofwel tevens bronhouder danwel in opdracht van de bronhouder) aanbiedt bij de innamewebservice van het BRO systeem, wordt de inhoud van het brondocument tussengevoegd in de tijdlijn.
-Explanation: De registratie van een object met een levenscyclus, zoals bij een overheidsbesluit bodemverontreiniging, wordt initieel gestart, eventueel aangevuld en eventueel uiteindelijk voltooid. Met een registrationRequest wordt de registratie gestart, aangevuld of voltooid. Met een replaceRequest worden in de registratie opgenomen gegevens vervangen. Met een insertRequest worden gegevens tussengevoegd in de tijdlijn. Met een moveRequest worden gegevens verplaatst op de tijdlijn. Met een deleteRequest worden gegevens op een bepaald moment in de tijdlijn verwijderd.</xs:documentation>
-        </xs:annotation>
-    </xs:element>
     <xs:element name="deleteRequest" type="issld:CorrectionRequestType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht deleteRequest is een specialisatie van brocom:CorrectionRequest, waaraan het een correctiereden en een brondocument toevoegt. Met een deleteRequest, dat een dataleverancier (ofwel tevens bronhouder danwel in opdracht van de bronhouder) aanbiedt bij de innamewebservice van het BRO systeem, wordt een brondocument verwijderd uit de tijdlijn.
