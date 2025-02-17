@@ -84,7 +84,7 @@
                     <sldcom:contaminatedArea>...</sldcom:contaminatedArea>
                     -->
                     <!-- 0 or more repitions of relatie naar Beeindigd Verontreinigd Gebied = imsikb0101:Dossier/imsikb0101:contaminationInfos[*] voor zover verwezen vanuit decision inclusief endTime.
-                    <sldcom:finishedContaminatedaArea>...</sldcom:finishedContaminatedaArea>
+                    <sldcom:finishedContaminatedArea>...</sldcom:finishedContaminatedArea>
                     -->
                     <!-- 0 or more repitions of relatie naar Nazorggebied = imsikb0101:Dossier/imsikb0101:sitemanagements[*] voor zover verwezen vanuit decision en zonder endTime. -->
                     <!-- SitemanagementMeasure gml:id="_d7b1c2d6-476d-4289-9792-3bedf303d108" heeft geen endTime -->
