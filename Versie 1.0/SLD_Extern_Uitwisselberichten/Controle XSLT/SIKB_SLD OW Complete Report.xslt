@@ -135,7 +135,7 @@
 		
 		<xsl:copy-of select="sikb:checkExistence(., $prGUID,'broId','ERROR')"/>
 		<xsl:copy-of select="sikb:checkFilled(., $prGUID,'broId', 'ERROR')"/>
-		<xsl:copy-of select="sikb:checkLength(., $prGUID, 'broId', 20, 'ERROR')"/>
+		<xsl:copy-of select="sikb:checkLength(., $prGUID, 'broId', 15, 'ERROR')"/>
 				
 	</xsl:template>
 	
