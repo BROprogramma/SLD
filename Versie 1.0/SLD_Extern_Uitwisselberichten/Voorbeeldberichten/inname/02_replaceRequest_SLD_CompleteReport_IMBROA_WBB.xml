@@ -18,8 +18,8 @@
     <sldcom:deliveryAccountableParty>27376655</sldcom:deliveryAccountableParty>
     <sldcom:broId>SLD000000012346</sldcom:broId>
     <sldcom:qualityRegime>IMBRO/A</sldcom:qualityRegime>    
-    <!-- optioneel -->
-    <sldcom:underPrivilege>nee</sldcom:underPrivilege>
+    <!-- optioneel, maar niet gebruiken voor SLD 
+    <sldcom:underPrivilege>nee</sldcom:underPrivilege>-->
     <correctionReason codeSpace="urn:bro:sld:CorrectionReason">eigenCorrectie</correctionReason>        
     <sourceDocument>
         <sldcom:SLD_CompleteReport>

@@ -19,6 +19,9 @@
     <sldcom:deliveryAccountableParty>27376655</sldcom:deliveryAccountableParty>
     <sldcom:broId>SLD000000012349</sldcom:broId>
     <sldcom:qualityRegime>IMBRO/A</sldcom:qualityRegime>
+    <!-- not allowed in SLD / only allowed in GMW
+    <sldcom:underPrivilege>?</sldcom:underPrivilege>
+     -->
     <correctionReason codeSpace="urn:bro:sld:CorrectionReason">inOnderzoek</correctionReason>
     <sourceDocument>
         <sldcom:SLD_StartReport>
