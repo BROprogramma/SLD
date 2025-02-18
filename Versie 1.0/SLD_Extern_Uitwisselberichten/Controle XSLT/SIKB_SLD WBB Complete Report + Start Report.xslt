@@ -104,8 +104,7 @@
 		<xsl:copy-of select="sikb:checkExistence(., $prGUID,'realizedVariationTopsoil','WARNING')" />
 		<xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'realizedVariationTopsoil', 'San_bovengrond', 'ERROR')"/>				
 		<xsl:copy-of select="sikb:checkExistence(., $prGUID,'realizedVariationSubsoil','WARNING')" />
-		<xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'realizedVariationSubsoil', 'San_ondergrond', 'ERROR')"/>
-		<xsl:copy-of select="sikb:checkExistenceEither(., $prGUID, 'realizedVariationTopsoil', 'realizedVariationSubsoil', 'WARNING')"/>	
+		<xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'realizedVariationSubsoil', 'San_ondergrond', 'ERROR')"/>	
 				
 		<!-- Voor WBB mag er geen Approach aanwezig zijn, deze wordt genegeerd en leeg gelaten. Bij OW verplicht -->	
         <!-- <xsl:if test="string-length(string(imsikb0101:approach)) > 0">			
@@ -173,7 +172,7 @@
 		
 		<xsl:copy-of select="sikb:checkExistence(., $prGUID,'broId','ERROR')"/>
 		<xsl:copy-of select="sikb:checkFilled(., $prGUID,'broId', 'ERROR')"/>
-		<xsl:copy-of select="sikb:checkLength(., $prGUID, 'broId', 20, 'ERROR')"/>
+		<xsl:copy-of select="sikb:checkLength(., $prGUID, 'broId', 15, 'ERROR')"/>
 				
 	</xsl:template>
 	<xsl:template match="imsikb0101:ContaminationInformation">
@@ -207,9 +206,6 @@
            <xsl:copy-of select="sikb:createRecord('ERROR','ContaminationInformation-Decision',string-join(('ContaminationInformation met gml:id (',$prGUID,') is gekoppeld aan meer dan 3 besluiten.'),''))" />
         </xsl:if>
 		
-		<xsl:if test="count(./imsikb0101:natures//imsikb0101:Nature) &lt; 1">            
-            <xsl:copy-of select="sikb:createRecord('ERROR', 'imsikb0101:Nature', string-join(('Een imsikb0101:ContaminationInformation moet minimaal 1 imsikb0101:Nature hebben. ContaminationInformation gml:id =',  $prGUID), ' ') )"/>
-        </xsl:if>
 	</xsl:template>
     <xsl:template match="imsikb0101:Nature">
 		<xsl:variable name="prGUID" select="./imsikb0101:identification/immetingen:NEN3610ID/immetingen:lokaalID"/>
