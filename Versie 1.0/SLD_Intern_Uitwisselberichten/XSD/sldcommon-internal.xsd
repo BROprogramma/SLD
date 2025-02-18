@@ -7,7 +7,7 @@
            targetNamespace="http://www.broservices.nl/xsd/sldcommon-internal/1.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="1.0.0">
+           version="1.0.1">
     <xs:annotation>
         <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
             <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
@@ -1152,7 +1152,7 @@ Explanation: De aanpak van bodemverontreiniging onder de Wbb doorloopt een aanta
                     </xs:element>
                     <xs:element minOccurs="0" maxOccurs="unbounded" name="handledArea" nillable="false" type="sldcom:HandledAreaNewDecisionPropertyType"/>
                     <xs:element minOccurs="0" maxOccurs="unbounded" name="contaminatedArea" nillable="false" type="sldcom:ContaminatedAreaNewDecisionPropertyType"/>
-                    <xs:element minOccurs="0" maxOccurs="unbounded" name="finishedContaminatedaArea" nillable="false" type="sldcom:FinishedContaminatedAreaPropertyType"/>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="finishedContaminatedArea" nillable="false" type="sldcom:FinishedContaminatedAreaPropertyType"/>
                     <xs:element minOccurs="0" maxOccurs="unbounded" name="aftercareArea" nillable="false" type="sldcom:AftercareAreaNewDecisionPropertyType"/>
                     <xs:element minOccurs="0" maxOccurs="unbounded" name="finishedAftercareArea" nillable="false" type="sldcom:FinishedAftercareAreaPropertyType"/>
                     <xs:element minOccurs="1" maxOccurs="1" name="decision" nillable="false" type="sldcom:DecisionNewDecisionPropertyType"/>
