@@ -791,8 +791,8 @@
 		<xsl:variable name="elementLocalName" select="string($context/local-name())"/>
 		<!-- Retrieve the matching node using the key.
              The key uses lower-case(parent::*/@categorie) so we pass 'besluit' in lower-case. -->
-        <xsl:variable name="decisionTypeValue" select="key('imsikb0101Key', concat('besluit', '|', $decisionTypeValue), $immetingenLookup)/waarde"/>
-        <xsl:variable name="projectTypeValue" select="key('imsikb0101Key', concat('onderzoekType', '|', $projectType), $immetingenLookup)/waarde"/>
+        <xsl:variable name="decisionTypeValue" select="key('imsikbKey', concat('besluit', '|', $decisionTypeValue), $immetingenLookup)/waarde"/>
+        <xsl:variable name="projectTypeValue" select="key('imsikbKey', concat('onderzoekType', '|', $projectType), $immetingenLookup)/waarde"/>
 <!--		<xsl:variable name="decisionTypeValue" select="document($imsikb0101LookupFile)//*[@categorie='Besluit']/*[id = $decisionTypeValue]/waarde"/>-->
 <!--		<xsl:variable name="projectTypeValue" select="document($imsikb0101LookupFile)//*[@categorie='OnderzoekType']/*[id = $projectType]/waarde"/> -->
 		<xsl:variable name="dossierGmlId" select="$context/ancestor::imsikb0101:Dossier/@gml:id"/>
