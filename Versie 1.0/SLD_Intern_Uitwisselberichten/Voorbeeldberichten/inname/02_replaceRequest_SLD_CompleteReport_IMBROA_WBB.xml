@@ -161,7 +161,7 @@
                                 <!-- aanpak = niet aanwezig bij WBB -->
                                 <!-- optioneel: is vermeld in (relaties naar Besluit) = imsikb0101:Dossier/imsikb0101:decisions[]//imsikb0101:Decision[imsikb0101:remediations/@xlink:href = '#<imsikb0101:Remediation/@gml:id>'] -->
                                 <sldcom:referencedByDecisions>
-                                    <sldcom:identification>426f7ea5-c871-478b-a702-4d3120a5ba0</sldcom:identification>
+                                    <sldcom:identification>426f7ea5-c871-478b-a702-4d3120a5ba0b</sldcom:identification>
                                 </sldcom:referencedByDecisions>
                                 <!-- optioneel: relatie naar Evaluatieverslag = imsikb0101:Dossier/imsikb0101:projects[imsikb0101:projectType=urn:imsikb0101:OnderzoekType:id:11][1] -->
                                 <sldcom:evaluationReport>
