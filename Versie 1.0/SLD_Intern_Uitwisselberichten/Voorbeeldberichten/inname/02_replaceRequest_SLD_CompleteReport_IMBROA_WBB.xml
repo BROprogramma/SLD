@@ -37,7 +37,7 @@
             <!-- optioneel: identificatie van het Overheidsbesluit bodemverontreiniging in de eigen administratie. -->
             <sldcom:objectIdAccountableParty>12345</sldcom:objectIdAccountableParty>
             <!-- Kader aanlevering; WBB of OW -->
-            <sldcom:deliveryContext codeSpace="urn:bro:sld:DeliveryContext">WBB</sldcom:deliveryContext>
+            <sldcom:deliveryContext codeSpace="urn:bro:sld:DeliveryContext">WetBodembescherming</sldcom:deliveryContext>
             <sldcom:soilLocationOrHandledArea>
                 <sldcom:SoilLocationOrHandledArea>
                     <!-- DeliveryContext = WBB dus bodemlocatie / SoilLocation -->

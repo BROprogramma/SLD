@@ -25,7 +25,7 @@
                     <!-- optional; present in SLD_O_DP -->
                     <sldcom:deliveryResponsibleParty>12345678</sldcom:deliveryResponsibleParty>
                     <sldcom:qualityRegime>IMBRO/A</sldcom:qualityRegime>
-                    <deliveryContext codeSpace="urn:bro:sld:DeliveryContext">Kader Aanlevering</deliveryContext>
+                    <deliveryContext codeSpace="urn:bro:sld:DeliveryContext">WetBodembescherming</deliveryContext>
                     <registrationHistory>
                         <sldcom:objectRegistrationTime>2023-01-13T13:15:57+01:00</sldcom:objectRegistrationTime>
                         <sldcom:registrationStatus codeSpace="urn:bro:RegistrationStatus">voltooid</sldcom:registrationStatus>

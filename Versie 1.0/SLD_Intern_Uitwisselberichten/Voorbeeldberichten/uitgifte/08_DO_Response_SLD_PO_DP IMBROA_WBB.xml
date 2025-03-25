@@ -26,7 +26,7 @@
                     <!-- optional; present in SLD_O_DP -->
                     <brocom:deliveryResponsibleParty>12345678</brocom:deliveryResponsibleParty>
                     <brocom:qualityRegime>IMBRO/A</brocom:qualityRegime>
-                    <deliveryContext codeSpace="urn:bro:sld:DeliveryContext">WBB</deliveryContext>
+                    <deliveryContext codeSpace="urn:bro:sld:DeliveryContext">WetBodembescherming</deliveryContext>
                     <registrationHistory>
                         <brocom:objectRegistrationTime>2023-01-13T13:15:57+01:00</brocom:objectRegistrationTime>
                         <brocom:registrationStatus codeSpace="urn:bro:RegistrationStatus">voltooid</brocom:registrationStatus>
