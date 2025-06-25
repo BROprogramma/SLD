@@ -5,13 +5,13 @@
 		<SIKB0101ID>1</SIKB0101ID>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving></Omschrijving>
+		<Omschrijving>De contour betreft de matrix 'grond' en bevat alleen data die over de grond gaat.</Omschrijving>
 	</Compartiment>
 	<Compartiment>
 		<Waarde>grondwater</Waarde>
 		<SIKB0101ID>2</SIKB0101ID>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving></Omschrijving>
+		<Omschrijving>De contour betreft de matrix 'grondwater' en bevat alleen data die over het grondwater gaat.</Omschrijving>
 	</Compartiment>
 </domeintabel>
