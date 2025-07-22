@@ -34,7 +34,9 @@
 			<xsl:apply-templates select="//imsikb0101:Remediation"/>
 			<!-- niet hier, wordt per remediation gedaan
             <xsl:apply-templates select="//imsikb0101:Project"/>-->
-            <xsl:apply-templates select="//immetingen:Depth"/>
+            <xsl:apply-templates select="//imsikb0101:Remediation/imsikb0101:lowerDepth/immetingen:Depth"/>
+            <xsl:apply-templates select="//imsikb0101:Remediation/imsikb0101:upperDepth/immetingen:Depth"/>
+            
 			<xsl:apply-templates select="//imsikb0101:featureMember" />
 			<xsl:apply-templates select="//imsikb0101:geometry"/>
 			<xsl:apply-templates select="//immetingen:NEN3610ID"/>				        					

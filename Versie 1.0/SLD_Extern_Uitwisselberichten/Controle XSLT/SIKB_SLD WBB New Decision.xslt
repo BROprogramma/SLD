@@ -46,7 +46,13 @@
 			<xsl:apply-templates select="//imsikb0101:Remediation"/>
 			<!-- niet hier, wordt per remediation gedaan
             <xsl:apply-templates select="//imsikb0101:Project"/>-->
-            <xsl:apply-templates select="//immetingen:Depth"/>
+			<xsl:apply-templates select="//imsikb0101:Remediation/imsikb0101:lowerDepth/immetingen:Depth"/>
+            <xsl:apply-templates select="//imsikb0101:Remediation/imsikb0101:upperDepth/immetingen:Depth"/>
+            <xsl:apply-templates select="//imsikb0101:ContaminationInformation/imsikb0101:lowerDepth/immetingen:Depth"/>
+            <xsl:apply-templates select="//imsikb0101:ContaminationInformation/imsikb0101:upperDepth/immetingen:Depth"/>
+            <xsl:apply-templates select="//imsikb0101:SitemanagementMeasure/imsikb0101:lowerDepth/immetingen:Depth"/>
+            <xsl:apply-templates select="//imsikb0101:SitemanagementMeasure/imsikb0101:upperDepth/immetingen:Depth"/>
+            
 			<xsl:apply-templates select="//imsikb0101:featureMember" />
 			<xsl:apply-templates select="//imsikb0101:geometry"/>
 			<xsl:apply-templates select="//imsikb0101:ContaminationInformation"/>	
@@ -188,9 +194,9 @@
 		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'contourType', 'ERROR')"/>
 		<xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'contourType', 'ContourType', 'ERROR')"/>
         
-		<xsl:copy-of select="sikb:checkExistence(., $prGUID,'exceededClass','ERROR')" />
-		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'exceededClass', 'ERROR')"/>
-		<xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'exceededClass', 'Overschrijding', 'ERROR')"/>
+		<xsl:copy-of select="sikb:checkExistence(., $prGUID,'exceededClass','WARNING')" />
+		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'exceededClass', 'WARNING')"/>
+		<xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'exceededClass', 'Overschrijding', 'WARNING')"/>
 		
         <xsl:copy-of select="sikb:checkExistence(., $prGUID,'startTime','WARNING')" />
 		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'startTime', 'WARNING')"/>
@@ -257,7 +263,7 @@
 				
 		<xsl:copy-of select="sikb:checkExistence(., $prGUID, 'decisionType', 'ERROR')"/>
 		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'decisionType', 'ERROR')" />
-		<xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'decisionType', 'Besluit', 'ERROR')"/>
+		<xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'decisionType', 'Besluit', 'WARNING')"/>
 		
 		<xsl:copy-of select="sikb:checkExistence(., $prGUID,'startTime','ERROR')" />
 		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'startTime', 'ERROR')"/>
