@@ -263,7 +263,7 @@
 				
 		<xsl:copy-of select="sikb:checkExistence(., $prGUID, 'decisionType', 'ERROR')"/>
 		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'decisionType', 'ERROR')" />
-		<xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'decisionType', 'Besluit', 'WARNING')"/>
+		<xsl:copy-of select="sikb:checkLookupId(., $prGUID, 'decisionType', 'Besluit', 'ERROR')"/> <!-- without a decision there is no new decision -->
 		
 		<xsl:copy-of select="sikb:checkExistence(., $prGUID,'startTime','ERROR')" />
 		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'startTime', 'ERROR')"/>
