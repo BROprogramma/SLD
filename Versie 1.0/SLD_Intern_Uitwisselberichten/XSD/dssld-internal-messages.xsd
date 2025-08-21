@@ -131,7 +131,7 @@ Explanation: Het gegeven ontbreekt als de BRO geen registratieobject bevat met h
          <xs:extension base="brocom:AbstractCharacteristicsV2Type">
             <xs:sequence>
                <xs:element name="deliveryContext"
-                           minOccurs="0"
+                           minOccurs="1"
                            maxOccurs="1"
                            type="sldcominternal:DeliveryContextType">
                   <xs:annotation>
@@ -424,11 +424,11 @@ Explanation: De grens van een bodemlocatie valt niet per se samen met de grens v
                            minOccurs="1"
                            maxOccurs="1"/>
                <xs:element name="dossierIdLocalAuthority"
-                           minOccurs="0"
+                           minOccurs="1"
                            maxOccurs="1"
                            type="xs:string"/>
                <xs:element name="dossierIdSoilInformationSystem"
-                           minOccurs="0"
+                           minOccurs="1"
                            maxOccurs="1"
                            type="xs:string"/>
                <xs:element name="followUp"
@@ -588,8 +588,22 @@ Explanation: De grens van een bodemlocatie valt niet per se samen met de grens v
                      maxOccurs="1"/>
       </xs:sequence>
    </xs:complexType>
+   <xs:element name="SLD_CriteriaSetType"
+                  type="dssldinternal:SLD_CriteriaSetType"
+               substitutionGroup="gml:AbstractFeature"/>
    <xs:complexType name="SLD_CriteriaSetType">
-      <xs:sequence>
+      <xs:complexContent>
+         <xs:extension base="gml:AbstractFeatureType">
+            <xs:sequence>
+               <xs:element name="area"
+                           type="brocom:AreaType"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geografische begrenzing waarbinnen de locatie van een booronderzoek ligt.
+Explanation: Een gebied bestaat uit een omsluitende rechthoek of een omsluitende cirkel.</xs:documentation>
+                  </xs:annotation>
+         </xs:element>
          <xs:element name="approach"
                      minOccurs="1"
                      maxOccurs="1"
@@ -613,8 +627,24 @@ Explanation: De grens van een bodemlocatie valt niet per se samen met de grens v
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het compartiment waarop de sanerings- of graafwerkzaamheden binnen het aangepakt gebied betrekking moeten hebben.</xs:documentation>
             </xs:annotation>
          </xs:element>
+         <xs:element name="correctionPeriod"
+                           type="xs:date"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het datuminterval waarbinnen het laatste correctietijdstip van het booronderzoek ligt.</xs:documentation>
+                  </xs:annotation>
+         </xs:element>
+         <xs:element name="deliveryAccountableParty"
+                           type="brocom:ChamberOfCommerceNumberType"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: TODO</xs:documentation>
+                  </xs:annotation>
+         </xs:element>
          <xs:element name="deliveryContext"
-                     minOccurs="0"
+                     minOccurs="1"
                      maxOccurs="1"
                      type="sldcominternal:DeliveryContextType">
             <xs:annotation>
@@ -626,7 +656,7 @@ Explanation: De grens van een bodemlocatie valt niet per se samen met de grens v
             </xs:annotation>
          </xs:element>
          <xs:element name="dossierIdLocalAuthority"
-                     minOccurs="0"
+                     minOccurs="1"
                      maxOccurs="1"
                      type="xs:string">
             <xs:annotation>
@@ -634,7 +664,7 @@ Explanation: De grens van een bodemlocatie valt niet per se samen met de grens v
             </xs:annotation>
          </xs:element>
          <xs:element name="dossierIdSoilInformationSystem"
-                     minOccurs="0"
+                     minOccurs="1"
                      maxOccurs="1"
                      type="xs:string">
             <xs:annotation>
@@ -642,7 +672,7 @@ Explanation: De grens van een bodemlocatie valt niet per se samen met de grens v
             </xs:annotation>
          </xs:element>
          <xs:element name="followUp"
-                     minOccurs="0"
+                     minOccurs="1"
                      maxOccurs="1"
                      type="sldcominternal:FollowUpType">
             <xs:annotation>
@@ -655,7 +685,7 @@ Explanation: De grens van een bodemlocatie valt niet per se samen met de grens v
          </xs:element>
          <xs:element name="identificationHandledArea"
                      type="xs:string"
-                     minOccurs="0"
+                     minOccurs="1"
                      maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De SIKB0101-identificatie van het aangepakte gebied waarop het overheidsbesluit bodemverontreiniging van toepassing moet zijn.</xs:documentation>
@@ -663,13 +693,39 @@ Explanation: De grens van een bodemlocatie valt niet per se samen met de grens v
          </xs:element>
          <xs:element name="identificationSoilLocation"
                      type="xs:string"
-                     minOccurs="0"
+                     minOccurs="1"
                      maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De SIKB0101-identificatie van de bodemlocatie waarop het overheidsbesluit bodemverontreiniging van toepassing moet zijn.</xs:documentation>
             </xs:annotation>
          </xs:element>
+         <xs:element name="qualityRegime"
+                           type="brocom:QualityRegimeType"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: TODO</xs:documentation>
+                  </xs:annotation>
+            </xs:element>
+         <xs:element name="registrationPeriod"
+                           type="xs:date"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het datuminterval waarbinnen de datum van het tijdstip registratie object van het booronderzoek ligt</xs:documentation>
+                  </xs:annotation>
+         </xs:element>
+         <xs:element name="underReview"
+                           type="brocom:IndicationYesNoType"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: TODO</xs:documentation>
+                  </xs:annotation>
+         </xs:element>
       </xs:sequence>
+      </xs:extension>
+      </xs:complexContent>
    </xs:complexType>
    <xs:simpleType name="DataToBeDeliveredType">
       <xs:annotation>
