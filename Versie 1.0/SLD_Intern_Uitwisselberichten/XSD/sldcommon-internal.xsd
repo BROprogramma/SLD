@@ -421,7 +421,7 @@ Explanation: Dat is grond of grondwater. Waterbodem is buiten scope van BRO Mili
                                 <CodeListURI>urn:bro:sld:ExceededClass</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De grenswaarde, geldig onder het regime van de Wet bodembescherming, die binnen de contour van het verontreinigd gebied wordt overschreden.
-Explanation: De toetsingswaarde in het kader van de Wbb is de interventiewaarde (I-waarde). In sommige gevallen is een verontreinigd gebied op basis van de streefwaarde (S-waarde) of van de achtergrondwaarde (AW-waarde) geregistreerd. De overschreden toetsingswaarde is niet altijd in het bronsysteem ingevuld.</xs:documentation>
+Explanation: De toetsingswaarde in het kader van de Wbb is de interventiewaarde (I-waarde).In sommige gevallen is een verontreinigd gebied op basis van de streefwaarde (S-waarde) of van de achtergrondwaarde (AW-waarde) geregistreerd.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
                     <xs:element name="beginDepth" minOccurs="0" maxOccurs="1">
@@ -521,14 +521,14 @@ Explanation: De contour van de verontreiniging is met behulp van het toetsingska
 Explanation: Dat is grond of grondwater. Waterbodem is buiten scope van BRO Milieukwaliteit.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="exceededClass" minOccurs="1" maxOccurs="1" type="sldcom:ExceededClassType">
+                    <xs:element name="exceededClass" minOccurs="0" maxOccurs="1" type="sldcom:ExceededClassType">
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>ExceededClass</CodeListName>
                                 <CodeListURI>urn:bro:sld:ExceededClass</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De grenswaarde, geldig onder het regime van de Wet bodembescherming, die binnen de contour van het verontreinigd gebied wordt overschreden.
-Explanation: De toetsingswaarde in het kader van de Wbb is de interventiewaarde (I-waarde). In sommige gevallen is een verontreinigd gebied op basis van de streefwaarde (S-waarde) of van de achtergrondwaarde (AW-waarde) geregistreerd. De overschreden toetsingswaarde is niet altijd in het bronsysteem ingevuld.</xs:documentation>
+Explanation: De toetsingswaarde in het kader van de Wbb is de interventiewaarde (I-waarde).In sommige gevallen is een verontreinigd gebied op basis van de streefwaarde (S-waarde) of van de achtergrondwaarde (AW-waarde) geregistreerd.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
                     <xs:element name="beginDepth" minOccurs="0" maxOccurs="1">
