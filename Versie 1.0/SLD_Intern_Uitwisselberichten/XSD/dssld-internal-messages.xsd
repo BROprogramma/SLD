@@ -270,7 +270,7 @@ Explanation: Voor de attributen met materiële geschiedenis wordt de actuele waa
                      </xs:appinfo>
                   </xs:annotation>
                </xs:element>
-<xs:element name="exceededClass" minOccurs="0" maxOccurs="1" type="sldcominternal:ExceededClassType">
+<xs:element name="exceededClass" minOccurs="1" maxOccurs="1" type="sldcominternal:ExceededClassType">
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>ExceededClass</CodeListName>

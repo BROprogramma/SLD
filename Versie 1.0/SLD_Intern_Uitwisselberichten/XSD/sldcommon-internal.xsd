@@ -414,7 +414,7 @@ Explanation: De contour van de verontreiniging is met behulp van het toetsingska
 Explanation: Dat is grond of grondwater. Waterbodem is buiten scope van BRO Milieukwaliteit.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="exceededClass" minOccurs="0" maxOccurs="1" type="sldcom:ExceededClassType">
+                    <xs:element name="exceededClass" minOccurs="1" maxOccurs="1" type="sldcom:ExceededClassType">
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>ExceededClass</CodeListName>
@@ -521,7 +521,7 @@ Explanation: De contour van de verontreiniging is met behulp van het toetsingska
 Explanation: Dat is grond of grondwater. Waterbodem is buiten scope van BRO Milieukwaliteit.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="exceededClass" minOccurs="0" maxOccurs="1" type="sldcom:ExceededClassType">
+                    <xs:element name="exceededClass" minOccurs="1" maxOccurs="1" type="sldcom:ExceededClassType">
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>ExceededClass</CodeListName>
