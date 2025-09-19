@@ -151,7 +151,7 @@ Domeintabel: BijlageType</documentation>
 codes.sikb.nl/0101/contour.xml</documentation>
                         </annotation>
                     </element>
-                    <element name="dataAdministrator" type="gml:CodeType">
+                    <element name="dataAdministrator" type="gml:CodeType" minOccurs="0">
                         <annotation>
                             <documentation>bronhouder/ gegevensbeheerder - De overheidsinstantie die de gegevensbeheerder van dit element is.
 Domeintabel: Bronhouders</documentation>
@@ -324,7 +324,7 @@ http://codes.sikb.nl/0101/gebruik.xml</documentation>
                     <documentation>kenmerk - Het kenmerk van het document of de brief die hoort bij het besluit dat door het bevoegd gezag Wet bodembescherming (een provincie of gemeente) is gegeven.</documentation>
                 </annotation>
             </element>
-            <element name="dataAdministrator" type="gml:CodeType">
+            <element name="dataAdministrator" type="gml:CodeType" minOccurs="0">
                 <annotation>
                     <documentation>gegevensbeheerder/bronhouder - De overheidsinstantie die de gegevensbeheerder van dit element is.
 Domeintabel: Bronhouders</documentation>
@@ -513,7 +513,7 @@ codes.sikb.nl/0101/convenantpartij.xml</documentation>
 Gebruikt Domeintabel: WettelijkKader</documentation>
                         </annotation>
                     </element>
-                    <element name="dataAdministrator" type="gml:CodeType">
+                    <element name="dataAdministrator" type="gml:CodeType" minOccurs="0">
                         <annotation>
                             <documentation>Bronhouder/bevoegd gezag - De overheidsinstantie die de gegevensbeheerder van dit element is.
 Domeintabel: Bronhouders</documentation>
@@ -1057,7 +1057,7 @@ begrensd is - contour
 Domeintabel: ContourType</documentation>
                         </annotation>
                     </element>
-                    <element name="dataAdministrator" type="gml:CodeType">
+                    <element name="dataAdministrator" type="gml:CodeType" minOccurs="0">
                         <annotation>
                             <documentation>Gegevensbeheerder/ bronhouder - De overheidsinstantie die de gegevensbeheerder van dit element is.
 Domeintabel: Bronhouders</documentation>
@@ -1241,7 +1241,7 @@ ttp://codes.sikb.nl/0101/tijdelijke_maatregel.xml</documentation>
         <complexContent>
             <extension base="gml:AbstractFeatureType">
                 <sequence>
-                    <element name="dataAdministrator" type="gml:CodeType">
+                    <element name="dataAdministrator" type="gml:CodeType" minOccurs="0">
                         <annotation>
                             <documentation>Bronhouder/bevoegd gezag - De overheidsinstantie die de gegevensbeheerder van dit element is.
 Domeintabel: Bronhouders</documentation>

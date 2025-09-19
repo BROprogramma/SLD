@@ -77,7 +77,8 @@
                                     <imsikb0101:projects xlink:href="#_f6fac78d-6772-4490-9602-238a757614ac"/>
                                     <imsikb0101:projects xlink:href="#_1cdafa32-38fe-4a27-8396-f0db5adc7bfa"/>
                                     <imsikb0101:soilLocation xlink:href="#_92efc58e-b8e1-4917-babf-42f4ba195354"/>
-                                    <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>
+                                    <!-- will not be exported 
+									<imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator> -->
                                     <!-- optioneel -->
                                     <imsikb0101:dossierIdLocalAuthority>ZL071500060</imsikb0101:dossierIdLocalAuthority>                      
                                     <!-- optioneel -->          
@@ -89,7 +90,8 @@
                                     <imsikb0101:decisions>
                                         <imsikb0101:Decision>
                                             <imsikb0101:characteristic>RMW0210320</imsikb0101:characteristic>
-                                            <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>
+                                            <!-- will not be exported 
+											<imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>-->
                                             <imsikb0101:decisionType codeSpace="www.sikb.nl">urn:imsikb0101:besluit:id:13</imsikb0101:decisionType>
                                             <imsikb0101:identification>
                                                 <immetingen:NEN3610ID>
@@ -109,7 +111,8 @@
                                     <imsikb0101:decisions>
                                         <imsikb0101:Decision>
                                             <imsikb0101:characteristic>RMW0210320</imsikb0101:characteristic>
-                                            <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>
+                                            <!-- will not be exported 
+											<imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>-->
                                             <imsikb0101:decisionType codeSpace="www.sikb.nl">urn:imsikb0101:besluit:id:28</imsikb0101:decisionType>
                                             <imsikb0101:identification>
                                                 <immetingen:NEN3610ID>
@@ -201,7 +204,8 @@
                             <!-- SiteManagement -->
                             <imsikb0101:featureMember>
                                 <imsikb0101:SitemanagementMeasure gml:id="_8bfe8e65-f886-4e59-9e6c-ef64b498efc7">
-                                    <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>                            
+                                    <!-- will not be exported 
+									<imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator> -->
                                     <!-- optioneel -->
                                     <imsikb0101:duration uom="urn:immetingen:Eenheid:id:137">-1</imsikb0101:duration>
                                     <!-- optioneel -->                            
@@ -277,7 +281,8 @@
                             <!-- sitemanagement -->
                             <imsikb0101:featureMember>
                                 <imsikb0101:SitemanagementMeasure gml:id="_c7b1c2d6-476d-4289-9792-3bedf303d107">
-                                    <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>
+                                    <!-- will not be exported 
+									<imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator> -->
                                     <!-- optioneel -->
                                     <imsikb0101:duration uom="urn:immetingen:Eenheid:id:137">88</imsikb0101:duration>
                                     <!-- optioneel -->
@@ -340,7 +345,8 @@
                             <imsikb0101:featureMember>
                                 <imsikb0101:ContaminationInformation gml:id="_ddd148bf-0f8e-4326-9625-8e4f3020c73c">                                
                                     <imsikb0101:contourType codeSpace="www.sikb.nl">urn:imsikb0101:ContourType:id:1</imsikb0101:contourType>
-                                    <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>    
+                                    <!-- will not be exported 
+									<imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator> -->
                                     <!-- optioneel -->
                                     <imsikb0101:endTime>2024-11-11</imsikb0101:endTime>
                                     <imsikb0101:exceededClass codeSpace="www.sikb.nl">urn:imsikb0101:overschrijding:id:3</imsikb0101:exceededClass>                                                             
@@ -403,7 +409,8 @@
                             <imsikb0101:featureMember>
                                 <imsikb0101:ContaminationInformation gml:id="_4b5aaf21-1a3c-467f-9916-2ae64e75fbc8">                                
                                     <imsikb0101:contourType codeSpace="www.sikb.nl">urn:imsikb0101:ContourType:id:1</imsikb0101:contourType>
-                                    <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>
+                                    <!-- will not be exported 
+									<imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>-->
                                     <imsikb0101:exceededClass codeSpace="www.sikb.nl">urn:imsikb0101:overschrijding:id:3</imsikb0101:exceededClass>                               
                                     <imsikb0101:geometry>
                                         <gml:MultiSurface gml:id="_1e407302-155e-4fd6-a494-b08b35a8aa66">
@@ -491,7 +498,8 @@
                             <imsikb0101:featureMember>
                                 <imsikb0101:Remediation gml:id="_9867c501-61ba-4a8e-84ba-9734c93cce43">                                
                                     <imsikb0101:contourType codeSpace="www.sikb.nl">urn:imsikb0101:ContourType:id:1</imsikb0101:contourType>
-                                    <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>
+                                    <!-- will not be exported 
+									<imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>-->
                                     <!-- optioneel -->                                
                                     <imsikb0101:endTime>2004-12-13</imsikb0101:endTime>
                                     <imsikb0101:geometry>
@@ -544,7 +552,8 @@
                             <imsikb0101:featureMember>
                                 <imsikb0101:Remediation gml:id="_f7eee423-38fc-4f39-b40e-3eafb93335ff">                                 
                                     <imsikb0101:contourType codeSpace="www.sikb.nl">urn:imsikb0101:ContourType:id:1</imsikb0101:contourType>
-                                    <imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator>
+                                    <!-- will not be exported 
+									<imsikb0101:dataAdministrator codeSpace="www.sikb.nl">urn:imsikb0101:Bronhouders:id:552</imsikb0101:dataAdministrator> -->
                                      <!-- optioneel --> 
                                     <imsikb0101:endTime>2004-12-13</imsikb0101:endTime>
                                      <!-- optioneel --> 
