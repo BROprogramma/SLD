@@ -647,11 +647,10 @@ Explanation: De grens van een bodemlocatie valt niet per se samen met de grens v
       </xs:sequence>
    </xs:complexType>
    <xs:element name="SLD_CriteriaSetType"
-                  type="dssldinternal:SLD_CriteriaSetType"
-               substitutionGroup="gml:AbstractFeature"/>
+                  type="dssldinternal:SLD_CriteriaSetType"/>
    <xs:complexType name="SLD_CriteriaSetType">
       <xs:complexContent>
-         <xs:extension base="gml:AbstractFeatureType">
+			<xs:extension base="brocom:CriteriaSetType">
             <xs:sequence>
                <xs:element name="area"
                            type="brocom:AreaType"
