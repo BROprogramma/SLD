@@ -30,7 +30,7 @@ let respecConfig = {
   shortName: "sld",
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  //publishDate: "2024-06-13",
+  publishDate: "2025-08-08",
   //custom header lines  
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
   publishVersion: " ",
