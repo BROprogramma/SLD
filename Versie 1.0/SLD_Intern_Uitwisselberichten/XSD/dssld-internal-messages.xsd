@@ -653,7 +653,7 @@ Explanation: De grens van een bodemlocatie valt niet per se samen met de grens v
 			<xs:extension base="brocom:CriteriaSetType">
             <xs:sequence>
          <xs:element name="approach"
-                     minOccurs="1"
+                     minOccurs="0"
                      maxOccurs="1"
                      type="sldcominternal:ApproachType">
             <xs:annotation>
@@ -664,7 +664,7 @@ Explanation: De grens van een bodemlocatie valt niet per se samen met de grens v
             </xs:annotation>
          </xs:element>
          <xs:element name="compartment"
-                     minOccurs="1"
+                     minOccurs="0"
                      maxOccurs="1"
                      type="sldcominternal:CompartmentType">
             <xs:annotation>
@@ -676,7 +676,7 @@ Explanation: De grens van een bodemlocatie valt niet per se samen met de grens v
             </xs:annotation>
          </xs:element>
          <xs:element name="deliveryContext"
-                     minOccurs="1"
+                     minOccurs="0"
                      maxOccurs="1"
                      type="sldcominternal:DeliveryContextType">
             <xs:annotation>
@@ -688,7 +688,7 @@ Explanation: De grens van een bodemlocatie valt niet per se samen met de grens v
             </xs:annotation>
          </xs:element>
          <xs:element name="dossierIdLocalAuthority"
-                     minOccurs="1"
+                     minOccurs="0"
                      maxOccurs="1"
                      type="xs:string">
             <xs:annotation>
@@ -696,7 +696,7 @@ Explanation: De grens van een bodemlocatie valt niet per se samen met de grens v
             </xs:annotation>
          </xs:element>
          <xs:element name="dossierIdSoilInformationSystem"
-                     minOccurs="1"
+                     minOccurs="0"
                      maxOccurs="1"
                      type="xs:string">
             <xs:annotation>
@@ -704,7 +704,7 @@ Explanation: De grens van een bodemlocatie valt niet per se samen met de grens v
             </xs:annotation>
          </xs:element>
          <xs:element name="followUp"
-                     minOccurs="1"
+                     minOccurs="0"
                      maxOccurs="1"
                      type="sldcominternal:FollowUpType">
             <xs:annotation>
@@ -717,7 +717,7 @@ Explanation: De grens van een bodemlocatie valt niet per se samen met de grens v
          </xs:element>
          <xs:element name="identificationHandledArea"
                      type="xs:string"
-                     minOccurs="1"
+                     minOccurs="0"
                      maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De SIKB0101-identificatie van het aangepakte gebied waarop het overheidsbesluit bodemverontreiniging van toepassing moet zijn.</xs:documentation>
@@ -725,7 +725,7 @@ Explanation: De grens van een bodemlocatie valt niet per se samen met de grens v
          </xs:element>
          <xs:element name="identificationSoilLocation"
                      type="xs:string"
-                     minOccurs="1"
+                     minOccurs="0"
                      maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De SIKB0101-identificatie van de bodemlocatie waarop het overheidsbesluit bodemverontreiniging van toepassing moet zijn.</xs:documentation>
