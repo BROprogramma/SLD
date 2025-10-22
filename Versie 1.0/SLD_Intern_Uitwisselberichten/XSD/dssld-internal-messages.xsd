@@ -664,7 +664,7 @@ Explanation: De grens van een bodemlocatie valt niet per se samen met de grens v
             </xs:annotation>
          </xs:element>
          <xs:element name="compartment"
-                     minOccurs="0"
+                     minOccurs="1"
                      maxOccurs="1"
                      type="sldcominternal:CompartmentType">
             <xs:annotation>
