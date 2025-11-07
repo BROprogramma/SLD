@@ -647,23 +647,13 @@ Explanation: De grens van een bodemlocatie valt niet per se samen met de grens v
       </xs:sequence>
    </xs:complexType>
    <xs:element name="SLD_CriteriaSetType"
-                  type="dssldinternal:SLD_CriteriaSetType"
-               substitutionGroup="gml:AbstractFeature"/>
+                  type="dssldinternal:SLD_CriteriaSetType"/>
    <xs:complexType name="SLD_CriteriaSetType">
       <xs:complexContent>
-         <xs:extension base="gml:AbstractFeatureType">
+			<xs:extension base="brocom:CriteriaSetType">
             <xs:sequence>
-               <xs:element name="area"
-                           type="brocom:AreaType"
-                           minOccurs="1"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geografische begrenzing waarbinnen de locatie van een booronderzoek ligt.
-Explanation: Een gebied bestaat uit een omsluitende rechthoek of een omsluitende cirkel.</xs:documentation>
-                  </xs:annotation>
-         </xs:element>
          <xs:element name="approach"
-                     minOccurs="1"
+                     minOccurs="0"
                      maxOccurs="1"
                      type="sldcominternal:ApproachType">
             <xs:annotation>
@@ -685,24 +675,8 @@ Explanation: Een gebied bestaat uit een omsluitende rechthoek of een omsluitende
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het compartiment waarop de sanerings- of graafwerkzaamheden binnen het aangepakt gebied betrekking moeten hebben.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="correctionPeriod"
-                           type="xs:date"
-                           minOccurs="0"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het datuminterval waarbinnen het laatste correctietijdstip van het booronderzoek ligt.</xs:documentation>
-                  </xs:annotation>
-         </xs:element>
-         <xs:element name="deliveryAccountableParty"
-                           type="brocom:ChamberOfCommerceNumberType"
-                           minOccurs="1"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: TODO</xs:documentation>
-                  </xs:annotation>
-         </xs:element>
          <xs:element name="deliveryContext"
-                     minOccurs="1"
+                     minOccurs="0"
                      maxOccurs="1"
                      type="sldcominternal:DeliveryContextType">
             <xs:annotation>
@@ -714,7 +688,7 @@ Explanation: Een gebied bestaat uit een omsluitende rechthoek of een omsluitende
             </xs:annotation>
          </xs:element>
          <xs:element name="dossierIdLocalAuthority"
-                     minOccurs="1"
+                     minOccurs="0"
                      maxOccurs="1"
                      type="xs:string">
             <xs:annotation>
@@ -722,7 +696,7 @@ Explanation: Een gebied bestaat uit een omsluitende rechthoek of een omsluitende
             </xs:annotation>
          </xs:element>
          <xs:element name="dossierIdSoilInformationSystem"
-                     minOccurs="1"
+                     minOccurs="0"
                      maxOccurs="1"
                      type="xs:string">
             <xs:annotation>
@@ -730,7 +704,7 @@ Explanation: Een gebied bestaat uit een omsluitende rechthoek of een omsluitende
             </xs:annotation>
          </xs:element>
          <xs:element name="followUp"
-                     minOccurs="1"
+                     minOccurs="0"
                      maxOccurs="1"
                      type="sldcominternal:FollowUpType">
             <xs:annotation>
@@ -743,7 +717,7 @@ Explanation: Een gebied bestaat uit een omsluitende rechthoek of een omsluitende
          </xs:element>
          <xs:element name="identificationHandledArea"
                      type="xs:string"
-                     minOccurs="1"
+                     minOccurs="0"
                      maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De SIKB0101-identificatie van het aangepakte gebied waarop het overheidsbesluit bodemverontreiniging van toepassing moet zijn.</xs:documentation>
@@ -751,35 +725,11 @@ Explanation: Een gebied bestaat uit een omsluitende rechthoek of een omsluitende
          </xs:element>
          <xs:element name="identificationSoilLocation"
                      type="xs:string"
-                     minOccurs="1"
+                     minOccurs="0"
                      maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De SIKB0101-identificatie van de bodemlocatie waarop het overheidsbesluit bodemverontreiniging van toepassing moet zijn.</xs:documentation>
             </xs:annotation>
-         </xs:element>
-         <xs:element name="qualityRegime"
-                           type="brocom:QualityRegimeType"
-                           minOccurs="0"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: TODO</xs:documentation>
-                  </xs:annotation>
-            </xs:element>
-         <xs:element name="registrationPeriod"
-                           type="xs:date"
-                           minOccurs="0"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het datuminterval waarbinnen de datum van het tijdstip registratie object van het booronderzoek ligt</xs:documentation>
-                  </xs:annotation>
-         </xs:element>
-         <xs:element name="underReview"
-                           type="brocom:IndicationYesNoType"
-                           minOccurs="0"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: TODO</xs:documentation>
-                  </xs:annotation>
          </xs:element>
       </xs:sequence>
       </xs:extension>
