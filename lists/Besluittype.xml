@@ -278,7 +278,7 @@
 		<SIKB0101ID>50</SIKB0101ID>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Het bevoegd gezag Wet bodembescherming heeft met een besluit een aanwijzing gegeven aan een derde die niet van plan is (voldoende) maatregelen te treffen de vastgestelde nieuwe (ontstaan na 1 januari 1987) verontreiniging aan te pakken. De bevoegde overheid kan hierbij zowel om onderzoek, een saneringsplan als een sanering vragen. De aanwijzing zal veelal direct gericht zijn op sanering, aangezien een nieuwe verontreiniging volgens artikel 27 van de Wet bodembescherming direct ongedaan moet worden gemaakt.</Omschrijving>
+		<Omschrijving>Het bevoegd gezag Wet bodembescherming heeft met een besluit een aanwijzing gegeven aan een derde die niet van plan is (voldoende) maatregelen te treffen de vastgestelde nieuwe (ontstaan na 1 januari 1987) verontreiniging aan te pakken. De bevoegde overheid kan hierbij zowel om onderzoek, een saneringsplan als een sanering vragen.</Omschrijving>
 	</Besluittype>
 	<Besluittype>
 		<Waarde>uitvoerenSanering</Waarde>
@@ -411,7 +411,7 @@
 		<SIKB0101ID>78</SIKB0101ID>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Het bevoegd gezag Wet bodembescherming heeft met een besluit aangegeven dat ingestemd wordt met het plan van aanpak saneringen. Het plan van aanpak heeft geen directe status in de Wbb, wel moet op grond van artikel 27 bekend worden gemaakt welke maatregel (uit art. 13) men denkt te gaan nemen. Preventief kan het bevoegd gezag laten blijken of de te nemen maatregelen in haar zienswijze van de uitvoering van artikel 13 Wbb past.</Omschrijving>
+		<Omschrijving>Het bevoegd gezag Wet bodembescherming heeft met een besluit aangegeven dat ingestemd wordt met het plan van aanpak saneringen.</Omschrijving>
 	</Besluittype>
 	<Besluittype>
 		<Waarde>instemmingMonitoringsrapport</Waarde>
