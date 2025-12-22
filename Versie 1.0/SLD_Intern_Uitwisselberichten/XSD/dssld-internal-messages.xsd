@@ -255,10 +255,6 @@ Explanation: Voor de attributen met materiële geschiedenis wordt de actuele waa
       <xs:complexContent>
          <xs:extension base="gml:AbstractFeatureType">
             <xs:sequence>
-               <xs:element name="boundary"
-                           type="gml:MultiSurfacePropertyType"
-                           minOccurs="0"
-                           maxOccurs="1"/>
                <xs:element name="compartment"
                            minOccurs="1"
                            maxOccurs="1"
@@ -296,6 +292,10 @@ Explanation: De diepte is vastgelegd ten opzichte van het maaiveld. De maximale 
                             </xs:simpleContent>
                         </xs:complexType>
                     </xs:element>
+               <xs:element name="boundary"
+                           type="gml:MultiSurfacePropertyType"
+                           minOccurs="0"
+                           maxOccurs="1"/>
                     <xs:element name="dateDecreed" type="xs:date" minOccurs="0" maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de verontreiniging is vastgesteld.
@@ -306,17 +306,6 @@ Explanation: Deze datum is de datum inwerkingtreding van het onderliggende beslu
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop het verontreinigd gebied niet langer geldig is.
 Explanation: De einddatum wordt vastgelegd wanneer het verontreinigd gebied is beëindigd. Het verontreinigd gebied wordt beëindigd wanneer de verontreiniging volledig is verwijderd en het bevoegd gezag heeft ingestemd met het evaluatieverslag van de (uniforme) sanering. Ook wanneer na de sanering een restverontreiniging is overgebleven, wordt het verontreinigd gebied beëindigd; voor de restverontreiniging wordt er een nieuw verontreinigd gebied geregistreerd in de basisregistratie ondergrond. Van bodemlocaties die vóór 1 januari 2024 zijn afgerond onder het regime van de Wbb, zijn de gegevens aangeleverd aan de basisregistratie ondergrond in het kader van archiefoverdracht. Bij deze gegevens is de einddatum niet altijd vastgelegd omdat het in het bronsysteem niet altijd is ingevuld. Van bodemlocaties die vanaf 1 januari 2024 onder het overgangsrecht vallen, zijn de gegevens die zijn ontstaan onder het regime van de Wbb (tot 1 januari 2024) aangeleverd aan de basisregistratie ondergrond in het kader van archiefoverdracht. Bij deze gegevens is de einddatum niet altijd in het bronsysteem ingevuld. Uit het ontbreken van de einddatum kan niet worden afgeleid dat de verontreiniging nog aanwezig is. Bij aangeleverde nieuwe gegevens die zijn ontstaan op basis van besluiten die zijn genomen onder het overgangsrecht is de einddatum, indien van toepassing, altijd vastgelegd.</xs:documentation>
-                        </xs:annotation>
-                    </xs:element>
-                    <xs:element minOccurs="0" maxOccurs="1" name="contaminationNature" nillable="false" type="sldcominternal:ContaminationNatureType">
-                        <xs:annotation>
-                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De karakterisering van de verontreiniging.
-Explanation: De aard van de verontreiniging komt tot uiting in een lijst met de chemische stoffen die de verontreiniging kenmerken. De aard verontreiniging is niet altijd in het bronsysteem ingevuld.</xs:documentation>
-                        </xs:annotation>
-                    </xs:element>
-                    <xs:element minOccurs="0" maxOccurs="1" name="referencedByDecisions" nillable="false" type="sldcominternal:ReferencedByDecisionsType">
-                        <xs:annotation>
-                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Optionele lijst van besluiten, ieder geïdentificeerd door hun SIKB0101-identificatie, waarin het gebied is vermeld.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
             </xs:sequence>
