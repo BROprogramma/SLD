@@ -11367,13 +11367,13 @@
 			<broSldImbroA>true</broSldImbroA>
 			<broSldImbro></broSldImbro>
 		</Parameter>
-		<Parameter versie="14.7.0" datum="2026-01-16" status="Gewijzigd">
+		<Parameter versie="14.7.0" datum="2026-04-08" status="Gewijzigd">
 			<ID>935</ID>
 			<Code>KLEURITSTT</Code>
 			<Omschrijving>Kleur intensiteit</Omschrijving>
 			<Groep>Typering</Groep>
-			<broSadImbroA>false</broSadImbroA>
-			<broSadImbro>false</broSadImbro>
+			<broSadImbroA>true</broSadImbroA>
+			<broSadImbro>true</broSadImbro>
 			<broSldImbroA>false</broSldImbroA>
 			<broSldImbro>false</broSldImbro>
 		</Parameter>
@@ -36467,13 +36467,13 @@
 			<broSldImbroA>true</broSldImbroA>
 			<broSldImbro>true</broSldImbro>
 		</Parameter>
-		<Parameter versie="14.7.0" datum="2026-01-16" status="Gewijzigd">
+		<Parameter versie="14.7.0" datum="2026-04-08" status="Gewijzigd">
 			<ID>3688</ID>
 			<Code>GRONDSBMSGD</Code>
 			<Omschrijving>Grondsoort bijmengsel grind</Omschrijving>
 			<Groep>Typering</Groep>
-			<broSadImbroA>false</broSadImbroA>
-			<broSadImbro>false</broSadImbro>
+			<broSadImbroA>true</broSadImbroA>
+			<broSadImbro>true</broSadImbro>
 			<broSldImbroA>false</broSldImbroA>
 			<broSldImbro>false</broSldImbro>
 		</Parameter>
@@ -36487,13 +36487,13 @@
 			<broSldImbroA>true</broSldImbroA>
 			<broSldImbro>true</broSldImbro>
 		</Parameter>
-		<Parameter versie="14.7.0" datum="2026-01-09" status="Gewijzigd">
+		<Parameter versie="14.7.0" datum="2026-04-08" status="Gewijzigd">
 			<ID>3690</ID>
 			<Code>GRONDSBMSHMS</Code>
 			<Omschrijving>Grondsoort bijmengsel humus</Omschrijving>
 			<Groep>Typering</Groep>
-			<broSadImbroA>false</broSadImbroA>
-			<broSadImbro>false</broSadImbro>
+			<broSadImbroA>true</broSadImbroA>
+			<broSadImbro>true</broSadImbro>
 			<broSldImbroA>false</broSldImbroA>
 			<broSldImbro>false</broSldImbro>
 		</Parameter>
@@ -36567,23 +36567,23 @@
 			<broSldImbroA>false</broSldImbroA>
 			<broSldImbro>false</broSldImbro>
 		</Parameter>
-		<Parameter versie="14.7.0" datum="2026-01-16" status="Gewijzigd">
+		<Parameter versie="14.7.0" datum="2026-04-08" status="Gewijzigd">
 			<ID>3698</ID>
 			<Code>GRONDSMDAN</Code>
 			<Omschrijving>Grondsoort mediaan</Omschrijving>
 			<Groep>Typering</Groep>
-			<broSadImbroA>false</broSadImbroA>
-			<broSadImbro>false</broSadImbro>
+			<broSadImbroA>true</broSadImbroA>
+			<broSadImbro>true</broSadImbro>
 			<broSldImbroA>false</broSldImbroA>
 			<broSldImbro>false</broSldImbro>
 		</Parameter>
-		<Parameter versie="14.7.0" datum="2026-01-16" status="Gewijzigd">
+		<Parameter versie="14.7.0" datum="2026-04-08" status="Gewijzigd">
 			<ID>3699</ID>
 			<Code>GRONDST</Code>
 			<Omschrijving>Grondsoort</Omschrijving>
 			<Groep>Typering</Groep>
-			<broSadImbroA>false</broSadImbroA>
-			<broSadImbro>false</broSadImbro>
+			<broSadImbroA>true</broSadImbroA>
+			<broSadImbro>true</broSadImbro>
 			<broSldImbroA>false</broSldImbroA>
 			<broSldImbro>false</broSldImbro>
 		</Parameter>
@@ -72637,23 +72637,23 @@
 			<broSldImbroA>false</broSldImbroA>
 			<broSldImbro>false</broSldImbro>
 		</Parameter>
-		<Parameter versie="14.7.0" datum="2026-01-16" status="Bevestigd">
+		<Parameter versie="14.7.0" datum="2026-04-08" status="Bevestigd">
 			<ID>7315</ID>
 			<Code>BIJKLEURTPE</Code>
 			<Omschrijving>Bijkleur type</Omschrijving>
 			<Groep>Typering</Groep>
-			<broSadImbroA>false</broSadImbroA>
-			<broSadImbro>false</broSadImbro>
+			<broSadImbroA>true</broSadImbroA>
+			<broSadImbro>true</broSadImbro>
 			<broSldImbroA>false</broSldImbroA>
 			<broSldImbro>false</broSldImbro>
 		</Parameter>
-		<Parameter versie="14.7.0" datum="2026-01-16" status="Bevestigd">
+		<Parameter versie="14.7.0" datum="2026-04-08" status="Bevestigd">
 			<ID>7313</ID>
 			<Code>BDLBZBSDGTPE</Code>
 			<Omschrijving>Bodemlaag bijzonder bestanddeel gradatie type</Omschrijving>
 			<Groep>Typering</Groep>
-			<broSadImbroA>false</broSadImbroA>
-			<broSadImbro>false</broSadImbro>
+			<broSadImbroA>true</broSadImbroA>
+			<broSadImbro>true</broSadImbro>
 			<broSldImbroA>false</broSldImbroA>
 			<broSldImbro>false</broSldImbro>
 		</Parameter>
@@ -72677,13 +72677,13 @@
 			<broSldImbroA>false</broSldImbroA>
 			<broSldImbro>false</broSldImbro>
 		</Parameter>
-		<Parameter versie="14.7.0" datum="2026-01-16" status="Bevestigd">
+		<Parameter versie="14.7.0" datum="2026-04-08" status="Bevestigd">
 			<ID>7311</ID>
 			<Code>BDLBZBSDTPE</Code>
 			<Omschrijving>Bodemlaag bijzonder bestanddeel type</Omschrijving>
 			<Groep>Typering</Groep>
-			<broSadImbroA>false</broSadImbroA>
-			<broSadImbro>false</broSadImbro>
+			<broSadImbroA>true</broSadImbroA>
+			<broSadImbro>true</broSadImbro>
 			<broSldImbroA>false</broSldImbroA>
 			<broSldImbro>false</broSldImbro>
 		</Parameter>
@@ -72767,13 +72767,13 @@
 			<broSldImbroA>false</broSldImbroA>
 			<broSldImbro>false</broSldImbro>
 		</Parameter>
-		<Parameter versie="14.7.0" datum="2026-01-16" status="Bevestigd">
+		<Parameter versie="14.7.0" datum="2026-04-08" status="Bevestigd">
 			<ID>7340</ID>
 			<Code>GRONDSTBMTPE</Code>
 			<Omschrijving>Grondsoort bijmengsel type</Omschrijving>
 			<Groep>Typering</Groep>
-			<broSadImbroA>false</broSadImbroA>
-			<broSadImbro>false</broSadImbro>
+			<broSadImbroA>true</broSadImbroA>
+			<broSadImbro>true</broSadImbro>
 			<broSldImbroA>false</broSldImbroA>
 			<broSldImbro>false</broSldImbro>
 		</Parameter>
@@ -72787,13 +72787,13 @@
 			<broSldImbroA>false</broSldImbroA>
 			<broSldImbro>false</broSldImbro>
 		</Parameter>
-		<Parameter versie="14.7.0" datum="2026-01-16" status="Bevestigd">
+		<Parameter versie="14.7.0" datum="2026-04-08" status="Bevestigd">
 			<ID>7314</ID>
 			<Code>HFDKLEURTPE</Code>
 			<Omschrijving>Hoofdkleur type</Omschrijving>
 			<Groep>Typering</Groep>
-			<broSadImbroA>false</broSadImbroA>
-			<broSadImbro>false</broSadImbro>
+			<broSadImbroA>true</broSadImbroA>
+			<broSadImbro>true</broSadImbro>
 			<broSldImbroA>false</broSldImbroA>
 			<broSldImbro>false</broSldImbro>
 		</Parameter>
@@ -72807,23 +72807,23 @@
 			<broSldImbroA>false</broSldImbroA>
 			<broSldImbro>false</broSldImbro>
 		</Parameter>
-		<Parameter versie="14.7.0" datum="2026-01-09" status="Bevestigd">
+		<Parameter versie="14.7.0" datum="2026-04-08" status="Bevestigd">
 			<ID>7318</ID>
 			<Code>OLWTRTMTTPE</Code>
 			<Omschrijving>Oliewater reactie mate type</Omschrijving>
 			<Groep>Typering</Groep>
-			<broSadImbroA>false</broSadImbroA>
-			<broSadImbro>false</broSadImbro>
+			<broSadImbroA>true</broSadImbroA>
+			<broSadImbro>true</broSadImbro>
 			<broSldImbroA>false</broSldImbroA>
 			<broSldImbro>false</broSldImbro>
 		</Parameter>
-		<Parameter versie="14.7.0" datum="2026-01-09" status="Bevestigd">
+		<Parameter versie="14.7.0" datum="2026-04-08" status="Bevestigd">
 			<ID>7324</ID>
 			<Code>PEILBBLINDE</Code>
 			<Omschrijving>Peilbuis belucht indicatie</Omschrijving>
 			<Groep>Typering</Groep>
-			<broSadImbroA>false</broSadImbroA>
-			<broSadImbro>false</broSadImbro>
+			<broSadImbroA>true</broSadImbroA>
+			<broSadImbro>true</broSadImbro>
 			<broSldImbroA>false</broSldImbroA>
 			<broSldImbro>false</broSldImbro>
 		</Parameter>
