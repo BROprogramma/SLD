@@ -16,7 +16,7 @@
 		<Waarde>bodemlocatieGewijzigdZonderBesluit</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>De bodemlocatie is gewijzigd zonder dat hieraan een besluit ten grondslag ligt.</Omschrijving>
+		<Omschrijving>De bodemlocatie is gewijzigd zonder dat hierover een nieuwe besluit is genomen.</Omschrijving>
 	</NaamGebeurtenis>
 	<NaamGebeurtenis>
 		<Waarde>nieuwBesluitBekendgemaakt</Waarde>
