@@ -13,6 +13,12 @@
 		<Omschrijving>De aanpak van de bodemlocatie onder het regime van de Wet bodembescherming is afgerond.</Omschrijving>
 	</NaamGebeurtenis>
 	<NaamGebeurtenis>
+		<Waarde>bodemlocatieGewijzigdZonderBesluit</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De bodemlocatie is gewijzigd zonder dat hierover een nieuw besluit is genomen.</Omschrijving>
+	</NaamGebeurtenis>
+	<NaamGebeurtenis>
 		<Waarde>nieuwBesluitBekendgemaakt</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
