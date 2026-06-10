@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--XSLT SLD OW Complete Report versie 5.7 (15-4-2026) - SIKB0101 versie 15.0-->
+<!--XSLT IMBRO SLD  Complete Report versie 1.0 (15-4-2026) - SIKB0101 versie 15.0-->
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:xsi="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xdt="http://www.w3.org/2005/xpath-datatypes" xmlns:imsikb0101="http://www.sikb.nl/imsikb0101" xmlns:immetingen="http://www.sikb.nl/immetingen" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:om="http://www.opengis.net/om/2.0" xmlns:sam="http://www.opengis.net/sampling/2.0" xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sikb="http://xslcontrole.sikb" xsi:schemaLocation="http://www.sikb.nl/imsikb0101 imsikb0101_v15.0.xsd">
 	<xsl:output method="xml" indent="yes"/>
 	<!-- Global variables for the lookup files -->
