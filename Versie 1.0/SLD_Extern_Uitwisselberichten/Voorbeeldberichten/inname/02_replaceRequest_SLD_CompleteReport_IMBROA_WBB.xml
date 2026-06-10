@@ -13,7 +13,7 @@
         Replace correctie:
          * ContaminationInformation -> Nature -> Toevoeging extra parameter: 288aec24-70a0-43e5-9232-e8b7edbffd16
     -->
-    <sldcom:requestReference>verzoek_2</sldcom:requestReference>
+    <sldcom:requestReference>correctie verzoek_2</sldcom:requestReference>
     <!-- Optional: KVK nummer van de aanleverende partij. -->
     <sldcom:deliveryAccountableParty>27376655</sldcom:deliveryAccountableParty>
     <sldcom:broId>SLD000000012346</sldcom:broId>

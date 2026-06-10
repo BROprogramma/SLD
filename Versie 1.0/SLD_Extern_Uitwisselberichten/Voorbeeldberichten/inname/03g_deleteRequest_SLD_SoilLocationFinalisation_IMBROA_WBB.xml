@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<registrationRequest 
+<deleteRequest 
     xmlns="http://www.broservices.nl/xsd/issld/1.0" 
     xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon/1.0" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -17,9 +17,10 @@
     <!-- broId required for SLD_SoilLocationFinalisation -->
     <sldcom:broId>SLD000000012349</sldcom:broId>
     <sldcom:qualityRegime>IMBRO/A</sldcom:qualityRegime>
+    <correctionReason codeSpace="urn:bro:sld:CorrectionReason">eigenCorrectie</correctionReason>  
     <sourceDocument>
         <sldcom:SLD_SoilLocationFinalisation>
-            <sldcom:eventDate>2024-11-05</sldcom:eventDate>
+            <sldcom:eventDate>2025-08-05</sldcom:eventDate>
         </sldcom:SLD_SoilLocationFinalisation>
     </sourceDocument>
-</registrationRequest>
+</deleteRequest>
