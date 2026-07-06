@@ -155,7 +155,7 @@ Explanation: De wetgever stipuleert dat het gegeven moet zijn vastgelegd om inzi
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de gebeurtenis heeft plaatsgevonden.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element minOccurs="1" maxOccurs="1" name="soilLocation" nillable="false" type="sldcom:SoilLocationPropertyType"/>
+                    <xs:element minOccurs="1" maxOccurs="1" name="soilLocation" nillable="false" type="sldcom:SoilLocationChangeSoilLocationDataPropertyType"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
@@ -1189,7 +1189,42 @@ Explanation: De aanpak van bodemverontreiniging onder de Wbb doorloopt een aanta
         </xs:sequence>
         <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
     </xs:complexType>
-
+        <xs:element name="SoilLocationChangeSoilLocationData" type="sldcom:SoilLocationChangeSoilLocationDataType" substitutionGroup="gml:AbstractFeature">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De eenheid of verzameling van eenheden met een vermoeden of bewezen bodemverontreiniging die als één geheel wordt aangepakt onder het regime van de Wet bodembescherming.
+Explanation: De grens van een bodemlocatie valt niet per se samen met de grens van één geval van bodemverontreiniging. Een locatie kan meerdere gevallen van bodemverontreiniging bevatten. Het kan ook voorkomen dat een bodemlocatie is aangemaakt door een niet-bevoegd gezag Wbb op basis van een uitgevoerd milieuhygiënisch bodemonderzoek. Bodemlocaties kunnen elkaar overlappen.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="SoilLocationChangeSoilLocationDataType">
+        <xs:complexContent>
+            <xs:extension base="gml:AbstractFeatureType">
+                <xs:sequence>
+                    <xs:element name="boundary" type="gml:MultiSurfacePropertyType" minOccurs="0" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De begrenzing van de bodemlocatie op het aardoppervlak.
+Explanation: De begrenzing is vastgelegd als een vlak of verzameling vlakken (multi-vlak). Het gegeven kan een nieuwe waarde krijgen bij wijziging van de begrenzing. In dat geval blijft ook de oude waarde behouden in de registratie ondergrond.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="followUp" minOccurs="0" maxOccurs="1" type="sldcom:FollowUpType">
+                        <xs:annotation>
+                            <xs:appinfo>
+                                <CodeListName>FollowUp</CodeListName>
+                                <CodeListURI>urn:bro:sld:FollowUp</CodeListURI>
+                            </xs:appinfo>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De uit te voeren vervolgactie in de aanpak van een bodemverontreiniging onder het regime van de Wet bodembescherming.
+Explanation: De aanpak van bodemverontreiniging onder de Wbb doorloopt een aantal stadia. De vervolgactie geeft aan wat de volgende stap in die aanpak is. De vervolgactie wordt bepaald door het bevoegd gezag Wbb op basis van een besluit genomen onder het regime van de Wbb, of op basis van de onderzoeksresultaten uit een milieuhygiënisch bodemonderzoek (zonder besluit volgens de Wbb). Het kan voorkomen dat een niet-bevoegd gezag Wbb een waarde heeft toegekend aan de bodemlocatie op basis van een milieuhygiënisch bodemonderzoek. Wanneer de bodemlocatie voldoende is onderzocht of voldoende is gesaneerd, is de aanpak van de verontreiniging in het kader van de Wbb afgerond. Het gegeven kan een nieuwe waarde krijgen bij voortgang in de aanpak van de bodemverontreiniging. In dat geval blijft ook de oude waarde behouden in de registratie ondergrond. De vervolgactie is niet altijd in het bronsysteem ingevuld.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="SoilLocationChangeSoilLocationDataPropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="sldcom:SoilLocationChangeSoilLocationData"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
     <xs:complexType name="ContaminationNatureType">
         <xs:sequence>
             <xs:element name="chemicalSubstance" minOccurs="1" maxOccurs="unbounded" type="sldcom:ParameterType">

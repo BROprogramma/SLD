@@ -365,7 +365,7 @@ img.license{float:left;padding-right:5px;background:0 0}
     <h2>
       BRO Standaard<br>
       Werkversie
-      <time class="dt-published" datetime="2025-08-08">03 juni 2026</time>
+      <time class="dt-published" datetime="2025-08-08">01 juli 2026</time>
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
@@ -490,7 +490,7 @@ Deze historische gegevens kunnen niet altijd voldoen aan de strikte regels die d
 <figure id="fig-overzicht-verschillen-tussen-de-kwaliteitsregimes">
 	<img src="https://raw.githubusercontent.com/BROprogramma/generiek/gh-pages/media/tabel_kwaliteitsregime.png" width="350">
 	<figcaption><a class="self-link" href="#fig-overzicht-verschillen-tussen-de-kwaliteitsregimes">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">Overzicht verschillen tussen de kwaliteitsregimes.</span></figcaption>
-</figure><br><br><p>Voor een nadere toelichting van het kwaliteitsregime met een beschrijving van verschillende scenario's voor het corrigeren van het kwaliteitsregime van geleverde gegevens, wordt verwezen naar de <a href="https://www.bro-productomgeving.nl/bpo/latest/informatie-voor-bro-gebruikers/handreiking-aanleveren-bro-gegevens">Handreiking aanleveren BRO-gegevens</a> op de BRO-Productomgeving.</p>
+</figure><br><br><p>Voor een nadere toelichting van het kwaliteitsregime met een beschrijving van verschillende scenario's voor het corrigeren van het kwaliteitsregime van geleverde gegevens, wordt verwezen naar de <a href="https://www.bro-productomgeving.nl/bpo/latest/handreiking-aanleveren-bro-gegevens">Handreiking aanleveren BRO-gegevens</a> op de BRO-Productomgeving.</p>
 </section><section id="formele-en-materiele-geschiedenis"><div class="header-wrapper"><h3 id="x2-5-formele-en-materiele-geschiedenis"><bdi class="secno">2.5 </bdi>Formele en materiële geschiedenis</h3><a class="self-link" href="#formele-en-materiele-geschiedenis" aria-label="Permalink for Section 2.5"></a></div>
 <p>De BRO maakt deel uit van een stelsel van basisregistraties. Binnen het stelsel maakt men onderscheid tussen de materiële geschiedenis en de formele geschiedenis van een object.</p>
 <p>Het begrip materiële geschiedenis wordt gebruikt om de veranderingen van eigenschappen van een object in de werkelijkheid aan te duiden (dus niet attributen in een systeem). De materiële geschiedenis van een object wordt, voor zover relevant, in de BRO vastgelegd. Niet alle registratieobjecten hebben een materiële geschiedenis, alleen de registratieobjecten met een levensduur, zoals de grondwatermonitoringput.</p>
@@ -625,7 +625,6 @@ Deze historische gegevens kunnen niet altijd voldoen aan de strikte regels die d
 <li>Domein Grondwatermonitoring: er is vooralsnog gekozen om de grondwatermonitoringnetten die zijn ingericht in het kader van milieuhygiënisch bodemonderzoek onderdeel te laten zijn van milieuhygiënisch bodemonderzoek (SAD) en niet bij het registratieobject grondwatermonitoringnet op te nemen.</li>
 </ul>
 </section></section>
-	
 
 	
 	<section id="overheidsbesluit-bodemverontreiniging"><div class="header-wrapper"><h2 id="x4-overheidsbesluit-bodemverontreiniging"><bdi class="secno">4. </bdi>Overheidsbesluit bodemverontreiniging</h2><a class="self-link" href="#overheidsbesluit-bodemverontreiniging" aria-label="Permalink for Section 4."></a></div><section id="inleiding-0"><div class="header-wrapper"><h3 id="x4-1-inleiding"><bdi class="secno">4.1 </bdi>Inleiding</h3><a class="self-link" href="#inleiding-0" aria-label="Permalink for Section 4.1"></a></div>
@@ -765,7 +764,7 @@ Bij het domein 'Datum' is het voldoende de naam te geven, omdat de opbouw altijd
 </section><section id="datumtijd"><div class="header-wrapper"><h5 id="x5-2-6-2-datumtijd"><bdi class="secno">5.2.6.2 </bdi>DatumTijd</h5><a class="self-link" href="#datumtijd" aria-label="Permalink for Section 5.2.6.2"></a></div>
 <p>Het domein 'DatumTijd' wordt gebruikt om een tijdstip volgens de Gregoriaanse kalender tot op de seconde nauwkeurig aan te geven. De opbouw is JJJJ-MM-DDTUU:MM:SS+UU:MM.
 Bij het domein 'DatumTijd' is het voldoende de naam te geven, omdat de opbouw altijd hetzelfde is. Gewoonlijk wordt de waardeverzameling verder ingeperkt door een bereik te specificeren.</p>
-<p>De registratie ondergrond volgt de ISO8601 standaard en rekent de geleverde DatumTijd waarde om tot een Nederlandse DatumTijd waarde voordat er wordt getoetst op eventuele regels. Het is dus belangrijk dat de juiste tijdzone wordt opgevoerd om tijdstippen correct leesbaar te houden. Voor de lezer is dit de lokale tijd. Daarnaast is het belangrijk dat de zomer- en wintertijd correct worden toegepast. Geadviseerd wordt om voor de tijdzone de in Nederland geldige waarden +01:00 en +02:00 te gebruiken: dit ondersteunt de leesbaarheid van de XML door mensen. Zie voor een uitgebreidere toelichting het document <em><a href="https://www.bro-productomgeving.nl/bpo/latest/informatie-voor-softwareleveranciers/het-afhandelen-van-tijdstippen">Het afhandelen van tijdstippen</a></em> op de BRO productomgeving.</p>
+<p>De registratie ondergrond volgt de ISO8601 standaard en rekent de geleverde DatumTijd waarde om tot een Nederlandse DatumTijd waarde voordat er wordt getoetst op eventuele regels. Het is dus belangrijk dat de juiste tijdzone wordt opgevoerd om tijdstippen correct leesbaar te houden. Voor de lezer is dit de lokale tijd. Daarnaast is het belangrijk dat de zomer- en wintertijd correct worden toegepast. Geadviseerd wordt om voor de tijdzone de in Nederland geldige waarden +01:00 en +02:00 te gebruiken: dit ondersteunt de leesbaarheid van de XML door mensen. Zie voor een uitgebreidere toelichting het document <em><a href="https://www.bro-productomgeving.nl/bpo/latest/het-afhandelen-van-tijdstippen">Het afhandelen van tijdstippen</a></em> op de BRO productomgeving.</p>
 </section><section id="onvolledigedatum"><div class="header-wrapper"><h5 id="x5-2-6-3-onvolledigedatum"><bdi class="secno">5.2.6.3 </bdi>OnvolledigeDatum</h5><a class="self-link" href="#onvolledigedatum" aria-label="Permalink for Section 5.2.6.3"></a></div>
 <p>Voor gegevens die onder het kwaliteitsregime IMBRO/A aangeleverd worden, geldt een derde domein met vier keuzemogelijkheden.</p>
 <ul>
@@ -977,7 +976,7 @@ Een meetreeks heeft een bepaalde naam. Alleen in het domeinmodel is de meetreeks
 <p><em>De kardinaliteit= [0..1] en er is geen aanvullende regel opgenomen.</em> Dit betekent dat het attribuut alleen aanwezig is als het een waarde heeft.</p>
 <p>Voor de kardinaliteiten [0..<em>] optioneel en meervoudig en [1..</em>] verplicht en meervoudig geldt in essentie hetzelfde.</p>
 </section></section>
-	 
+
 	
 	<section id="gegevensdefinitie"><div class="header-wrapper"><h2 id="x6-gegevensdefinitie"><bdi class="secno">6. </bdi>Gegevensdefinitie</h2><a class="self-link" href="#gegevensdefinitie" aria-label="Permalink for Section 6."></a></div><section id="global_class_Model_Registratieobject"><div class="header-wrapper"><h3 id="x6-1-registratieobject"><bdi class="secno">6.1 </bdi>   Registratieobject</h3><a class="self-link" href="#global_class_Model_Registratieobject" aria-label="Permalink for Section 6.1"></a></div>
                <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Overheidsbesluit bodemverontreiniging</td></tr><tr><th scope="row">Code</th><td>SLD</td></tr><tr><th scope="row">Definitie</th><td>
@@ -1970,6 +1969,7 @@ De identificatie is binnen de informatieketen milieukwaliteit aan het besluit to
 
 	
 	<script src="https://docs.geostandaarden.nl/bro/gen/js/panZoomImage.js"></script>
+
 
 
 <p role="navigation" id="back-to-top">
