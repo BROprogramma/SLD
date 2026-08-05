@@ -6,8 +6,8 @@ let respecConfig = {
   subtitle: "Versie 1.1",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   //specStatus: "wv",                   // Werkversie
-  //specStatus: "cv",               // Consultatieversie
-  specStatus: "vv",               // Versie ter vaststelling
+  specStatus: "cv",               // Consultatieversie
+  //specStatus: "vv",               // Versie ter vaststelling
   //specStatus: "def",              // Vastgestelde versie
   //specStatus: "basis",            // Basis Document
   //-- specType is verplicht bij alle andere dan BASIS ---------------------------------
@@ -30,7 +30,7 @@ let respecConfig = {
   shortName: "sld",
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  publishDate: "2026-07-29",
+  publishDate: "2026-08-05",
   //custom header lines  
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
   publishVersion: " ",
