@@ -489,7 +489,7 @@
         <!-- Evaluate the lookupRecord for status and BRO quality -->
         <xsl:variable name="checkLookupRecord">
             <xsl:choose>
-                <xsl:when test="$lookupRecord and $lookupRecord/@status = 'Vervallen'">vervallen</xsl:when>
+                <xsl:when test="$lookupRecord and $lookupRecord/@status = 'Vervallen' and $lookupRecord/broSldImbro != 'true'">vervallen</xsl:when>
                 <xsl:when test="$lookupRecord and $lookupRecord/broSldImbro != 'true'">niet geldig voor BRO SLD IMBRO kwaliteit</xsl:when>
                 <xsl:when test="not($lookupRecord) and $lookupValue != ''">niet gevonden</xsl:when>
                 <xsl:otherwise/>
