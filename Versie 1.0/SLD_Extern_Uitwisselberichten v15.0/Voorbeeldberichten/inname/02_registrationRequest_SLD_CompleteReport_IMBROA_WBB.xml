@@ -363,7 +363,7 @@
                                     <imsikb0101:physicalProperty>
                                         <immetingen:PhysicalProperty>
                                             <immetingen:quantity codeSpace="www.sikb.nl">urn:immetingen:Parameter:id:2725</immetingen:quantity>
-                                            <immetingen:parameter codeSpace="www.sikb.nl">urn:immetingen:Parameter:id:1693</immetingen:parameter>
+                                            <immetingen:parameter codeSpace="www.sikb.nl">urn:immetingen:Parameter:id:2931</immetingen:parameter>
                                         </immetingen:PhysicalProperty>
                                     </imsikb0101:physicalProperty>
                                 </imsikb0101:Nature>
