@@ -546,6 +546,701 @@
         "message_contains": "heeft een afwijkend lokaalId ( 00000000"
       },
       "waarom": "Geen enkel SLD-object heeft een immetingen:identification; die tak van de controle wordt zo toch getest."
+    },
+    {
+      "name": "WBB Complete Report - Aangepakt gebied (Remediation): geometrie moet aanwezig zijn, met einddatum → WARNING",
+      "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Remediation[@gml:id='_9867c501-61ba-4a8e-84ba-9734c93cce43']/imsikb0101:geometry",
+          "action": "remove"
+        }
+      ],
+      "expect": {
+        "type": "WARNING",
+        "title_contains": "Remediation",
+        "message_contains": "Het element geometry bij Remediation"
+      },
+      "not_expect": [
+        {
+          "type": "ERROR",
+          "title_contains": "Remediation",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag ontbreken als een einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB Complete Report - Aangepakt gebied (Remediation): geometrie moet aanwezig zijn, zonder einddatum → ERROR",
+      "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Remediation[@gml:id='_9867c501-61ba-4a8e-84ba-9734c93cce43']/imsikb0101:endTime",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:Remediation[@gml:id='_9867c501-61ba-4a8e-84ba-9734c93cce43']/imsikb0101:geometry",
+          "action": "remove"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "Remediation",
+        "message_contains": "Het element geometry bij Remediation"
+      },
+      "not_expect": [
+        {
+          "type": "WARNING",
+          "title_contains": "Remediation",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag niet ontbreken als geen einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB Complete Report - Aangepakt gebied (Remediation): geometrie moet gevuld zijn, met einddatum → WARNING",
+      "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Remediation[@gml:id='_9867c501-61ba-4a8e-84ba-9734c93cce43']/imsikb0101:geometry/*",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:Remediation[@gml:id='_9867c501-61ba-4a8e-84ba-9734c93cce43']/imsikb0101:geometry",
+          "action": "set",
+          "value": ""
+        }
+      ],
+      "expect": {
+        "type": "WARNING",
+        "title_contains": "Remediation",
+        "message_contains": "Het element geometry bij Remediation"
+      },
+      "not_expect": [
+        {
+          "type": "ERROR",
+          "title_contains": "Remediation",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag ontbreken als een einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB Complete Report - Aangepakt gebied (Remediation): geometrie moet gevuld zijn, zonder einddatum → ERROR",
+      "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Remediation[@gml:id='_9867c501-61ba-4a8e-84ba-9734c93cce43']/imsikb0101:endTime",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:Remediation[@gml:id='_9867c501-61ba-4a8e-84ba-9734c93cce43']/imsikb0101:geometry/*",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:Remediation[@gml:id='_9867c501-61ba-4a8e-84ba-9734c93cce43']/imsikb0101:geometry",
+          "action": "set",
+          "value": ""
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "Remediation",
+        "message_contains": "Het element geometry bij Remediation"
+      },
+      "not_expect": [
+        {
+          "type": "WARNING",
+          "title_contains": "Remediation",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag niet ontbreken als geen einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB Complete Report - Verontreinigd gebied (ContaminationInformation): geometrie moet aanwezig zijn, met einddatum → WARNING",
+      "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:ContaminationInformation[@gml:id='_ddd148bf-0f8e-4326-9625-8e4f3020c73c']/imsikb0101:geometry",
+          "action": "remove"
+        }
+      ],
+      "expect": {
+        "type": "WARNING",
+        "title_contains": "ContaminationInformation",
+        "message_contains": "Het element geometry bij ContaminationInformation"
+      },
+      "not_expect": [
+        {
+          "type": "ERROR",
+          "title_contains": "ContaminationInformation",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag ontbreken als een einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB Complete Report - Verontreinigd gebied (ContaminationInformation): geometrie moet aanwezig zijn, zonder einddatum → ERROR",
+      "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:ContaminationInformation[@gml:id='_ddd148bf-0f8e-4326-9625-8e4f3020c73c']/imsikb0101:endTime",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:ContaminationInformation[@gml:id='_ddd148bf-0f8e-4326-9625-8e4f3020c73c']/imsikb0101:geometry",
+          "action": "remove"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "ContaminationInformation",
+        "message_contains": "Het element geometry bij ContaminationInformation"
+      },
+      "not_expect": [
+        {
+          "type": "WARNING",
+          "title_contains": "ContaminationInformation",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag niet ontbreken als geen einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB Complete Report - Verontreinigd gebied (ContaminationInformation): geometrie moet gevuld zijn, met einddatum → WARNING",
+      "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:ContaminationInformation[@gml:id='_ddd148bf-0f8e-4326-9625-8e4f3020c73c']/imsikb0101:geometry/*",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:ContaminationInformation[@gml:id='_ddd148bf-0f8e-4326-9625-8e4f3020c73c']/imsikb0101:geometry",
+          "action": "set",
+          "value": ""
+        }
+      ],
+      "expect": {
+        "type": "WARNING",
+        "title_contains": "ContaminationInformation",
+        "message_contains": "Het element geometry bij ContaminationInformation"
+      },
+      "not_expect": [
+        {
+          "type": "ERROR",
+          "title_contains": "ContaminationInformation",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag ontbreken als een einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB Complete Report - Verontreinigd gebied (ContaminationInformation): geometrie moet gevuld zijn, zonder einddatum → ERROR",
+      "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:ContaminationInformation[@gml:id='_ddd148bf-0f8e-4326-9625-8e4f3020c73c']/imsikb0101:endTime",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:ContaminationInformation[@gml:id='_ddd148bf-0f8e-4326-9625-8e4f3020c73c']/imsikb0101:geometry/*",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:ContaminationInformation[@gml:id='_ddd148bf-0f8e-4326-9625-8e4f3020c73c']/imsikb0101:geometry",
+          "action": "set",
+          "value": ""
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "ContaminationInformation",
+        "message_contains": "Het element geometry bij ContaminationInformation"
+      },
+      "not_expect": [
+        {
+          "type": "WARNING",
+          "title_contains": "ContaminationInformation",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag niet ontbreken als geen einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB Complete Report - Nazorggebied (SitemanagementMeasure): geometrie moet aanwezig zijn, met einddatum → WARNING",
+      "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:SitemanagementMeasure[@gml:id='_c7b1c2d6-476d-4289-9792-3bedf303d107']/imsikb0101:geometry",
+          "action": "remove"
+        }
+      ],
+      "expect": {
+        "type": "WARNING",
+        "title_contains": "SitemanagementMeasure",
+        "message_contains": "Het element geometry bij SitemanagementMeasure"
+      },
+      "not_expect": [
+        {
+          "type": "ERROR",
+          "title_contains": "SitemanagementMeasure",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag ontbreken als een einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB Complete Report - Nazorggebied (SitemanagementMeasure): geometrie moet aanwezig zijn, zonder einddatum → ERROR",
+      "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:SitemanagementMeasure[@gml:id='_c7b1c2d6-476d-4289-9792-3bedf303d107']/imsikb0101:endTime",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:SitemanagementMeasure[@gml:id='_c7b1c2d6-476d-4289-9792-3bedf303d107']/imsikb0101:geometry",
+          "action": "remove"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "SitemanagementMeasure",
+        "message_contains": "Het element geometry bij SitemanagementMeasure"
+      },
+      "not_expect": [
+        {
+          "type": "WARNING",
+          "title_contains": "SitemanagementMeasure",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag niet ontbreken als geen einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB Complete Report - Nazorggebied (SitemanagementMeasure): geometrie moet gevuld zijn, met einddatum → WARNING",
+      "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:SitemanagementMeasure[@gml:id='_c7b1c2d6-476d-4289-9792-3bedf303d107']/imsikb0101:geometry/*",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:SitemanagementMeasure[@gml:id='_c7b1c2d6-476d-4289-9792-3bedf303d107']/imsikb0101:geometry",
+          "action": "set",
+          "value": ""
+        }
+      ],
+      "expect": {
+        "type": "WARNING",
+        "title_contains": "SitemanagementMeasure",
+        "message_contains": "Het element geometry bij SitemanagementMeasure"
+      },
+      "not_expect": [
+        {
+          "type": "ERROR",
+          "title_contains": "SitemanagementMeasure",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag ontbreken als een einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB Complete Report - Nazorggebied (SitemanagementMeasure): geometrie moet gevuld zijn, zonder einddatum → ERROR",
+      "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:SitemanagementMeasure[@gml:id='_c7b1c2d6-476d-4289-9792-3bedf303d107']/imsikb0101:endTime",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:SitemanagementMeasure[@gml:id='_c7b1c2d6-476d-4289-9792-3bedf303d107']/imsikb0101:geometry/*",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:SitemanagementMeasure[@gml:id='_c7b1c2d6-476d-4289-9792-3bedf303d107']/imsikb0101:geometry",
+          "action": "set",
+          "value": ""
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "SitemanagementMeasure",
+        "message_contains": "Het element geometry bij SitemanagementMeasure"
+      },
+      "not_expect": [
+        {
+          "type": "WARNING",
+          "title_contains": "SitemanagementMeasure",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag niet ontbreken als geen einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB New Decision - Aangepakt gebied (Remediation): geometrie moet aanwezig zijn, met einddatum → WARNING",
+      "source": "T1. New Decision met Project en endTime (van 03c_2).xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Remediation[@gml:id='_57eee423-38fc-4f39-b40e-3eafb93335ff']/imsikb0101:geometry",
+          "action": "remove"
+        }
+      ],
+      "expect": {
+        "type": "WARNING",
+        "title_contains": "Remediation",
+        "message_contains": "Het element geometry bij Remediation"
+      },
+      "not_expect": [
+        {
+          "type": "ERROR",
+          "title_contains": "Remediation",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag ontbreken als een einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB New Decision - Aangepakt gebied (Remediation): geometrie moet aanwezig zijn, zonder einddatum → ERROR",
+      "source": "T1. New Decision met Project en endTime (van 03c_2).xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Remediation[@gml:id='_57eee423-38fc-4f39-b40e-3eafb93335ff']/imsikb0101:endTime",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:Remediation[@gml:id='_57eee423-38fc-4f39-b40e-3eafb93335ff']/imsikb0101:geometry",
+          "action": "remove"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "Remediation",
+        "message_contains": "Het element geometry bij Remediation"
+      },
+      "not_expect": [
+        {
+          "type": "WARNING",
+          "title_contains": "Remediation",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag niet ontbreken als geen einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB New Decision - Aangepakt gebied (Remediation): geometrie moet gevuld zijn, met einddatum → WARNING",
+      "source": "T1. New Decision met Project en endTime (van 03c_2).xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Remediation[@gml:id='_57eee423-38fc-4f39-b40e-3eafb93335ff']/imsikb0101:geometry/*",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:Remediation[@gml:id='_57eee423-38fc-4f39-b40e-3eafb93335ff']/imsikb0101:geometry",
+          "action": "set",
+          "value": ""
+        }
+      ],
+      "expect": {
+        "type": "WARNING",
+        "title_contains": "Remediation",
+        "message_contains": "Het element geometry bij Remediation"
+      },
+      "not_expect": [
+        {
+          "type": "ERROR",
+          "title_contains": "Remediation",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag ontbreken als een einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB New Decision - Aangepakt gebied (Remediation): geometrie moet gevuld zijn, zonder einddatum → ERROR",
+      "source": "T1. New Decision met Project en endTime (van 03c_2).xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Remediation[@gml:id='_57eee423-38fc-4f39-b40e-3eafb93335ff']/imsikb0101:endTime",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:Remediation[@gml:id='_57eee423-38fc-4f39-b40e-3eafb93335ff']/imsikb0101:geometry/*",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:Remediation[@gml:id='_57eee423-38fc-4f39-b40e-3eafb93335ff']/imsikb0101:geometry",
+          "action": "set",
+          "value": ""
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "Remediation",
+        "message_contains": "Het element geometry bij Remediation"
+      },
+      "not_expect": [
+        {
+          "type": "WARNING",
+          "title_contains": "Remediation",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag niet ontbreken als geen einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB New Decision - Verontreinigd gebied (ContaminationInformation): geometrie moet aanwezig zijn, met einddatum → WARNING",
+      "source": "T1. New Decision met Project en endTime (van 03c_2).xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:ContaminationInformation[@gml:id='_5b5aaf21-1a3c-467f-9916-2ae64e75fbc8']/imsikb0101:geometry",
+          "action": "remove"
+        }
+      ],
+      "expect": {
+        "type": "WARNING",
+        "title_contains": "ContaminationInformation",
+        "message_contains": "Het element geometry bij ContaminationInformation"
+      },
+      "not_expect": [
+        {
+          "type": "ERROR",
+          "title_contains": "ContaminationInformation",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag ontbreken als een einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB New Decision - Verontreinigd gebied (ContaminationInformation): geometrie moet aanwezig zijn, zonder einddatum → ERROR",
+      "source": "T1. New Decision met Project en endTime (van 03c_2).xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:ContaminationInformation[@gml:id='_5b5aaf21-1a3c-467f-9916-2ae64e75fbc8']/imsikb0101:endTime",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:ContaminationInformation[@gml:id='_5b5aaf21-1a3c-467f-9916-2ae64e75fbc8']/imsikb0101:geometry",
+          "action": "remove"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "ContaminationInformation",
+        "message_contains": "Het element geometry bij ContaminationInformation"
+      },
+      "not_expect": [
+        {
+          "type": "WARNING",
+          "title_contains": "ContaminationInformation",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag niet ontbreken als geen einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB New Decision - Verontreinigd gebied (ContaminationInformation): geometrie moet gevuld zijn, met einddatum → WARNING",
+      "source": "T1. New Decision met Project en endTime (van 03c_2).xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:ContaminationInformation[@gml:id='_5b5aaf21-1a3c-467f-9916-2ae64e75fbc8']/imsikb0101:geometry/*",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:ContaminationInformation[@gml:id='_5b5aaf21-1a3c-467f-9916-2ae64e75fbc8']/imsikb0101:geometry",
+          "action": "set",
+          "value": ""
+        }
+      ],
+      "expect": {
+        "type": "WARNING",
+        "title_contains": "ContaminationInformation",
+        "message_contains": "Het element geometry bij ContaminationInformation"
+      },
+      "not_expect": [
+        {
+          "type": "ERROR",
+          "title_contains": "ContaminationInformation",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag ontbreken als een einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB New Decision - Verontreinigd gebied (ContaminationInformation): geometrie moet gevuld zijn, zonder einddatum → ERROR",
+      "source": "T1. New Decision met Project en endTime (van 03c_2).xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:ContaminationInformation[@gml:id='_5b5aaf21-1a3c-467f-9916-2ae64e75fbc8']/imsikb0101:endTime",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:ContaminationInformation[@gml:id='_5b5aaf21-1a3c-467f-9916-2ae64e75fbc8']/imsikb0101:geometry/*",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:ContaminationInformation[@gml:id='_5b5aaf21-1a3c-467f-9916-2ae64e75fbc8']/imsikb0101:geometry",
+          "action": "set",
+          "value": ""
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "ContaminationInformation",
+        "message_contains": "Het element geometry bij ContaminationInformation"
+      },
+      "not_expect": [
+        {
+          "type": "WARNING",
+          "title_contains": "ContaminationInformation",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag niet ontbreken als geen einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB New Decision - Nazorggebied (SitemanagementMeasure): geometrie moet aanwezig zijn, met einddatum → WARNING",
+      "source": "T1. New Decision met Project en endTime (van 03c_2).xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:SitemanagementMeasure[@gml:id='_d7b1c2d6-476d-4289-9792-3bedf303d108']/imsikb0101:geometry",
+          "action": "remove"
+        }
+      ],
+      "expect": {
+        "type": "WARNING",
+        "title_contains": "SitemanagementMeasure",
+        "message_contains": "Het element geometry bij SitemanagementMeasure"
+      },
+      "not_expect": [
+        {
+          "type": "ERROR",
+          "title_contains": "SitemanagementMeasure",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag ontbreken als een einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB New Decision - Nazorggebied (SitemanagementMeasure): geometrie moet aanwezig zijn, zonder einddatum → ERROR",
+      "source": "T1. New Decision met Project en endTime (van 03c_2).xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:SitemanagementMeasure[@gml:id='_d7b1c2d6-476d-4289-9792-3bedf303d108']/imsikb0101:endTime",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:SitemanagementMeasure[@gml:id='_d7b1c2d6-476d-4289-9792-3bedf303d108']/imsikb0101:geometry",
+          "action": "remove"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "SitemanagementMeasure",
+        "message_contains": "Het element geometry bij SitemanagementMeasure"
+      },
+      "not_expect": [
+        {
+          "type": "WARNING",
+          "title_contains": "SitemanagementMeasure",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag niet ontbreken als geen einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB New Decision - Nazorggebied (SitemanagementMeasure): geometrie moet gevuld zijn, met einddatum → WARNING",
+      "source": "T1. New Decision met Project en endTime (van 03c_2).xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:SitemanagementMeasure[@gml:id='_d7b1c2d6-476d-4289-9792-3bedf303d108']/imsikb0101:geometry/*",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:SitemanagementMeasure[@gml:id='_d7b1c2d6-476d-4289-9792-3bedf303d108']/imsikb0101:geometry",
+          "action": "set",
+          "value": ""
+        }
+      ],
+      "expect": {
+        "type": "WARNING",
+        "title_contains": "SitemanagementMeasure",
+        "message_contains": "Het element geometry bij SitemanagementMeasure"
+      },
+      "not_expect": [
+        {
+          "type": "ERROR",
+          "title_contains": "SitemanagementMeasure",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag ontbreken als een einddatum wordt aangeleverd."
+    },
+    {
+      "name": "WBB New Decision - Nazorggebied (SitemanagementMeasure): geometrie moet gevuld zijn, zonder einddatum → ERROR",
+      "source": "T1. New Decision met Project en endTime (van 03c_2).xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:SitemanagementMeasure[@gml:id='_d7b1c2d6-476d-4289-9792-3bedf303d108']/imsikb0101:endTime",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:SitemanagementMeasure[@gml:id='_d7b1c2d6-476d-4289-9792-3bedf303d108']/imsikb0101:geometry/*",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:SitemanagementMeasure[@gml:id='_d7b1c2d6-476d-4289-9792-3bedf303d108']/imsikb0101:geometry",
+          "action": "set",
+          "value": ""
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "SitemanagementMeasure",
+        "message_contains": "Het element geometry bij SitemanagementMeasure"
+      },
+      "not_expect": [
+        {
+          "type": "WARNING",
+          "title_contains": "SitemanagementMeasure",
+          "message_contains": "Het element geometry bij"
+        }
+      ],
+      "waarom": "Contour (geometry) mag niet ontbreken als geen einddatum wordt aangeleverd."
+    },
+    {
+      "name": "OW Complete Report - Aangepakt gebied (Remediation): geometrie moet aanwezig zijn → ERROR",
+      "source": "01_registrationRequest_SLD_CompleteReport_IMBRO_OW.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Remediation/imsikb0101:geometry",
+          "action": "remove"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "Remediation",
+        "message_contains": "Het element geometry bij Remediation"
+      }
+    },
+    {
+      "name": "OW Complete Report - Aangepakt gebied (Remediation): geometrie moet gevuld zijn → ERROR",
+      "source": "01_registrationRequest_SLD_CompleteReport_IMBRO_OW.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Remediation/imsikb0101:geometry/*",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:Remediation/imsikb0101:geometry",
+          "action": "set",
+          "value": ""
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "Remediation",
+        "message_contains": "Het element geometry bij Remediation"
+      }
     }
   ]
 }
