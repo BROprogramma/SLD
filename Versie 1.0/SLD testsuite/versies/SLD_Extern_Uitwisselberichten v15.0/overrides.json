@@ -1,0 +1,20 @@
+{
+  "_uitleg": "Aanpassingen op de automatisch gegenereerde controles. 'check' is template|functie|veld zoals in het rapport. Velden: skip (reden), source, context_xpath, lookup_mutatie ('onbekende_code' of 'verkeerde_tabel'), reden.",
+  "overrides": [
+    {
+      "check": "imsikb0101:Project|checkLookupId|projectType",
+      "lookup_mutatie": "verkeerde_tabel",
+      "reden": "Bij WBB wordt een Project met projectType alleen gecontroleerd als het id exact 11 is; een onbekend id slaat het Project dus over. Daarom testen we een verwijzing naar een verkeerde lookup-tabel met id 11."
+    },
+    {
+      "check": "imsikb0101:Remediation|checkLength|realizedVariationTopsoil",
+      "regime": "OW Complete Report",
+      "skip": "Geen voorbeeldbericht heeft realizedVariationTopsoil (bij OW mag het er niet zijn); gedekt door testcase 'OW - Remediation met realizedVariationTopsoil'."
+    },
+    {
+      "check": "imsikb0101:Remediation|checkLength|realizedVariationSubsoil",
+      "regime": "OW Complete Report",
+      "skip": "Geen voorbeeldbericht heeft realizedVariationSubsoil (bij OW mag het er niet zijn); gedekt door testcase 'OW - Remediation met realizedVariationSubsoil'."
+    }
+  ]
+}

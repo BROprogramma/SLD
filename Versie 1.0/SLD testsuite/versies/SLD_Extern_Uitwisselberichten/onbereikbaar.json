@@ -1,0 +1,4 @@
+{
+  "_uitleg": "Controles die met geen enkele invoer kunnen afgaan (dode code). Ze tellen niet mee in het dekkingspercentage maar staan apart in het rapport. Gaat zo'n controle tóch af, dan telt hij gewoon als geraakt.",
+  "onbereikbaar": []
+}

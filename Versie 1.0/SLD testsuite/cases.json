@@ -1,0 +1,551 @@
+{
+  "_uitleg": "Gedeelde handgeschreven testcases voor alle SLD-versies. Elke case neemt een goed bericht (source of sources), past het in het geheugen aan (mutations) en controleert dat de XSLT die bij dat bericht hoort de verwachte NIEUWE melding geeft. Versie-afhankelijke waarden: ${NAAM} uit versies/<versie>/versie.json. Zie README.md.",
+  "cases": [
+    {
+      "name": "Metadata - dataflow ontbreekt",
+      "sources": [
+        "01_registrationRequest_SLD_CompleteReport_IMBRO_OW.xml",
+        "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+        "03b_registrationRequest_SLD_ChangeSoilLocation_IMBROA_WBB.xml",
+        "03c_registrationRequest_SLD_NewDecision_IMBROA_WBB_2.xml"
+      ],
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:metaData/imsikb0101:dataflow",
+          "action": "remove"
+        }
+      ],
+      "expect": [
+        {
+          "type": "WARNING",
+          "title_contains": "dataflow",
+          "message_contains": "Er zou een metadata/dataflow ingevuld moeten zijn"
+        },
+        {
+          "type": "WARNING",
+          "title_contains": "dataflow",
+          "message_contains": "zou ingevuld moeten zijn met"
+        }
+      ]
+    },
+    {
+      "name": "Metadata - dataflow is geen LIB/SLD (id:1)",
+      "sources": [
+        "01_registrationRequest_SLD_CompleteReport_IMBRO_OW.xml",
+        "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+        "03b_registrationRequest_SLD_ChangeSoilLocation_IMBROA_WBB.xml",
+        "03c_registrationRequest_SLD_NewDecision_IMBROA_WBB_2.xml"
+      ],
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:metaData/imsikb0101:dataflow",
+          "action": "set",
+          "value": "urn:imsikb0101:DatastroomType:id:1"
+        }
+      ],
+      "expect": {
+        "type": "WARNING",
+        "title_contains": "dataflow",
+        "message_contains": "zou ingevuld moeten zijn met"
+      },
+      "not_expect": [
+        {
+          "type": "WARNING",
+          "message_contains": "Er zou een metadata/dataflow ingevuld moeten zijn"
+        }
+      ]
+    },
+    {
+      "name": "Metadata - version is niet de versie van de XSLT",
+      "sources": [
+        "01_registrationRequest_SLD_CompleteReport_IMBRO_OW.xml",
+        "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+        "03b_registrationRequest_SLD_ChangeSoilLocation_IMBROA_WBB.xml",
+        "03c_registrationRequest_SLD_NewDecision_IMBROA_WBB_2.xml"
+      ],
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:metaData/imsikb0101:version",
+          "action": "set",
+          "value": "14.0"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "imsikb0101:version",
+        "message_contains": "versie"
+      }
+    },
+    {
+      "name": "OW - twee Remediations",
+      "source": "01_registrationRequest_SLD_CompleteReport_IMBRO_OW.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:featureMember[imsikb0101:Remediation]",
+          "action": "duplicate"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "xml-bestand",
+        "message_contains": "minimaal en maximaal 1 Remediation"
+      }
+    },
+    {
+      "name": "OW - Remediation zonder gekoppeld Project",
+      "source": "01_registrationRequest_SLD_CompleteReport_IMBRO_OW.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Remediation/imsikb0101:project",
+          "action": "remove"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "xml-bestand",
+        "message_contains": "exact 1 Project gekoppeld"
+      }
+    },
+    {
+      "name": "Bestand - geen SoilLocation",
+      "sources": [
+        "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+        "03c_registrationRequest_SLD_NewDecision_IMBROA_WBB_2.xml"
+      ],
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:featureMember[imsikb0101:SoilLocation]",
+          "action": "remove"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "xml-bestand",
+        "message_contains": "minimaal 1 SoilLocation"
+      }
+    },
+    {
+      "name": "Bestand - twee Dossiers",
+      "sources": [
+        "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+        "03b_registrationRequest_SLD_ChangeSoilLocation_IMBROA_WBB.xml",
+        "03c_registrationRequest_SLD_NewDecision_IMBROA_WBB_2.xml"
+      ],
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:featureMember[imsikb0101:Dossier]",
+          "action": "duplicate"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "xml-bestand",
+        "message_contains": "maximaal 1 Dossier"
+      }
+    },
+    {
+      "name": "Change SoilLocation - twee SoilLocations",
+      "source": "03b_registrationRequest_SLD_ChangeSoilLocation_IMBROA_WBB.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:featureMember[imsikb0101:SoilLocation]",
+          "action": "duplicate"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "xml-bestand",
+        "message_contains": "maximaal 1 SoilLocation"
+      }
+    },
+    {
+      "name": "Change SoilLocation - met een Decision",
+      "source": "03b_registrationRequest_SLD_ChangeSoilLocation_IMBROA_WBB.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:featureMember[imsikb0101:Dossier]",
+          "action": "insert_xml",
+          "position": "after",
+          "xml": "<imsikb0101:featureMember><imsikb0101:Decision/></imsikb0101:featureMember>"
+        }
+      ],
+      "expect": {
+        "type": "WARNING",
+        "title_contains": "xml-bestand",
+        "message_contains": "mag geen nieuwe Decision"
+      }
+    },
+    {
+      "name": "Change SoilLocation - geen followUpWBB en geen geometrie",
+      "source": "03b_registrationRequest_SLD_ChangeSoilLocation_IMBROA_WBB.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Dossier/imsikb0101:followUpWBB",
+          "action": "remove"
+        },
+        {
+          "xpath": "//imsikb0101:SoilLocation/imsikb0101:geometry",
+          "action": "remove"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "xml-bestand",
+        "message_contains": "followUpWBB of imsikb0101:SoilLocation/imsikb0101:geometry"
+      }
+    },
+    {
+      "name": "New Decision - twee Decisions",
+      "source": "03c_registrationRequest_SLD_NewDecision_IMBROA_WBB_2.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Dossier/imsikb0101:decisions",
+          "action": "duplicate"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "xml-bestand",
+        "message_contains": "maximaal 1 Decision"
+      }
+    },
+    {
+      "name": "Remediation, ContaminationInformation en SitemanagementMeasure aan meer dan 3 besluiten",
+      "sources": [
+        "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+        "03c_registrationRequest_SLD_NewDecision_IMBROA_WBB_2.xml"
+      ],
+      "mutations": [
+        {
+          "xpath": "(//imsikb0101:Dossier/imsikb0101:decisions)[1]",
+          "action": "duplicate"
+        },
+        {
+          "xpath": "(//imsikb0101:Dossier/imsikb0101:decisions)[1]",
+          "action": "duplicate"
+        },
+        {
+          "xpath": "(//imsikb0101:Dossier/imsikb0101:decisions)[1]",
+          "action": "duplicate"
+        }
+      ],
+      "expect": [
+        {
+          "type": "ERROR",
+          "title_contains": "Remediation-Decision",
+          "message_contains": "meer dan 3 besluiten"
+        },
+        {
+          "type": "ERROR",
+          "title_contains": "ContaminationInformation-Decision",
+          "message_contains": "meer dan 3 besluiten"
+        },
+        {
+          "type": "ERROR",
+          "title_contains": "SitemanagementMeasure",
+          "message_contains": "meer dan 3 besluiten"
+        }
+      ],
+      "waarom": "De eerste Decision (gekoppeld aan een Remediation, ContaminationInformation en SitemanagementMeasure) wordt 3x gedupliceerd: 4 besluiten."
+    },
+    {
+      "name": "OW - Remediation met realizedVariationTopsoil",
+      "source": "01_registrationRequest_SLD_CompleteReport_IMBRO_OW.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Remediation",
+          "action": "insert_xml",
+          "xml": "<imsikb0101:realizedVariationTopsoil>urn:imsikb0101:San_bovengrond:id:1</imsikb0101:realizedVariationTopsoil>"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "Remediation",
+        "message_contains": "realizedVariationTopsoil"
+      },
+      "waarom": "Bij OW mag dit veld niet voorkomen (checkLength met maximum 0)."
+    },
+    {
+      "name": "OW - Remediation met realizedVariationSubsoil",
+      "source": "01_registrationRequest_SLD_CompleteReport_IMBRO_OW.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Remediation",
+          "action": "insert_xml",
+          "xml": "<imsikb0101:realizedVariationSubsoil>urn:imsikb0101:San_ondergrond:id:1</imsikb0101:realizedVariationSubsoil>"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "Remediation",
+        "message_contains": "realizedVariationSubsoil"
+      },
+      "waarom": "Bij OW mag dit veld niet voorkomen (checkLength met maximum 0)."
+    },
+    {
+      "name": "Dossier - dossier-id's niet uniek (twee Dossiers met dezelfde id's)",
+      "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:featureMember[imsikb0101:Dossier]",
+          "action": "duplicate"
+        }
+      ],
+      "expect": [
+        {
+          "type": "WARNING",
+          "title_contains": "Dossier",
+          "message_contains": "Waarde van het element dossierIdLocalAuthority"
+        },
+        {
+          "type": "WARNING",
+          "title_contains": "Dossier",
+          "message_contains": "Waarde van het element dossierIdNotLocalAuthority"
+        }
+      ],
+      "waarom": "checkUnique zoekt in het hele bestand: twee Dossiers met dezelfde id's."
+    },
+    {
+      "name": "Nature - onbekende parameter-code",
+      "sources": [
+        "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+        "03c_registrationRequest_SLD_NewDecision_IMBROA_WBB_2.xml"
+      ],
+      "mutations": [
+        {
+          "xpath": "(//imsikb0101:Nature)[1]/imsikb0101:physicalProperty/immetingen:PhysicalProperty/immetingen:parameter",
+          "action": "set",
+          "value": "urn:immetingen:Parameter:id:9999999"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "message_contains": "van het element parameter"
+      }
+    },
+    {
+      "name": "Depth - onbekende eenheid",
+      "sources": [
+        "01_registrationRequest_SLD_CompleteReport_IMBRO_OW.xml",
+        "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+        "03c_registrationRequest_SLD_NewDecision_IMBROA_WBB_2.xml"
+      ],
+      "mutations": [
+        {
+          "xpath": "(//immetingen:Depth/immetingen:value)[1]",
+          "action": "set_attribute",
+          "name": "uom",
+          "value": "urn:immetingen:Eenheid:id:999999"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "immetingen:Depth",
+        "message_contains": "komt niet voor in lookup-tabel Eenheid"
+      }
+    },
+    {
+      "name": "Depth - eenheid uit een andere tabel",
+      "sources": [
+        "01_registrationRequest_SLD_CompleteReport_IMBRO_OW.xml",
+        "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+        "03c_registrationRequest_SLD_NewDecision_IMBROA_WBB_2.xml"
+      ],
+      "mutations": [
+        {
+          "xpath": "(//immetingen:Depth/immetingen:value)[1]",
+          "action": "set_attribute",
+          "name": "uom",
+          "value": "urn:immetingen:Hoedanigheid:id:19"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "immetingen:Depth",
+        "message_contains": "komt niet voor in lookup-tabel Eenheid"
+      },
+      "waarom": "Id 19 bestaat wel als eenheid (cm), maar de verwijzing moet naar de Eenheid-tabel gaan."
+    },
+    {
+      "name": "Depth - lege eenheid",
+      "sources": [
+        "01_registrationRequest_SLD_CompleteReport_IMBRO_OW.xml",
+        "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+        "03c_registrationRequest_SLD_NewDecision_IMBROA_WBB_2.xml"
+      ],
+      "mutations": [
+        {
+          "xpath": "(//immetingen:Depth/immetingen:value)[1]",
+          "action": "set_attribute",
+          "name": "uom",
+          "value": ""
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "immetingen:Depth",
+        "message_contains": "is leeg of komt niet voor"
+      }
+    },
+    {
+      "name": "Depth - geldige eenheden geven geen melding",
+      "sources": [
+        "01_registrationRequest_SLD_CompleteReport_IMBRO_OW.xml",
+        "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+        "03c_registrationRequest_SLD_NewDecision_IMBROA_WBB_2.xml"
+      ],
+      "mutations": [
+        {
+          "xpath": "(//immetingen:Depth/immetingen:value)[1]",
+          "action": "set_attribute",
+          "name": "uom",
+          "value": "urn:immetingen:Eenheid:id:115"
+        }
+      ],
+      "expect": [],
+      "not_expect": [
+        {
+          "type": "ERROR",
+          "title_contains": "immetingen:Depth",
+          "message_contains": "lookup-tabel Eenheid"
+        }
+      ],
+      "waarom": "Alle eenheden staan in de lookup op broSldImbro(A)=false; de controle mag daar dus niet op afgaan."
+    },
+    {
+      "name": "WBB - Project zonder projectType wordt gecontroleerd",
+      "sources": [
+        "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+        "T1. New Decision met Project en endTime (van 03c_2).xml"
+      ],
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Project[contains(imsikb0101:projectType, 'id:11')]/imsikb0101:projectType",
+          "action": "remove"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "Project",
+        "message_contains": "projectType"
+      },
+      "waarom": "Voorheen werd een Project zonder projectType stilletjes overgeslagen."
+    },
+    {
+      "name": "WBB - Project van type 44 wordt (nog steeds) niet gecontroleerd",
+      "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Project[contains(imsikb0101:projectType, 'id:44')]/imsikb0101:reportNumber",
+          "action": "remove"
+        }
+      ],
+      "expect": [],
+      "not_expect": [
+        {
+          "type": "ERROR",
+          "message_contains": "reportNumber"
+        }
+      ],
+      "waarom": "Voor WBB wordt alleen projectType 11 geaccepteerd (commentaar in de XSLT); type 44 wordt overgeslagen."
+    },
+    {
+      "name": "WBB - projectType id:110 telt niet als 11",
+      "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Project[contains(imsikb0101:projectType, 'id:11')]/imsikb0101:projectType",
+          "action": "set",
+          "value": "urn:imsikb0101:OnderzoekType:id:110"
+        },
+        {
+          "xpath": "//imsikb0101:Project[contains(imsikb0101:projectType, 'id:110')]/imsikb0101:reportNumber",
+          "action": "remove"
+        }
+      ],
+      "expect": [],
+      "not_expect": [
+        {
+          "type": "ERROR",
+          "message_contains": "reportNumber"
+        }
+      ],
+      "waarom": "Voorheen matchte contains(projectType, 'id:11') ook id:110; nu wordt exact id 11 vergeleken."
+    },
+    {
+      "name": "Dossier - dubbel dossierIdLocalAuthority loopt niet vast",
+      "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Dossier/imsikb0101:dossierIdLocalAuthority",
+          "action": "duplicate"
+        }
+      ],
+      "expect": {
+        "type": "WARNING",
+        "title_contains": "Dossier",
+        "message_contains": "Waarde van het element dossierIdLocalAuthority"
+      },
+      "waarom": "Voorheen gaf dit een XSLT-runtimefout. Nu geeft de uniciteitscontrole een WARNING."
+    },
+    {
+      "name": "Dossier - dubbel dossierIdNotLocalAuthority loopt niet vast",
+      "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Dossier/imsikb0101:dossierIdNotLocalAuthority",
+          "action": "duplicate"
+        }
+      ],
+      "expect": {
+        "type": "WARNING",
+        "title_contains": "Dossier",
+        "message_contains": "Waarde van het element dossierIdNotLocalAuthority"
+      },
+      "waarom": "Voorheen gaf dit een XSLT-runtimefout. Nu geeft de uniciteitscontrole een WARNING."
+    },
+    {
+      "name": "featureMember - lokaalID wijkt af van gml:id (imsikb0101-identificatie)",
+      "sources": [
+        "01_registrationRequest_SLD_CompleteReport_IMBRO_OW.xml",
+        "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+        "03b_registrationRequest_SLD_ChangeSoilLocation_IMBROA_WBB.xml",
+        "03c_registrationRequest_SLD_NewDecision_IMBROA_WBB_2.xml"
+      ],
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Dossier/imsikb0101:identification/immetingen:NEN3610ID/immetingen:lokaalID",
+          "action": "set",
+          "value": "00000000-0000-4000-8000-000000000000"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "Dossier",
+        "message_contains": "heeft een afwijkend lokaalId"
+      }
+    },
+    {
+      "name": "featureMember - lokaalID wijkt af van gml:id (immetingen-identificatie)",
+      "sources": [
+        "01_registrationRequest_SLD_CompleteReport_IMBRO_OW.xml",
+        "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
+        "03b_registrationRequest_SLD_ChangeSoilLocation_IMBROA_WBB.xml",
+        "03c_registrationRequest_SLD_NewDecision_IMBROA_WBB_2.xml"
+      ],
+      "mutations": [
+        {
+          "xpath": "//imsikb0101:Dossier",
+          "action": "insert_xml",
+          "xml": "<immetingen:identification><immetingen:NEN3610ID><immetingen:namespace>SIKB</immetingen:namespace><immetingen:lokaalID>00000000-0000-4000-8000-000000000000</immetingen:lokaalID></immetingen:NEN3610ID></immetingen:identification>"
+        }
+      ],
+      "expect": {
+        "type": "ERROR",
+        "title_contains": "Dossier",
+        "message_contains": "heeft een afwijkend lokaalId ( 00000000"
+      },
+      "waarom": "Geen enkel SLD-object heeft een immetingen:identification; die tak van de controle wordt zo toch getest."
+    }
+  ]
+}

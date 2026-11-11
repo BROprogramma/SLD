@@ -17,10 +17,10 @@
 			<xsl:if test="count(//imsikb0101:metaData/imsikb0101:dataflow) &lt; 1">			
 				<xsl:copy-of select="sikb:createRecord('WARNING','imsikb0101:metaData/imsikb0101:dataflow','Er zou een metadata/dataflow ingevuld moeten zijn.')"/>		
 			</xsl:if>
-			<xsl:if test="not( (lower-case(//imsikb0101:metaData/imsikb0101:dataflow) = lower-case('urn:imsikb0101:DatastroomType:id:5'))  or  (lower-case(//imsikb0101:metaData/imsikb0101:dataflow) = lower-case('urn:imsikb0101:DatastroomType:id:10'))  )">			
+			<xsl:if test="not( (lower-case((//imsikb0101:metaData/imsikb0101:dataflow)[1]) = lower-case('urn:imsikb0101:DatastroomType:id:5'))  or  (lower-case((//imsikb0101:metaData/imsikb0101:dataflow)[1]) = lower-case('urn:imsikb0101:DatastroomType:id:10'))  )">			
 				<xsl:copy-of select="sikb:createRecord('WARNING','imsikb0101:metaData/imsikb0101:dataflow','Het veld metadata/dataflow zou ingevuld moeten zijn met: urn:imsikb0101:DatastroomType:id:5 or 10. Als dit geen LIB-xml of SLD is, kies dan voor een andere controle xslt.')"/>		
 			</xsl:if>				
-			<xsl:if test="not(lower-case(//imsikb0101:metaData/imsikb0101:version) = lower-case('15.0'))">
+			<xsl:if test="not(lower-case((//imsikb0101:metaData/imsikb0101:version)[1]) = lower-case('15.0'))">
                 <xsl:copy-of select="sikb:createRecord('ERROR','imsikb0101:metaData/imsikb0101:version','Het veld metadata/versie moet versie 15.0 zijn')"/>
             </xsl:if>  
             
@@ -40,7 +40,7 @@
                 <xsl:copy-of select="sikb:createRecord('WARNING', 'xml-bestand', $message)"/>
             </xsl:if>      
             
-			<xsl:if test="not(contains(lower-case(//imsikb0101:Dossier/imsikb0101:followUpWBB),lower-case('VervolgWBB'))) and fn:string-length(string(//imsikb0101:SoilLocation/imsikb0101:geometry)) &lt; 10">
+			<xsl:if test="not(contains(lower-case(//imsikb0101:Dossier/imsikb0101:followUpWBB),lower-case('VervolgWBB'))) and fn:string-length(string((//imsikb0101:SoilLocation/imsikb0101:geometry)[1])) &lt; 10">
 				<!-- Check existence minimal required fields -->
                 <xsl:variable name="message" select="'In dit bronbestand moet minimaal imsikb0101:Dossier/imsikb0101:followUpWBB of imsikb0101:SoilLocation/imsikb0101:geometry opgenomen en gevuld zijn om te wijzigen.'"/>
                 <xsl:copy-of select="sikb:createRecord('ERROR', 'xml-bestand', $message)"/>
@@ -87,10 +87,10 @@
 	
     <!-- every featuremember -->
     <xsl:template match="imsikb0101:featureMember">
-        <xsl:variable name="GmlId" select="substring-after(./*/@gml:id,'_')"/>
+        <xsl:variable name="GmlId" select="substring-after((./*/@gml:id)[1],'_')"/>
         <xsl:variable name="IdentificationImmetingen" select="./*/immetingen:identification/immetingen:NEN3610ID/immetingen:lokaalID"/>
         <xsl:variable name="IdentificationImSikb" select="./*/imsikb0101:identification/immetingen:NEN3610ID/immetingen:lokaalID"/>
-        <xsl:variable name="ElementName" select="name(./*)"/>
+        <xsl:variable name="ElementName" select="name((./*)[1])"/>
         <xsl:choose>
         
             <xsl:when test="$IdentificationImmetingen != ''">
@@ -182,7 +182,7 @@
 		<xsl:variable name="elementLocalName" select="string($context/local-name())"/>
 		<xsl:variable name="message" select="string-join(('Het element', $field, 'bij', $elementLocalName, $prGUID, 'ontbreekt.'), ' ')"/>
 		<xsl:if test="count($context/*[local-name()=$field]) &gt;0">
-			<xsl:if test="string-length(string($context/*[local-name()=$field])) = 0">
+			<xsl:if test="$context/*[local-name()=$field][string-length(string(.)) = 0]">
 				<xsl:copy-of select="sikb:createRecord($errorType, $elementName, $message)"/>
 			</xsl:if>
 		</xsl:if>
@@ -197,7 +197,7 @@
 		<xsl:variable name="elementName" select="string($context/name())"/>
 		<xsl:variable name="elementLocalName" select="string($context/local-name())"/>
 		<xsl:variable name="message" select="replace(string-join(('Waarde van het element', $field, 'bij', $elementLocalName, $prGUID, 'is niet uniek.'), ' '), '  ', ' ')"/>
-		<xsl:variable name="value" select="string($context/*[local-name()=$field])"/>
+		<xsl:variable name="value" select="string(($context/*[local-name()=$field])[1])"/>
 		<xsl:if test="count($searchContext//*[local-name()=$field][text()=$value]) &gt;1">
 			<xsl:copy-of select="sikb:createRecord($errorType, $elementName, $message)"/>
 		</xsl:if>
@@ -212,7 +212,7 @@
         <xsl:variable name="elementName" select="string($context/name())"/>
         <xsl:variable name="elementLocalName" select="string($context/local-name())"/>
         <xsl:variable name="messageBase" select="replace(string-join(( 'Datum in het element', $field, 'bij', $elementLocalName, $prGUID, 'ligt niet voor'), ' '), '  ', ' ')"/>
-        <xsl:variable name="value" select="$context/*[local-name()=$field]"/>
+        <xsl:variable name="value" select="($context/*[local-name()=$field])[1]"/>
 <xsl:variable name="valueDate">
             <xsl:choose>
                 <xsl:when test="($value castable as xsi:dateTime)">
@@ -251,7 +251,7 @@
                     <xsl:value-of select="string-join(($messageBase, $date), ' ')"/>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:value-of select="string-join(($messageBase, 'datum', string($context/*[local-name()=$date]), 'in element', $date), ' ')"/>
+                    <xsl:value-of select="string-join(($messageBase, 'datum', string(($context/*[local-name()=$date])[1]), 'in element', $date), ' ')"/>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
@@ -268,7 +268,7 @@
         <xsl:variable name="elementName" select="string($context/name())"/>
         <xsl:variable name="elementLocalName" select="string($context/local-name())"/>
         <xsl:variable name="messageBase" select="replace(string-join(( 'Datum in het element', $field, 'bij', $elementLocalName, $prGUID, 'ligt niet na'), ' '), '  ', ' ')"/>
-        <xsl:variable name="value" select="$context/*[local-name()=$field]"/>
+        <xsl:variable name="value" select="($context/*[local-name()=$field])[1]"/>
 		<xsl:variable name="valueDate">
             <xsl:choose>
                 <xsl:when test="($value castable as xsi:dateTime)">
@@ -307,7 +307,7 @@
                     <xsl:value-of select="string-join(($messageBase, $date), ' ')"/>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:value-of select="string-join(($messageBase, 'datum', string($context/*[local-name()=$date]), 'in element', $date), ' ')"/>
+                    <xsl:value-of select="string-join(($messageBase, 'datum', string(($context/*[local-name()=$date])[1]), 'in element', $date), ' ')"/>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
@@ -326,7 +326,7 @@
 		<xsl:variable name="elementLocalName" select="string($context/local-name())"/>
 		<xsl:variable name="message" select="replace(string-join(( 'Lengte van de waarde in het element', $field, 'bij', $elementLocalName, $prGUID, 'is meer dan', string($max), 'karakters.'), ' '), '  ', ' ')"/>
 		<xsl:if test="count($context/*[local-name()=$field]) &gt;0">
-			<xsl:variable name="value" select="string($context/*[local-name()=$field])"/>
+			<xsl:variable name="value" select="string(($context/*[local-name()=$field])[1])"/>
 			<xsl:if test="string-length($value) &gt; $max">
 				<xsl:copy-of select="sikb:createRecord($errorType, $elementName, $message)"/>
 			</xsl:if>
@@ -343,7 +343,7 @@
 		<xsl:variable name="elementLocalName" select="string($context/local-name())"/>
 		<xsl:variable name="message" select="replace(string-join(( 'Lengte van de waarde in het element', $field, 'bij', $elementLocalName, $prGUID, 'is niet gelijk aan', string($length), 'karakters.'), ' '), '  ', ' ')"/>
 		<xsl:if test="count($context/*[local-name()=$field]) &gt;0">
-			<xsl:variable name="value" select="string($context/*[local-name()=$field])"/>
+			<xsl:variable name="value" select="string(($context/*[local-name()=$field])[1])"/>
 			<xsl:if test="string-length($value) != $length">
 				<xsl:copy-of select="sikb:createRecord($errorType, $elementName, $message)"/>
 			</xsl:if>
@@ -356,7 +356,7 @@
 		<xsl:param name="field"/>
 		<xsl:param name="max"/>
 		<xsl:param name="errorType"/>
-		<xsl:variable name="value" select="string($context/*[local-name()=$field])"/>
+		<xsl:variable name="value" select="string(($context/*[local-name()=$field])[1])"/>
 		<xsl:choose>
 			<xsl:when test="contains($value, '.')">
 				<xsl:copy-of select="sikb:checkLength($context, $prGUID, $field, $max + 1, $errorType)"/>
@@ -376,7 +376,7 @@
 		<xsl:variable name="elementName" select="string($context/name())"/>
 		<xsl:variable name="elementLocalName" select="string($context/local-name())"/>
 		<xsl:variable name="message" select="replace(string-join(( 'Lengte van de waarde in het element', $field, 'bij', $elementLocalName, $prGUID, 'is meer dan', string($max), 'karakters voor het decimaalteken.'), ' '), '  ', ' ')"/>
-		<xsl:variable name="value" select="substring-before(string($context/*[local-name()=$field]),'.')"/>
+		<xsl:variable name="value" select="substring-before(string(($context/*[local-name()=$field])[1]),'.')"/>
 		<xsl:if test="count($context/*[local-name()=$field]) &gt;0">
 			<xsl:if test="string-length($value) &gt; $max">
 				<xsl:copy-of select="sikb:createRecord($errorType, $elementName, $message)"/>
@@ -394,7 +394,7 @@
 		<xsl:variable name="elementLocalName" select="string($context/local-name())"/>
 		<xsl:variable name="message" select="replace(string-join(( 'Lengte van de waarde in het element', $field, 'bij', $elementLocalName, $prGUID, 'is niet exact', string($length), 'karakters.'), ' '), '  ', ' ')"/>
 		<xsl:if test="count($context/*[local-name()=$field]) &gt;0">
-			<xsl:variable name="value" select="string($context/*[local-name()=$field])"/>
+			<xsl:variable name="value" select="string(($context/*[local-name()=$field])[1])"/>
 			<xsl:if test="string-length($value) != $length">
 				<xsl:copy-of select="sikb:createRecord($errorType, $elementName, $message)"/>
 			</xsl:if>
@@ -415,17 +415,17 @@
         <!-- Extract lookup value from the field, from @xlink:href, or from a physicalProperty -->
         <xsl:variable name="lookupValue">
             <xsl:choose>                
-                <xsl:when test="$context/*[local-name() = $field]/@xlink:href and string($context/*[local-name() = $field]/@xlink:href) != ''">
-                    <xsl:value-of select="$context/*[local-name() = $field]/@xlink:href"/>
+                <xsl:when test="$context/*[local-name() = $field]/@xlink:href and string(($context/*[local-name() = $field])[1]/@xlink:href) != ''">
+                    <xsl:value-of select="($context/*[local-name() = $field])[1]/@xlink:href"/>
                 </xsl:when>
-                <xsl:when test="$context/*[local-name() = $field]/@uom and string($context/*[local-name() = $field]/@uom) != ''">
-                    <xsl:value-of select="$context/*[local-name() = $field]/@uom"/>
+                <xsl:when test="$context/*[local-name() = $field]/@uom and string(($context/*[local-name() = $field])[1]/@uom) != ''">
+                    <xsl:value-of select="($context/*[local-name() = $field])[1]/@uom"/>
                 </xsl:when>
-                <xsl:when test="$context/*[local-name()='physicalProperty']/*[local-name()='PhysicalProperty']/*[local-name() = $field] and string($context/*[local-name()='physicalProperty']/*[local-name()='PhysicalProperty']/*[local-name() = $field]) != ''">
-                    <xsl:value-of select="$context/*[local-name()='physicalProperty']/*[local-name()='PhysicalProperty']/*[local-name() = $field]"/>
+                <xsl:when test="$context/*[local-name()='physicalProperty']/*[local-name()='PhysicalProperty']/*[local-name() = $field] and string(($context/*[local-name()='physicalProperty']/*[local-name()='PhysicalProperty']/*[local-name() = $field])[1]) != ''">
+                    <xsl:value-of select="($context/*[local-name()='physicalProperty']/*[local-name()='PhysicalProperty']/*[local-name() = $field])[1]"/>
                 </xsl:when>
-                <xsl:when test="$context/*[local-name() = $field] and string($context/*[local-name() = $field]) != ''">
-                    <xsl:value-of select="$context/*[local-name() = $field]"/>
+                <xsl:when test="$context/*[local-name() = $field] and string(($context/*[local-name() = $field])[1]) != ''">
+                    <xsl:value-of select="($context/*[local-name() = $field])[1]"/>
                 </xsl:when>
             </xsl:choose>
         </xsl:variable>
@@ -501,7 +501,7 @@
 		<xsl:param name="errorType"/>
 		<xsl:variable name="elementName" select="string($context/name())"/>
 		<xsl:variable name="elementLocalName" select="string($context/local-name())"/>
-		<xsl:variable name="value" select="string($context/*[local-name()=$field])"/>
+		<xsl:variable name="value" select="string(($context/*[local-name()=$field])[1])"/>
 		<xsl:variable name="currentYear" select="year-from-date(current-date())"/>
 		<xsl:variable name="messageBase" select="replace(string-join(('Waarde van het element', $field, 'bij', $elementLocalName, $prGUID, 'ligt niet tussen 1450 en huidig jaartal'), ' '), '  ', ' ')"/>
 		<xsl:if test="not(number($value) &gt;=1450 and number($value) &lt;=$currentYear)">
@@ -527,7 +527,7 @@
 		<xsl:param name="errorType"/>
 		<xsl:variable name="elementName" select="string($context/name())"/>
 		<xsl:variable name="elementLocalName" select="string($context/local-name())"/>
-		<xsl:variable name="value" select="string($context/*[local-name()=$field])"/>
+		<xsl:variable name="value" select="string(($context/*[local-name()=$field])[1])"/>
 		<xsl:variable name="message" select="replace(string-join(('Waarde van het element', $field, 'bij', $elementLocalName, $prGUID, 'moet groter zijn dan nul'), ' '), '  ', ' ')"/>
 		<xsl:if test="count($context/*[local-name()=$field]) !=0">
 			<xsl:if test="not(number($value) &gt;0)">
@@ -543,7 +543,7 @@
 		<xsl:param name="errorType"/>
 		<xsl:variable name="elementName" select="string($context/name())"/>
 		<xsl:variable name="elementLocalName" select="string($context/local-name())"/>
-		<xsl:variable name="value" select="string($context/*[local-name()=$field])"/>
+		<xsl:variable name="value" select="string(($context/*[local-name()=$field])[1])"/>
 		<xsl:variable name="message" select="replace(string-join(('Waarde van het element', $field, 'bij', $elementLocalName, $prGUID, 'moet gelijk zijn aan of groter zijn dan nul'), ' '), '  ', ' ')"/>
 		<xsl:if test="count($context/*[local-name()=$field]) !=0">
 			<xsl:if test="not(number($value) &gt;=0)">
@@ -559,7 +559,7 @@
         <xsl:param name="max"/>
         <xsl:param name="errorType"/>
         <!-- Extract the lookupId from the unit-of-measure attribute -->
-        <xsl:variable name="lookupId" select="substring-after(string($context/*[local-name()=$field]/@uom), ':id:')"/>
+        <xsl:variable name="lookupId" select="substring-after(string(($context/*[local-name()=$field])[1]/@uom), ':id:')"/>
         <!-- Retrieve the matching node using the key.
              The key uses lower-case(parent::*/@categorie) so we pass 'eenheid' in lower-case. -->
         <xsl:variable name="lookupNode" select="key('immetingenKey', concat('eenheid', '|', $lookupId), $immetingenLookup)"/>
@@ -585,8 +585,8 @@
 		<xsl:if test="count($context/*[local-name()=$field]) &gt;0">
 			<xsl:variable name="value">
 				<xsl:choose>
-					<xsl:when test="contains(string($context/*[local-name()=$field]),':id:')">
-						<xsl:copy-of select="number(substring-after(string($context/*[local-name()=$field]),':id:'))"/>
+					<xsl:when test="contains(string(($context/*[local-name()=$field])[1]),':id:')">
+						<xsl:copy-of select="number(substring-after(string(($context/*[local-name()=$field])[1]),':id:'))"/>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:copy-of select="number($context/*[local-name()=$field])"/>
@@ -623,7 +623,7 @@
 		<xsl:variable name="elementName" select="string($context/name())"/>
 		<xsl:variable name="elementLocalName" select="string($context/local-name())"/>
 		<xsl:variable name="message" select="replace(string-join(('Het element', $checkField, 'bij', $elementLocalName, $prGUID, 'moet aanwezig zijn als het element', $field, 'waarde', $condition, 'heeft.'), ' '), '  ', ' ')"/>
-		<xsl:if test="substring-after($context/*[local-name()=$field],':id:') = $condition and string-length(string($context/*[local-name()=$checkField])) = 0">
+		<xsl:if test="substring-after($context/*[local-name()=$field],':id:') = $condition and string-length(string(($context/*[local-name()=$checkField])[1])) = 0">
 			<xsl:copy-of select="sikb:createRecord($errorType, $elementName, $message)"/>
 		</xsl:if>
 	</xsl:function>
@@ -748,7 +748,7 @@
 		<xsl:param name="errorType"/>
 		<xsl:variable name="elementName" select="string($context/name())"/>
 		<xsl:variable name="elementLocalName" select="string($context/local-name())"/>
-		<xsl:variable name="dossierIdLocalAuthorityValue" select="string($context/imsikb0101:dossierIdLocalAuthority)"/>
+		<xsl:variable name="dossierIdLocalAuthorityValue" select="string(($context/imsikb0101:dossierIdLocalAuthority)[1])"/>
 		<xsl:variable name="checkFormatCodeLocalAuthority" select="matches(substring($dossierIdLocalAuthorityValue,1,2),'[A-Z]{2}')"/>
 		<xsl:variable name="checkFormatDistrictCode" select="matches(substring($dossierIdLocalAuthorityValue,3,4),'[0-9]{4}')"/>
 		<xsl:variable name="checkFormatUniqueNumber" select="matches(substring($dossierIdLocalAuthorityValue,7,5),'[0-9]{5}')"/>
@@ -795,7 +795,7 @@
 		<xsl:variable name="elementLocalName" select="string($context/local-name())"/>
 		<xsl:variable name="message" select="replace(string-join(('Geometry bij',$elementLocalName,$prGUID,'moet een',$elementType,'zijn, geen andere types zijn toegestaan. Let op, dat de srsName het juiste coordinaten stelsel heeft, in de vorm van een URN.'), ' '), '  ',' ')"/>
 		<xsl:if test="count($context/*[local-name()='geometry']) &gt;0">
-			<xsl:if test="name($context/*[local-name()='geometry']/element()) != '' and name($context/*[local-name()='geometry']/element()) != $elementType">
+			<xsl:if test="name(($context/*[local-name()='geometry']/element())[1]) != '' and name(($context/*[local-name()='geometry']/element())[1]) != $elementType">
 				<xsl:copy-of select="sikb:createRecord($errorType,$elementName,$message)"/>
 			</xsl:if>
 		</xsl:if>
@@ -810,7 +810,7 @@
 		<xsl:variable name="elementLocalName" select="string($context/local-name())"/>
 		<xsl:variable name="message" select="replace(string-join(('Geometry bij',$elementLocalName,$prGUID,'moet een',$elementType1,'of een',$elementType2,'zijn, andere types zijn niet toegestaan. Let op, dat de srsName het juiste coordinaten stelsel heeft, in de vorm van een URN.'), ' '), '  ',' ')"/>
 		<xsl:if test="count($context/*[local-name()='geometry']) &gt;0">
-			<xsl:if test="name($context/*[local-name()='geometry']/element()) != '' and name($context/*[local-name()='geometry']/element()) != $elementType1 and name($context/*[local-name()='geometry']/element()) != $elementType2">
+			<xsl:if test="name(($context/*[local-name()='geometry']/element())[1]) != '' and name(($context/*[local-name()='geometry']/element())[1]) != $elementType1 and name(($context/*[local-name()='geometry']/element())[1]) != $elementType2">
 				<xsl:copy-of select="sikb:createRecord($errorType,$elementName,$message)"/>
 			</xsl:if>
 		</xsl:if>
@@ -840,7 +840,7 @@
 		<xsl:variable name="elementName" select="string($context/name())"/>
 		<xsl:variable name="elementLocalName" select="string($context/local-name())"/>
 		<xsl:variable name="message" select="replace(string-join(('Het element', $field, 'bij', $elementLocalName, $prGUID, 'moet uom Eenheid:id', $eenheidId, ' hebben.'), ' '), '  ', ' ')"/>
-		<xsl:if test="not(lower-case(string($context/*[local-name()=$field]/@uom)) = lower-case($checkEenheidId))">
+		<xsl:if test="not(lower-case(string(($context/*[local-name()=$field])[1]/@uom)) = lower-case($checkEenheidId))">
 			<xsl:copy-of select="sikb:createRecord($errorType, $elementName, $message)"/>
 		</xsl:if>
 	</xsl:function>

@@ -1,0 +1,44 @@
+{
+  "_uitleg": "Product-instellingen voor de testsuite. 'mappen' zijn paden binnen een geleverde versie-map. 'controles' bepalen welk bericht door welke XSLT gaat: de eerste regel waarvan sourceDocument (naam van het eerste element in sourceDocument) en qualityRegime passen, wint. Een bericht dat bij geen enkele regel past wordt overgeslagen (met reden in het rapport).",
+  "product": "SLD",
+  "mappen": {
+    "xslt": "Controle XSLT",
+    "xsd": "XSD",
+    "inname": "Voorbeeldberichten/inname",
+    "uitgifte": "Voorbeeldberichten/uitgifte"
+  },
+  "xsd": {
+    "inname": "issld-messages.xsd",
+    "uitgifte": "dssld-messages.xsd"
+  },
+  "controles": [
+    {
+      "naam": "OW Complete Report",
+      "xslt": "SIKB_SLD OW Complete Report.xslt",
+      "sourceDocument": ["SLD_CompleteReport"],
+      "qualityRegime": ["IMBRO"]
+    },
+    {
+      "naam": "WBB Complete Report + Start Report",
+      "xslt": "SIKB_SLD WBB Complete Report + Start Report.xslt",
+      "sourceDocument": ["SLD_CompleteReport", "SLD_StartReport"],
+      "qualityRegime": ["IMBRO/A"]
+    },
+    {
+      "naam": "WBB Change SoilLocation",
+      "xslt": "SIKB_SLD WBB Change SoilLocation.xslt",
+      "sourceDocument": ["SLD_ChangeSoilLocationData"],
+      "qualityRegime": ["IMBRO/A"]
+    },
+    {
+      "naam": "WBB New Decision",
+      "xslt": "SIKB_SLD WBB New Decision.xslt",
+      "sourceDocument": ["SLD_NewDecision"],
+      "qualityRegime": ["IMBRO/A"]
+    }
+  ],
+  "namespaces": {
+    "issld": "http://www.broservices.nl/xsd/issld/1.0",
+    "sldcom": "http://www.broservices.nl/xsd/sldcommon/1.0"
+  }
+}
