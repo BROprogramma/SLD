@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:dssld="http://www.broservices.nl/xsd/dssld/1.0"
+<xs:schema xmlns:dssld="http://www.broservices.nl/xsd/dssld/1"
            xmlns:gml="http://www.opengis.net/gml/3.2"
            xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
            xmlns:imsikb0101="http://www.sikb.nl/imsikb0101"
-           xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon/1.0"
+           xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon/1"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://www.broservices.nl/xsd/dssld/1.0"
+           targetNamespace="http://www.broservices.nl/xsd/dssld/1"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
            version="1.0.0">
@@ -15,13 +15,13 @@
         </xs:appinfo>
     </xs:annotation>
 
-    <xs:import namespace="http://www.broservices.nl/xsd/sldcommon/1.0" schemaLocation="sldcommon.xsd"/>
+    <xs:import namespace="http://www.broservices.nl/xsd/sldcommon/1" schemaLocation="sldcommon.xsd"/>
     <xs:import namespace="http://www.sikb.nl/imsikb0101" schemaLocation="imsikb0101_v14.9.0.xsd"/>
     <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
     <!--
-    <xs:import namespace="http://www.broservices.nl/xsd/sldcommon/1.0" schemaLocation="https://schema.broservices.nl/xsd/sld/1.0/sldcommon.xsd"/>
+    <xs:import namespace="http://www.broservices.nl/xsd/sldcommon/1" schemaLocation="https://schema.broservices.nl/xsd/sld/1/sldcommon.xsd"/>
     <xs:import namespace="http://www.sikb.nl/imsikb0101/1.1" schemaLocation="https://schema.broservices.nl/xsd/imsikb0101/14.8/imsikb0101_v14.8.0.xsd"/>
-    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
+    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1/gml-profile.xsd"/>
     -->
 
     <xs:element name="parseFault" type="sldcom:ParseFaultType"/>
