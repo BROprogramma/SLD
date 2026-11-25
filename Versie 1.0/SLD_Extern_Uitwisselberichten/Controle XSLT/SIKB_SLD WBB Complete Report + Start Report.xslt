@@ -100,11 +100,9 @@
 	<xsl:template match="imsikb0101:Remediation">
 		<xsl:variable name="prGUID" select="@gml:id" />
 		
-		<!-- Geometrie (Remediation): verplicht (ERROR), behalve als er een einddatum is aangeleverd; dan mag hij
-		     ontbreken en volgt alleen een WARNING. -->
-		<xsl:variable name="geometryErrorType" select="if (imsikb0101:endTime[normalize-space()]) then 'WARNING' else 'ERROR'"/>
-		<xsl:copy-of select="sikb:checkExistence(., $prGUID, 'geometry', $geometryErrorType)"/>
-		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'geometry', $geometryErrorType)"/>
+		<!-- Geometrie (Remediation): altijd verplicht (ERROR), ook als er een einddatum is aangeleverd. -->
+		<xsl:copy-of select="sikb:checkExistence(., $prGUID, 'geometry', 'ERROR')"/>
+		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'geometry', 'ERROR')"/>
 		<xsl:copy-of select="sikb:checkGeometryElements(.,$prGUID,'gml:Polygon','gml:MultiSurface','ERROR')"/>
 
 		<xsl:copy-of select="sikb:checkExistence(., $prGUID,'contourType','ERROR')" />
@@ -199,11 +197,9 @@
 	<xsl:template match="imsikb0101:ContaminationInformation">
 		<xsl:variable name="prGUID" select="@gml:id"/>
 
-        <!-- Geometrie (ContaminationInformation): verplicht (ERROR), behalve als er een einddatum is aangeleverd; dan mag hij
-             ontbreken en volgt alleen een WARNING. -->
-        <xsl:variable name="geometryErrorType" select="if (imsikb0101:endTime[normalize-space()]) then 'WARNING' else 'ERROR'"/>
-        <xsl:copy-of select="sikb:checkExistence(., $prGUID, 'geometry', $geometryErrorType)"/>
-        <xsl:copy-of select="sikb:checkFilled(., $prGUID, 'geometry', $geometryErrorType)"/>
+        <!-- Geometrie (ContaminationInformation): altijd verplicht (ERROR), ook als er een einddatum is aangeleverd. -->
+        <xsl:copy-of select="sikb:checkExistence(., $prGUID, 'geometry', 'ERROR')"/>
+        <xsl:copy-of select="sikb:checkFilled(., $prGUID, 'geometry', 'ERROR')"/>
 		<xsl:copy-of select="sikb:checkGeometryElements(.,$prGUID,'gml:Polygon','gml:MultiSurface','ERROR')"/>
 		
         <xsl:copy-of select="sikb:checkExistence(., $prGUID,'contourType','ERROR')" />
@@ -240,11 +236,9 @@
 	</xsl:template>	
     <xsl:template match="imsikb0101:SitemanagementMeasure">
 		<xsl:variable name="prGUID" select="@gml:id"/>
-        <!-- Geometrie (SitemanagementMeasure): verplicht (ERROR), behalve als er een einddatum is aangeleverd; dan mag hij
-             ontbreken en volgt alleen een WARNING. -->
-        <xsl:variable name="geometryErrorType" select="if (imsikb0101:endTime[normalize-space()]) then 'WARNING' else 'ERROR'"/>
-        <xsl:copy-of select="sikb:checkExistence(., $prGUID, 'geometry', $geometryErrorType)"/>
-        <xsl:copy-of select="sikb:checkFilled(., $prGUID, 'geometry', $geometryErrorType)"/>
+        <!-- Geometrie (SitemanagementMeasure): altijd verplicht (ERROR), ook als er een einddatum is aangeleverd. -->
+        <xsl:copy-of select="sikb:checkExistence(., $prGUID, 'geometry', 'ERROR')"/>
+        <xsl:copy-of select="sikb:checkFilled(., $prGUID, 'geometry', 'ERROR')"/>
 		<xsl:copy-of select="sikb:checkGeometryElements(.,$prGUID,'gml:Polygon','gml:MultiSurface','ERROR')"/>
 						
         <xsl:copy-of select="sikb:checkExistence(., $prGUID,'startTime','WARNING')" />

@@ -548,7 +548,7 @@
       "waarom": "Geen enkel SLD-object heeft een immetingen:identification; die tak van de controle wordt zo toch getest."
     },
     {
-      "name": "WBB Complete Report - Aangepakt gebied (Remediation): geometrie moet aanwezig zijn, met einddatum → WARNING",
+      "name": "WBB Complete Report - Aangepakt gebied (Remediation): geometrie moet aanwezig zijn, met einddatum → ERROR",
       "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
       "mutations": [
         {
@@ -557,18 +557,18 @@
         }
       ],
       "expect": {
-        "type": "WARNING",
+        "type": "ERROR",
         "title_contains": "Remediation",
         "message_contains": "Het element geometry bij Remediation"
       },
       "not_expect": [
         {
-          "type": "ERROR",
+          "type": "WARNING",
           "title_contains": "Remediation",
           "message_contains": "Het element geometry bij"
         }
       ],
-      "waarom": "Contour (geometry) mag ontbreken als een einddatum wordt aangeleverd."
+      "waarom": "Bij Complete/Start Report is contour (geometry) altijd verplicht, ook als een einddatum wordt aangeleverd (uitzondering geldt alleen voor New Decision)."
     },
     {
       "name": "WBB Complete Report - Aangepakt gebied (Remediation): geometrie moet aanwezig zijn, zonder einddatum → ERROR",
@@ -595,10 +595,10 @@
           "message_contains": "Het element geometry bij"
         }
       ],
-      "waarom": "Contour (geometry) mag niet ontbreken als geen einddatum wordt aangeleverd."
+      "waarom": "Bij Complete/Start Report is contour (geometry) altijd verplicht."
     },
     {
-      "name": "WBB Complete Report - Aangepakt gebied (Remediation): geometrie moet gevuld zijn, met einddatum → WARNING",
+      "name": "WBB Complete Report - Aangepakt gebied (Remediation): geometrie moet gevuld zijn, met einddatum → ERROR",
       "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
       "mutations": [
         {
@@ -612,18 +612,18 @@
         }
       ],
       "expect": {
-        "type": "WARNING",
+        "type": "ERROR",
         "title_contains": "Remediation",
         "message_contains": "Het element geometry bij Remediation"
       },
       "not_expect": [
         {
-          "type": "ERROR",
+          "type": "WARNING",
           "title_contains": "Remediation",
           "message_contains": "Het element geometry bij"
         }
       ],
-      "waarom": "Contour (geometry) mag ontbreken als een einddatum wordt aangeleverd."
+      "waarom": "Bij Complete/Start Report is contour (geometry) altijd verplicht, ook als een einddatum wordt aangeleverd (uitzondering geldt alleen voor New Decision)."
     },
     {
       "name": "WBB Complete Report - Aangepakt gebied (Remediation): geometrie moet gevuld zijn, zonder einddatum → ERROR",
@@ -655,10 +655,10 @@
           "message_contains": "Het element geometry bij"
         }
       ],
-      "waarom": "Contour (geometry) mag niet ontbreken als geen einddatum wordt aangeleverd."
+      "waarom": "Bij Complete/Start Report is contour (geometry) altijd verplicht."
     },
     {
-      "name": "WBB Complete Report - Verontreinigd gebied (ContaminationInformation): geometrie moet aanwezig zijn, met einddatum → WARNING",
+      "name": "WBB Complete Report - Verontreinigd gebied (ContaminationInformation): geometrie moet aanwezig zijn, met einddatum → ERROR",
       "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
       "mutations": [
         {
@@ -667,18 +667,18 @@
         }
       ],
       "expect": {
-        "type": "WARNING",
+        "type": "ERROR",
         "title_contains": "ContaminationInformation",
         "message_contains": "Het element geometry bij ContaminationInformation"
       },
       "not_expect": [
         {
-          "type": "ERROR",
+          "type": "WARNING",
           "title_contains": "ContaminationInformation",
           "message_contains": "Het element geometry bij"
         }
       ],
-      "waarom": "Contour (geometry) mag ontbreken als een einddatum wordt aangeleverd."
+      "waarom": "Bij Complete/Start Report is contour (geometry) altijd verplicht, ook als een einddatum wordt aangeleverd (uitzondering geldt alleen voor New Decision)."
     },
     {
       "name": "WBB Complete Report - Verontreinigd gebied (ContaminationInformation): geometrie moet aanwezig zijn, zonder einddatum → ERROR",
@@ -705,10 +705,10 @@
           "message_contains": "Het element geometry bij"
         }
       ],
-      "waarom": "Contour (geometry) mag niet ontbreken als geen einddatum wordt aangeleverd."
+      "waarom": "Bij Complete/Start Report is contour (geometry) altijd verplicht."
     },
     {
-      "name": "WBB Complete Report - Verontreinigd gebied (ContaminationInformation): geometrie moet gevuld zijn, met einddatum → WARNING",
+      "name": "WBB Complete Report - Verontreinigd gebied (ContaminationInformation): geometrie moet gevuld zijn, met einddatum → ERROR",
       "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
       "mutations": [
         {
@@ -722,18 +722,18 @@
         }
       ],
       "expect": {
-        "type": "WARNING",
+        "type": "ERROR",
         "title_contains": "ContaminationInformation",
         "message_contains": "Het element geometry bij ContaminationInformation"
       },
       "not_expect": [
         {
-          "type": "ERROR",
+          "type": "WARNING",
           "title_contains": "ContaminationInformation",
           "message_contains": "Het element geometry bij"
         }
       ],
-      "waarom": "Contour (geometry) mag ontbreken als een einddatum wordt aangeleverd."
+      "waarom": "Bij Complete/Start Report is contour (geometry) altijd verplicht, ook als een einddatum wordt aangeleverd (uitzondering geldt alleen voor New Decision)."
     },
     {
       "name": "WBB Complete Report - Verontreinigd gebied (ContaminationInformation): geometrie moet gevuld zijn, zonder einddatum → ERROR",
@@ -765,10 +765,10 @@
           "message_contains": "Het element geometry bij"
         }
       ],
-      "waarom": "Contour (geometry) mag niet ontbreken als geen einddatum wordt aangeleverd."
+      "waarom": "Bij Complete/Start Report is contour (geometry) altijd verplicht."
     },
     {
-      "name": "WBB Complete Report - Nazorggebied (SitemanagementMeasure): geometrie moet aanwezig zijn, met einddatum → WARNING",
+      "name": "WBB Complete Report - Nazorggebied (SitemanagementMeasure): geometrie moet aanwezig zijn, met einddatum → ERROR",
       "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
       "mutations": [
         {
@@ -777,18 +777,18 @@
         }
       ],
       "expect": {
-        "type": "WARNING",
+        "type": "ERROR",
         "title_contains": "SitemanagementMeasure",
         "message_contains": "Het element geometry bij SitemanagementMeasure"
       },
       "not_expect": [
         {
-          "type": "ERROR",
+          "type": "WARNING",
           "title_contains": "SitemanagementMeasure",
           "message_contains": "Het element geometry bij"
         }
       ],
-      "waarom": "Contour (geometry) mag ontbreken als een einddatum wordt aangeleverd."
+      "waarom": "Bij Complete/Start Report is contour (geometry) altijd verplicht, ook als een einddatum wordt aangeleverd (uitzondering geldt alleen voor New Decision)."
     },
     {
       "name": "WBB Complete Report - Nazorggebied (SitemanagementMeasure): geometrie moet aanwezig zijn, zonder einddatum → ERROR",
@@ -815,10 +815,10 @@
           "message_contains": "Het element geometry bij"
         }
       ],
-      "waarom": "Contour (geometry) mag niet ontbreken als geen einddatum wordt aangeleverd."
+      "waarom": "Bij Complete/Start Report is contour (geometry) altijd verplicht."
     },
     {
-      "name": "WBB Complete Report - Nazorggebied (SitemanagementMeasure): geometrie moet gevuld zijn, met einddatum → WARNING",
+      "name": "WBB Complete Report - Nazorggebied (SitemanagementMeasure): geometrie moet gevuld zijn, met einddatum → ERROR",
       "source": "02_registrationRequest_SLD_CompleteReport_IMBROA_WBB.xml",
       "mutations": [
         {
@@ -832,18 +832,18 @@
         }
       ],
       "expect": {
-        "type": "WARNING",
+        "type": "ERROR",
         "title_contains": "SitemanagementMeasure",
         "message_contains": "Het element geometry bij SitemanagementMeasure"
       },
       "not_expect": [
         {
-          "type": "ERROR",
+          "type": "WARNING",
           "title_contains": "SitemanagementMeasure",
           "message_contains": "Het element geometry bij"
         }
       ],
-      "waarom": "Contour (geometry) mag ontbreken als een einddatum wordt aangeleverd."
+      "waarom": "Bij Complete/Start Report is contour (geometry) altijd verplicht, ook als een einddatum wordt aangeleverd (uitzondering geldt alleen voor New Decision)."
     },
     {
       "name": "WBB Complete Report - Nazorggebied (SitemanagementMeasure): geometrie moet gevuld zijn, zonder einddatum → ERROR",
@@ -875,7 +875,7 @@
           "message_contains": "Het element geometry bij"
         }
       ],
-      "waarom": "Contour (geometry) mag niet ontbreken als geen einddatum wordt aangeleverd."
+      "waarom": "Bij Complete/Start Report is contour (geometry) altijd verplicht."
     },
     {
       "name": "WBB New Decision - Aangepakt gebied (Remediation): geometrie moet aanwezig zijn, met einddatum → WARNING",
