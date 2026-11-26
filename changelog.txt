@@ -10,5 +10,5 @@ Version 1.0.0 - 19.11.2026
 Version 1.0.0 - 26.11.2026
 ----------------------------
 
-1. new folder for versie 1 was made, that has all the applied changes in the namespaces for files in all intern and extern uitwisselberichten (15) folders.
+1. new folder for versie 1.x was made, that has all the applied changes in the namespaces for files in all intern and extern uitwisselberichten (15) folders.
 2. Versie 1.0 is revert to the latest (based on the recent commit from gh-pages) status.
