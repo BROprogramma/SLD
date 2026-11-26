@@ -100,8 +100,9 @@
 	<xsl:template match="imsikb0101:Remediation">
 		<xsl:variable name="prGUID" select="@gml:id" />
 		
-		<xsl:copy-of select="sikb:checkExistence(., $prGUID, 'geometry', 'WARNING')"/>
-		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'geometry', 'WARNING')"/>
+		<!-- Geometrie (Remediation): altijd verplicht (ERROR), ook als er een einddatum is aangeleverd. -->
+		<xsl:copy-of select="sikb:checkExistence(., $prGUID, 'geometry', 'ERROR')"/>
+		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'geometry', 'ERROR')"/>
 		<xsl:copy-of select="sikb:checkGeometryElements(.,$prGUID,'gml:Polygon','gml:MultiSurface','ERROR')"/>
 
 		<xsl:copy-of select="sikb:checkExistence(., $prGUID,'contourType','ERROR')" />
@@ -196,8 +197,9 @@
 	<xsl:template match="imsikb0101:ContaminationInformation">
 		<xsl:variable name="prGUID" select="@gml:id"/>
 
-        <xsl:copy-of select="sikb:checkExistence(., $prGUID, 'geometry', 'WARNING')"/>
-		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'geometry', 'WARNING')"/>
+        <!-- Geometrie (ContaminationInformation): altijd verplicht (ERROR), ook als er een einddatum is aangeleverd. -->
+        <xsl:copy-of select="sikb:checkExistence(., $prGUID, 'geometry', 'ERROR')"/>
+        <xsl:copy-of select="sikb:checkFilled(., $prGUID, 'geometry', 'ERROR')"/>
 		<xsl:copy-of select="sikb:checkGeometryElements(.,$prGUID,'gml:Polygon','gml:MultiSurface','ERROR')"/>
 		
         <xsl:copy-of select="sikb:checkExistence(., $prGUID,'contourType','ERROR')" />
@@ -234,8 +236,9 @@
 	</xsl:template>	
     <xsl:template match="imsikb0101:SitemanagementMeasure">
 		<xsl:variable name="prGUID" select="@gml:id"/>
-        <xsl:copy-of select="sikb:checkExistence(., $prGUID, 'geometry', 'WARNING')"/>
-		<xsl:copy-of select="sikb:checkFilled(., $prGUID, 'geometry', 'WARNING')"/>
+        <!-- Geometrie (SitemanagementMeasure): altijd verplicht (ERROR), ook als er een einddatum is aangeleverd. -->
+        <xsl:copy-of select="sikb:checkExistence(., $prGUID, 'geometry', 'ERROR')"/>
+        <xsl:copy-of select="sikb:checkFilled(., $prGUID, 'geometry', 'ERROR')"/>
 		<xsl:copy-of select="sikb:checkGeometryElements(.,$prGUID,'gml:Polygon','gml:MultiSurface','ERROR')"/>
 						
         <xsl:copy-of select="sikb:checkExistence(., $prGUID,'startTime','WARNING')" />

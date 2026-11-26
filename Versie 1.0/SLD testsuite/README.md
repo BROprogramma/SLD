@@ -223,3 +223,6 @@ Bij het opzetten van de tests zijn drie problemen gevonden. Ze zijn in alle vier
 | Een herhaald element (bijv. twee keer `dossierIdLocalAuthority`, een dubbel `version`, of twee geometrie-elementen) liet de XSLT vastlopen met een runtime-fout in plaats van een melding. | De hulpfuncties en de root-/featureMember-/geometrie-expressies gebruiken nu het eerste voorkomen (`(...)[1]`); `checkFilled` meldt het als één van de voorkomens leeg is. Daarna liepen 0 van de ruim 2.300 duplicaties per versie nog vast. | cases "Dossier - dubbel …" + groep *Robuustheid* (`--robuust`) |
 
 `onbereikbaar.json` is daardoor nu leeg voor beide versies.
+
+### Geometrie (contour) bij WBB afhankelijk van einddatum (11-11-2026)
+Bij WBB Complete Report + Start Report en WBB New Decision gaven ontbrekende of lege geometrie van Remediation (Aangepakt gebied), ContaminationInformation (Verontreinigd gebied) en SitemanagementMeasure (Nazorggebied) altijd een WARNING. Nu: **ERROR** als er geen (gevulde) `endTime` is, **WARNING** als er wel een einddatum is aangeleverd. Bij OW Complete Report blijft het altijd een ERROR. Getest door de cases "… geometrie moet aanwezig/gevuld zijn, met/zonder einddatum".
