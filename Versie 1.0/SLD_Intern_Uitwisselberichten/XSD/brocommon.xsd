@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema"
         xmlns:gml="http://www.opengis.net/gml/3.2"
-        xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3"
-        targetNamespace="http://www.broservices.nl/xsd/brocommon/3"
+        xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+        targetNamespace="http://www.broservices.nl/xsd/brocommon/3.0"
         elementFormDefault="qualified"
-        version="3.0.9">
+        version="3.0.8">
 
     <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml-profile.xsd"/>
     <!--
@@ -14,48 +14,42 @@
 
     <annotation>
         <documentation>
-            This XSD describes the complex types, simple types common to the entire BRO.
-            Version:2.5.6 Changes compared to Version:2.5.5:
-            - Added CorrectionTypeType and CorrectionRequestType.
-            - Definitions grouped by simpleTypes and complexTypes.
-            - Definitions ordered alphabetically within group.
-            Version:2.5.7:
-            - New design for operations and messages with less operations and logic based on
-            SourceDocumentTypes.
-            Version:3.0.1
-            - standardizedLocation, deliveredLocation optional.
-            Version:3.0.2
-            - RegistrationObject, DeregisteredObject, Enumeration Wrappers.
-            Version:3.0.3
-            - OrganizationType.
-            Version:3.0.4
-            - Added AbstractDispatchCharacteristicsRequestType.
-            - Removed attribute requestReference from complexType DispatchCharacteristicsRequest.
-            - Split CharacteristicsType into broId and CommonCharacteristics.
-            - Added root element AbstractCharacteristics.
-            - Added AbstractCharacteristicsType.
-            Version:3.0.5
-            - Added MeasureNillableType, which is similar to gml:MeasureType but with an optional
-            rather than a required attribute uom.
-            Version:3.0.6
-            - support for curve, surface in kenset delivered location and multipoint in kenset and
-            object standardized location
-            - Added StandardizedGeometryType (Point or MultiPoint)
-            - Added DeliveredGeometryType (Point, Curve or Surface)
-            - Added AbstractCharacteristicsV2, AbstractCharacteristicsV2Type and
-            CommonCharacteristicsV2 group
-            - Added StandardizedLocationV2Type
-            Version:3.0.7
-            - support for (Multi)Polygon in standardized geometry
-            - Added Surface and MultiSurface to DeliveredGeometryType
-            - Added Surface and MultiSurface to StandardizedGeometryType
-            - Added DeliveredGeometry and StandardizedGeometry element and propertyType
+            This XSD describes the complex types, simple types common to the entire BRO. 
+            Version:2.5.6 Changes compared to Version:2.5.5: 
+                - Added CorrectionTypeType and CorrectionRequestType. 
+                - Definitions grouped by simpleTypes and complexTypes. 
+                - Definitions ordered alphabetically within group. 
+            Version:2.5.7: 
+                - New design for operations and messages with less operations and logic based on SourceDocumentTypes. 
+            Version:3.0.1 
+                - standardizedLocation, deliveredLocation optional. 
+            Version:3.0.2 
+                - RegistrationObject, DeregisteredObject, Enumeration Wrappers. 
+            Version:3.0.3 
+                - OrganizationType. 
+            Version:3.0.4 
+                - Added AbstractDispatchCharacteristicsRequestType. 
+                - Removed attribute requestReference from complexType DispatchCharacteristicsRequest. 
+                - Split CharacteristicsType into broId and CommonCharacteristics. 
+                - Added root element AbstractCharacteristics. 
+                - Added AbstractCharacteristicsType. 
+            Version:3.0.5 
+                - Added MeasureNillableType, which is similar to gml:MeasureType but with an optional rather than a required attribute uom. 
+            Version:3.0.6 
+                - support for curve, surface in kenset delivered location and multipoint in kenset and object standardized location 
+                - Added StandardizedGeometryType (Point or MultiPoint) 
+                - Added DeliveredGeometryType (Point, Curve or Surface) 
+                - Added AbstractCharacteristicsV2, AbstractCharacteristicsV2Type and CommonCharacteristicsV2 group 
+                - Added StandardizedLocationV2Type 
+            Version:3.0.7 
+                - support for (Multi)Polygon in standardized geometry 
+                - Added Surface and MultiSurface to DeliveredGeometryType 
+                - Added Surface and MultiSurface to StandardizedGeometryType 
+                - Added DeliveredGeometry and StandardizedGeometry element and propertyType
             Version:3.0.8
-            - changed layout
-            - Added gml:Polygon to DeliveredGeometryType
-            - Added gml:MultiGeometry to StandardizedGeometryType:
-            Version:3.0.9
-            - namespace changed from "....brocommon/3.0" to "...brocommon/3"
+                - changed layout
+                - Added gml:Polygon to DeliveredGeometryType 
+                - Added gml:MultiGeometry to StandardizedGeometryType: 
         </documentation>
     </annotation>
 

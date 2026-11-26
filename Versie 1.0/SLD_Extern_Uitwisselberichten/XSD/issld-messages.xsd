@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:gml="http://www.opengis.net/gml/3.2"
            xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
-           xmlns:issld="http://www.broservices.nl/xsd/issld/1"
-           xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon/1"
+           xmlns:issld="http://www.broservices.nl/xsd/issld/1.0"
+           xmlns:sldcom="http://www.broservices.nl/xsd/sldcommon/1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://www.broservices.nl/xsd/issld/1"
+           targetNamespace="http://www.broservices.nl/xsd/issld/1.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
            version="1.0.0">
@@ -14,10 +14,10 @@
         </xs:appinfo>
     </xs:annotation>
 
-    <xs:import namespace="http://www.broservices.nl/xsd/sldcommon/1" schemaLocation="sldcommon.xsd"/>
+    <xs:import namespace="http://www.broservices.nl/xsd/sldcommon/1.0" schemaLocation="sldcommon.xsd"/>
     <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
     <!--
-    <xs:import namespace="http://www.broservices.nl/xsd/sldcommon/1" schemaLocation="https://schema.broservices.nl/xsd/sld/1/sldcommon.xsd"/>
+    <xs:import namespace="http://www.broservices.nl/xsd/sldcommon/1.0" schemaLocation="https://schema.broservices.nl/xsd/sld/1.0/sldcommon.xsd"/>
     <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
     -->
 
